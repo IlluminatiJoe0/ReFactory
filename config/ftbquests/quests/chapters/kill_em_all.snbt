@@ -1,0 +1,33 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "kill_em_all"
+	group: ""
+	icon: {
+		Count: 1
+		id: "cgm:pistol"
+		tag: {
+			AmmoCount: 16
+		}
+	}
+	id: "36A679EAAEBE0B78"
+	order_index: 6
+	quest_links: [ ]
+	quests: [{
+		id: "2579156FD9649CC0"
+		tasks: [{
+			id: "2D8358A966EADC64"
+			item: {
+				Count: 1
+				id: "cgm:pistol"
+				tag: {
+					AmmoCount: 16
+				}
+			}
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Kill 'em All"
+}

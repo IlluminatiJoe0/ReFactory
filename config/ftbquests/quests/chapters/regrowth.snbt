@@ -1,0 +1,90 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "regrowth"
+	group: ""
+	icon: "botania:pure_daisy"
+	id: "4DF8A4EB7F3C23CA"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Welcome to Botania"]
+			disable_toast: true
+			id: "164936F5A53110D4"
+			rewards: [{
+				id: "79B66DD0EEB622C2"
+				item: "botania:lexicon"
+				type: "item"
+			}]
+			tasks: [{
+				id: "71E5AFED95B5BFDF"
+				title: "Lexica Botania"
+				type: "checkmark"
+			}]
+			title: "Lexica Botania"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C3A2DA8B5971533"]
+			id: "3AACA352C261688C"
+			tasks: [{
+				id: "5DF372D967568CA3"
+				item: "botania:livingwood_log"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["71DA8374016E4183"]
+			description: ["&eNote: Flax and Fluffy seeds work as well, since you won't have access to regular seeds yet.&r"]
+			id: "1C3A2DA8B5971533"
+			size: 1.5d
+			tasks: [{
+				id: "5B955F4F60638BA8"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1C3A2DA8B5971533"]
+			id: "0765A1C269042682"
+			tasks: [{
+				id: "36DC2B8599305B8F"
+				item: "botania:livingrock"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["164936F5A53110D4"]
+			description: ["The gateway to Botania"]
+			id: "71DA8374016E4183"
+			tasks: [{
+				id: "4D5ADBEB2490C04B"
+				item: "botania:apothecary_default"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3AACA352C261688C"]
+			id: "24F313A71382D5A4"
+			size: 1.5d
+			tasks: [{
+				id: "01BB0E8CADE70FB7"
+				item: "gtceu:rubber_sapling"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -5.0d
+		}
+	]
+	title: "Regrowth"
+}
