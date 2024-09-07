@@ -11,3 +11,6 @@ A post-apocalyptic, expert-styled, factory-building 1.20.1 Minecraft Modpack cen
 - Fight and survive the buffed Infernal Mobs using Apotheosis, Silent Gear and MrCrayfish's Guns
 - Farm drops using Compact Mob Farms, Mob Grinding Utils, Easy Villagers and Botany Pots
 - Become a designer with Rechiseled and Xtones Reworked
+- Travel to the Aether
+- Many other small mods and tweaks
+- Focuses on providing an optimized and smooth-running experience for all PCs
