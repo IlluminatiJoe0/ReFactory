@@ -1,4 +1,6 @@
 ServerEvents.recipes(event => {
+	// 0.0.1
+	
 	// RUBBER SAPLING
 	event.shaped(
 		'gtceu:rubber_sapling',
@@ -42,6 +44,23 @@ ServerEvents.recipes(event => {
 			T: 'minecraft:stick',
 			R: 'gtceu:rubber_plate',
 			L: '#minecraft:logs'
+		}
+	)
+	
+	// 0.0.2
+	
+	// APOTHECARY
+	event.shaped(
+		'botania:apothecary_default',
+		[
+			'CPC',
+			'SCS',
+			'CCC'
+		],
+		{
+			C: '#minecraft:stone_crafting_materials',
+			P: '#botania:petals',
+			S: 'gtceu:steel_plate'
 		}
 	)
 })

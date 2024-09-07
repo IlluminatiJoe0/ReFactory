@@ -342,6 +342,7 @@
 		}
 		{
 			dependencies: ["364AD55044CC7EBE"]
+			description: ["A primitive pump makes getting more water into the steam boilers a lot easier."]
 			id: "3FCDBCB2152DE3FB"
 			size: 1.0d
 			tasks: [{
@@ -372,17 +373,27 @@
 		}
 		{
 			dependencies: ["5E785D06BD90880A"]
+			description: ["Creates coke and creosote from coal."]
 			id: "364AD55044CC7EBE"
-			tasks: [{
-				id: "7BF316FE70843AF7"
-				item: "gtceu:coke_oven"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7BF316FE70843AF7"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "431A0C5FEFDE9DC5"
+					item: { Count: 25, id: "gtceu:coke_oven_bricks" }
+					type: "item"
+				}
+			]
 			x: 9.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["2F7F7A99342C19A6"]
+			description: ["Put some gravel in the forge hammer to get sand."]
 			id: "5E785D06BD90880A"
 			tasks: [{
 				id: "697074F319A0CDB5"
@@ -456,6 +467,7 @@
 		}
 		{
 			dependencies: ["364AD55044CC7EBE"]
+			description: ["Coke is required to make steel."]
 			id: "536AD04E85FE9AE6"
 			size: 1.0d
 			tasks: [{
@@ -542,12 +554,21 @@
 		}
 		{
 			dependencies: ["5FC306AB0CF12117"]
+			description: ["A very important multiblock, able to make steel from iron and coke."]
 			id: "102E0DFFBDE7BD84"
-			tasks: [{
-				id: "205FE61D350E26B6"
-				item: "gtceu:primitive_blast_furnace"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "205FE61D350E26B6"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "19260AA417D42E3C"
+					item: { Count: 32, id: "gtceu:firebricks" }
+					type: "item"
+				}
+			]
 			x: 9.0d
 			y: 4.5d
 		}
@@ -556,6 +577,7 @@
 				"536AD04E85FE9AE6"
 				"102E0DFFBDE7BD84"
 			]
+			description: ["Combine iron and coke in the Primitive Blast Furnace to get steel!"]
 			id: "189B920AAB6456B4"
 			size: 1.5d
 			subtitle: "MAJOR"
@@ -569,6 +591,7 @@
 		}
 		{
 			dependencies: ["6C35D6ECE63E59AB"]
+			description: ["Electricity finally!"]
 			id: "62B56B57D291BF7B"
 			size: 1.5d
 			tasks: [{
@@ -581,6 +604,7 @@
 		}
 		{
 			dependencies: ["189B920AAB6456B4"]
+			description: ["A step into future."]
 			id: "313476D47A208906"
 			tasks: [{
 				id: "2C455DA05F51CDE9"
@@ -667,6 +691,7 @@
 				"3AACA352C261688C"
 				"09ECD67B4648D2EA"
 			]
+			description: ["A market is very useful to get seeds and grow better and more sustainable food."]
 			id: "31A0620289688EFB"
 			tasks: [{
 				id: "1F21F93BD35D84D9"
@@ -678,6 +703,7 @@
 		}
 		{
 			dependencies: ["30A1CCB30F870404"]
+			description: ["Primitive input and output buses that don't require cables to craft."]
 			id: "429FB4A4E857C6F3"
 			tasks: [
 				{
@@ -697,6 +723,7 @@
 		}
 		{
 			dependencies: ["30A1CCB30F870404"]
+			description: ["A multiblock version of the alloy smelter."]
 			id: "07A730A0B1F9A9CB"
 			tasks: [{
 				id: "2629D18876434DC8"
@@ -708,6 +735,11 @@
 		}
 		{
 			dependencies: ["30A1CCB30F870404"]
+			description: [
+				"A multiblock version of the centrifuge."
+				""
+				"Can be used to make sulfur if you really hate to go to the nether."
+			]
 			id: "0F9A343D4916C7A4"
 			tasks: [{
 				id: "28DB8871FF767453"

@@ -51,6 +51,7 @@
 				"6554F633F91E900C"
 				"2D54523A85BC82A2"
 			]
+			description: ["Here comes the hard part..."]
 			id: "0E1F6E844041CC9F"
 			size: 1.5d
 			tasks: [{
@@ -492,6 +493,17 @@
 			}]
 			x: 7.5d
 			y: 2.5d
+		}
+		{
+			dependencies: ["1AD99F9620569AA4"]
+			id: "597B768AC0E3FBEC"
+			tasks: [{
+				id: "79E17099F22F5C5E"
+				item: "gtceu:lv_rock_crusher"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.0d
 		}
 	]
 	title: "LV Age"
