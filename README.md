@@ -2,3 +2,12 @@
 # ReFactory
 
 A post-apocalyptic, expert-styled, factory-building 1.20.1 Minecraft Modpack centered around GregTech.
+
+# Features
+- Everything is a Wasteland biome from Biomes'O'Plenty
+- Progress through the pack and make automated lines using GregTech, EnderIO and Thermal Foundation
+- Restore the biosphere using Botania
+- Manage your logistics using Applied Energistics 2
+- Fight and survive the buffed Infernal Mobs using Apotheosis, Silent Gear and MrCrayfish's Guns
+- Farm drops using Compact Mob Farms, Mob Grinding Utils, Easy Villagers and Botany Pots
+- Become a designer with Rechiseled and Xtones Reworked
