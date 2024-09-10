@@ -1,6 +1,6 @@
 #General configuration
 #This is a list of entities that will not be rendered by TOP. This option also works if it is set client-side alone
-renderBlacklist = []
+renderBlacklist = ["gtceu:coke_oven"]
 #The amount of milliseconds to wait before updating probe information from the server
 #Range: 10 ~ 100000
 timeout = 300
