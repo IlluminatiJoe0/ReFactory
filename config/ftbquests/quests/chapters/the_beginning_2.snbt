@@ -591,7 +591,11 @@
 		}
 		{
 			dependencies: ["6C35D6ECE63E59AB"]
-			description: ["Electricity finally!"]
+			description: [
+				"Electricity finally!"
+				""
+				"This block is an ingredient to all your LV machines."
+			]
 			id: "62B56B57D291BF7B"
 			size: 1.5d
 			tasks: [{
@@ -619,6 +623,7 @@
 				"38D1CF49FA014533"
 				"59B13573493F565F"
 			]
+			description: ["Now that you have rubber, you're ready to make cables!"]
 			id: "09ECD67B4648D2EA"
 			tasks: [{
 				id: "1ECBD4DC55C2A0EE"

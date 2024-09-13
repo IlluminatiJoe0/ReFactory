@@ -505,6 +505,95 @@
 			x: 8.0d
 			y: -4.0d
 		}
+		{
+			dependencies: ["0E1F6E844041CC9F"]
+			description: [
+				"An EBF is an important step for progressing. It's required to get Aluminium ingots and move into MV."
+				""
+				"The EBF requires MV, so unless you have an MV energy hatch, it's possible to use 2 LV energy hatches instead. Note that it does consume hefty amounts of energy."
+				""
+				"Later on it's recommended to get multiple EBF's running (preferably wall shared)."
+			]
+			id: "318CA73CE4C3DC3D"
+			tasks: [{
+				id: "0D5BD6D783E47B3B"
+				item: "gtceu:electric_blast_furnace"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"318CA73CE4C3DC3D"
+				"5F717D5E9715ED7C"
+			]
+			id: "18BC6F844CF368EF"
+			tasks: [{
+				id: "7CB8E4F11B64A373"
+				item: "gtceu:aluminium_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			description: [
+				"For basically all MV machines, you're going to need Aluminium."
+				"You can get it from either electrolyzing sapphire dust at LV, or clay dust at MV,"
+			]
+			id: "5F717D5E9715ED7C"
+			tasks: [{
+				id: "7F8D558574E13105"
+				item: "gtceu:aluminium_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -7.5d
+		}
+		{
+			description: [
+				"EBFs (Electric Blasts Furnaces) all require coils in order to work."
+				"Every material has its minimum coil tier that allows it to get smelted."
+				"Higher materials require higher levels of coils."
+				""
+				"One EBF requires 16 coils, unless it's wall-sharing with another EBF."
+			]
+			id: "4806751104224E6A"
+			tasks: [{
+				count: 16L
+				id: "62AFFC39EF5E36DC"
+				item: { Count: 16, id: "gtceu:cupronickel_coil_block" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["318CA73CE4C3DC3D"]
+			description: [
+				"You can wallshare EBFs, which means that two EBFs share a side with each other, reducing the amount of resources (mainly coils) to build."
+				""
+				"The following blocks CAN be wallshared:"
+				"- Coils"
+				"- Machine casings"
+				"- Input and output buses and hatches"
+				"- Muffler hatch (though impossible for the EBF)"
+				"- Energy hatches (though not recommended, unless you know what you are doing)"
+				""
+				"The following blocks CANNOT be wallshared:"
+				"- Maintenance hatch"
+				"- Controller"
+			]
+			id: "79469B87C6E057CA"
+			tasks: [{
+				id: "76DDC25C641D4F7F"
+				title: "Wallsharing"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -6.0d
+		}
 	]
 	title: "LV Age"
 }

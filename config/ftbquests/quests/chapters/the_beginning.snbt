@@ -171,6 +171,24 @@
 			x: -2.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["43E0325219933606"]
+			description: [
+				"Pollution in this pack is disabled, since it's recommended to stay in one secure place in the early game to minimize dying, the pollution would add nothing to the gameplay other than annoyance."
+				""
+				"If you wish to enable it, go to Mods->GregTech->Config"
+				"->Gameplay->environmentalHazards"
+				"and set it to True."
+			]
+			id: "4552071689D9C460"
+			tasks: [{
+				id: "3E1CF5E90B63B78C"
+				title: "Pollution"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
 	]
 	title: "Intro"
 }
