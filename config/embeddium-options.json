@@ -1,15 +1,15 @@
 {
   "quality": {
-    "weather_quality": "DEFAULT",
-    "leaves_quality": "DEFAULT",
-    "enable_vignette": true,
+    "weather_quality": "FAST",
+    "leaves_quality": "FAST",
+    "enable_vignette": false,
     "use_quad_normals_for_shading": true
   },
   "advanced": {
     "enable_memory_tracing": false,
     "use_advanced_staging_buffers": true,
     "disable_incompatible_mod_warnings": false,
-    "cpu_render_ahead_limit": 3
+    "cpu_render_ahead_limit": 4
   },
   "performance": {
     "chunk_builder_threads": 0,

@@ -4,7 +4,6 @@
 # But don't ignore these folders
 !config/
 !defaultconfigs/
-!fancymenu_data/
 !global_packs/
 !kubejs/
 !profileImage/
