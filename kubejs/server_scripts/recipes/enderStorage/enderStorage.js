@@ -1,20 +1,10 @@
 ServerEvents.recipes(event => {
-	// MV PHENOLIC CIRCUIT BOARD
-	event.recipes.gtceu.assembler('kubejs_phenolic_board')
-		.circuit(1)
-		.itemInputs(
-			'gtceu:wood_dust',
-			'gtceu:small_glass_dust'
-		)
-		.inputFluids(
-			Fluid.of('gtceu:glue', 50)
-		)
-		.itemOutputs(
-			'gtceu:phenolic_circuit_board'
-		)
-		.duration(160)
-		.EUt(30)
-		
+
+    // remove default ender storage recipes
+	event.remove({ id: 'enderstorage:ender_pouch'})
+	event.remove({ id: 'enderstorage:ender_chest'})
+	event.remove({ id: 'enderstorage:ender_tank'})
+
 	// ENDER CHEST
 	event.recipes.gtceu.assembler('kubejs_ender_chest')
 		.itemInputs(
@@ -48,5 +38,4 @@ ServerEvents.recipes(event => {
 		.itemOutputs('enderstorage:ender_pouch')
 		.duration(4800)
 		.EUt(256)
-
 })

@@ -1,13 +1,28 @@
-# Ignore everything
-*
-
-# But don't ignore these folders
-!config/
-!defaultconfigs/
-!global_packs/
-!kubejs/
-!profileImage/
-!resourcepacks/
-
-# Don't ignore the .gitignore file itself
-!.gitignore
+# Ignore
+.idea
+.vs
+.vscode
+backups
+crash-reports
+datapacks
+downloads
+fancymenu_data
+journeymap
+ldlib
+local
+logs
+mods
+patchouli_books
+profileImage
+resourcepacks
+saves
+screenshots
+shaderpacks
+.curseclient
+emi.json
+minecraftinstance.json
+options.txt
+patchouli_data.json
+rhino.local.properties
+usercache.json
+usernamecache.json
