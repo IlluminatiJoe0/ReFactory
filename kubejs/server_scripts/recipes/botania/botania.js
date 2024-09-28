@@ -27,5 +27,29 @@ ServerEvents.recipes(event => {
             P: '#botania:petals',
             S: 'gtceu:steel_plate'
         }
-)
+    )
+
+    // mystical white flower recipe quality of life
+    event.shapeless(
+        'botania:white_mystical_flower',
+        [
+            '#forge:dusts/bone',
+            '#botania:mystical_flowers'
+        ]
+    )
+
+    // rubber tree sapling recipe
+    event.recipes.botania.petal_apothecary(
+        'gtceu:rubber_sapling', 
+        [
+            '#botania:petals',
+            '#botania:petals',
+            '#botania:petals',
+            '#botania:petals',
+            'botania:livingwood_log',
+            'botania:livingwood_log'
+        ],
+        '#minecraft:saplings'
+    )
+
 })

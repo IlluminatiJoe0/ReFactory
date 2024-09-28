@@ -1,0 +1,86 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mv_age"
+	group: ""
+	icon: "gtceu:good_electronic_circuit"
+	id: "5DAF0EAA15F38ECC"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["498EF8FFD105D589"]
+			disable_toast: true
+			icon: "gtceu:mv_machine_hull"
+			id: "630A813B0F4DA078"
+			title: "MV AGE"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["07377D4D02DC350A"]
+			disable_toast: true
+			icon: "gtceu:good_electronic_circuit"
+			id: "2716593BFAA49CFD"
+			title: "Good Circuit"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["630A813B0F4DA078"]
+			id: "4F74168E48A8348E"
+			tasks: [{
+				id: "7C248DAA27330DA1"
+				item: "gtceu:mv_electric_motor"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F74168E48A8348E"]
+			id: "2D86BD3AE9C7AB6B"
+			tasks: [{
+				id: "3FD13D0F85994E05"
+				item: "gtceu:mv_electric_piston"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F74168E48A8348E"]
+			id: "41D7CFAE222CAE64"
+			tasks: [{
+				id: "5651DA51C150E465"
+				item: "gtceu:mv_electric_pump"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4F74168E48A8348E"]
+			id: "19FF64B61527ED5A"
+			tasks: [{
+				id: "2F07897A896FBE8A"
+				item: "gtceu:mv_conveyor_module"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2D86BD3AE9C7AB6B"]
+			id: "034D2646EC37C967"
+			tasks: [{
+				id: "6B0A8DAA9396E2E6"
+				item: "gtceu:mv_robot_arm"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+	]
+	title: "MV Age"
+}

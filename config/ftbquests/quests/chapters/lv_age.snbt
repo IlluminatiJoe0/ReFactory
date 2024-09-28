@@ -19,6 +19,7 @@
 		}
 		{
 			dependencies: ["0E1F6E844041CC9F"]
+			description: ["Crucial machine for creating LV power."]
 			id: "03D3442F857F0592"
 			size: 1.25d
 			tasks: [{
@@ -59,6 +60,7 @@
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
+			title: "Your First Circuit!"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -302,8 +304,8 @@
 				item: "gtceu:lv_miner"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 1.0d
+			x: 0.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["298F63E0659E0FD6"]
@@ -318,6 +320,13 @@
 		}
 		{
 			dependencies: ["35CB055A24346DE1"]
+			description: [
+				"A very useful buffer for power."
+				""
+				"Requires batteries of same voltage tier, and outputs amps depending on the number of batteries inside."
+				""
+				"You don't have access to batteries yet, but keep this in mind."
+			]
 			id: "7A182C2B32A50D8A"
 			tasks: [{
 				id: "0E85CD2DFD187C0A"
@@ -373,7 +382,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 1.0d
+			y: -6.25d
 		}
 		{
 			dependencies: ["0E1F6E844041CC9F"]
@@ -384,8 +393,8 @@
 				item: "gtceu:lv_emitter"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 1.0d
+			x: -1.875d
+			y: -6.25d
 		}
 		{
 			dependencies: ["44495C979D17EFD5"]
@@ -436,6 +445,7 @@
 				"3052BAA53CF8DBAA"
 				"2770BFB05F1E26EC"
 			]
+			description: ["The next tier of circuit."]
 			id: "07377D4D02DC350A"
 			size: 1.5d
 			tasks: [{
@@ -443,7 +453,8 @@
 				item: "gtceu:good_electronic_circuit"
 				type: "item"
 			}]
-			x: 7.5d
+			title: "Your Second Circuit"
+			x: 6.0d
 			y: 4.0d
 		}
 		{
@@ -480,8 +491,8 @@
 				item: "gtceu:phenolic_printed_circuit_board"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 2.5d
+			x: 7.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["74C94B5C7B866A34"]
@@ -514,14 +525,28 @@
 				""
 				"Later on it's recommended to get multiple EBF's running (preferably wall shared)."
 			]
+			icon: "gtceu:electric_blast_furnace"
 			id: "318CA73CE4C3DC3D"
-			tasks: [{
-				id: "0D5BD6D783E47B3B"
-				item: "gtceu:electric_blast_furnace"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0D5BD6D783E47B3B"
+					item: "gtceu:electric_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3695317FC04D7D6B"
+					item: { Count: 2, id: "gtceu:lv_energy_input_hatch" }
+					type: "item"
+				}
+				{
+					id: "40AEB0E535F06CB1"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+			]
 			x: 0.0d
-			y: -6.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -534,13 +559,14 @@
 				item: "gtceu:aluminium_ingot"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -7.5d
+			x: -2.0d
+			y: 1.0d
 		}
 		{
+			dependencies: ["62B56B57D291BF7B"]
 			description: [
 				"For basically all MV machines, you're going to need Aluminium."
-				"You can get it from either electrolyzing sapphire dust at LV, or clay dust at MV,"
+				"You can get it from either electrolyzing sapphire dust at LV, mining in The Aether dimension, or clay dust at MV."
 			]
 			id: "5F717D5E9715ED7C"
 			tasks: [{
@@ -548,10 +574,11 @@
 				item: "gtceu:aluminium_dust"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -7.5d
+			x: -3.0d
+			y: 1.0d
 		}
 		{
+			dependencies: ["318CA73CE4C3DC3D"]
 			description: [
 				"EBFs (Electric Blasts Furnaces) all require coils in order to work."
 				"Every material has its minimum coil tier that allows it to get smelted."
@@ -566,8 +593,9 @@
 				item: { Count: 16, id: "gtceu:cupronickel_coil_block" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: -6.0d
+			title: "Coils"
+			x: 0.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["318CA73CE4C3DC3D"]
@@ -591,8 +619,110 @@
 				title: "Wallsharing"
 				type: "checkmark"
 			}]
-			x: 1.0d
-			y: -6.0d
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["35CB055A24346DE1"]
+			description: [
+				"For transferring electricity you will need cables."
+				""
+				"Cables can only transfer a set amount of &eamps&r, and have a &dvoltage limit&r."
+				"Transferring power that is &chigher voltage&r (e.g. MV power through LV cables) &cwill make the cable burn&r, which can cause fires and potentially blow up machines."
+				""
+				"Similarly, transferring &cmore amps than the cable allows will also burn the cable&r. Usually, a singleblock machine will use 1 amp of power, so make sure the number of machines is less than the amount of amps your cable can transfer."
+				""
+				"At last, there's also &3cable loss&r, which determines &3how much EU will the cable lose, per block&r to the machine. Make sure machines are closer to the source of power, as well as using cables which have less cable loss."
+				""
+				"For LV, it's best to use tin cables."
+			]
+			id: "6C3A8FBF865AF3E0"
+			rewards: [{
+				count: 4
+				id: "1E49B6D6434B9292"
+				item: "thermal:green_bean_pie"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A6367562A3CB19F"
+				title: "Cables"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"53B8480F64FDA089"
+				"07377D4D02DC350A"
+			]
+			id: "6B22D87DF0CDC580"
+			size: 1.5d
+			tasks: [{
+				id: "501190AA63AA8AA8"
+				item: "gtceu:lv_circuit_assembler"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["18BC6F844CF368EF"]
+			description: ["The base of all MV machines"]
+			id: "498EF8FFD105D589"
+			size: 1.0d
+			tasks: [{
+				id: "165C8A2A8AE2CF63"
+				item: "gtceu:mv_machine_hull"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["35CB055A24346DE1"]
+			description: [
+				"Maybe you want to convert EU to RF/FE or vice versa?"
+				""
+				"Well then this is the perfect block for you!"
+				""
+				"Later on you might want to generate power with Powah, so you can use these to easily convert energy."
+			]
+			id: "77529F6F46D25E74"
+			tasks: [{
+				id: "537E23D3C0AD1590"
+				item: "gtceu:lv_4a_energy_converter"
+				type: "item"
+			}]
+			title: "Energy Conversion"
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["35CB055A24346DE1"]
+			description: ["Holds insane amounts of one item."]
+			hide_dependency_lines: true
+			id: "5CE14FF227CC4A58"
+			tasks: [{
+				id: "3FB6A1A4FB68E55E"
+				item: "gtceu:lv_super_chest"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["35CB055A24346DE1"]
+			description: ["Holds insane amounts of one fluid."]
+			hide_dependency_lines: true
+			id: "0DC21557F69B6755"
+			tasks: [{
+				id: "64467B66C3A008BA"
+				item: "gtceu:lv_super_tank"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -5.5d
 		}
 	]
 	title: "LV Age"

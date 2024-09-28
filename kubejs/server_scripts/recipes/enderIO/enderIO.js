@@ -33,4 +33,19 @@ ServerEvents.recipes(event => {
 			C: 'gtceu:electrum_single_cable'
 		}
 	)
+
+	// electromagnet
+	event.remove({ id: 'enderio:electromagnet' })
+	event.shaped(
+		'enderio:electromagnet',
+		[
+			'PPP',
+			'P P',
+			'C C',
+		],
+		{
+			P: 'gtceu:steel_ingot',
+			C: 'gtceu:magnetic_steel_ingot'
+		}
+	)
 })

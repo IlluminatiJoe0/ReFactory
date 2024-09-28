@@ -1,19 +1,4 @@
 ServerEvents.recipes(event => {
-	// RUBBER SAPLING
-	event.shaped(
-		'gtceu:rubber_sapling',
-		[
-			'AAA',
-			'ASA',
-			'ALA'
-		],
-		{
-			A: '#botania:petals',
-			S: '#minecraft:saplings',
-			L: 'botania:livingwood_log'
-		}
-	)
-
     // Removing default mv circuit board recipes
     event.remove({ id: 'gtceu:assembler/phenolic_board' })
 	event.remove({ id: 'gtceu:shaped/good_circuit_board' })

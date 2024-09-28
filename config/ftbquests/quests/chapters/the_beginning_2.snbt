@@ -54,7 +54,6 @@
 		{
 			dependencies: ["10C2C691F26385C4"]
 			id: "071811F3550BAF2F"
-			subtitle: "Irony"
 			tasks: [{
 				id: "2A650CBF16A2A4F3"
 				item: "minecraft:iron_ingot"
@@ -66,7 +65,6 @@
 		{
 			dependencies: ["10C2C691F26385C4"]
 			id: "19ED228B99A30CBF"
-			subtitle: "Cope"
 			tasks: [{
 				id: "0C4AE3C4AD39924D"
 				item: "minecraft:copper_ingot"
@@ -78,18 +76,6 @@
 		{
 			dependencies: ["10C2C691F26385C4"]
 			id: "4B41B7447B139821"
-			rewards: [{
-				id: "3C29ADC6A94C8A90"
-				item: {
-					Count: 1
-					id: "minecraft:chainmail_helmet"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			subtitle: "Tin foil hat enthusiast"
 			tasks: [{
 				id: "041E72E2DBCCEFCB"
 				item: "gtceu:tin_ingot"
@@ -115,7 +101,6 @@
 				item: "minecraft:cookie"
 				type: "item"
 			}]
-			subtitle: "For cooking (ores)"
 			tasks: [{
 				id: "26D084F2991E50A8"
 				item: "minecraft:furnace"
@@ -132,26 +117,33 @@
 				"Use them until you get better machines that will do the jobs for you."
 			]
 			id: "03CF5FEDA44D312B"
-			rewards: [{
-				id: "3101A3CA88E9CDA2"
-				item: {
-					Count: 1
-					id: "gtceu:diamond_hammer"
-					tag: {
-						DisallowContainerItem: 0b
-						GT.Behaviours: { }
-						GT.Tool: {
-							Damage: 0
-							Enchantability: 18
-							HarvestLevel: 3
-							MaxDamage: 767
-							ToolSpeed: 10.0f
+			rewards: [
+				{
+					id: "3101A3CA88E9CDA2"
+					item: {
+						Count: 1
+						id: "gtceu:diamond_hammer"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								Enchantability: 18
+								HarvestLevel: 3
+								MaxDamage: 767
+								ToolSpeed: 10.0f
+							}
+							HideFlags: 2
 						}
-						HideFlags: 2
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "35B9C46231EAF347"
+					item: "minecraft:cake"
+					type: "item"
+				}
+			]
 			subtitle: "Handyman"
 			tasks: [
 				{
@@ -753,6 +745,20 @@
 			}]
 			x: 7.5d
 			y: 7.0d
+		}
+		{
+			dependencies: ["14769C69DDD4F79E"]
+			description: ["A very useful storage, stores a bunch of a single item."]
+			hide_dependency_lines: true
+			id: "63B9AE0D4FC62C2E"
+			tasks: [{
+				id: "26FE2F1345AE1EF7"
+				item: "storagedrawers:oak_full_drawers_1"
+				type: "item"
+			}]
+			title: "Drawers"
+			x: -3.0d
+			y: 0.0d
 		}
 	]
 	title: "The Beginning"
