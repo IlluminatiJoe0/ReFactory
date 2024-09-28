@@ -1,5 +1,6 @@
 # 0.0.3
 - Removed SilentGear Compat
+- Removed SilentGear
 - Added Snad: Redstone Edition
 - Added Not Enough Crashes
 - Added ProbeJS
