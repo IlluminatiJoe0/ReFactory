@@ -12,4 +12,8 @@ ServerEvents.recipes(event => {
 			B: 'minecraft:water_bucket'
 		}
 	)
+
+	// remove handcrafted ender eye recipe
+	event.remove('minecraft:ender_eye')
+	
 })

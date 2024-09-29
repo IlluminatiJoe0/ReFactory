@@ -1,0 +1,338 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "power"
+	group: ""
+	icon: {
+		Count: 1
+		id: "powah:battery_niotic"
+		tag: { }
+	}
+	id: "7230C36C9441CF20"
+	images: [{
+		color: 0
+		height: 2.0d
+		image: "lollipop:textures/gui/container/slot/ov_energy.png"
+		rotation: 0.0d
+		width: 2.0d
+		x: -2.0d
+		y: 0.5d
+	}]
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome to Powah!"
+				""
+				"Powah has reactors that generate insane amounts of RF."
+			]
+			id: "224B2F81FBC05090"
+			size: 1.25d
+			tasks: [{
+				id: "39DD78A60B2B6678"
+				item: "powah:reactor_starter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.625d
+		}
+		{
+			dependencies: ["224B2F81FBC05090"]
+			id: "3122EA82C7670705"
+			size: 1.25d
+			tasks: [{
+				id: "270DD6F7AADE0043"
+				item: "powah:reactor_basic"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.625d
+		}
+		{
+			dependencies: ["3122EA82C7670705"]
+			id: "65F752B216038986"
+			size: 1.25d
+			tasks: [{
+				id: "66EC7046DD4798E5"
+				item: "powah:reactor_hardened"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.625d
+		}
+		{
+			dependencies: ["65F752B216038986"]
+			id: "62FB7518CA31F864"
+			size: 1.25d
+			tasks: [{
+				id: "058E38087F6B2F94"
+				item: "powah:reactor_blazing"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.625d
+		}
+		{
+			dependencies: ["62FB7518CA31F864"]
+			id: "78705C58DFF6FF53"
+			size: 1.25d
+			tasks: [{
+				id: "599734F29B14DD15"
+				item: "powah:reactor_niotic"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.625d
+		}
+		{
+			dependencies: ["78705C58DFF6FF53"]
+			id: "01C8C9D02FDD4196"
+			size: 1.25d
+			tasks: [{
+				id: "0B5AA8D5A2276AAF"
+				item: "powah:reactor_spirited"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.625d
+		}
+		{
+			dependencies: ["01C8C9D02FDD4196"]
+			id: "71CD774D5B869CE1"
+			size: 1.25d
+			tasks: [{
+				id: "4C23D90DF018B4D4"
+				item: "powah:reactor_nitro"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.625d
+		}
+		{
+			id: "4C60781F63A68896"
+			tasks: [{
+				id: "68DE0ECEE441989C"
+				item: "gtceu:lv_steam_turbine"
+				type: "item"
+			}]
+			title: "LV Steam"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			id: "2ED1972D5F6AB80D"
+			tasks: [{
+				id: "3A52DA2BD6692CF3"
+				item: "gtceu:mv_steam_turbine"
+				type: "item"
+			}]
+			title: "MV Steam"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			id: "47A9CB0608353FA0"
+			tasks: [{
+				id: "27609B3DF6199510"
+				item: "gtceu:hv_steam_turbine"
+				type: "item"
+			}]
+			title: "HV Steam"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			description: ["Multiblock version of the HV Steam Turbine."]
+			id: "680AA1D55DD526DA"
+			tasks: [{
+				id: "4C3C084549803ED9"
+				item: "gtceu:steam_large_turbine"
+				type: "item"
+			}]
+			title: "HV Steam Multiblock"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			id: "38EB3F74FF15565E"
+			tasks: [{
+				id: "519AEAC7E63199EC"
+				item: "gtceu:lv_gas_turbine"
+				type: "item"
+			}]
+			title: "LV Gas"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			id: "356863732109304B"
+			tasks: [{
+				id: "5E2711CB5FF2B101"
+				item: "gtceu:mv_gas_turbine"
+				type: "item"
+			}]
+			title: "MV Gas"
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			id: "7F8C19C918404342"
+			tasks: [{
+				id: "63426B10D1ACA745"
+				item: "gtceu:hv_gas_turbine"
+				type: "item"
+			}]
+			title: "HV Gas"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			id: "1007ECF43A2BDD4B"
+			tasks: [{
+				id: "2143CA3D0607FB73"
+				item: "gtceu:gas_large_turbine"
+				type: "item"
+			}]
+			title: "EV Gas"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			id: "498545974B0CD4CC"
+			tasks: [{
+				id: "220B2B919FAEC436"
+				item: "gtceu:lv_combustion"
+				type: "item"
+			}]
+			title: "LV Fuel"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			id: "426E2F60A0FFBF77"
+			tasks: [{
+				id: "6C52E97FC021C5AA"
+				item: "gtceu:mv_combustion"
+				type: "item"
+			}]
+			title: "MV Fuel"
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			id: "40039F44075ACA2B"
+			tasks: [{
+				id: "5EE2AA68917889C1"
+				item: "gtceu:hv_combustion"
+				type: "item"
+			}]
+			title: "HV Fuel"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			id: "65C93A6E1F11107D"
+			tasks: [{
+				id: "1B49A18760D7C85E"
+				item: "gtceu:large_combustion_engine"
+				type: "item"
+			}]
+			title: "EV Fuel"
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			id: "251F3EBC1EF05E99"
+			tasks: [{
+				id: "4ED8568B604E3AED"
+				item: "gtceu:extreme_combustion_engine"
+				type: "item"
+			}]
+			title: "IV Fuel"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			id: "61BF9B1182039243"
+			tasks: [{
+				id: "52BB36BD8808E755"
+				item: "thermal:dynamo_stirling"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			id: "79B777D14814D4F6"
+			tasks: [{
+				id: "093B0DE88F6626F7"
+				item: "thermal:dynamo_compression"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			id: "23F3D62D27BB4D45"
+			tasks: [{
+				id: "34B5D6F4086E6C97"
+				item: "thermal:dynamo_magmatic"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			id: "63E0B3B1853AC6CF"
+			tasks: [{
+				id: "26DBF92E48AF1BBB"
+				item: "thermal:dynamo_numismatic"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			id: "0756D9D031BBA406"
+			tasks: [{
+				id: "40E380DE9A0D1F98"
+				item: "thermal:dynamo_lapidary"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.5d
+		}
+		{
+			id: "175FBD992044903E"
+			tasks: [{
+				id: "4CEEFF6FE0D289EE"
+				item: "thermal:dynamo_disenchantment"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.5d
+		}
+		{
+			id: "259CE92E39267B45"
+			tasks: [{
+				id: "31488996532E685C"
+				item: "thermal:dynamo_gourmand"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.5d
+		}
+		{
+			id: "6B2D0C72C0350872"
+			tasks: [{
+				id: "37B8DD47F5199931"
+				item: "powah:energy_cell_starter"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+	]
+	title: "Power"
+}

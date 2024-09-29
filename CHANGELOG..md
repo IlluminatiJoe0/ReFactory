@@ -1,14 +1,16 @@
 # 0.0.3
 - Removed SilentGear Compat
-- Removed SilentGear
 - Added Snad: Redstone Edition
 - Added Not Enough Crashes
 - Added ProbeJS
 - Added KubeJS Botania
 - Questbook improvements
+- Infernal Mobs nerfed, more annoying prefixes removed
 - Aluminium and Bauxite spawn in The Aether
 - White mystical flower QOL recipe
-- Rubber sapling now crafted in the apothecary 
+- Rubber sapling now crafted in the apothecary
+- Snad custom assembler recipe (LV)
+- Sugar cane custom botania recipe
 
 # 0.0.2
 - IMPORTANT The One Probe substituted for Jade mod to remove errors

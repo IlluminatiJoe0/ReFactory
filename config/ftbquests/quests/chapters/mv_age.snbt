@@ -10,6 +10,7 @@
 	quests: [
 		{
 			dependencies: ["498EF8FFD105D589"]
+			description: ["Welcome to the MV age!"]
 			disable_toast: true
 			icon: "gtceu:mv_machine_hull"
 			id: "630A813B0F4DA078"
@@ -45,7 +46,7 @@
 				item: "gtceu:mv_electric_piston"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 9.0d
 			y: 0.0d
 		}
 		{
@@ -57,7 +58,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["4F74168E48A8348E"]
@@ -68,7 +69,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 3.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["2D86BD3AE9C7AB6B"]
@@ -78,8 +79,84 @@
 				item: "gtceu:mv_robot_arm"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 3.0d
+			x: 9.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2D86BD3AE9C7AB6B"]
+			id: "40949CE64C6F886A"
+			tasks: [{
+				id: "1EC4569A0911D349"
+				item: "gtceu:mv_extruder"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["40949CE64C6F886A"]
+			id: "0E1912B77BD360EC"
+			tasks: [
+				{
+					id: "61F68E070AC01A44"
+					item: "gtceu:rod_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "6FC64A7A32824C55"
+					item: "gtceu:bolt_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "2DE0C309329498B2"
+					item: "gtceu:ring_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "40CA721DF9545495"
+					item: "gtceu:cell_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "5F7933C282763EE2"
+					item: "gtceu:gear_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "439897F0D1B6CDAE"
+					item: "gtceu:small_gear_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "6C1BD9A15E1FE9A3"
+					item: "gtceu:rotor_extruder_mold"
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2D86BD3AE9C7AB6B"]
+			id: "3BAA5AE2A4ABA9EF"
+			tasks: [{
+				id: "3805F0F262DC7CDF"
+				item: "gtceu:mv_bender"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["034D2646EC37C967"]
+			id: "45EC6B51678C5FDB"
+			tasks: [{
+				id: "01ED14431FEFB9F4"
+				item: "gtceu:mv_assembler"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 5.0d
 		}
 	]
 	title: "MV Age"

@@ -52,4 +52,18 @@ ServerEvents.recipes(event => {
         '#minecraft:saplings'
     )
 
+    // sugar cane recipe
+    event.recipes.botania.petal_apothecary(
+        'minecraft:sugar_cane', 
+        [
+            'botania:cell_block',
+            'botania:cell_block',
+            'botania:cell_block',
+            'botania:cell_block',
+            'botania:cell_block',
+            'botania:cell_block'
+        ],
+        '#forge:seeds'
+    )
+
 })

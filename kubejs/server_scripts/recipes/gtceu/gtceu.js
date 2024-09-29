@@ -50,4 +50,19 @@ ServerEvents.recipes(event => {
 			} 
 		}
 	)
+
+    // snad recipe in an assembler
+    event.remove('snad:snad')
+    event.remove('snad:red_snad')
+    event.recipes.gtceu.assembler('kubejs_snad')
+    .circuit(1)
+    .itemInputs(
+        '32x minecraft:sand',
+        'minecraft:redstone_block'
+    )
+    .itemOutputs(
+        'snad:snad'
+    )
+    .duration(20*10)
+    .EUt(24)
 })

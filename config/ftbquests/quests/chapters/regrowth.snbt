@@ -28,6 +28,7 @@
 		}
 		{
 			dependencies: ["1C3A2DA8B5971533"]
+			description: ["Put any logs around the dais and wait for it to turn into Livingwood."]
 			id: "3AACA352C261688C"
 			tasks: [{
 				id: "5DF372D967568CA3"
@@ -41,6 +42,12 @@
 			dependencies: ["71DA8374016E4183"]
 			description: ["&eNote: Flax and Fluffy seeds work as well, since you won't have access to regular seeds yet.&r"]
 			id: "1C3A2DA8B5971533"
+			rewards: [{
+				count: 8
+				id: "4780C0D651BC687B"
+				item: "minecraft:cooked_porkchop"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "5B955F4F60638BA8"
@@ -52,18 +59,19 @@
 		}
 		{
 			dependencies: ["1C3A2DA8B5971533"]
+			description: ["Put stone around the daisy and wait for it to turn into Livingrock."]
 			id: "0765A1C269042682"
 			tasks: [{
 				id: "36DC2B8599305B8F"
 				item: "botania:livingrock"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -0.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["164936F5A53110D4"]
-			description: ["The gateway to Botania"]
+			description: ["The gateway to Botania."]
 			id: "71DA8374016E4183"
 			tasks: [{
 				id: "4D5ADBEB2490C04B"
@@ -88,6 +96,11 @@
 		{
 			dependencies: ["0765A1C269042682"]
 			id: "7654326C675F0181"
+			rewards: [{
+				id: "65FE57F79FD238F5"
+				item: "thermal:carrot_cake"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "488E9E83F78FEDC1"
@@ -214,6 +227,78 @@
 			}]
 			x: -1.5d
 			y: -6.5d
+		}
+		{
+			dependencies: ["022B354012349578"]
+			id: "40B63F7FC861DBFF"
+			tasks: [{
+				id: "06557AEACDEBB203"
+				item: "botania:conjuration_catalyst"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -16.5d
+		}
+		{
+			dependencies: ["2757DC4A2D67740E"]
+			id: "64649D7EB21F7AA2"
+			tasks: [{
+				id: "1542BCBB8F5996FA"
+				item: "botania:alfheim_portal"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["64649D7EB21F7AA2"]
+			id: "022B354012349578"
+			tasks: [{
+				id: "474441440F413AD7"
+				item: "botania:elementium_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["64649D7EB21F7AA2"]
+			id: "3CE5A137D4A0E9C8"
+			tasks: [{
+				id: "51A88F764970AA9E"
+				item: {
+					Count: 1
+					id: "botania:lexicon"
+					tag: {
+						"botania:elven_unlock": 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["71DA8374016E4183"]
+			id: "1E216CCC1E5EAFED"
+			tasks: [{
+				id: "46F2BE2F4A63B15E"
+				item: "botania:hydroangeas"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["71DA8374016E4183"]
+			id: "54AA5FCEA92FB58F"
+			tasks: [{
+				id: "4191714BD8F4ED2E"
+				item: "botania:endoflame"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
 		}
 	]
 	title: "Regrowth"

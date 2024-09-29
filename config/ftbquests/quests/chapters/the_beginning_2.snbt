@@ -55,6 +55,7 @@
 			dependencies: ["10C2C691F26385C4"]
 			id: "071811F3550BAF2F"
 			tasks: [{
+				count: 32L
 				id: "2A650CBF16A2A4F3"
 				item: "minecraft:iron_ingot"
 				type: "item"
@@ -66,6 +67,7 @@
 			dependencies: ["10C2C691F26385C4"]
 			id: "19ED228B99A30CBF"
 			tasks: [{
+				count: 32L
 				id: "0C4AE3C4AD39924D"
 				item: "minecraft:copper_ingot"
 				type: "item"
@@ -77,6 +79,7 @@
 			dependencies: ["10C2C691F26385C4"]
 			id: "4B41B7447B139821"
 			tasks: [{
+				count: 32L
 				id: "041E72E2DBCCEFCB"
 				item: "gtceu:tin_ingot"
 				type: "item"
@@ -302,8 +305,8 @@
 				type: "item"
 			}]
 			size: 1.5d
-			subtitle: "MAJOR"
 			tasks: [{
+				count: 16L
 				id: "532D6DE4DA19A8ED"
 				item: "gtceu:bronze_ingot"
 				type: "item"
@@ -396,10 +399,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: [
-				"30A1CCB30F870404"
-				"128552321EE61BC1"
-			]
+			dependencies: ["30A1CCB30F870404"]
 			description: [
 				"A forge hammer is used to turn ingots into plates at a 3:2 ratio, which is much better than making them by hand."
 				""
@@ -484,16 +484,6 @@
 			y: 4.5d
 		}
 		{
-			id: "128552321EE61BC1"
-			tasks: [{
-				id: "38D800FFC5679CC1"
-				item: "minecraft:redstone"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 3.0d
-		}
-		{
 			dependencies: ["30A1CCB30F870404"]
 			description: [
 				"A much better way of generating steam, but you will need silver to make it."
@@ -526,10 +516,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: [
-				"30A1CCB30F870404"
-				"128552321EE61BC1"
-			]
+			dependencies: ["30A1CCB30F870404"]
 			description: [
 				"This block compresses things into compressed things."
 				""
@@ -569,10 +556,19 @@
 				"536AD04E85FE9AE6"
 				"102E0DFFBDE7BD84"
 			]
-			description: ["Combine iron and coke in the Primitive Blast Furnace to get steel!"]
+			description: [
+				"Combine iron and coke in the Primitive Blast Furnace to get steel!"
+				""
+				"You'll need plenty of it, so keep the PBF going."
+			]
 			id: "189B920AAB6456B4"
+			rewards: [{
+				count: 8
+				id: "50007B6662EF549E"
+				item: "aether:gingerbread_man"
+				type: "item"
+			}]
 			size: 1.5d
-			subtitle: "MAJOR"
 			tasks: [{
 				id: "28811BAA82471930"
 				item: "gtceu:steel_ingot"
@@ -751,6 +747,11 @@
 			description: ["A very useful storage, stores a bunch of a single item."]
 			hide_dependency_lines: true
 			id: "63B9AE0D4FC62C2E"
+			rewards: [{
+				id: "06D1DF6EE1D41B76"
+				item: "storagedrawers:drawer_key"
+				type: "item"
+			}]
 			tasks: [{
 				id: "26FE2F1345AE1EF7"
 				item: "storagedrawers:oak_full_drawers_1"
@@ -759,6 +760,163 @@
 			title: "Drawers"
 			x: -3.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["189B920AAB6456B4"]
+			hide_dependency_lines: true
+			id: "496A59D3C7E8D87B"
+			tasks: [{
+				id: "2CC93D390B46DA3D"
+				item: {
+					Count: 1
+					id: "enderio:electromagnet"
+					tag: {
+						Energy: {
+							EnergyStored: 0
+							MaxEnergyStored: 100000
+							MaxEnergyUse: 100000
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["03CF5FEDA44D312B"]
+			description: [
+				"Sometimes you need to store a lot of fluid, and this multiblock tank does the job okay."
+				""
+				"&eIt cannot hold steam though.&r"
+			]
+			hide_dependency_lines: true
+			id: "0B4DDD082A28BD6C"
+			tasks: [
+				{
+					id: "02E3ACFC98FB8EAB"
+					item: "gtceu:wooden_multiblock_tank"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "67D06155EE673EEE"
+					item: { Count: 25, id: "gtceu:wood_wall" }
+					type: "item"
+				}
+			]
+			title: "Primitive Tank"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["30A1CCB30F870404"]
+			description: [
+				"A primitive way to get infinite cobblestone is with a rock crusher."
+				""
+				"It requires steam to run, as well as a lava and water block adjacent to it."
+			]
+			id: "700A61CF2839E142"
+			tasks: [{
+				id: "11A8110C4D883C83"
+				item: "gtceu:lp_steam_rock_crusher"
+				type: "item"
+			}]
+			title: "Cobble Generator"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"071811F3550BAF2F"
+				"10C2C691F26385C4"
+			]
+			description: [
+				"Welcome to Iron Furnaces."
+				""
+				"These furnaces are faster than vanilla ones, and each higher tier is faster than the previous."
+			]
+			id: "1F0BF9D9E762756A"
+			tasks: [{
+				id: "34E5761882DCFFD1"
+				item: "ironfurnaces:iron_furnace"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1F0BF9D9E762756A"]
+			id: "69671F83C3850ACA"
+			tasks: [{
+				id: "71EEF7CCFFFCBE9C"
+				item: "ironfurnaces:gold_furnace"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1FE2F49A9EA6D4FA"]
+			id: "02A383E3FC209A47"
+			tasks: [{
+				id: "29C1CF0A846CD186"
+				item: "ironfurnaces:emerald_furnace"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["69671F83C3850ACA"]
+			id: "1FE2F49A9EA6D4FA"
+			tasks: [{
+				id: "2C8BA44763575CC7"
+				item: "ironfurnaces:diamond_furnace"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["02A383E3FC209A47"]
+			id: "168973CDC4B0C6A1"
+			tasks: [{
+				id: "17E89F348831A2C2"
+				item: "ironfurnaces:obsidian_furnace"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["168973CDC4B0C6A1"]
+			id: "0EB570C7EA655C0C"
+			tasks: [{
+				id: "4B68A26AB60AC7DD"
+				item: "ironfurnaces:netherite_furnace"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["31A0620289688EFB"]
+			description: [
+				"There is no sugar cane in the market, but you can make it using Botania."
+				""
+				"You can also get it from a wandering trader if you're lucky."
+				""
+				"You will need it to make paper for resistors."
+			]
+			id: "4521814F0D4989E9"
+			tasks: [{
+				id: "23F96D4BF8CF7A55"
+				item: "minecraft:sugar_cane"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 1.5d
 		}
 	]
 	title: "The Beginning"
