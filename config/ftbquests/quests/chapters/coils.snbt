@@ -1,0 +1,122 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "coils"
+	group: ""
+	icon: "gtceu:trinium_coil_block"
+	id: "785BB2D0429D0AAF"
+	order_index: 14
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0EEAFBC41D260D65"
+			tasks: [{
+				id: "704563E25A81C2B3"
+				item: "gtceu:cupronickel_coil_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0EEAFBC41D260D65"]
+			id: "57E3D32E162AABE2"
+			tasks: [{
+				id: "6F05D4631139BF19"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["57E3D32E162AABE2"]
+			id: "5B2B06D2B9676B8D"
+			tasks: [{
+				id: "43BC18303BBB2D0D"
+				item: "gtceu:nichrome_coil_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5B2B06D2B9676B8D"]
+			id: "22D00DEAB06788F5"
+			tasks: [{
+				id: "343303C251EA42EE"
+				item: "gtceu:rtm_alloy_coil_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["22D00DEAB06788F5"]
+			id: "5A99BA27DAECB72F"
+			tasks: [{
+				id: "03291C9617626A4B"
+				item: "gtceu:hssg_coil_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5A99BA27DAECB72F"]
+			id: "6D571506B7EE239C"
+			tasks: [{
+				id: "423FD0FFEF126D1A"
+				item: "gtceu:naquadah_coil_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6D571506B7EE239C"]
+			id: "399632C5FD98A767"
+			tasks: [{
+				id: "6D6D64C4D99F5CD0"
+				item: "gtceu:trinium_coil_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["399632C5FD98A767"]
+			id: "5FBC6BAFFAB178B6"
+			tasks: [{
+				id: "7B1E420C641D4B26"
+				item: "gtceu:tritanium_coil_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["5FBC6BAFFAB178B6"]
+			id: "160441498883DE46"
+			tasks: [{
+				id: "0C6D6E198934D81D"
+				item: "gtceu:superconducting_coil"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["160441498883DE46"]
+			id: "3CF3113968B56768"
+			tasks: [{
+				id: "68F7A3F60B749EE2"
+				item: "gtceu:fusion_coil"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+	]
+	title: "Coils"
+}

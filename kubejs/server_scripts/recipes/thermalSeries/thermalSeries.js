@@ -24,10 +24,8 @@ ServerEvents.recipes(event => {
     // THERMAL MACHINE FRAME 
 	frame('thermal:machine_frame', 'gtceu:stainless_steel_plate')
 
-})
+  event.replaceInput({ input: 'thermal:cured_rubber' }, 'thermal:cured_rubber', 'gtceu:rubber_ingot')
 
-ServerEvents.tags('item', event => {
-    
 })
 
 // hide thermal items
@@ -83,3 +81,6 @@ ServerEvents.tags('item', event => {
     yeet('thermal:netherite_gear')
     yeet('thermal:gold_gear')
     yeet('thermal:rose_gold_gear')
+    // rubber
+    yeet('thermal:cured_rubber')
+    yeet('thermal:rubber')

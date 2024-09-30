@@ -155,7 +155,11 @@
 		}
 		{
 			dependencies: ["43E0325219933606"]
-			description: ["Since you'll be surviving here without food for a while, here are some berries, plant them."]
+			description: [
+				"Since you'll be surviving here without food for a while, here are some berries, plant them."
+				""
+				"You'll get more food throughout quests, but there's always a supply of food in the Emergency Items section."
+			]
 			id: "665BCDDFC912F276"
 			rewards: [{
 				count: 32

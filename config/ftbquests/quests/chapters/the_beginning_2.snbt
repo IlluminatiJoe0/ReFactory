@@ -635,7 +635,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -743,25 +743,6 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["14769C69DDD4F79E"]
-			description: ["A very useful storage, stores a bunch of a single item."]
-			hide_dependency_lines: true
-			id: "63B9AE0D4FC62C2E"
-			rewards: [{
-				id: "06D1DF6EE1D41B76"
-				item: "storagedrawers:drawer_key"
-				type: "item"
-			}]
-			tasks: [{
-				id: "26FE2F1345AE1EF7"
-				item: "storagedrawers:oak_full_drawers_1"
-				type: "item"
-			}]
-			title: "Drawers"
-			x: -3.0d
-			y: 0.0d
-		}
-		{
 			dependencies: ["189B920AAB6456B4"]
 			hide_dependency_lines: true
 			id: "496A59D3C7E8D87B"
@@ -786,9 +767,11 @@
 		{
 			dependencies: ["03CF5FEDA44D312B"]
 			description: [
-				"Sometimes you need to store a lot of fluid, and this multiblock tank does the job okay."
+				"Sometimes you need to store a lot of fluid (very useful for buffering steam)."
 				""
-				"&eIt cannot hold steam though.&r"
+				"You can input using tank valves that have to be on the side or top of the multiblock."
+				""
+				"You can only output from the bottom."
 			]
 			hide_dependency_lines: true
 			id: "0B4DDD082A28BD6C"
@@ -804,10 +787,16 @@
 					item: { Count: 25, id: "gtceu:wood_wall" }
 					type: "item"
 				}
+				{
+					count: 2L
+					id: "66F59BFBBD1021AE"
+					item: { Count: 2, id: "gtceu:wooden_tank_valve" }
+					type: "item"
+				}
 			]
 			title: "Primitive Tank"
 			x: -3.0d
-			y: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["30A1CCB30F870404"]
@@ -842,7 +831,7 @@
 				item: "ironfurnaces:iron_furnace"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.0d
 			y: 1.5d
 		}
 		{
@@ -853,8 +842,8 @@
 				item: "ironfurnaces:gold_furnace"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 2.5d
+			x: -3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1FE2F49A9EA6D4FA"]
@@ -864,8 +853,8 @@
 				item: "ironfurnaces:emerald_furnace"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 4.5d
+			x: -2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["69671F83C3850ACA"]
@@ -875,8 +864,8 @@
 				item: "ironfurnaces:diamond_furnace"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 3.5d
+			x: -3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["02A383E3FC209A47"]
@@ -886,8 +875,8 @@
 				item: "ironfurnaces:obsidian_furnace"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 5.5d
+			x: -2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["168973CDC4B0C6A1"]
@@ -897,8 +886,8 @@
 				item: "ironfurnaces:netherite_furnace"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 6.5d
+			x: -3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["31A0620289688EFB"]
@@ -917,6 +906,31 @@
 			}]
 			x: 15.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["09ECD67B4648D2EA"]
+			description: ["This tool removes fluid from machines."]
+			id: "34DED645D7701EBF"
+			tasks: [{
+				id: "50333742978F3153"
+				item: {
+					Count: 1
+					id: "gtceu:rubber_plunger"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							Damage: 0
+							Enchantability: 10
+							MaxDamage: 255
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 3.0d
 		}
 	]
 	title: "The Beginning"

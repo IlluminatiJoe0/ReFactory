@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:basic_electronic_circuit"
 	id: "29B5D62254073156"
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -539,6 +539,8 @@
 				"Higher materials require higher levels of coils."
 				""
 				"One EBF requires 16 coils, unless it's wall-sharing with another EBF."
+				""
+				"Take a look at the \"Coils\" chapter for more coil info."
 			]
 			id: "4806751104224E6A"
 			tasks: [{
@@ -733,6 +735,7 @@
 				"OPTIONAL"
 				""
 				"This is a multiblock that burns fuel and generates a lot of steam."
+				""
 				"This block might be for you if you have a lot of burnable material and need a lot of steam, though solar panels should do the job just as well, for free."
 			]
 			id: "7D3B41AED0D6C081"
@@ -770,13 +773,12 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["35CB055A24346DE1"]
+			dependencies: ["196B6372301A235E"]
 			description: [
 				"Fluid cells allow you to transfer fluids by hand. It's as easy as clicking on a fluid in a machine with a cell."
 				""
-				"You can also transform them into Universal Cells, which can hold more molten fluids than normal cells, but have less functionality."
+				"You can also transform them into Universal Cells, which can hold more molten fluids (1000mb) than normal cells (144mb), but have less functionality."
 			]
-			hide_dependency_lines: true
 			id: "68ADC7ADA9E45EB2"
 			tasks: [
 				{
@@ -790,8 +792,8 @@
 					type: "item"
 				}
 			]
-			x: -7.0d
-			y: -4.5d
+			x: 11.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["0E1F6E844041CC9F"]
@@ -834,6 +836,11 @@
 		}
 		{
 			dependencies: ["74C94B5C7B866A34"]
+			description: [
+				"Unlike sand, Snad boosts the growth of crops."
+				""
+				"Provide a constant redstone signal to the Snad to boost the growth."
+			]
 			id: "2013543595D54148"
 			tasks: [{
 				id: "2037CDEBA5A36AD7"
@@ -842,6 +849,22 @@
 			}]
 			x: 8.0d
 			y: -0.5d
+		}
+		{
+			dependencies: ["0E1F6E844041CC9F"]
+			description: ["This little guy holds energy for you and can charge your inventory equipment."]
+			id: "29598AD66C765FBA"
+			tasks: [{
+				id: "09621B4CE4B7D315"
+				item: {
+					Count: 1
+					id: "thermal:rf_potato"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
 		}
 	]
 	title: "LV Age"
