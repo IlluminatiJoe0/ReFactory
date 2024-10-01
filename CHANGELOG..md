@@ -1,3 +1,7 @@
+# 0.0.4
+- Zanite (Zt) and Ambrosium (A) are now GregTech elements and materials
+
+
 # 0.0.3
 - Removed SilentGear Compat
 - Added Snad: Redstone Edition

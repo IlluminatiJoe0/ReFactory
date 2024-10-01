@@ -1,3 +1,4 @@
+// they call me the yeeter (a function that hides an element from recipe viewers)
 let yeet = (itemName) => {
     ServerEvents.recipes(event => {
       event.remove({ output: itemName })

@@ -1,3 +1,6 @@
 {
-    "tagprefix.holystone": "Holystone %s Ore"
+    "tagprefix.holystone": "Holystone %s Ore",
+
+    "material.gtceu.zanite": "Zanite",
+    "material.gtceu.ambrosium": "Ambrosium"
 }

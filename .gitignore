@@ -6,7 +6,7 @@ backups
 crash-reports
 datapacks
 downloads
-fancymenu_data
+fancymenu_data/*
 journeymap
 ldlib
 local
@@ -26,3 +26,4 @@ patchouli_data.json
 rhino.local.properties
 usercache.json
 usernamecache.json
+fancymenu_data/last_world.fmdata
