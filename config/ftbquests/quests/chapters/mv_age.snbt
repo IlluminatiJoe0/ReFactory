@@ -25,7 +25,7 @@
 			id: "2716593BFAA49CFD"
 			title: "Good Circuit"
 			x: 0.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
@@ -35,7 +35,7 @@
 				item: "gtceu:mv_electric_motor"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -4.5d
 			y: 0.0d
 		}
 		{
@@ -46,7 +46,7 @@
 				item: "gtceu:mv_electric_piston"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 4.5d
 			y: 0.0d
 		}
 		{
@@ -57,7 +57,7 @@
 				item: "gtceu:mv_electric_pump"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -4.5d
 			y: -4.5d
 		}
 		{
@@ -68,8 +68,8 @@
 				item: "gtceu:mv_conveyor_module"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 3.0d
+			x: -4.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2D86BD3AE9C7AB6B"]
@@ -79,8 +79,8 @@
 				item: "gtceu:mv_robot_arm"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 4.5d
+			x: 4.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2D86BD3AE9C7AB6B"]
@@ -90,7 +90,7 @@
 				item: "gtceu:mv_extruder"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 4.5d
 			y: -1.5d
 		}
 		{
@@ -133,7 +133,7 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
+			x: 4.5d
 			y: -2.5d
 		}
 		{
@@ -144,7 +144,7 @@
 				item: "gtceu:mv_bender"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 6.0d
 			y: -1.5d
 		}
 		{
@@ -155,8 +155,8 @@
 				item: "gtceu:mv_assembler"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 4.5d
+			x: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2716593BFAA49CFD"]
@@ -168,7 +168,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -4.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2716593BFAA49CFD"]
@@ -179,8 +179,8 @@
 				item: "gtceu:iron_iii_chloride_bucket"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -4.0d
+			x: -1.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
@@ -252,9 +252,14 @@
 		}
 		{
 			dependencies: ["7FA2594B75A44E70"]
-			description: ["You'll need two of them to overclock the EBF to HV."]
+			description: [
+				"You'll need two of them to overclock the EBF to HV."
+				""
+				"Stainless Steel and Kanthal require HV to smelt."
+			]
 			id: "6DDF9D316DE9DCF7"
 			tasks: [{
+				count: 2L
 				id: "36105098D55B7C5A"
 				item: "gtceu:mv_energy_input_hatch"
 				type: "item"
@@ -274,7 +279,10 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["162E65E940DCC593"]
+			dependencies: [
+				"162E65E940DCC593"
+				"02350D73F63D59E8"
+			]
 			id: "08EE54E6C1C766CF"
 			tasks: [{
 				id: "67BFE8216EBD08CB"
@@ -293,7 +301,279 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1C54E1D5FA473422"]
+			description: [
+				"The greatest invention since the resistor."
+				""
+				"Now you can craft more advanced circuits!"
+			]
+			id: "02350D73F63D59E8"
+			tasks: [{
+				id: "2B6CF7C523424F0C"
+				item: "gtceu:transistor"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["114D15EF6DA771DD"]
+			description: [
+				"Now do the same with Silicon: EBF -> Chemical Bath in Water."
+				""
+				"I'd also now recommend making a second EBF if you don't already have one, because the further you go, the more materials are going to be smelted in the EBF."
+			]
+			id: "1C54E1D5FA473422"
+			tasks: [{
+				id: "1CFB3D49BACF04A0"
+				item: "gtceu:silicon_ingot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"7BD97DC4C3DE7F11"
+				"5459BC503BBBD81E"
+			]
+			description: ["Put the hot ingot into the chemical bath with some water or distilled water and you get yourself a cool and nice Kanthal Ingot."]
+			id: "0BB13F96B93699A8"
+			tasks: [{
+				id: "1ED384BC9AD338A3"
+				item: "gtceu:kanthal_ingot"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1FFBE42450E3D964"]
+			description: ["Put the dust into the EBF to cook, and you get the Hot Ingot, but fear not, there is a way to cool it down."]
+			id: "5459BC503BBBD81E"
+			tasks: [{
+				id: "25E40097EDB50226"
+				item: "gtceu:hot_kanthal_ingot"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0A6A88F07A82E229"]
+			description: [
+				"Kanthal is a mix of Aluminium, Chromium and Iron."
+				""
+				"You'll need it for the next set of coils."
+			]
+			id: "1FFBE42450E3D964"
+			tasks: [{
+				id: "0A874F2BB5948FAB"
+				item: "gtceu:kanthal_dust"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["19748C62B5822497"]
+			description: ["You can get Chromium by electrolyzing Ruby and processing Ruby ore."]
+			hide_dependency_lines: true
+			id: "0A6A88F07A82E229"
+			tasks: [{
+				id: "32A66118BD33885F"
+				item: "gtceu:chromium_dust"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["630A813B0F4DA078"]
+			id: "19748C62B5822497"
+			tasks: [{
+				id: "60A3100B880C2A2F"
+				item: "gtceu:mv_electrolyzer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0BB13F96B93699A8"]
+			description: ["These coils are the next in line of coil progression!"]
+			id: "114D15EF6DA771DD"
+			tasks: [{
+				count: 16L
+				id: "408B5C1DC06317BE"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["630A813B0F4DA078"]
+			hide_dependency_lines: true
+			id: "7BD97DC4C3DE7F11"
+			tasks: [{
+				id: "6141BF3BA1655498"
+				item: "gtceu:mv_chemical_bath"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["53A05923F8895595"]
+			id: "0F53EFB5D7D2C329"
+			tasks: [{
+				id: "44F006E9A08BD5DC"
+				item: "gtceu:stainless_steel_ingot"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0A6A88F07A82E229"]
+			id: "53A05923F8895595"
+			tasks: [{
+				id: "39A7D0F31DC2F7B9"
+				item: "gtceu:stainless_steel_dust"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F53EFB5D7D2C329"]
+			id: "6AB3F08490774D51"
+			tasks: [{
+				id: "03D8A40305A6B956"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0A6A88F07A82E229"]
+			description: ["Vanadium Steel is a very durable alloy, useful in making long-lasting tools."]
+			id: "5C58171E0C7D446C"
+			tasks: [{
+				id: "69D3438C8775A763"
+				item: "gtceu:vanadium_steel_dust"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["19748C62B5822497"]
+			description: ["Now you can electrolyze clay into Aluminium, Lithium, Silicon and Sodium dusts."]
+			id: "2B92683848576A1A"
+			tasks: [
+				{
+					id: "75B1624D785AF96C"
+					item: "gtceu:clay_dust"
+					type: "item"
+				}
+				{
+					id: "13CCA2AFA7034258"
+					item: "gtceu:aluminium_dust"
+					type: "item"
+				}
+				{
+					id: "4ECEC7B2B0DE1830"
+					item: "gtceu:lithium_dust"
+					type: "item"
+				}
+				{
+					id: "44F20BB2BA936061"
+					item: "gtceu:sodium_dust"
+					type: "item"
+				}
+				{
+					id: "3CA2BCC27B155268"
+					item: "gtceu:silicon_dust"
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"6EA539D38718E106"
+				"1984444D466E8EEF"
+			]
+			id: "3D4CCF904B1F83F8"
+			tasks: [{
+				id: "3684127AA8A1EA9E"
+				item: "gtceu:simple_soc"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3D4CCF904B1F83F8"]
+			id: "1DD14EF208DDB413"
+			tasks: [{
+				id: "20CB40E3F2D5325C"
+				item: "gtceu:nand_chip"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["739B7A5F5E19CEB1"]
+			id: "1833F90AC37B8826"
+			tasks: [{
+				id: "023D299E08C80209"
+				item: "gtceu:mv_fluid_drilling_rig"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5C58171E0C7D446C"]
+			id: "739B7A5F5E19CEB1"
+			tasks: [{
+				id: "6A22F696F95797CB"
+				item: "gtceu:vanadium_steel_ingot"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["274FBD9F4BD7DF4D"]
+			id: "3FD7316FB7DEA638"
+			tasks: [{
+				id: "20AB51ECD4E674CC"
+				item: "gtceu:mv_miner"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2716593BFAA49CFD"]
+			id: "274FBD9F4BD7DF4D"
+			tasks: [{
+				id: "17EB68509E5A7394"
+				item: "gtceu:mv_sensor"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
 		}
 	]
 	title: "MV Age"

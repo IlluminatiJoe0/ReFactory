@@ -1,0 +1,27 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hv_age"
+	group: ""
+	icon: "gtceu:advanced_integrated_circuit"
+	id: "7FEB7EC8E62B9067"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["08EE54E6C1C766CF"]
+			icon: "gtceu:advanced_integrated_circuit"
+			id: "530D44DF1E3897F8"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6AB3F08490774D51"]
+			icon: "gtceu:hv_machine_hull"
+			id: "59775F7F175FF086"
+			x: 3.0d
+			y: 0.0d
+		}
+	]
+	title: "HV Age"
+}
