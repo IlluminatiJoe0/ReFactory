@@ -168,7 +168,7 @@
 				item: "gtceu:lv_autoclave"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 7.0d
 			y: -7.5d
 		}
 		{
@@ -223,7 +223,7 @@
 				item: "gtceu:lv_extractor"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 6.0d
 			y: -7.5d
 		}
 		{
@@ -358,8 +358,8 @@
 				item: "gtceu:lv_canner"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -7.5d
+			x: 7.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["1996FB28610A07F4"]
@@ -369,8 +369,8 @@
 				item: "gtceu:lv_cadmium_battery"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -7.5d
+			x: 8.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["1996FB28610A07F4"]
@@ -380,8 +380,8 @@
 				item: "gtceu:lv_lithium_battery"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -6.5d
+			x: 8.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["1996FB28610A07F4"]
@@ -391,8 +391,8 @@
 				item: "gtceu:lv_sodium_battery"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -8.5d
+			x: 8.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -412,7 +412,10 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["74C94B5C7B866A34"]
+			dependencies: [
+				"74C94B5C7B866A34"
+				"7D4B02AACF124E44"
+			]
 			id: "3052BAA53CF8DBAA"
 			tasks: [{
 				id: "1B3917FEBC3F7C66"
@@ -686,13 +689,14 @@
 		}
 		{
 			dependencies: ["4816A85DF7D24F0B"]
+			description: ["Soldering alloy is the most efficient ingredient for electronic circuit crafting in the Circuit Assembler."]
 			id: "0B597578FA4639DF"
 			tasks: [{
 				id: "718DD372E45A8A9E"
 				item: "gtceu:soldering_alloy_dust"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 7.0d
 			y: -1.0d
 		}
 		{
@@ -719,15 +723,15 @@
 		}
 		{
 			dependencies: ["44495C979D17EFD5"]
-			description: ["A replacement for the previous water pump."]
+			description: ["Pumps liquids."]
 			id: "29C101F9D9E01012"
 			tasks: [{
 				id: "1A49E8ACB4659F89"
 				item: "gtceu:lv_pump"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -8.5d
+			x: 5.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["0E1F6E844041CC9F"]
@@ -848,7 +852,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0E1F6E844041CC9F"]
@@ -865,6 +869,197 @@
 			}]
 			x: -1.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["44495C979D17EFD5"]
+			id: "59B4E0F4EA02306B"
+			tasks: [{
+				id: "73E33CD17C8C95FD"
+				item: "gtceu:lv_distillery"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["29C101F9D9E01012"]
+			description: [
+				"Oil is an important resource. "
+				""
+				"It can be distilled into other products (each useful in it's own way)."
+				"It and it's products can be used in generators."
+				"It's also a very good way to get Polyethylene."
+			]
+			id: "51F2F1AC28487CF8"
+			tasks: [{
+				id: "554175A4B22533AC"
+				item: "gtceu:oil_medium_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"59B4E0F4EA02306B"
+				"51F2F1AC28487CF8"
+			]
+			description: [
+				"&ePolyethylene is a very versatile plastic that's used in electronic circuits, multiblock parts, machine parts and other very important stuff I can't think of right now...&r"
+				""
+				"First step: Oil in a distillery makes Sulfuric Light Fuel."
+				""
+				"&8(For alternative polyethylene sources consult the JEI)&r"
+			]
+			id: "724145B7C20122BC"
+			size: 1.0d
+			tasks: [{
+				id: "62DE223034BB106D"
+				item: "gtceu:sulfuric_light_fuel_bucket"
+				type: "item"
+			}]
+			title: "Polyethylene Line"
+			x: 4.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["724145B7C20122BC"]
+			description: [
+				"Light Fuel is created by reacting Sulfuric Light Fuel with Hydrogen in a chemical reactor."
+				""
+				"You can completely recycle the Hydrogen Sulfide into Sulfur and Hydrogen, which you can pump back into the same machine."
+				""
+				"Or you can use it to create Sulfuric Acid by reacting it with Oxygen."
+			]
+			id: "113DE9526B6901DB"
+			size: 1.0d
+			tasks: [{
+				id: "4B0FDB218668BC07"
+				item: "gtceu:light_fuel_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["113DE9526B6901DB"]
+			description: ["Now you need to crack the Light Fuel with some Steam in a chemical reactor."]
+			id: "1638E3D5D5FC015A"
+			size: 1.0d
+			tasks: [{
+				id: "0774AEED5ABD0566"
+				item: "gtceu:severely_steam_cracked_light_fuel_bucket"
+				type: "item"
+			}]
+			title: "Severely blah blah Light Fuel"
+			x: 2.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["1638E3D5D5FC015A"]
+			description: ["Next step is to distill the Severely Steam-Cracked Light Fuel into Ethylene, with Carbon as a byproduct (don't void it)."]
+			id: "35B97C16211F8BAA"
+			size: 1.0d
+			tasks: [{
+				id: "7427743C5A08DE8E"
+				item: "gtceu:ethylene_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["35B97C16211F8BAA"]
+			description: [
+				"At last, react Ethylene with Oxygen, and you got yourself Polyethylene!"
+				""
+				"Alternatively, you can react the Ethylene with Air, but keep in mind Oxygen gives a 50% increase in Polyethylene yield."
+			]
+			id: "2F59FB2BF839C4C5"
+			rewards: [{
+				count: 16
+				id: "18530701E1510DF7"
+				item: "gtceu:polyethylene_plate"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "4806BBD053AFFF44"
+				item: "gtceu:polyethylene_bucket"
+				type: "item"
+			}]
+			title: "Polyethylene My Beloved"
+			x: 3.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["4D377D42028B96A1"]
+			description: ["A very good way to get Hydrogen and Oxygen is through Water Electrolysis."]
+			icon: "minecraft:water_bucket"
+			id: "3F4ACE47ACD1EED4"
+			tasks: [
+				{
+					id: "609FC8A219CAB267"
+					item: "gtceu:hydrogen_bucket"
+					type: "item"
+				}
+				{
+					id: "30220AA001B1C685"
+					item: "gtceu:oxygen_bucket"
+					type: "item"
+				}
+			]
+			title: "Water Electrolysis"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4816A85DF7D24F0B"]
+			description: [
+				"Gallium Arsenide is needed in Diode crafting in the early game, or until wafers become available to you."
+				""
+				"You can get Gallium from processing Sphalerite."
+				""
+				"You can get Arsenic from centrifuging Realgar Dust."
+			]
+			id: "7D4B02AACF124E44"
+			tasks: [{
+				id: "6800D7060EB527F6"
+				item: "gtceu:gallium_arsenide_dust"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["35B97C16211F8BAA"]
+			description: ["You can take a part of your Ethylene and make Vinyl Chloride using some Chlorine."]
+			id: "662DD867DD212E87"
+			tasks: [{
+				id: "3A44FC3DE4619D4E"
+				item: "gtceu:vinyl_chloride_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["662DD867DD212E87"]
+			description: ["Oxygen and Vynil chloride reacting in the chemical reactor give Polyvinyl Chloride, or more commonly known as PVC."]
+			id: "2BE55924C7BFF8B8"
+			rewards: [{
+				count: 16
+				id: "0C857FBB78569AED"
+				item: "gtceu:polyvinyl_chloride_plate"
+				type: "item"
+			}]
+			tasks: [{
+				id: "540B6CF0BBDBF322"
+				item: "gtceu:polyvinyl_chloride_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -10.5d
 		}
 	]
 	title: "LV Age"

@@ -1278,20 +1278,22 @@
 		{
 			id: "70CA448129DCC351"
 			tasks: [{
-				id: "492F50769AA76BE7"
-				title: "A"
-				type: "checkmark"
+				id: "5DE2DBFE6DDA4A0C"
+				item: "gtceu:ambrosium_gem"
+				type: "item"
 			}]
+			title: "A"
 			x: 2.0d
 			y: 7.0d
 		}
 		{
 			id: "1900195E9FAA35C3"
 			tasks: [{
-				id: "20B634D3750BD13A"
-				title: "Zt"
-				type: "checkmark"
+				id: "0840723ACF0FE1AF"
+				item: "gtceu:zanite_gem"
+				type: "item"
 			}]
+			title: "Zt"
 			x: 3.0d
 			y: 7.0d
 		}

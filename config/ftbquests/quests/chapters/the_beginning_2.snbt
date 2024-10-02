@@ -686,6 +686,12 @@
 			]
 			description: ["A market is very useful to get seeds and grow better and more sustainable food."]
 			id: "31A0620289688EFB"
+			rewards: [{
+				count: 8
+				id: "33DAE636387D1F01"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1F21F93BD35D84D9"
 				item: "farmingforblockheads:market"
@@ -931,6 +937,59 @@
 			}]
 			x: 12.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["14769C69DDD4F79E"]
+			description: ["It's not much but better than nothing."]
+			id: "17B097B326E0A44F"
+			tasks: [
+				{
+					id: "0A3F84F099A00FB4"
+					item: {
+						Count: 1
+						id: "immersive_armors:wooden_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5A5992947DE6B898"
+					item: {
+						Count: 1
+						id: "immersive_armors:wooden_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1EAC1411C678A81A"
+					item: {
+						Count: 1
+						id: "immersive_armors:wooden_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3570BEE7A72A3C54"
+					item: {
+						Count: 1
+						id: "immersive_armors:wooden_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -1.5d
 		}
 	]
 	title: "The Beginning"

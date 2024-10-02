@@ -62,7 +62,7 @@
 		{
 			dependencies: ["43E0325219933606"]
 			description: [
-				"True Darkness mod makes the whole world pitch black during night,"
+				"True Darkness mod makes the whole world completely black during night,"
 				"so be mindful about wandering without a light source."
 			]
 			disable_toast: true
@@ -88,9 +88,11 @@
 			description: [
 				"This modpack has increased Infernal Mobs mod spawn rate, so &ea safe shelter is very important throughout the night&r."
 				""
-				"A chance of a mob spawning infernal is 50%, they have higher health, and zombies always spawn infernal."
+				"A chance of a mob spawning infernal is 50%, and zombies always spawn infernal."
 				""
-				"Some infernal prefixes are disabled to distinguish hard from annoying."
+				"Some infernal prefixes are disabled."
+				""
+				"It is recommended to make a base in the air, in the ground, on a platform over the sea or similar."
 			]
 			disable_toast: true
 			icon: "minecraft:zombie_head"
@@ -136,13 +138,7 @@
 			id: "66E630CF05711378"
 			rewards: [{
 				id: "59967C3ADEFFEA79"
-				item: {
-					Count: 1
-					id: "gtceu:prospector.lv"
-					tag: {
-						Charge: 100000L
-					}
-				}
+				item: "gtceu:prospector.hv"
 				type: "item"
 			}]
 			tasks: [{

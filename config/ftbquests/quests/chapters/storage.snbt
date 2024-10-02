@@ -187,6 +187,30 @@
 			x: 4.5d
 			y: 0.0d
 		}
+		{
+			dependencies: ["2F1D18213F81EA19"]
+			hide_dependency_lines: true
+			id: "568E66E469AA85DA"
+			tasks: [{
+				id: "3564368D440867D3"
+				item: "ironchest:crystal_chest"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2F1D18213F81EA19"]
+			hide_dependency_lines: true
+			id: "6D3C59828B61D14D"
+			tasks: [{
+				id: "78920F5C95128480"
+				item: "ironchest:obsidian_chest"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.5d
+		}
 	]
 	title: "Storage"
 }

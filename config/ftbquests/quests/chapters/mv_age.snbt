@@ -158,6 +158,30 @@
 			x: 7.5d
 			y: 5.0d
 		}
+		{
+			dependencies: ["2716593BFAA49CFD"]
+			description: ["Sodium Persulfate and Iron III Chloride are both liquids that are used in crafting circuit boards more efficiently."]
+			id: "1E85E8CDA6896B40"
+			tasks: [{
+				id: "21C9B7E721B81FD8"
+				item: "gtceu:sodium_persulfate_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2716593BFAA49CFD"]
+			description: ["Sodium Persulfate and Iron III Chloride are both liquids that are used in crafting circuit boards more efficiently."]
+			id: "19CFA0E711F38601"
+			tasks: [{
+				id: "5FBB4534A72EE6D1"
+				item: "gtceu:iron_iii_chloride_bucket"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
 	]
 	title: "MV Age"
 }
