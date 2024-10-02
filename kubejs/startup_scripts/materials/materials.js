@@ -26,6 +26,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         '1x minecraft:redstone'
     )
     .iconSet(GTMaterialIconSet.DULL)
+    .color(0xff9021)
     .flags(
         GTMaterialFlags.GENERATE_PLATE, 
         GTMaterialFlags.GENERATE_LONG_ROD,
@@ -50,6 +51,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         '1x gtceu:ender_pearl_dust'
     )
     .iconSet(GTMaterialIconSet.DULL)
+    .color(0x07e830)
     .flags(
         GTMaterialFlags.GENERATE_PLATE, 
         GTMaterialFlags.GENERATE_LONG_ROD,
