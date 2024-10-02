@@ -35,7 +35,7 @@
 				item: "gtceu:mv_electric_motor"
 				type: "item"
 			}]
-			x: 3.0d
+			x: -4.0d
 			y: 0.0d
 		}
 		{
@@ -46,7 +46,7 @@
 				item: "gtceu:mv_electric_piston"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 4.0d
 			y: 0.0d
 		}
 		{
@@ -57,7 +57,7 @@
 				item: "gtceu:mv_electric_pump"
 				type: "item"
 			}]
-			x: 3.0d
+			x: -4.0d
 			y: -4.5d
 		}
 		{
@@ -68,8 +68,8 @@
 				item: "gtceu:mv_conveyor_module"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 5.0d
+			x: -4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2D86BD3AE9C7AB6B"]
@@ -79,8 +79,8 @@
 				item: "gtceu:mv_robot_arm"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 5.0d
+			x: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2D86BD3AE9C7AB6B"]
@@ -90,7 +90,7 @@
 				item: "gtceu:mv_extruder"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 4.0d
 			y: -1.5d
 		}
 		{
@@ -133,7 +133,7 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
+			x: 4.0d
 			y: -2.5d
 		}
 		{
@@ -144,7 +144,7 @@
 				item: "gtceu:mv_bender"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 5.0d
 			y: -1.5d
 		}
 		{
@@ -155,8 +155,8 @@
 				item: "gtceu:mv_assembler"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 5.0d
+			x: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2716593BFAA49CFD"]
@@ -181,6 +181,119 @@
 			}]
 			x: -1.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["630A813B0F4DA078"]
+			id: "1984444D466E8EEF"
+			tasks: [{
+				id: "1AD796DD9F693082"
+				item: "gtceu:silicon_boule"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6EA539D38718E106"
+				"1984444D466E8EEF"
+			]
+			id: "7FA2594B75A44E70"
+			tasks: [{
+				id: "7DC616D3A506759B"
+				item: "gtceu:ulpic_chip"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6EA539D38718E106"
+				"1984444D466E8EEF"
+			]
+			id: "162E65E940DCC593"
+			tasks: [{
+				id: "6FBFA278FBA12ADE"
+				item: "gtceu:ram_chip"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"630A813B0F4DA078"
+				"0F53A979A0A20B60"
+				"2D86BD3AE9C7AB6B"
+			]
+			id: "6EA539D38718E106"
+			tasks: [{
+				id: "3492B74BAED620F9"
+				item: "gtceu:mv_laser_engraver"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1984444D466E8EEF"
+				"6EA539D38718E106"
+			]
+			id: "65CD30C3D6C13C7E"
+			tasks: [{
+				id: "718BD294162D8939"
+				item: "gtceu:ilc_chip"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7FA2594B75A44E70"]
+			description: ["You'll need two of them to overclock the EBF to HV."]
+			id: "6DDF9D316DE9DCF7"
+			tasks: [{
+				id: "36105098D55B7C5A"
+				item: "gtceu:mv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["65CD30C3D6C13C7E"]
+			id: "22F6144BF80A1413"
+			tasks: [{
+				id: "3A7C56391AFB4016"
+				item: "gtceu:basic_integrated_circuit"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["162E65E940DCC593"]
+			id: "08EE54E6C1C766CF"
+			tasks: [{
+				id: "67BFE8216EBD08CB"
+				item: "gtceu:advanced_integrated_circuit"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2716593BFAA49CFD"]
+			id: "0F53A979A0A20B60"
+			tasks: [{
+				id: "1848D98EB1282464"
+				item: "gtceu:mv_emitter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
 		}
 	]
 	title: "MV Age"

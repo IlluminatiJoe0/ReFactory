@@ -573,7 +573,6 @@
 				"- Controller"
 			]
 			disable_toast: true
-			hide: true
 			id: "79469B87C6E057CA"
 			tasks: [{
 				id: "76DDC25C641D4F7F"
