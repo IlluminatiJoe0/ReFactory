@@ -66,4 +66,20 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     .element(GTElements.get('vibrant_alloy'))
     .blastTemp(1600, null, GTValues.VA[GTValues.MV], 20*30)
 
+    // Zanite Steel
+    event.create('zanite_steel')
+    .ingot()
+    .components(
+        '1x zanite',
+        '1x steel'
+    )
+    .color(0x62426e)
+    .iconSet(GTMaterialIconSet.SHINY)
+    .flags(
+        GTMaterialFlags.GENERATE_PLATE, 
+        GTMaterialFlags.GENERATE_FINE_WIRE,
+        GTMaterialFlags.GENERATE_FOIL,
+        GTMaterialFlags.GENERATE_ROD
+    )
+    .blastTemp(2000, null, GTValues.VA[GTValues.HV], 20*30)
 })

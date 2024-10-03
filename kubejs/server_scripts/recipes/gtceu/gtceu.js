@@ -65,4 +65,16 @@ ServerEvents.recipes(event => {
     )
     .duration(20*10)
     .EUt(24)
+
+    // zanite steel
+    event.recipes.gtceu.mixer('zanite_steel')
+    .circuit(31)
+    .itemInputs(
+        'gtceu:steel_dust',
+        'gtceu:zanite_dust'
+    )
+    .itemOutputs('gtceu:zanite_steel_dust')
+    .duration(20*15)
+    .EUt(GTValues.VA[GTValues.MV])
+    
 })

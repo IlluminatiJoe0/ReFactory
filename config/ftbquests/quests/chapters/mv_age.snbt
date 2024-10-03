@@ -450,7 +450,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["0F53EFB5D7D2C329"]
+			dependencies: [
+				"0F53EFB5D7D2C329"
+				"096CFE2C835BCABF"
+			]
 			id: "6AB3F08490774D51"
 			tasks: [{
 				id: "03D8A40305A6B956"
@@ -574,6 +577,16 @@
 			}]
 			x: 1.5d
 			y: -3.0d
+		}
+		{
+			id: "096CFE2C835BCABF"
+			tasks: [{
+				id: "424D562CB1E8C612"
+				title: "ZaniteSteel"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: 4.5d
 		}
 	]
 	title: "MV Age"

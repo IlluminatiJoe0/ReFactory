@@ -61,8 +61,30 @@ ServerEvents.recipes(event => {
 	)
 
 	// Replace enderio ingots with gtceu ingots
-	event.replaceInput({}, 'enderio:energetic_alloy_ingot', 'gtceu:energetic_alloy_ingot')
-	event.replaceInput({}, 'enderio:vibrant_alloy_ingot', 'gtceu:vibrant_alloy_ingot')
+	event.replaceInput({ input: 'enderio:energetic_alloy_ingot' }, 'enderio:energetic_alloy_ingot', 'gtceu:energetic_alloy_ingot')
+	event.replaceInput({ input: 'enderio:vibrant_alloy_ingot' }, 'enderio:vibrant_alloy_ingot', 'gtceu:vibrant_alloy_ingot')
+
+	// energetic alloy dust recipe
+	event.recipes.gtceu.mixer('kubejs_enderio_energetic_alloy_dust')
+	.circuit(3)
+	.itemInputs(
+		'gtceu:gold_dust',
+		'minecraft:redstone'
+	)
+	.itemOutputs('gtceu:energetic_alloy_dust')
+	.duration(20*10)
+	.EUt(GTValues.VA[GTValues.MV])
+
+	// vibrant alloy dust recipe
+	event.recipes.gtceu.mixer('kubejs_enderio_vibrant_alloy_dust')
+	.circuit(3)
+	.itemInputs(
+		'gtceu:energetic_alloy_dust',
+		'gtceu:ender_pearl_dust'
+	)
+	.itemOutputs('gtceu:vibrant_alloy_dust')
+	.duration(20*10)
+	.EUt(GTValues.VA[GTValues.MV])
 })
 
 yeet('enderio:energetic_alloy_ingot')
