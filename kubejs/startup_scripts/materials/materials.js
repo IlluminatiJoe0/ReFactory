@@ -21,10 +21,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('energetic_alloy')
     .ingot()
     .liquid()
-    .components(
-        '1x gtceu:gold_dust',
-        '1x minecraft:redstone'
-    )
     .iconSet(GTMaterialIconSet.DULL)
     .color(0xff9021)
     .flags(
@@ -40,16 +36,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         GTMaterialFlags.GENERATE_ROTOR
     )
     .element(GTElements.get('energetic_alloy'))
-    .blastTemp(1500, null, GTValues.VA[GTValues.MV], 20*20)
+    .blastTemp(1500, null, GTValues.VA[GTValues.MV], 20*25)
 
     // Vibrant
     event.create('vibrant_alloy')
     .ingot()
     .liquid()
-    .components(
-        '1x gtceu:energetic_alloy_dust',
-        '1x gtceu:ender_pearl_dust'
-    )
     .iconSet(GTMaterialIconSet.DULL)
     .color(0x07e830)
     .flags(
@@ -65,6 +57,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         GTMaterialFlags.GENERATE_ROTOR
     )
     .element(GTElements.get('vibrant_alloy'))
-    .blastTemp(1600, null, GTValues.VA[GTValues.MV], 20*25)
+    .blastTemp(1600, null, GTValues.VA[GTValues.MV], 20*30)
 
 })
