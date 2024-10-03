@@ -1,3 +1,14 @@
+// they call me the yeeter (a function that hides an element from recipe viewers)
+let yeet = (itemName) => {
+    ServerEvents.recipes(event => {
+      event.remove({ output: itemName })
+    })
+    ServerEvents.tags('item', event => {
+      event.add('c:hidden_from_recipe_viewers', itemName)
+      event.remove('forge:tools/hammers', itemName)
+    })
+}
+
 ServerEvents.recipes(event => {
     // frame helper
 	let frame = (output, input) => {
@@ -48,4 +59,11 @@ ServerEvents.recipes(event => {
 			C: 'gtceu:magnetic_steel_ingot'
 		}
 	)
+
+	// Replace enderio ingots with gtceu ingots
+	event.replaceInput({}, 'enderio:energetic_alloy_ingot', 'gtceu:energetic_alloy_ingot')
+	event.replaceInput({}, 'enderio:vibrant_alloy_ingot', 'gtceu:vibrant_alloy_ingot')
 })
+
+yeet('enderio:energetic_alloy_ingot')
+yeet('enderio:vibrant_alloy_ingot')

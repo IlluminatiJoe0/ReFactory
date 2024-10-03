@@ -23,6 +23,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     .liquid()
     .iconSet(GTMaterialIconSet.DULL)
     .color(0xff9021)
+    .components(
+        '1x gold',
+        '1x redstone'
+    )
     .flags(
         GTMaterialFlags.GENERATE_PLATE, 
         GTMaterialFlags.GENERATE_LONG_ROD,
@@ -35,7 +39,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         GTMaterialFlags.GENERATE_ROD,
         GTMaterialFlags.GENERATE_ROTOR
     )
-    .element(GTElements.get('energetic_alloy'))
     .blastTemp(1500, null, GTValues.VA[GTValues.MV], 20*25)
 
     // Vibrant
@@ -44,6 +47,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     .liquid()
     .iconSet(GTMaterialIconSet.DULL)
     .color(0x07e830)
+    .components(
+        '1x energetic_alloy',
+        '1x ender_pearl'
+    )
     .flags(
         GTMaterialFlags.GENERATE_PLATE, 
         GTMaterialFlags.GENERATE_LONG_ROD,
