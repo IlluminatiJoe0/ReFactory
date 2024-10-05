@@ -1,3 +1,12 @@
+let yeet = (itemName) => {
+    ServerEvents.recipes(event => {
+      event.remove({ output: itemName })
+    })
+    ServerEvents.tags('item', event => {
+      event.add('c:hidden_from_recipe_viewers', itemName)
+    })
+}
+
 ServerEvents.recipes(event => {
 
     // remove default apothecary recipes
@@ -56,14 +65,28 @@ ServerEvents.recipes(event => {
     event.recipes.botania.petal_apothecary(
         'minecraft:sugar_cane', 
         [
-            'botania:cell_block',
-            'botania:cell_block',
-            'botania:cell_block',
-            'botania:cell_block',
-            'botania:cell_block',
-            'botania:cell_block'
+            'minecraft:carrot'
         ],
         '#forge:seeds'
     )
 
+    // replace mana pool recipe
+    event.remove({ id: 'botania:mana_pool' })
+    event.recipes.gtceu.assembler('kubejs_mana_pool')
+    .circuit(31)
+    .itemInputs(
+        '5x botania:livingrock'
+    )
+    .itemOutputs(
+        'botania:mana_pool'
+    )
+    .duration(20*15)
+    .EUt(GTValues.VA[GTValues.LV])
+
+    // replace botania ingot with gt ingot and in recipes
+    // event.replaceInput({ input: 'botania:manasteel_ingot' }, 'botania:manasteel_ingot', 'gtceu:manasteel_ingot')
+    // event.replaceOutput({ output: 'botania:manasteel_ingot' }, 'botania:manasteel_ingot', 'gtceu:manasteel_ingot')
+
 })
+
+// yeet('botania:manasteel_ingot')

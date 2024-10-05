@@ -82,4 +82,27 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         GTMaterialFlags.GENERATE_ROD
     )
     .blastTemp(2000, null, GTValues.VA[GTValues.HV], 20*30)
+
+    // Mana (created just for the 'Ma' component, doesn't actually exist in the game)
+    event.create('mana')
+    .element(GTElements.get('mana'))
+    // Manasteel
+    event.create('manasteel')
+    .ingot()
+    .color(0x67b9ee)
+    .components(
+        '1x mana',
+        '1x iron'
+    )
+    .iconSet(GTMaterialIconSet.SHINY)
+    .flags(
+        GTMaterialFlags.GENERATE_PLATE,
+        GTMaterialFlags.GENERATE_ROD
+    )
+})
+
+GTCEuStartupEvents.materialModification(event => {
+    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('manasteel'), () => Item.getItem('botania:manasteel_ingot'))
+    // TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('terrasteel'), () => Item.getItem('botania:terrasteel_ingot'))
+    // TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('elementium'), () => Item.getItem('botania:elementium_ingot'))
 })

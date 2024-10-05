@@ -5,4 +5,6 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('zanite', 122, 308, -1, null, 'Zt', false)
     // event.create('energetic_alloy', 100, 100, -1, null, '(Si(FeS₂)₅(CrAl₂O₃)Hg₃)Au', false)
     // event.create('vibrant_alloy', 100, 100, -1, null, '((Si(FeS₂)₅(CrAl₂O₃)Hg₃)Au)(BeK₄N₅)', false)
+    event.create('mana', -1, -1, -1, null, 'Ma', false)
+    
  })

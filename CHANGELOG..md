@@ -1,8 +1,10 @@
 # 0.0.4
 - Zanite (Zt) and Ambrosium (A) are now GregTech elements and materials
+- ULV superconductor (mana alloy)
 - Energetic and Vibrant Alloy are now GregTech materials
 - Questbook improvements
 - Powah buffed (6x power generation)
+- Custom Mana Pool recipe (LV)
 
 # 0.0.3
 - Removed SilentGear Compat
