@@ -22,6 +22,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["41EFB2DDDC445E15"]
 			description: [
 				"Welcome to Powah!"
 				""
@@ -38,7 +39,10 @@
 			y: 0.625d
 		}
 		{
-			dependencies: ["224B2F81FBC05090"]
+			dependencies: [
+				"224B2F81FBC05090"
+				"2E6AD6093E146584"
+			]
 			id: "3122EA82C7670705"
 			size: 1.25d
 			tasks: [{
@@ -332,6 +336,38 @@
 			}]
 			x: -2.0d
 			y: 2.0d
+		}
+		{
+			id: "41EFB2DDDC445E15"
+			tasks: [{
+				id: "686BE727611E654C"
+				item: "powah:dielectric_paste"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["41EFB2DDDC445E15"]
+			id: "54FA4F541B6DD285"
+			tasks: [{
+				id: "5E58E275B9DADE92"
+				item: "powah:capacitor_basic_tiny"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["41EFB2DDDC445E15"]
+			id: "2E6AD6093E146584"
+			tasks: [{
+				id: "5D6BDDB70D125141"
+				item: "powah:capacitor_basic_large"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
 		}
 	]
 	title: "Power"

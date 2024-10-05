@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:basic_electronic_circuit"
 	id: "29B5D62254073156"
-	order_index: 4
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -168,8 +168,8 @@
 				item: "gtceu:lv_autoclave"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -7.5d
+			x: 4.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["298F63E0659E0FD6"]
@@ -201,7 +201,7 @@
 				item: "gtceu:lv_compressor"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 12.0d
 			y: -2.0d
 		}
 		{
@@ -234,8 +234,8 @@
 				item: "gtceu:lv_extruder"
 				type: "item"
 			}]
-			x: 13.0d
-			y: -2.0d
+			x: 12.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["298F63E0659E0FD6"]
@@ -347,8 +347,8 @@
 				item: "gtceu:lv_emitter"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -2.0d
+			x: 1.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["44495C979D17EFD5"]
@@ -471,7 +471,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0E1F6E844041CC9F"]
@@ -516,8 +516,8 @@
 				item: "gtceu:aluminium_ingot"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 1.0d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["62B56B57D291BF7B"]
@@ -531,11 +531,14 @@
 				item: "gtceu:aluminium_dust"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 1.0d
+			x: 1.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["318CA73CE4C3DC3D"]
+			dependencies: [
+				"318CA73CE4C3DC3D"
+				"6A3B2EF9E54AB551"
+			]
 			description: [
 				"EBFs (Electric Blasts Furnaces) all require coils in order to work."
 				"Every material has its minimum coil tier that allows it to get smelted."
@@ -553,8 +556,8 @@
 				type: "item"
 			}]
 			title: "Coils"
-			x: 0.0d
-			y: 2.5d
+			x: 1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["318CA73CE4C3DC3D"]
@@ -579,7 +582,7 @@
 				title: "Wallsharing"
 				type: "checkmark"
 			}]
-			x: 1.5d
+			x: -1.0d
 			y: 1.0d
 		}
 		{
@@ -636,8 +639,8 @@
 				item: "gtceu:mv_machine_hull"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 2.5d
+			x: 0.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["35CB055A24346DE1"]
@@ -760,8 +763,8 @@
 				item: "gtceu:lv_buffer"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 1.0d
+			x: 4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2425F4CE4FE78AC1"]
@@ -850,7 +853,7 @@
 				item: "snad:snad"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 8.0d
 			y: 0.0d
 		}
 		{
@@ -988,8 +991,8 @@
 				type: "item"
 			}]
 			title: "Polyethylene My Beloved"
-			x: 3.0d
-			y: -9.5d
+			x: 2.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["4D377D42028B96A1"]
@@ -1015,7 +1018,7 @@
 		{
 			dependencies: ["4816A85DF7D24F0B"]
 			description: [
-				"Gallium Arsenide is needed in Diode crafting in the early game, or until wafers become available to you."
+				"Gallium Arsenide is needed in Diode crafting."
 				""
 				"You can get Gallium from processing Sphalerite."
 				""
@@ -1087,6 +1090,46 @@
 			}]
 			x: -7.0d
 			y: -4.5d
+		}
+		{
+			dependencies: ["4816A85DF7D24F0B"]
+			description: [
+				"Mana Alloy is an alloy of Manasteel and Redstone. It's an ULV superconductor, but you probably won't be using it as a cable."
+				""
+				"It's use is in Cupronickel coils."
+			]
+			hide_dependency_lines: true
+			id: "6A3B2EF9E54AB551"
+			tasks: [{
+				id: "0EEB232EEE2C1D00"
+				item: "gtceu:mana_alloy_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["74C94B5C7B866A34"]
+			disable_toast: true
+			id: "01A0E9661BB0FDAB"
+			tasks: [{
+				id: "2F71AD033A6074AD"
+				item: "botania:mana_pool"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["51F2F1AC28487CF8"]
+			id: "3F93873DE169ED25"
+			tasks: [{
+				id: "68A3B4AF78395BF5"
+				item: "gtceu:lubricant_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -9.5d
 		}
 	]
 	title: "LV Age"

@@ -5,7 +5,7 @@
 	group: ""
 	icon: "botania:pure_daisy"
 	id: "4DF8A4EB7F3C23CA"
-	order_index: 7
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
@@ -299,6 +299,18 @@
 			}]
 			x: -1.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["5F1F1AFD5426D7DD"]
+			disable_toast: true
+			id: "51A8C22684F311BA"
+			tasks: [{
+				id: "2C12F58DEF9F0E90"
+				item: "gtceu:mana_alloy_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -7.0d
 		}
 	]
 	title: "Regrowth"

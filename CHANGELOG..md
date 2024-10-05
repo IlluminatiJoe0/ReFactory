@@ -1,9 +1,11 @@
 # 0.0.4
 - Zanite (Zt) and Ambrosium (A) are now GregTech elements and materials
-- ULV superconductor (mana alloy)
+- ULV superconductor (mana alloy), needed in Cupronickel Coils recipe
 - Energetic and Vibrant Alloy are now GregTech materials
-- Questbook improvements
+- Questbook improvements (LV and MV)
 - Powah buffed (6x power generation)
+- Removed Bronze ingot from silent gear
+- Powah Gregification
 - Custom Mana Pool recipe (LV)
 
 # 0.0.3
