@@ -1,4 +1,9 @@
 # 0.0.4
+- Added Blood Magic
+- Added Applied Botanics Addon
+- Added Botanical Machinery
+- Added Botany Pots Tiers
+- Updated Botany Pots
 - Zanite (Zt) and Ambrosium (A) are now GregTech elements and materials
 - ULV superconductor (mana alloy), needed in Cupronickel Coils recipe
 - Energetic and Vibrant Alloy are now GregTech materials
