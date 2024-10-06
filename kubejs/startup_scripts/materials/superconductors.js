@@ -17,8 +17,38 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     .iconSet(GTMaterialIconSet.SHINY)
 
     // LV
+    event.create('energetic_aluminium')
+    .ingot()
+    .components(
+        '1x energetic_alloy',
+        '2x aluminium'
+    )
+    .cableProperties(GTValues.V[GTValues.LV], 2, 0, true)
+    .color(0x43bff0)
+    .secondaryColor(0xe0e841)
+    .flags(
+        GTMaterialFlags.GENERATE_PLATE,
+        GTMaterialFlags.GENERATE_FOIL
+    )
+    .iconSet(GTMaterialIconSet.SHINY)
 
     // MV
+    event.create('electroconglomerate_alloy')
+    .ingot()
+    .components(
+        '1x energetic_aluminium',
+        '1x ambrosium',
+        '1x electrum'
+    )
+    .cableProperties(GTValues.V[GTValues.MV], 2, 0, true)
+    .color(0x57612d)
+    .secondaryColor(0xd1ff12)
+    .flags(
+        GTMaterialFlags.GENERATE_PLATE,
+        GTMaterialFlags.GENERATE_FOIL
+    )
+    .iconSet(GTMaterialIconSet.SHINY)
+    .blastTemp(1800, null, GTValues.VA[GTValues.HV], 20*20)
 
     // HV
 

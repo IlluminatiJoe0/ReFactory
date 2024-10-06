@@ -764,7 +764,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2425F4CE4FE78AC1"]
@@ -1092,13 +1092,12 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["4816A85DF7D24F0B"]
+			dependencies: ["55D76A052A9EE6A0"]
 			description: [
 				"Mana Alloy is an alloy of Manasteel and Redstone. It's an ULV superconductor, but you probably won't be using it as a cable."
 				""
 				"It's use is in Cupronickel coils."
 			]
-			hide_dependency_lines: true
 			id: "6A3B2EF9E54AB551"
 			tasks: [{
 				id: "0EEB232EEE2C1D00"
@@ -1117,8 +1116,8 @@
 				item: "botania:mana_pool"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 0.0d
+			x: 6.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["51F2F1AC28487CF8"]
@@ -1130,6 +1129,29 @@
 			}]
 			x: 6.0d
 			y: -9.5d
+		}
+		{
+			dependencies: ["01A0E9661BB0FDAB"]
+			id: "55D76A052A9EE6A0"
+			tasks: [{
+				id: "40E8B07C3856E4DB"
+				item: "botania:manasteel_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["35CB055A24346DE1"]
+			hide_dependency_lines: true
+			id: "389E05F5B0B8FD1A"
+			tasks: [{
+				id: "60D7C8FB99B88068"
+				item: "gtceu:steel_fluid_cell"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.5d
 		}
 	]
 	title: "LV Age"

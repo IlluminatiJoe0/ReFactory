@@ -33,6 +33,7 @@
 			y: 0.0d
 		}
 		{
+			description: ["The mobs are a very high threat to you early on, so you should invest some time and resources into crafting GUNS. Yes, you heard me right, GUNS!"]
 			id: "4579323210A58BA4"
 			tasks: [{
 				id: "2BE5CCF343A9FF95"

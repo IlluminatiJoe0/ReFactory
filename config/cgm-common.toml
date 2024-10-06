@@ -10,10 +10,10 @@
 		enableHeadShots = true
 		#The value to multiply the damage by if projectile hit the players head
 		#Range: 1.0 ~ 1.7976931348623157E308
-		headShotDamageMultiplier = 1.25
+		headShotDamageMultiplier = 1.5
 		#The value to multiply the damage by if projectile is a critical hit
 		#Range: 1.0 ~ 1.7976931348623157E308
-		criticalDamageMultiplier = 1.5
+		criticalDamageMultiplier = 2.0
 		#If true, projectiles will ignore leaves when checking for collision
 		ignoreLeaves = true
 		#If true, projectiles will cause knockback when an entity is hit. By default this is set to true to match the behaviour of Minecraft.
@@ -29,14 +29,14 @@
 		#Properties related to gun griefing
 		[common.gameplay.griefing]
 			#If enabled, allows guns to shoot out glass and other fragile objects
-			enableGlassBreaking = true
+			enableGlassBreaking = false
 			#If enabled, fragile blocks will drop their loot when broken
-			fragileBlockDrops = true
+			fragileBlockDrops = false
 			#The base chance that a fragile block is broken when impacted by a bullet. The hardness of a block will scale this value; the harder the block, the lower the final calculated chance will be.
 			#Range: 0.0 ~ 1.0
-			fragileBlockBreakChance = 1.0
+			fragileBlockBreakChance = 0.0
 			#If true, allows guns enchanted with Fire Starter to light and spread fires on blocks
-			setFireToBlocks = true
+			setFireToBlocks = false
 
 	#Properties relating to cross-mod compatibilities
 	[common.compatibilities]

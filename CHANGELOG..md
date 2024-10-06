@@ -5,9 +5,12 @@
 - Added Botany Pots Tiers
 - Updated Botany Pots
 - Zanite (Zt) and Ambrosium (A) are now GregTech elements and materials
-- ULV superconductor (mana alloy), needed in Cupronickel Coils recipe
+- Manasteel (Botania) is now a GregTech material
 - Energetic and Vibrant Alloy are now GregTech materials
-- Questbook improvements (LV and MV)
+- ULV superconductor (mana alloy), needed in Cupronickel Coils recipe
+- LV superconductor (energetic aluminum), needed in Kanthal coil recipe
+- MV superconductor (electroconglomerate alloy), needed in Nichrome coil recipe
+- Questbook improvements (LV and MV + other chapters)
 - Powah buffed (6x power generation)
 - Removed Bronze ingot from silent gear
 - Powah Gregification

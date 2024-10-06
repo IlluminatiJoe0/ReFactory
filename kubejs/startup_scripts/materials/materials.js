@@ -80,7 +80,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         GTMaterialFlags.GENERATE_FOIL,
         GTMaterialFlags.GENERATE_ROD
     )
-    .blastTemp(1800, null, GTValues.VA[GTValues.HV], 20*30)
+    .blastTemp(1800, null, GTValues.VA[GTValues.HV], 20*20)
 
     // Mana (created just for the 'Ma' component, doesn't actually exist in the game)
     event.create('mana')

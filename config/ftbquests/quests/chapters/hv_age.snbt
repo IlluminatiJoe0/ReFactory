@@ -22,6 +22,55 @@
 			x: 3.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["4A6F76983101B7E1"]
+			description: [
+				"Electroconglomerate Alloy is an alloy of Ambrosium, Energetic Aluminium and Electrum."
+				""
+				"It's an MV superconductor."
+				""
+				"It's required to make Nichrome coils."
+			]
+			id: "722C635C6F7AA733"
+			tasks: [{
+				id: "21E7E4AFA1553AF5"
+				item: "gtceu:electroconglomerate_alloy_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			id: "4A6F76983101B7E1"
+			tasks: [{
+				id: "67CEF5C4051AFE3C"
+				item: "gtceu:ambrosium_gem"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3C1300681CAA0377"]
+			id: "68BAC4CBCD602803"
+			tasks: [{
+				id: "4BC4012FA008DC4B"
+				item: "gtceu:zanite_steel_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			id: "3C1300681CAA0377"
+			tasks: [{
+				id: "5365E9798A02BD6E"
+				item: "gtceu:zanite_gem"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
 	]
 	title: "HV Age"
 }
