@@ -93,6 +93,8 @@
 				"Some infernal prefixes are disabled."
 				""
 				"It is recommended to make a base in the air, in the ground, on a platform over the sea or similar."
+				""
+				"&9If you're really struggling, or don't want to struggle at all, you can either play on peaceful, or disable Infernal Mobs, I won't judge you.&r"
 			]
 			disable_toast: true
 			icon: "minecraft:zombie_head"

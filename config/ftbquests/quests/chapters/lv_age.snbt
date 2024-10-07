@@ -846,6 +846,8 @@
 				"Unlike sand, Snad boosts the growth of crops."
 				""
 				"Provide a constant redstone signal to the Snad to boost the growth."
+				""
+				"Can be used in Botany Pots and provides a 1.5x boost."
 			]
 			id: "2013543595D54148"
 			tasks: [{
@@ -1120,15 +1122,16 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["51F2F1AC28487CF8"]
+			dependencies: ["59B4E0F4EA02306B"]
+			description: ["You can make Lubricant in a Brewery, using Talc, Soapstone or Redstone with Oil, Seed Oil or Creosote."]
 			id: "3F93873DE169ED25"
 			tasks: [{
 				id: "68A3B4AF78395BF5"
 				item: "gtceu:lubricant_bucket"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -9.5d
+			x: 3.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["01A0E9661BB0FDAB"]

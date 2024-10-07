@@ -4,17 +4,18 @@
 - Added Botanical Machinery
 - Added Botany Pots Tiers
 - Updated Botany Pots
-- Zanite (Zt) and Ambrosium (A) are now GregTech elements and materials
-- Manasteel (Botania) is now a GregTech material
-- Energetic and Vibrant Alloy are now GregTech materials
+- Zanite (Zt) and Ambrosium (A) (Aether) are now GregTech elements and materials
+- Manasteel, Mana, Terrasteel, Terra and Elementium (Botania) are now GregTech materials
+- Energetic and Vibrant Alloy (EnderIO) are now GregTech materials
 - ULV superconductor (mana alloy), needed in Cupronickel Coils recipe
-- LV superconductor (energetic aluminum), needed in Kanthal coil recipe
+- LV superconductor (energetic aluminium), needed in Kanthal coil recipe
 - MV superconductor (electroconglomerate alloy), needed in Nichrome coil recipe
 - Questbook improvements (LV and MV + other chapters)
 - Powah buffed (6x power generation)
-- Removed Bronze ingot from silent gear
-- Powah Gregification
-- Custom Mana Pool recipe (LV)
+- Removed Bronze ingot from silent gear (progression loophole)
+- Powah Gregification (LV and MV for now)
+- Applied Botanics Gregification
+- Various other Gregifications
 
 # 0.0.3
 - Removed SilentGear Compat

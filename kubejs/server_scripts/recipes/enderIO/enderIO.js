@@ -85,6 +85,19 @@ ServerEvents.recipes(event => {
 	.itemOutputs('gtceu:vibrant_alloy_dust')
 	.duration(20*10)
 	.EUt(GTValues.VA[GTValues.MV])
+
+	// conduit binder composite recipe
+	event.remove( {id: 'enderio:conduit_binder_composite'} )
+	event.recipes.gtceu.mixer('kubejs_enderio_conduit_binder_composite')
+	.circuit(31)
+	.itemInputs(
+		'minecraft:clay_ball',
+		'#forge:sand',
+		'2x #forge:gravel'
+	)
+	.itemOutputs('4x enderio:conduit_binder_composite')
+	.duration(20*5)
+	.EUt(GTValues.VA[GTValues.ULV])
 })
 
 yeet('enderio:energetic_alloy_ingot')

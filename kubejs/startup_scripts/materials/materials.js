@@ -82,14 +82,17 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     )
     .blastTemp(1800, null, GTValues.VA[GTValues.HV], 20*20)
 
-    // Mana (created just for the 'Ma' component, doesn't actually exist in the game)
+    // Mana
     event.create('mana')
+    .dust()
+    .color(0x0088ff)
     .element(GTElements.get('mana'))
+    .iconSet(GTMaterialIconSet.SHINY)
 
     // Manasteel
     event.create('manasteel')
     .ingot()
-    .color(0x67b9ee)
+    .color(0x195eff)
     .components(
         '1x mana',
         '1x iron'
@@ -99,10 +102,42 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         GTMaterialFlags.GENERATE_PLATE,
         GTMaterialFlags.GENERATE_ROD
     )
+
+    // Terra
+    event.create('terra')
+    .dust()
+    .color(0x00ff1a)
+    .element(GTElements.get('terra'))
+    .iconSet(GTMaterialIconSet.SHINY)
+
+    // Terrasteel
+    event.create('terrasteel')
+    .ingot()
+    .color(0x16bf00)
+    .components(
+        '1x terra',
+        '1x manasteel'
+    )
+    .iconSet(GTMaterialIconSet.SHINY)
+    .flags(
+        GTMaterialFlags.GENERATE_PLATE,
+        GTMaterialFlags.GENERATE_ROD
+    )
+
+    // Elementium
+    event.create('elementium')
+    .ingot()
+    .color(0xff2be3)
+    .element(GTElements.get('elementium'))
+    .iconSet(GTMaterialIconSet.SHINY)
+    .flags(
+        GTMaterialFlags.GENERATE_PLATE,
+        GTMaterialFlags.GENERATE_ROD
+    )
 })
 
 GTCEuStartupEvents.materialModification(event => {
     TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('manasteel'), () => Item.getItem('botania:manasteel_ingot'))
-    // TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('terrasteel'), () => Item.getItem('botania:terrasteel_ingot'))
-    // TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('elementium'), () => Item.getItem('botania:elementium_ingot'))
+    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('terrasteel'), () => Item.getItem('botania:terrasteel_ingot'))
+    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('elementium'), () => Item.getItem('botania:elementium_ingot'))
 })

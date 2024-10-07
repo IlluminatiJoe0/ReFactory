@@ -42,12 +42,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     )
     .cableProperties(GTValues.V[GTValues.MV], 2, 0, true)
     .color(0x57612d)
-    .secondaryColor(0xd1ff12)
+    .secondaryColor(0x24361c)
     .flags(
         GTMaterialFlags.GENERATE_PLATE,
         GTMaterialFlags.GENERATE_FOIL
     )
-    .iconSet(GTMaterialIconSet.SHINY)
+    .iconSet(GTMaterialIconSet.DULL)
     .blastTemp(1800, null, GTValues.VA[GTValues.HV], 20*20)
 
     // HV
