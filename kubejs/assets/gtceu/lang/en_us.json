@@ -15,6 +15,16 @@
     "material.gtceu.elementium": "Elementium",
     "material.gtceu.terrasteel": "Terrasteel",
 
+    "material.gtceu.chlorophyte": "Chlorophyte",
+    "material.gtceu.indole_3_acetic_acid": "Indole-3-Acetic Acid",
+    "material.gtceu.indole": "Indole",
+    "material.gtceu.pyruvic_acid": "Pyruvic Acid",
+    "material.gtceu.glyceric_acid": "Glyceric Acid",
+    "material.gtceu.phenylhydrazine": "Phenylhydrazine",
+    "material.gtceu.aniline": "Aniline",
+    "material.gtceu.glycolic_acid": "Glycolic Acid",
+    "material.gtceu.chlorophyte_growth_medium": "Chlorophyte Growth Medium",
+
     "gtceu.jei.ore_vein.zanite": "Zanite Ore Vein",
     "gtceu.jei.ore_vein.ambrosium": "Ambrosium Ore Vein",
     "gtceu.jei.ore_vein.aluminium": "Aluminium Ore Vein"

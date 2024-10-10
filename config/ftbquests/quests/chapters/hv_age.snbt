@@ -37,17 +37,18 @@
 				item: "gtceu:electroconglomerate_alloy_ingot"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.5d
 			y: 3.0d
 		}
 		{
+			dependencies: ["04EEC280F22C612F"]
 			id: "4A6F76983101B7E1"
 			tasks: [{
 				id: "67CEF5C4051AFE3C"
 				item: "gtceu:ambrosium_gem"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.5d
 			y: 4.5d
 		}
 		{
@@ -58,18 +59,31 @@
 				item: "gtceu:zanite_steel_ingot"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 0.5d
 			y: 3.0d
 		}
 		{
+			dependencies: ["04EEC280F22C612F"]
 			id: "3C1300681CAA0377"
 			tasks: [{
 				id: "5365E9798A02BD6E"
 				item: "gtceu:zanite_gem"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 0.5d
 			y: 4.5d
+		}
+		{
+			id: "04EEC280F22C612F"
+			tasks: [{
+				dimension: "aether:the_aether"
+				icon: "aether:aether_portal_frame"
+				id: "5C3862DB6ABCF203"
+				title: "Aether"
+				type: "dimension"
+			}]
+			x: 1.5d
+			y: 6.5d
 		}
 	]
 	title: "HV Age"

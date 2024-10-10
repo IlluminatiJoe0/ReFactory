@@ -1,3 +1,6 @@
+# 0.1.0
+- Added Chlorophyte (LuV material) and it's production line
+
 # 0.0.4
 - Added Blood Magic
 - Added Applied Botanics Addon
