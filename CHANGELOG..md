@@ -1,5 +1,6 @@
 # 0.1.0
 - Added Chlorophyte (LuV material) and it's production line
+- Proliferation Inducer (multiblock for Chlorophyte production) added (LuV)
 
 # 0.0.4
 - Added Blood Magic

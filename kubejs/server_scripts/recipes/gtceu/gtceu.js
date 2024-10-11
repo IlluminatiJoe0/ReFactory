@@ -76,5 +76,33 @@ ServerEvents.recipes(event => {
     .itemOutputs('gtceu:zanite_steel_dust')
     .duration(20*15)
     .EUt(GTValues.VA[GTValues.MV])
+
+    // Silicon Boule line
+    // Single Crystal Silicon
+    event.recipes.gtceu.alloy_smelter('kubejs_single_crystal_silicon')
+        .itemInputs(
+            '4x gtceu:silicon_dust', 
+            'gtceu:small_gallium_arsenide_dust'
+        )
+        .itemOutputs('kubejs:single_crystal_silicon')
+        .duration(20*15)
+        .EUt(GTValues.VA[GTValues.LV])
+    // Seed Crystal
+    event.recipes.gtceu.lathe('kubejs_seed_crystal')
+        .itemInputs('kubejs:single_crystal_silicon')
+        .itemOutputs('2x kubejs:seed_crystal')
+        .duration(20*15)
+        .EUt(GTValues.VA[GTValues.LV])
+    event.remove('gtceu:electric_blast_furnace/silicon_boule')
+    event.recipes.gtceu.electric_blast_furnace('kubejs_silicon_boule')
+        .circuit(2)
+        .itemInputs(
+            'kubejs:seed_crystal',
+            '32x gtceu:silicon_dust'
+        )
+        .itemOutputs('gtceu:silicon_boule')
+        .duration(20*420)
+        .EUt(GTValues.VA[GTValues.MV])
+        .blastFurnaceTemp(1784)
     
 })
