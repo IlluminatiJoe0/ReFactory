@@ -19,6 +19,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         GTMaterialFlags.GENERATE_ROD,
         GTMaterialFlags.GENERATE_ROTOR
     )
+    .blastTemp(5500, null, GTValues.VA[GTValues.LuV], 20*20)
 
     event.create('indole_3_acetic_acid')
     .element(GTElements.get('indole_3_acetic_acid'))

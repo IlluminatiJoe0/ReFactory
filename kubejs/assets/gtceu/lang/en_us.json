@@ -1,6 +1,10 @@
 {
     "tagprefix.holystone": "Holystone %s Ore",
 
+    "gtceu.proliferation_inducer": "§dProliferation Inducer",
+
+    "block.gtceu.proliferation_inducer": "§dProliferation Inducer",
+
     "material.gtceu.zanite": "Zanite",
     "material.gtceu.ambrosium": "Ambrosium",
     "material.gtceu.energetic_alloy": "Energetic Alloy",
@@ -24,6 +28,8 @@
     "material.gtceu.aniline": "Aniline",
     "material.gtceu.glycolic_acid": "Glycolic Acid",
     "material.gtceu.chlorophyte_growth_medium": "Chlorophyte Growth Medium",
+
+    "tooltip.gtceu.multiblock.proliferation_inducer": "Used for growing an ancient biometal",
 
     "gtceu.jei.ore_vein.zanite": "Zanite Ore Vein",
     "gtceu.jei.ore_vein.ambrosium": "Ambrosium Ore Vein",

@@ -92,6 +92,15 @@ ServerEvents.recipes(event => {
     .duration(20*20)
     .EUt(GTValues.VA[GTValues.IV])
 
-    // CHLOROPHYTE TODO
+    // CHLOROPHYTE
+    event.recipes.gtceu.proliferation_inducer('chlorophyte')
+    .itemInputs(
+        '4x gtceu:chlorophyte_growth_medium_dust',
+        'gtceu:indole_3_acetic_acid_dust'
+    )
+    .inputFluids(Fluid.of('gtceu:biomass 8000'))
+    .itemOutputs('4x gtceu:chlorophyte_dust')
+    .duration(20*60)
+    .EUt(GTValues.VA[GTValues.LuV])
 
 })
