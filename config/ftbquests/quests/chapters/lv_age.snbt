@@ -1156,6 +1156,17 @@
 			x: -6.0d
 			y: -4.5d
 		}
+		{
+			dependencies: ["3F93873DE169ED25"]
+			id: "164443788430F196"
+			tasks: [{
+				id: "75CCC7153CD65E6E"
+				item: "powah:dielectric_paste"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.5d
+		}
 	]
 	title: "LV Age"
 }
