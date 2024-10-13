@@ -16,13 +16,12 @@
 				""
 				"&cThe Wasteland biome is never-ending &r"
 				""
-				"&8&mCue nomifactory mining hammers&r&r"
+				"Here, have an unbreakable hammer! :)"
 			]
 			disable_toast: true
 			icon: "minecraft:book"
 			id: "43E0325219933606"
 			rewards: [{
-				count: 2
 				id: "3DDE7ADEE672DBF3"
 				item: {
 					Count: 1
@@ -41,10 +40,11 @@
 							Damage: 0
 							Enchantability: 18
 							HarvestLevel: 3
-							MaxDamage: 2303
+							MaxDamage: 420
 							ToolSpeed: 6.4f
 						}
 						HideFlags: 2
+						Unbreakable: 1
 					}
 				}
 				type: "item"

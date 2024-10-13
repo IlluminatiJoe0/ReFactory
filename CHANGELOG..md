@@ -2,7 +2,7 @@
 - Added Chlorophyte (LuV material) and it's production line
 - Proliferation Inducer (multiblock for Chlorophyte production) added (LuV)
 - Complete Gregification(tm) of Powah
-- Questbook Improvements
+- Questbook Improvements (LV - HV)
 
 # 0.0.4
 - Added Blood Magic

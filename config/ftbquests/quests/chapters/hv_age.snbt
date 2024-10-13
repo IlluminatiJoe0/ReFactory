@@ -12,15 +12,17 @@
 			dependencies: ["08EE54E6C1C766CF"]
 			icon: "gtceu:advanced_integrated_circuit"
 			id: "530D44DF1E3897F8"
-			x: 0.0d
+			title: "HV Circuits"
+			x: 1.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6AB3F08490774D51"]
 			icon: "gtceu:hv_machine_hull"
 			id: "59775F7F175FF086"
-			x: 3.0d
-			y: 0.0d
+			title: "HV Age"
+			x: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4A6F76983101B7E1"]
@@ -38,7 +40,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["04EEC280F22C612F"]
@@ -59,8 +61,8 @@
 				item: "gtceu:zanite_steel_ingot"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 3.0d
+			x: 4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["04EEC280F22C612F"]
@@ -70,10 +72,11 @@
 				item: "gtceu:zanite_gem"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 4.0d
 			y: 4.5d
 		}
 		{
+			dependencies: ["17A254562B5DF529"]
 			id: "04EEC280F22C612F"
 			tasks: [{
 				dimension: "aether:the_aether"
@@ -82,8 +85,405 @@
 				title: "Aether"
 				type: "dimension"
 			}]
-			x: 1.5d
-			y: 6.5d
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["722C635C6F7AA733"]
+			id: "28B610006FFBCBE6"
+			tasks: [{
+				count: 16L
+				id: "4A69CED0E44758DB"
+				item: "gtceu:nichrome_coil_block"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["59775F7F175FF086"]
+			id: "17A254562B5DF529"
+			tasks: [{
+				id: "497468DD038247B0"
+				item: "gtceu:hv_assembler"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["530D44DF1E3897F8"]
+			hide_dependency_lines: true
+			id: "35122B1BDDA69282"
+			tasks: [
+				{
+					id: "08D46160201AF15D"
+					item: "gtceu:inductor"
+					type: "item"
+				}
+				{
+					id: "5100F1EC85852324"
+					item: "gtceu:smd_inductor"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["530D44DF1E3897F8"]
+			hide_dependency_lines: true
+			id: "7D4A190F091292E2"
+			tasks: [
+				{
+					id: "499530EC177D389E"
+					item: "gtceu:capacitor"
+					type: "item"
+				}
+				{
+					id: "63D73488983FECE9"
+					item: "gtceu:smd_capacitor"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7D4A190F091292E2"
+				"1147F49038872B8F"
+				"6CC009AB2D84F83C"
+				"06F1D313C716783D"
+			]
+			description: ["Cheapest LV circuits there are."]
+			id: "53CBD2CE4933D4F0"
+			tasks: [{
+				id: "1666B115D48EE522"
+				item: "gtceu:microchip_processor"
+				type: "item"
+			}]
+			title: "Cheapest LV Circuits"
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["530D44DF1E3897F8"]
+			hide_dependency_lines: true
+			id: "2D8135FE37AA066D"
+			tasks: [{
+				id: "6FDB9D4D3B306EC5"
+				item: "gtceu:plastic_circuit_board"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2D8135FE37AA066D"]
+			id: "1147F49038872B8F"
+			tasks: [{
+				id: "16FC91122792C2C1"
+				item: "gtceu:plastic_printed_circuit_board"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7D4A190F091292E2"
+				"1147F49038872B8F"
+				"6CC009AB2D84F83C"
+				"06F1D313C716783D"
+			]
+			id: "0E89B435074FF121"
+			tasks: [{
+				id: "66B8C580766D15E1"
+				item: "gtceu:micro_processor"
+				type: "item"
+			}]
+			title: "Cheap MV Circuits"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0E89B435074FF121"
+				"1147F49038872B8F"
+				"35122B1BDDA69282"
+			]
+			id: "1D08089B37803F70"
+			tasks: [{
+				id: "25AF509E2496D7B9"
+				item: "gtceu:micro_processor_assembly"
+				type: "item"
+			}]
+			title: "Cheaper HV Circuits"
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1147F49038872B8F"
+				"1D08089B37803F70"
+			]
+			description: ["A bit expensive but worth it!"]
+			id: "5E0F220459741BE1"
+			tasks: [{
+				id: "55AF6871D5DDC015"
+				item: "gtceu:micro_processor_computer"
+				type: "item"
+			}]
+			title: "Early EV Circuits"
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"1147F49038872B8F"
+				"7D4A190F091292E2"
+				"35122B1BDDA69282"
+				"5E0F220459741BE1"
+			]
+			description: [
+				"These do get expensive, so don't craft them until you really need them."
+				""
+				"&8Or don't, I don't really care, you can do what you want, I'm just a guy in a book.&r"
+			]
+			id: "5C1F974BF9733EE6"
+			tasks: [{
+				id: "2DC960AA62E911F6"
+				item: "gtceu:micro_processor_mainframe"
+				type: "item"
+			}]
+			title: "Early IV Circuits"
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"41DC9E77D843E0D2"
+				"095EFD640A49AE71"
+			]
+			id: "43D222FD4AF3280E"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "0C91FD82700F7BF8"
+				item: "gtceu:titanium_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["04EEC280F22C612F"]
+			description: ["Process some Ilmenite or Bauxite to get Rutile dust. You'll need it to make Titanium."]
+			id: "2D3383DBA6CE7935"
+			tasks: [{
+				id: "4194A6D3629F7258"
+				item: "gtceu:rutile_dust"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2D3383DBA6CE7935"]
+			description: ["React Carbon, Rutile and Chlorine in a HV Chemical Reactor to get Titanium Tetrachloride."]
+			id: "6E595E49F758C615"
+			tasks: [{
+				id: "475320E1196D6B38"
+				item: "gtceu:titanium_tetrachloride_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6E595E49F758C615"]
+			description: ["Blast the Titanium Tetrachloride in an EBF with some Magnesium to get Hot Titanium and some Magnesium Chloride, which can be recycled."]
+			icon: "gtceu:hot_titanium_ingot"
+			id: "095EFD640A49AE71"
+			tasks: [
+				{
+					id: "2FB633DD573E4CA0"
+					item: "gtceu:hot_titanium_ingot"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "76D6FCBC44A58133"
+					item: { Count: 6, id: "gtceu:magnesium_chloride_dust" }
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5E0F220459741BE1"]
+			description: ["Chill!"]
+			id: "41DC9E77D843E0D2"
+			shape: "gear"
+			tasks: [{
+				id: "0C6FDED276BB1CCB"
+				item: "gtceu:vacuum_freezer"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["43D222FD4AF3280E"]
+			id: "097912261E2A9B52"
+			tasks: [{
+				id: "7DEDB3B30A81C9DE"
+				item: "gtceu:ev_machine_hull"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["762A79DEDEE8636A"]
+			description: [
+				"Smelt the Tantalum dust to get Tantalum ingots."
+				""
+				"With Tantalum you can get cheaper components, SMD components specifically."
+				"Craft a batch of them and never worry again!"
+			]
+			id: "2BB98DA0A2CA5342"
+			tasks: [{
+				id: "29292500FE20AEF9"
+				item: "gtceu:tantalum_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["530D44DF1E3897F8"]
+			description: ["You can get Tantalite from Manganese ore veins."]
+			hide_dependency_lines: true
+			id: "762A79DEDEE8636A"
+			tasks: [{
+				id: "570530954BC7FD66"
+				item: "gtceu:tantalite_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"2BB98DA0A2CA5342"
+				"530D44DF1E3897F8"
+			]
+			hide_dependency_lines: true
+			id: "6CC009AB2D84F83C"
+			tasks: [{
+				id: "4764886C84795300"
+				item: "gtceu:smd_transistor"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["530D44DF1E3897F8"]
+			hide_dependency_lines: true
+			id: "06F1D313C716783D"
+			tasks: [{
+				id: "51104D4EFCA14BB1"
+				item: "gtceu:smd_resistor"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["530D44DF1E3897F8"]
+			description: ["You can now finally craft Eyes of Ender."]
+			hide_dependency_lines: true
+			id: "30D787446CE3CE8B"
+			tasks: [{
+				id: "7842EF6C359F8308"
+				item: "minecraft:ender_eye"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["30D787446CE3CE8B"]
+			id: "0B159426F31C5AC1"
+			tasks: [{
+				id: "3E00F8C9FB25DB70"
+				item: "gtceu:hv_sensor"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["30D787446CE3CE8B"]
+			id: "6B1DA81DE2410919"
+			tasks: [{
+				id: "636429606B949817"
+				item: "gtceu:hv_emitter"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B159426F31C5AC1"]
+			id: "0310998DEAFB2B09"
+			tasks: [{
+				id: "34DCAC0493EBE60F"
+				item: "gtceu:hv_miner"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["530D44DF1E3897F8"]
+			hide_dependency_lines: true
+			id: "65A57FFE85237811"
+			tasks: [{
+				id: "5391599AE1F6EB34"
+				item: "gtceu:epoxy_bucket"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["65A57FFE85237811"]
+			id: "557BC2B888BAA213"
+			tasks: [{
+				id: "008E015919F91F83"
+				item: "gtceu:epoxy_printed_circuit_board"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5E0F220459741BE1"]
+			id: "1F4BD78DF492DE6A"
+			tasks: [{
+				id: "469144AD637D4644"
+				item: "gtceu:hv_circuit_assembler"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 4.5d
 		}
 	]
 	title: "HV Age"

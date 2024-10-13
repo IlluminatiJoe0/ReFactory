@@ -53,6 +53,7 @@
 		}
 		{
 			dependencies: ["10C2C691F26385C4"]
+			description: ["You can get iron from several ores (Pyrite, Magnetite, Yellow Limonite)"]
 			id: "071811F3550BAF2F"
 			tasks: [{
 				count: 32L
@@ -65,6 +66,7 @@
 		}
 		{
 			dependencies: ["10C2C691F26385C4"]
+			description: ["You can get Copper from several ores (Chalcopyrite, Malachite, Copper)"]
 			id: "19ED228B99A30CBF"
 			tasks: [{
 				count: 32L
@@ -77,6 +79,7 @@
 		}
 		{
 			dependencies: ["10C2C691F26385C4"]
+			description: ["You can get Tin from Sphalerite or Cassiterite."]
 			id: "4B41B7447B139821"
 			tasks: [{
 				count: 32L
@@ -119,6 +122,22 @@
 				""
 				"Use them until you get better machines that will do the jobs for you."
 			]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_hammer"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						Damage: 0
+						Enchantability: 14
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
 			id: "03CF5FEDA44D312B"
 			rewards: [
 				{
@@ -304,6 +323,7 @@
 				item: "minecraft:pumpkin_pie"
 				type: "item"
 			}]
+			shape: "gear"
 			size: 1.5d
 			tasks: [{
 				count: 16L
@@ -337,7 +357,11 @@
 		}
 		{
 			dependencies: ["364AD55044CC7EBE"]
-			description: ["A primitive pump makes getting more water into the steam boilers a lot easier."]
+			description: [
+				"A primitive pump makes getting more water into the steam boilers a lot easier."
+				""
+				"Unlike the Aqueous Accumulator, it does export water."
+			]
 			id: "3FCDBCB2152DE3FB"
 			size: 1.0d
 			tasks: [{
@@ -359,6 +383,7 @@
 			id: "0C2AE8D7483504CC"
 			subtitle: "No clay?"
 			tasks: [{
+				count: 32L
 				id: "501B3C9CD37425C4"
 				item: "minecraft:clay_ball"
 				type: "item"
@@ -369,6 +394,7 @@
 		{
 			dependencies: ["5E785D06BD90880A"]
 			description: ["Creates coke and creosote from coal."]
+			icon: "gtceu:coke_oven"
 			id: "364AD55044CC7EBE"
 			tasks: [
 				{
@@ -568,12 +594,15 @@
 				item: "aether:gingerbread_man"
 				type: "item"
 			}]
+			shape: "gear"
 			size: 1.5d
 			tasks: [{
+				count: 16L
 				id: "28811BAA82471930"
 				item: "gtceu:steel_ingot"
 				type: "item"
 			}]
+			title: "Steel"
 			x: 10.5d
 			y: 4.5d
 		}
@@ -585,6 +614,7 @@
 				"This block is an ingredient to all your LV machines."
 			]
 			id: "62B56B57D291BF7B"
+			shape: "gear"
 			size: 1.5d
 			tasks: [{
 				id: "005B104BEE3776A8"
@@ -622,13 +652,13 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["370BF17C5F4076DD"]
 			description: [
-				"Sulfur does not naturally generate in the Overworld, rather, you have to get it from the Nether."
+				"Sulfur does not naturally generate in the Overworld, rather, you have to get it from the Nether's Sulfur vein."
 				""
 				"An alternative way to get Sulfur is by centrifuging Realgar (or, less efficient, Netherrack dust), for which you'll need either a LV Centrifuge, or a Steam Separator."
 			]
 			id: "38D1CF49FA014533"
-			subtitle: "Nether time!"
 			tasks: [{
 				id: "24F52A408312390C"
 				item: "gtceu:sulfur_dust"
@@ -642,12 +672,15 @@
 				"313476D47A208906"
 				"09ECD67B4648D2EA"
 			]
+			description: ["Craft the rubber into sheets, and coat some tin cables with it."]
 			id: "6C35D6ECE63E59AB"
 			tasks: [{
+				count: 2L
 				id: "42C1623EB206A147"
 				item: "gtceu:tin_single_cable"
 				type: "item"
 			}]
+			title: "Cables"
 			x: 13.5d
 			y: 4.5d
 		}
@@ -990,6 +1023,83 @@
 			]
 			x: 0.0d
 			y: -1.5d
+		}
+		{
+			dependencies: ["1F0BF9D9E762756A"]
+			id: "3EA8D154B8F2D359"
+			optional: true
+			tasks: [{
+				id: "169EA8F7847E52B1"
+				item: "ironfurnaces:item_copy"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["03CF5FEDA44D312B"]
+			description: ["A very useful tool for gathering dirt/gravel. Mines in a 3x3 radius."]
+			id: "2C091EEA2566F00E"
+			tasks: [{
+				id: "481B9E8C050ECCA9"
+				item: {
+					Count: 1
+					id: "gtceu:wrought_iron_spade"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							AoEColumn: 1
+							AoELayer: 0
+							AoERow: 1
+							MaxAoEColumn: 1
+							MaxAoELayer: 0
+							MaxAoERow: 1
+						}
+						GT.Tool: {
+							Damage: 0
+							Enchantability: 5
+							HarvestLevel: 2
+							MaxDamage: 1151
+							ToolSpeed: 4.8f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["189B920AAB6456B4"]
+			description: ["To get certain resources (e.g. Sulfur and Nether Quartz), you're going to need to visit the Nether."]
+			hide_dependency_lines: true
+			id: "370BF17C5F4076DD"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				icon: "minecraft:obsidian"
+				id: "57B3232E17DB0996"
+				type: "dimension"
+			}]
+			title: "Visit the Nether"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E785D06BD90880A"]
+			description: [
+				"A good water source. Passively generates water when in between two water source blocks. "
+				""
+				"&eIt cannot export water itself, though.&r"
+			]
+			id: "4A802C4BAD92CE8F"
+			tasks: [{
+				id: "1F87C8FDCC4C850D"
+				item: "thermal:device_water_gen"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
 		}
 	]
 	title: "The Beginning"

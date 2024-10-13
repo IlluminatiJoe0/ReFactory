@@ -54,6 +54,7 @@
 			]
 			description: ["Here comes the hard part..."]
 			id: "0E1F6E844041CC9F"
+			shape: "gear"
 			size: 1.5d
 			tasks: [{
 				id: "1BC795E23F104984"
@@ -399,10 +400,16 @@
 				"3052BAA53CF8DBAA"
 				"2770BFB05F1E26EC"
 			]
-			description: ["The next tier of circuit."]
+			description: [
+				"The next tier of circuit."
+				""
+				"With these 2 circuits, you should immediately craft the LV Circuit Assembler, as it is very efficient in making circuits."
+			]
 			id: "07377D4D02DC350A"
+			shape: "gear"
 			size: 1.5d
 			tasks: [{
+				count: 2L
 				id: "0FEE350D6FF93B46"
 				item: "gtceu:good_electronic_circuit"
 				type: "item"
@@ -484,6 +491,7 @@
 			]
 			icon: "gtceu:electric_blast_furnace"
 			id: "318CA73CE4C3DC3D"
+			shape: "gear"
 			tasks: [
 				{
 					id: "0D5BD6D783E47B3B"
@@ -511,13 +519,14 @@
 				"5F717D5E9715ED7C"
 			]
 			id: "18BC6F844CF368EF"
+			shape: "gear"
 			tasks: [{
 				id: "7CB8E4F11B64A373"
 				item: "gtceu:aluminium_ingot"
 				type: "item"
 			}]
 			x: 0.0d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["62B56B57D291BF7B"]
@@ -531,8 +540,8 @@
 				item: "gtceu:aluminium_dust"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 2.0d
+			x: 1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -556,7 +565,7 @@
 				type: "item"
 			}]
 			title: "Coils"
-			x: 1.0d
+			x: 1.5d
 			y: 1.0d
 		}
 		{
@@ -582,7 +591,7 @@
 				title: "Wallsharing"
 				type: "checkmark"
 			}]
-			x: -1.0d
+			x: -2.0d
 			y: 1.0d
 		}
 		{
@@ -620,6 +629,7 @@
 				"07377D4D02DC350A"
 			]
 			id: "6B22D87DF0CDC580"
+			shape: "gear"
 			size: 1.5d
 			tasks: [{
 				id: "501190AA63AA8AA8"
@@ -640,7 +650,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["35CB055A24346DE1"]
@@ -986,6 +996,7 @@
 				item: "gtceu:polyethylene_plate"
 				type: "item"
 			}]
+			shape: "gear"
 			size: 1.0d
 			tasks: [{
 				id: "4806BBD053AFFF44"
@@ -1049,7 +1060,7 @@
 		}
 		{
 			dependencies: ["662DD867DD212E87"]
-			description: ["Oxygen and Vynil chloride reacting in the chemical reactor give Polyvinyl Chloride, or more commonly known as PVC."]
+			description: ["Oxygen and Vinyl chloride reacting in the chemical reactor give Polyvinyl Chloride, or more commonly known as PVC."]
 			id: "2BE55924C7BFF8B8"
 			rewards: [{
 				count: 16
@@ -1057,6 +1068,7 @@
 				item: "gtceu:polyvinyl_chloride_plate"
 				type: "item"
 			}]
+			shape: "gear"
 			tasks: [{
 				id: "540B6CF0BBDBF322"
 				item: "gtceu:polyvinyl_chloride_bucket"
@@ -1106,7 +1118,7 @@
 				item: "gtceu:mana_alloy_ingot"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 3.0d
 			y: 1.0d
 		}
 		{
@@ -1158,6 +1170,11 @@
 		}
 		{
 			dependencies: ["3F93873DE169ED25"]
+			description: [
+				"Start your Powah adventure!"
+				""
+				"See the \"Power\" tab for more info."
+			]
 			id: "164443788430F196"
 			tasks: [{
 				id: "75CCC7153CD65E6E"
@@ -1166,6 +1183,30 @@
 			}]
 			x: 2.0d
 			y: -6.5d
+		}
+		{
+			dependencies: ["35CB055A24346DE1"]
+			description: ["If you haven't made an EnderIO magnet, this one does the job as well, but is a bit harder to craft."]
+			hide_dependency_lines: true
+			id: "1E761C6B347E80D6"
+			tasks: [{
+				id: "3E7BF9337D7DCD9F"
+				item: "gtceu:lv_item_magnet"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["18BC6F844CF368EF"]
+			id: "0C8965813F7EE3D2"
+			tasks: [{
+				id: "2778506E3101EE40"
+				item: "enderio:void_chassis"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.5d
 		}
 	]
 	title: "LV Age"

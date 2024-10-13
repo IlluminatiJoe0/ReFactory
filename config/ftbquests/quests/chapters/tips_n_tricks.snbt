@@ -243,7 +243,7 @@
 			y: 1.5d
 		}
 		{
-			description: ["With Carry On you can pick up most entities and some block entities by shift-righclicking them. You have to have both hands empty to do that."]
+			description: ["With Carry On you can pick up most entities and some block entities by shift-rightclicking them. You have to have both hands empty to do that."]
 			id: "02A3A75D6F16A925"
 			tasks: [{
 				id: "0A570B80BC83A9E8"
@@ -265,7 +265,11 @@
 			y: -3.5d
 		}
 		{
-			description: ["Press \"J\" to open a map."]
+			description: [
+				"Press \"J\" to open a map."
+				""
+				"Press \"B\" to set a new waypoint."
+			]
 			id: "0B6246A996F0397B"
 			tasks: [{
 				id: "6D9194C86943DD2C"

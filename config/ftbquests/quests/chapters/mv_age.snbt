@@ -75,6 +75,11 @@
 		}
 		{
 			dependencies: ["2D86BD3AE9C7AB6B"]
+			description: [
+				"The MV extruder can craft most of the things (unlike the LV extruder)."
+				""
+				"It is incredibly useful (and efficient!)"
+			]
 			id: "40949CE64C6F886A"
 			tasks: [{
 				id: "1EC4569A0911D349"
@@ -86,6 +91,7 @@
 		}
 		{
 			dependencies: ["40949CE64C6F886A"]
+			description: ["These are all comonly used molds for the extruder."]
 			id: "0E1912B77BD360EC"
 			tasks: [
 				{
@@ -125,7 +131,7 @@
 				}
 			]
 			x: 4.5d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2D86BD3AE9C7AB6B"]
@@ -176,6 +182,7 @@
 		{
 			dependencies: ["630A813B0F4DA078"]
 			id: "1984444D466E8EEF"
+			shape: "gear"
 			tasks: [{
 				id: "1AD796DD9F693082"
 				item: "gtceu:silicon_boule"
@@ -185,61 +192,52 @@
 			y: 1.5d
 		}
 		{
-			dependencies: [
-				"6EA539D38718E106"
-				"1984444D466E8EEF"
-			]
+			dependencies: ["1984444D466E8EEF"]
 			id: "7FA2594B75A44E70"
 			tasks: [{
 				id: "7DC616D3A506759B"
 				item: "gtceu:ulpic_chip"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 4.0d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
-			dependencies: [
-				"6EA539D38718E106"
-				"1984444D466E8EEF"
-			]
+			dependencies: ["1984444D466E8EEF"]
 			id: "162E65E940DCC593"
 			tasks: [{
 				id: "6FBFA278FBA12ADE"
 				item: "gtceu:ram_chip"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 1.5d
 			y: 3.0d
 		}
 		{
 			dependencies: [
-				"630A813B0F4DA078"
 				"0F53A979A0A20B60"
 				"2D86BD3AE9C7AB6B"
 			]
 			id: "6EA539D38718E106"
+			shape: "gear"
 			tasks: [{
 				id: "3492B74BAED620F9"
 				item: "gtceu:mv_laser_engraver"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 4.5d
 			y: 1.5d
 		}
 		{
-			dependencies: [
-				"1984444D466E8EEF"
-				"6EA539D38718E106"
-			]
+			dependencies: ["1984444D466E8EEF"]
 			id: "65CD30C3D6C13C7E"
 			tasks: [{
 				id: "718BD294162D8939"
 				item: "gtceu:ilc_chip"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 4.0d
+			x: -1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["7FA2594B75A44E70"]
@@ -255,8 +253,8 @@
 				item: "gtceu:mv_energy_input_hatch"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 6.5d
+			x: 0.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["65CD30C3D6C13C7E"]
@@ -266,8 +264,9 @@
 				item: "gtceu:basic_integrated_circuit"
 				type: "item"
 			}]
+			title: "Second LV Circuit"
 			x: -1.5d
-			y: 6.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -275,13 +274,16 @@
 				"02350D73F63D59E8"
 			]
 			id: "08EE54E6C1C766CF"
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "67BFE8216EBD08CB"
 				item: "gtceu:advanced_integrated_circuit"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 4.0d
+			title: "First HV Circuit"
+			x: 3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
@@ -301,6 +303,8 @@
 				"The greatest invention since the resistor."
 				""
 				"Now you can craft more advanced circuits!"
+				""
+				"I recommend crafting huge batches of these types of materials (Transistors, Resistors, Inductors, etc)."
 			]
 			id: "02350D73F63D59E8"
 			tasks: [{
@@ -308,7 +312,7 @@
 				item: "gtceu:transistor"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 4.5d
 			y: 3.0d
 		}
 		{
@@ -324,7 +328,7 @@
 				item: "gtceu:silicon_ingot"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 6.0d
 			y: 3.0d
 		}
 		{
@@ -339,7 +343,7 @@
 				item: "gtceu:kanthal_ingot"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 7.0d
 			y: 4.5d
 		}
 		{
@@ -351,7 +355,7 @@
 				item: "gtceu:hot_kanthal_ingot"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 8.0d
 			y: 4.5d
 		}
 		{
@@ -367,7 +371,7 @@
 				item: "gtceu:kanthal_dust"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 9.0d
 			y: 4.5d
 		}
 		{
@@ -380,7 +384,7 @@
 				item: "gtceu:chromium_dust"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 7.5d
 			y: 3.0d
 		}
 		{
@@ -399,7 +403,7 @@
 				"0BB13F96B93699A8"
 				"472217BE9BA19D20"
 			]
-			description: ["These coils are the next in line of coil progression!"]
+			description: ["These coils are the next in line in coil progression!"]
 			id: "114D15EF6DA771DD"
 			tasks: [{
 				count: 16L
@@ -407,7 +411,7 @@
 				item: "gtceu:kanthal_coil_block"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 6.0d
 			y: 4.5d
 		}
 		{
@@ -419,18 +423,20 @@
 				item: "gtceu:mv_chemical_bath"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 5.5d
+			x: 7.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["53A05923F8895595"]
 			id: "0F53EFB5D7D2C329"
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "44F006E9A08BD5DC"
 				item: "gtceu:stainless_steel_ingot"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 10.5d
 			y: 3.0d
 		}
 		{
@@ -441,7 +447,7 @@
 				item: "gtceu:stainless_steel_dust"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 9.0d
 			y: 3.0d
 		}
 		{
@@ -452,7 +458,7 @@
 				item: "gtceu:hv_machine_hull"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 12.0d
 			y: 3.0d
 		}
 		{
@@ -464,12 +470,19 @@
 				item: "gtceu:vanadium_steel_dust"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 9.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["19748C62B5822497"]
-			description: ["Now you can electrolyze clay into Aluminium, Lithium, Silicon and Sodium dusts."]
+			description: [
+				"Now you can electrolyze clay into Aluminium, Lithium, Silicon and Sodium dusts."
+				""
+				"To get infinite clay, there are two ways:"
+				"Diorite > Diorite Dust > Clay Dust"
+				""
+				"Dirt > Mud > Clay > Clay Dust"
+			]
 			id: "2B92683848576A1A"
 			tasks: [
 				{
@@ -503,31 +516,6 @@
 			y: 1.0d
 		}
 		{
-			dependencies: [
-				"6EA539D38718E106"
-				"1984444D466E8EEF"
-			]
-			id: "3D4CCF904B1F83F8"
-			tasks: [{
-				id: "3684127AA8A1EA9E"
-				item: "gtceu:simple_soc"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["3D4CCF904B1F83F8"]
-			id: "1DD14EF208DDB413"
-			tasks: [{
-				id: "20CB40E3F2D5325C"
-				item: "gtceu:nand_chip"
-				type: "item"
-			}]
-			x: -4.5d
-			y: 4.5d
-		}
-		{
 			dependencies: ["739B7A5F5E19CEB1"]
 			id: "1833F90AC37B8826"
 			tasks: [{
@@ -535,7 +523,7 @@
 				item: "gtceu:mv_fluid_drilling_rig"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 12.0d
 			y: 1.5d
 		}
 		{
@@ -546,30 +534,8 @@
 				item: "gtceu:vanadium_steel_ingot"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 10.5d
 			y: 1.5d
-		}
-		{
-			dependencies: ["274FBD9F4BD7DF4D"]
-			id: "3FD7316FB7DEA638"
-			tasks: [{
-				id: "20AB51ECD4E674CC"
-				item: "gtceu:mv_miner"
-				type: "item"
-			}]
-			x: -4.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["630A813B0F4DA078"]
-			id: "274FBD9F4BD7DF4D"
-			tasks: [{
-				id: "17EB68509E5A7394"
-				item: "gtceu:mv_sensor"
-				type: "item"
-			}]
-			x: -3.0d
-			y: -1.0d
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
@@ -580,7 +546,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: -2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
@@ -607,96 +573,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["45EC6B51678C5FDB"]
-			id: "26605EDFC4D9A881"
-			tasks: [{
-				id: "32ACBC75E737C2D0"
-				item: "gtceu:capacitor"
-				type: "item"
-			}]
-			x: 10.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["630A813B0F4DA078"]
-			hide_dependency_lines: true
-			id: "7E21A4341B119FC6"
-			tasks: [{
-				id: "21DB392B56B78BBC"
-				item: "gtceu:plastic_circuit_board"
-				type: "item"
-			}]
-			x: 12.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["7E21A4341B119FC6"]
-			id: "1400942457215562"
-			tasks: [{
-				id: "5F8A282A1964981F"
-				item: "gtceu:plastic_printed_circuit_board"
-				type: "item"
-			}]
-			x: 10.5d
-			y: -3.0d
-		}
-		{
-			dependencies: [
-				"1400942457215562"
-				"26605EDFC4D9A881"
-				"02350D73F63D59E8"
-			]
-			id: "57FAF5BA7DA9BA8D"
-			tasks: [{
-				id: "059E49D7645BC190"
-				item: "gtceu:micro_processor"
-				type: "item"
-			}]
-			x: 12.0d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"1400942457215562"
-				"26605EDFC4D9A881"
-				"02350D73F63D59E8"
-			]
-			id: "31C98EB725F87E7A"
-			tasks: [{
-				id: "4641C25517796429"
-				item: "gtceu:microchip_processor"
-				type: "item"
-			}]
-			x: 10.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["45EC6B51678C5FDB"]
-			id: "413984D4853AA33D"
-			tasks: [{
-				id: "559AE57299DA2FA8"
-				item: "gtceu:inductor"
-				type: "item"
-			}]
-			x: 7.5d
-			y: -1.5d
-		}
-		{
-			dependencies: [
-				"26605EDFC4D9A881"
-				"31C98EB725F87E7A"
-				"413984D4853AA33D"
-			]
-			id: "57921DBFD6DCD112"
-			tasks: [{
-				id: "1CA87AAC7F19E1D1"
-				item: "gtceu:micro_processor_assembly"
-				type: "item"
-			}]
-			x: 9.0d
-			y: -1.5d
-		}
-		{
 			dependencies: ["630A813B0F4DA078"]
 			description: [
 				"Energetic Aluminium is an alloy of Aluminium and Energetic Alloy."
@@ -710,8 +586,8 @@
 				item: "gtceu:energetic_aluminium_ingot"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 5.5d
+			x: 6.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
@@ -724,6 +600,59 @@
 			}]
 			x: -5.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["45EC6B51678C5FDB"]
+			id: "42565F2AB5AC211C"
+			shape: "gear"
+			tasks: [{
+				id: "2349C3D85F5F5C49"
+				item: "botania:terra_plate"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["12D3FF7ABD35CD49"]
+			description: [
+				"Make use of this guy, really."
+				""
+				"From now on miners are incredibly useful for passively \"generating\" ores. They use little to no power."
+				""
+				"&eRemember to chunk load them!&r"
+			]
+			id: "2A693A123793F7E8"
+			tasks: [{
+				id: "1306B2572A639129"
+				item: "gtceu:mv_miner"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["630A813B0F4DA078"]
+			id: "12D3FF7ABD35CD49"
+			tasks: [{
+				id: "021E5A17B1D59F93"
+				item: "gtceu:mv_sensor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["08EE54E6C1C766CF"]
+			id: "374FBE623A0F7200"
+			shape: "gear"
+			tasks: [{
+				id: "67B350A5160DAA39"
+				item: "gtceu:mv_circuit_assembler"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.5d
 		}
 	]
 	title: "MV Age"
