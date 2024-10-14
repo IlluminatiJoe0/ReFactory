@@ -3,6 +3,9 @@
 - Proliferation Inducer (multiblock for Chlorophyte production) added (LuV)
 - Complete Gregification(tm) of Powah
 - Questbook Improvements (LV - HV)
+- Aether is now HV exclusive
+- Aluminium/Bauxite/Ilmenite now only generates in the Aether
+- Firebrick dust production doubled
 
 # 0.0.4
 - Added Blood Magic
