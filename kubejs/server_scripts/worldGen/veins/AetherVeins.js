@@ -11,6 +11,7 @@ GTCEuServerEvents.oreVeins(event => {
             .buildLayerPattern(pattern => pattern
                 .layer(l => l.weight(3).mat(GTMaterials.Aluminium).size(2, 4))
                 .layer(l => l.weight(2).mat(GTMaterials.Bauxite).size(1, 3))
+                .layer(l => l.weight(2).mat(GTMaterials.Ilmenite).size(1, 3))
             )
         )
         .surfaceIndicatorGenerator(indicator => indicator

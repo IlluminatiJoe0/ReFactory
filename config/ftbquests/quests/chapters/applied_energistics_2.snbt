@@ -5,9 +5,10 @@
 	group: ""
 	icon: "ae2:controller"
 	id: "2B911F638B9484C6"
-	order_index: 10
+	order_index: 12
 	quest_links: [ ]
 	quests: [{
+		dependencies: ["669F52806D1D39F6"]
 		id: "5C179A22C4E6B2A6"
 		tasks: [{
 			id: "6F74D342AAB6FC9C"

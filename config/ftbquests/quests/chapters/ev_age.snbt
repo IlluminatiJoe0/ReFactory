@@ -1,0 +1,32 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ev_age"
+	group: ""
+	icon: "gtceu:micro_processor_computer"
+	id: "059E892A46E5235B"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5E0F220459741BE1"]
+			icon: "gtceu:micro_processor_computer"
+			id: "669F52806D1D39F6"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["669F52806D1D39F6"]
+			id: "5155F1DFD1D1AD33"
+			shape: "gear"
+			tasks: [{
+				id: "2DADE0277BBE2887"
+				item: "gtceu:platinum_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+	]
+	title: "EV Age"
+}

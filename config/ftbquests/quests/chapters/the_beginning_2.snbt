@@ -1101,6 +1101,17 @@
 			x: 7.5d
 			y: 0.0d
 		}
+		{
+			dependencies: ["14769C69DDD4F79E"]
+			id: "1CF59D16AF1501E9"
+			tasks: [{
+				id: "1D8DBFF2DF9D361C"
+				item: "minecraft:campfire"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
 	]
 	title: "The Beginning"
 }

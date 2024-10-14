@@ -5,7 +5,7 @@
 	group: ""
 	icon: "minecraft:iron_ingot"
 	id: "1DD018B2B6D19FDC"
-	order_index: 13
+	order_index: 15
 	quest_links: [ ]
 	quests: [
 		{

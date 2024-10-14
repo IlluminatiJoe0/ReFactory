@@ -104,5 +104,59 @@ ServerEvents.recipes(event => {
         .duration(20*420)
         .EUt(GTValues.VA[GTValues.MV])
         .blastFurnaceTemp(1784)
+
+    // Rubber sheets in Bender QOL
+    event.recipes.gtceu.bender('kubejs_rubber_sheet')
+        .circuit(1)
+        .itemInputs("gtceu:rubber_ingot")
+        .itemOutputs("gtceu:rubber_plate")
+        .duration(20/4)
+        .EUt(GTValues.VA[GTValues.ULV])
+
+    // Dirt recipes
+    event.recipes.gtceu.mixer('kubejs_dirt')
+        .itemInputs(
+            '4x minecraft:sand',
+            '4x minecraft:gravel',
+        )
+        .inputFluids(
+            Fluid.of('minecraft:water', 1000)
+        )
+        .itemOutputs('10x minecraft:dirt')
+        .duration(20*5)
+        .EUt(GTValues.VA[GTValues.LV])
+    const RockBreakerCondition = Java.loadClass("com.gregtechceu.gtceu.common.recipe.RockBreakerCondition")
+    event.recipes.gtceu.rock_breaker('dirt_mining')
+        .notConsumable('minecraft:dirt')
+        .itemOutputs('minecraft:dirt')
+        .duration(20*3)
+        .EUt(GTValues.VA[GTValues.MV])
+        .addCondition(RockBreakerCondition.INSTANCE)
+
+    // Double Fireclay output!
+    event.remove({ id: 'gtceu:shapeless/fireclay_dust'})
+    event.shapeless(
+        '4x gtceu:fireclay_dust',
+        [
+            'gtceu:clay_dust',
+            'gtceu:brick_dust'
+        ]
+    )
+    // Fixing the fireclay dust dupe
+    event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__fireclay' })
+    event.recipes.gtceu.centrifuge('fireclay_dupe_fix')
+        .itemInputs('4x gtceu:fireclay_dust')
+        .itemOutputs(
+            'gtceu:clay_dust',
+            'gtceu:brick_dust'
+        )
+        .duration(20*2.25)
+        .EUt(30)
     
+})
+
+ServerEvents.tags('block', event => {
+    // Aether only in HV
+    event.remove('aether:aether_portal_blocks', 'minecraft:glowstone')
+    event.add('aether:aether_portal_blocks', 'gtceu:clean_machine_casing')
 })

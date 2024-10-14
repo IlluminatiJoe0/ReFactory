@@ -1,0 +1,32 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "iv_age"
+	group: ""
+	icon: "gtceu:micro_processor_mainframe"
+	id: "5A95C11874372AB5"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5C1F974BF9733EE6"]
+			icon: "gtceu:micro_processor_mainframe"
+			id: "3F37E03149399E3F"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3F37E03149399E3F"]
+			id: "00F82DF8F9A97306"
+			shape: "gear"
+			tasks: [{
+				id: "4D65BAE6256D9903"
+				item: "gtceu:ev_circuit_assembler"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+	]
+	title: "IV Age"
+}

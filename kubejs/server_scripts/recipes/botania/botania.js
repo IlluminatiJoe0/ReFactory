@@ -87,6 +87,25 @@ ServerEvents.recipes(event => {
     // event.replaceInput({ input: 'botania:manasteel_ingot' }, 'botania:manasteel_ingot', 'gtceu:manasteel_ingot')
     // event.replaceOutput({ output: 'botania:manasteel_ingot' }, 'botania:manasteel_ingot', 'gtceu:manasteel_ingot')
 
+    // Terrestrial Agglomeration plate
+    event.remove({ id: 'botania:terra_plate' })
+    event.recipes.gtceu.assembler('kubejs_terra_plate')
+        .circuit(30)
+        .itemInputs(
+            '3x minecraft:lapis_block',
+            'botania:manasteel_block',
+            'botania:rune_water',
+            'botania:rune_fire',
+            'botania:rune_earth',
+            'botania:rune_air',
+            'botania:rune_mana'
+        )
+        .itemOutputs(
+            'botania:terra_plate'
+        )
+        .duration(20*30)
+        .EUt(GTValues.VA[GTValues.MV])
+
 })
 
 // yeet('botania:manasteel_ingot')

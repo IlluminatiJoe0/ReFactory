@@ -6,7 +6,7 @@
 	group: ""
 	icon: "enderio:ender_resonator"
 	id: "78C3D9CACFB4C904"
-	order_index: 9
+	order_index: 11
 	quest_links: [ ]
 	quests: [{
 		dependencies: ["18BC6F844CF368EF"]

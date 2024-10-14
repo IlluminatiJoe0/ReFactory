@@ -15,5 +15,11 @@ ServerEvents.recipes(event => {
 
 	// remove handcrafted ender eye recipe
 	event.remove('minecraft:ender_eye')
+
+	// String
+	event.shapeless(
+		'minecraft:string',
+		['silentgear:fluffy_string']
+	)
 	
 })

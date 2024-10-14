@@ -5,7 +5,7 @@
 	group: ""
 	icon: "botania:pure_daisy"
 	id: "4DF8A4EB7F3C23CA"
-	order_index: 6
+	order_index: 8
 	quest_links: [ ]
 	quests: [
 		{
@@ -48,6 +48,7 @@
 				item: "minecraft:cooked_porkchop"
 				type: "item"
 			}]
+			shape: "gear"
 			size: 1.5d
 			tasks: [{
 				id: "5B955F4F60638BA8"
@@ -101,6 +102,7 @@
 				item: "thermal:carrot_cake"
 				type: "item"
 			}]
+			shape: "gear"
 			size: 1.5d
 			tasks: [{
 				id: "488E9E83F78FEDC1"
@@ -175,6 +177,8 @@
 		{
 			dependencies: ["5F1F1AFD5426D7DD"]
 			id: "3676803CDE7C7045"
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "21E3912A520FD9A6"
 				item: "botania:terra_plate"
@@ -242,6 +246,8 @@
 		{
 			dependencies: ["2757DC4A2D67740E"]
 			id: "64649D7EB21F7AA2"
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "1542BCBB8F5996FA"
 				item: "botania:alfheim_portal"

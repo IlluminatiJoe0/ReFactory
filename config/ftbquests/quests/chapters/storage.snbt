@@ -5,7 +5,7 @@
 	group: ""
 	icon: "minecraft:chest"
 	id: "5820920CB3803DD1"
-	order_index: 7
+	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{
@@ -164,8 +164,8 @@
 				item: "enderstorage:ender_chest"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -1.5d
+			x: 7.5d
+			y: 0.0d
 		}
 		{
 			id: "0797694DCEEA9E84"
@@ -174,8 +174,8 @@
 				item: "enderstorage:ender_pouch"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -1.5d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			id: "484CAF886C20F9C2"

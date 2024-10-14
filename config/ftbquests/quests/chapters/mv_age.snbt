@@ -654,6 +654,17 @@
 			x: 3.0d
 			y: 4.5d
 		}
+		{
+			dependencies: ["42565F2AB5AC211C"]
+			id: "4B15C0711FA98FAB"
+			tasks: [{
+				id: "0A49C691E341B690"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
 	]
 	title: "MV Age"
 }
