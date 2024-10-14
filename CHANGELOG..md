@@ -1,11 +1,14 @@
 # 0.1.0
+- Added Visual Workbench, Extreme Sound Muffler, Crafting on a stick, Building Wands, NoMoWanderer, Crafting Station
+- Added BadOptimizations, ModernFix, FerriteCore
+- Updated mods
 - Added Chlorophyte (LuV material) and it's production line
 - Proliferation Inducer (multiblock for Chlorophyte production) added (LuV)
 - Complete Gregification(tm) of Powah
 - Questbook Improvements (LV - HV)
 - Aether is now HV exclusive
 - Aluminium/Bauxite/Ilmenite now only generates in the Aether
-- Firebrick dust production doubled
+- Firebrick dust production doubled (and other QOL changes)
 
 # 0.0.4
 - Added Blood Magic

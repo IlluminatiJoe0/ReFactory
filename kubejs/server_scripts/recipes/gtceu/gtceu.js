@@ -125,13 +125,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('10x minecraft:dirt')
         .duration(20*5)
         .EUt(GTValues.VA[GTValues.LV])
-    const RockBreakerCondition = Java.loadClass("com.gregtechceu.gtceu.common.recipe.RockBreakerCondition")
-    event.recipes.gtceu.rock_breaker('dirt_mining')
-        .notConsumable('minecraft:dirt')
-        .itemOutputs('minecraft:dirt')
-        .duration(20*3)
-        .EUt(GTValues.VA[GTValues.MV])
-        .addCondition(RockBreakerCondition.INSTANCE)
 
     // Double Fireclay output!
     event.remove({ id: 'gtceu:shapeless/fireclay_dust'})
