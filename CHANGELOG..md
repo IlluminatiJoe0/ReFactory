@@ -1,5 +1,6 @@
 # 0.1.0
-- Added Visual Workbench, Extreme Sound Muffler, Crafting on a stick, Building Wands, NoMoWanderer, Crafting Station
+- Fixed a game-breaking problem where The Nether and The End do not exist
+- Added Extreme Sound Muffler, Crafting on a stick, Building Wands, NoMoWanderer, Crafting Station
 - Added BadOptimizations, ModernFix, FerriteCore
 - Updated mods
 - Added Chlorophyte (LuV material) and it's production line
