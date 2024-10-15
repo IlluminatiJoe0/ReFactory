@@ -665,6 +665,18 @@
 			x: 10.5d
 			y: 0.0d
 		}
+		{
+			dependencies: ["630A813B0F4DA078"]
+			description: ["Faster Coke."]
+			id: "49322CC369C75E67"
+			tasks: [{
+				id: "4C686EAE4EE51341"
+				item: "gtceu:pyrolyse_oven"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
 	]
 	title: "MV Age"
 }

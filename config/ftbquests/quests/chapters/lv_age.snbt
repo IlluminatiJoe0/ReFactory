@@ -586,6 +586,11 @@
 			]
 			disable_toast: true
 			id: "79469B87C6E057CA"
+			rewards: [{
+				id: "28AD185319B60FF1"
+				item: "gtceu:duct_tape"
+				type: "item"
+			}]
 			tasks: [{
 				id: "76DDC25C641D4F7F"
 				title: "Wallsharing"
@@ -1207,6 +1212,22 @@
 			}]
 			x: -1.5d
 			y: 2.5d
+		}
+		{
+			dependencies: ["0E1F6E844041CC9F"]
+			description: [
+				"Generates water when placed between two water sources."
+				""
+				"You will need to output the water somehow (pump, conduit) because this machine doesn't export automatically."
+			]
+			id: "6F8BA04C054531D5"
+			tasks: [{
+				id: "1916FC1736C81B3E"
+				item: "thermal:device_water_gen"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
 		}
 	]
 	title: "LV Age"

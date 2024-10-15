@@ -11,6 +11,7 @@
 		{
 			description: ["Punch some trees you know the drill."]
 			id: "14769C69DDD4F79E"
+			shape: "gear"
 			size: 1.5d
 			subtitle: "Every Modpack Ever"
 			tasks: [{
@@ -55,6 +56,12 @@
 			dependencies: ["10C2C691F26385C4"]
 			description: ["You can get iron from several ores (Pyrite, Magnetite, Yellow Limonite)"]
 			id: "071811F3550BAF2F"
+			rewards: [{
+				count: 64
+				id: "2CC4F008477BD963"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				count: 32L
 				id: "2A650CBF16A2A4F3"
@@ -68,6 +75,12 @@
 			dependencies: ["10C2C691F26385C4"]
 			description: ["You can get Copper from several ores (Chalcopyrite, Malachite, Copper)"]
 			id: "19ED228B99A30CBF"
+			rewards: [{
+				count: 64
+				id: "36AC65C92EDD36E8"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				count: 32L
 				id: "0C4AE3C4AD39924D"
@@ -81,6 +94,12 @@
 			dependencies: ["10C2C691F26385C4"]
 			description: ["You can get Tin from Sphalerite or Cassiterite."]
 			id: "4B41B7447B139821"
+			rewards: [{
+				count: 64
+				id: "161A88ECFE0D3396"
+				item: "gtceu:tin_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				count: 32L
 				id: "041E72E2DBCCEFCB"
@@ -276,6 +295,28 @@
 					}
 					type: "item"
 				}
+				{
+					id: "29426334B0CE42FB"
+					item: {
+						Count: 1
+						id: "gtceu:iron_wrench"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								Mode: 2b
+							}
+							GT.Tool: {
+								Damage: 0
+								Enchantability: 14
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
 			]
 			title: "Tools"
 			x: 0.0d
@@ -381,6 +422,12 @@
 				"Later on you'll get a much better way of getting clay."
 			]
 			id: "0C2AE8D7483504CC"
+			rewards: [{
+				count: 32
+				id: "31B2B4E8FBDBC2FC"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
 			subtitle: "No clay?"
 			tasks: [{
 				count: 32L
@@ -393,9 +440,19 @@
 		}
 		{
 			dependencies: ["5E785D06BD90880A"]
-			description: ["Creates coke and creosote from coal."]
+			description: [
+				"Creates coke and creosote from coal."
+				""
+				"You will need 116 Coke Oven bricks for this."
+			]
 			icon: "gtceu:coke_oven"
 			id: "364AD55044CC7EBE"
+			rewards: [{
+				count: 32
+				id: "4213B61D30307511"
+				item: "minecraft:coal"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "7BF316FE70843AF7"
@@ -416,6 +473,12 @@
 			dependencies: ["2F7F7A99342C19A6"]
 			description: ["Put some gravel in the forge hammer to get sand."]
 			id: "5E785D06BD90880A"
+			rewards: [{
+				count: 32
+				id: "358B82812D8DFBB7"
+				item: "minecraft:sand"
+				type: "item"
+			}]
 			tasks: [{
 				id: "697074F319A0CDB5"
 				item: "minecraft:sand"
@@ -452,6 +515,20 @@
 				"&cUse bronze pipes for steam.&r"
 			]
 			id: "28F7E5C85179144D"
+			rewards: [
+				{
+					count: 8
+					id: "6B26F2B9E7DC48B4"
+					item: "gtceu:bronze_normal_fluid_pipe"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "192B54CCFDBAF3C1"
+					item: "gtceu:wood_normal_fluid_pipe"
+					type: "item"
+				}
+			]
 			subtitle: "Hot gas"
 			tasks: [
 				{
@@ -559,7 +636,13 @@
 		}
 		{
 			dependencies: ["5FC306AB0CF12117"]
-			description: ["A very important multiblock, able to make steel from iron and coke."]
+			description: [
+				"A very important multiblock, able to make steel from iron and coke."
+				""
+				"I very much recommend making multiple PBFs, especially because the recipe has been made cheaper, with double the amount of Fireclay Dust per craft. Steel takes a while."
+				""
+				"&eThey can also wall-share!&r"
+			]
 			id: "102E0DFFBDE7BD84"
 			tasks: [
 				{
@@ -588,12 +671,20 @@
 				"You'll need plenty of it, so keep the PBF going."
 			]
 			id: "189B920AAB6456B4"
-			rewards: [{
-				count: 8
-				id: "50007B6662EF549E"
-				item: "aether:gingerbread_man"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "50007B6662EF549E"
+					item: "aether:gingerbread_man"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "537A32D610BEB9E4"
+					item: "gtceu:steel_ingot"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -1044,7 +1135,7 @@
 				id: "481B9E8C050ECCA9"
 				item: {
 					Count: 1
-					id: "gtceu:wrought_iron_spade"
+					id: "gtceu:iron_spade"
 					tag: {
 						DisallowContainerItem: 0b
 						GT.Behaviours: {
@@ -1057,9 +1148,9 @@
 						}
 						GT.Tool: {
 							Damage: 0
-							Enchantability: 5
+							Enchantability: 14
 							HarvestLevel: 2
-							MaxDamage: 1151
+							MaxDamage: 767
 							ToolSpeed: 4.8f
 						}
 						HideFlags: 2
@@ -1086,23 +1177,12 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["5E785D06BD90880A"]
-			description: [
-				"A good water source. Passively generates water when in between two water source blocks. "
-				""
-				"&eIt cannot export water itself, though.&r"
-			]
-			id: "4A802C4BAD92CE8F"
-			tasks: [{
-				id: "1F87C8FDCC4C850D"
-				item: "thermal:device_water_gen"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 0.0d
-		}
-		{
 			dependencies: ["14769C69DDD4F79E"]
+			description: [
+				"A Campfire will create a safe zone where mobs cannot spawn."
+				""
+				"It will also hurt and kill those that are near it."
+			]
 			id: "1CF59D16AF1501E9"
 			tasks: [{
 				id: "1D8DBFF2DF9D361C"
@@ -1111,6 +1191,60 @@
 			}]
 			x: -1.5d
 			y: -1.5d
+		}
+		{
+			id: "223D1C1F43CDFF74"
+			tasks: [{
+				id: "074A508EB6FAEEA4"
+				item: "silentgear:fluffy_seeds"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["223D1C1F43CDFF74"]
+			id: "628E5C66DC7C1E88"
+			tasks: [{
+				id: "57909C27ACEEE0D2"
+				item: "silentgear:fluffy_string"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["628E5C66DC7C1E88"]
+			id: "1077BCD57E1E3837"
+			tasks: [{
+				id: "12F122359499B88E"
+				item: "minecraft:string"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["223D1C1F43CDFF74"]
+			id: "74D8894C4E3F7290"
+			tasks: [{
+				id: "2CA0089B112FF213"
+				item: "silentgear:fluffy_feather"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["74D8894C4E3F7290"]
+			id: "2E183948DCF883FC"
+			tasks: [{
+				id: "24E647DE835640B3"
+				item: "minecraft:feather"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.5d
 		}
 	]
 	title: "The Beginning"

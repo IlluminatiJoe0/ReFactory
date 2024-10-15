@@ -123,18 +123,6 @@
 			y: 0.0d
 		}
 		{
-			description: ["With the No Hostiles Around Campfire mod, hostile mobs won't spawn around your campfires (duh)."]
-			id: "2348FDF04074445E"
-			tasks: [{
-				id: "457C7A38787D8527"
-				item: "minecraft:campfire"
-				type: "item"
-			}]
-			title: "Mob Repellent"
-			x: -1.5d
-			y: 1.5d
-		}
-		{
 			description: ["A compass that locates structures."]
 			id: "1A3A96D98FE4717F"
 			tasks: [{
@@ -239,7 +227,7 @@
 				type: "item"
 			}]
 			title: "Mob Repellent 2.0"
-			x: -3.0d
+			x: -1.5d
 			y: 1.5d
 		}
 		{
@@ -325,6 +313,34 @@
 			}]
 			x: -3.0d
 			y: 0.0d
+		}
+		{
+			description: ["By eating unique foods, you gain hearts. This way you're rewarded for eating a variety of different foods!"]
+			id: "7FEB3F081DA28D43"
+			rewards: [
+				{
+					id: "25EF747B5159E119"
+					item: "minecraft:apple"
+					type: "item"
+				}
+				{
+					id: "0F39A0B90D888469"
+					item: "minecraft:baked_potato"
+					type: "item"
+				}
+				{
+					id: "64374D018C033103"
+					item: "thermal:sushi_maki"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "498328FB29AF53EA"
+				title: "Eat Various Foods!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -5.0d
 		}
 	]
 	title: "Tips n Tricks"

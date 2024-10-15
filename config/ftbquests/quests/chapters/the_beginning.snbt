@@ -139,8 +139,14 @@
 			icon: "minecraft:iron_ore"
 			id: "66E630CF05711378"
 			rewards: [{
-				id: "59967C3ADEFFEA79"
-				item: "gtceu:prospector.hv"
+				id: "3380955CCA1F1AF9"
+				item: {
+					Count: 1
+					id: "gtceu:prospector.hv"
+					tag: {
+						Charge: 1600000L
+					}
+				}
 				type: "item"
 			}]
 			tasks: [{
