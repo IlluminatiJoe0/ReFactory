@@ -376,7 +376,11 @@
 		}
 		{
 			dependencies: ["19748C62B5822497"]
-			description: ["You can get Chromium by electrolyzing Ruby and processing Ruby ore."]
+			description: [
+				"You can get Chromium by electrolyzing Ruby and processing Ruby ore."
+				""
+				"You can also get Chromium from Chromite ore in a Redstone vein in The Nether."
+			]
 			hide_dependency_lines: true
 			id: "0A6A88F07A82E229"
 			tasks: [{
