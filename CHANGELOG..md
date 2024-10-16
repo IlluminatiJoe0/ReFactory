@@ -1,5 +1,5 @@
 # 0.1.1
-- added Too Fast, Client Crafting
+- added Too Fast, Client Crafting, FTB Essentials
 - downgraded the Crafting Station (unable to craft items)
 
 # 0.1.0
