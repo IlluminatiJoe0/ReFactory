@@ -1,3 +1,7 @@
+# 0.1.1
+- added Too Fast, Client Crafting
+- downgraded the Crafting Station (unable to craft items)
+
 # 0.1.0
 - Fixed a game-breaking problem where The Nether and The End do not exist
 - Added Extreme Sound Muffler, Crafting on a stick, Building Wands, NoMoWanderer, Crafting Station
