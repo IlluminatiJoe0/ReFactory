@@ -1,4 +1,5 @@
 GTCEuServerEvents.oreVeins(event => {
+    // Putting the Chrome in the Nether Redstone Vein (do not use Chrome, use Brave/Firefox instead!)
     event.modify("gtceu:redstone_vein", vein => {
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern

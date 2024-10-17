@@ -8,4 +8,9 @@ StartupEvents.registry('item', event => {
     event.create('seed_crystal')
         .displayName('Seed Crystal')
         .texture('gtceu:item/seed_crystal')
+
+    // Mana core
+    event.create('mana_core')
+        .displayName('Mana core')
+        .texture('gtceu:item/mana_core')
 })

@@ -8,4 +8,5 @@ let yeet = (itemName) => {
     })
 }
 
+// Bypasses progression so has to be yeeted (bye bye!!!!)
 yeet('silentgear:bronze_ingot')
