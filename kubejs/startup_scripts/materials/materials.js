@@ -121,7 +121,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     .iconSet(GTMaterialIconSet.SHINY)
     .flags(
         GTMaterialFlags.GENERATE_PLATE,
-        GTMaterialFlags.GENERATE_ROD
+        GTMaterialFlags.GENERATE_ROD,
+        GTMaterialFlags.GENERATE_BOLT_SCREW
     )
 
     // Elementium

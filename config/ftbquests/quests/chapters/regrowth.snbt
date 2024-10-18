@@ -245,14 +245,23 @@
 		}
 		{
 			dependencies: ["2757DC4A2D67740E"]
+			icon: "botania:alfheim_portal"
 			id: "64649D7EB21F7AA2"
 			shape: "gear"
 			size: 1.5d
-			tasks: [{
-				id: "1542BCBB8F5996FA"
-				item: "botania:alfheim_portal"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1542BCBB8F5996FA"
+					item: "botania:alfheim_portal"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "18C8631DB9EEF6E3"
+					item: { Count: 2, id: "botania:natura_pylon" }
+					type: "item"
+				}
+			]
 			x: 4.0d
 			y: -13.5d
 		}

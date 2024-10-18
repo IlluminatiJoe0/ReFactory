@@ -209,8 +209,7 @@ ServerEvents.recipes(event => {
     event.remove({id: 'botania:mana_spreader'})
     event.recipes.gtceu.assembler('kubejs_mana_spreader')
         .itemInputs(
-            '6x #botania:livingwood_blocks',
-            'kubejs:mana_core',
+            '6x #botania:livingwood_logs',
             'gtceu:lv_emitter',
             '#forge:lenses'
         )
@@ -259,6 +258,10 @@ ServerEvents.recipes(event => {
         .duration(20*15)
         .EUt(GTValues.VA[GTValues.HV] / 2)
 
+
+    // Mana Core
+    event.recipes.botania.mana_infusion('kubejs:mana_core', 'gtceu:lv_machine_casing', 1000)
+
     // Alchemy Catalyst
     event.remove({id: 'botania:alchemy_catalyst'})
     event.recipes.gtceu.assembler('kubejs_alchemy_catalyst')
@@ -301,6 +304,176 @@ ServerEvents.recipes(event => {
         )
         .duration(20*2)
         .EUt(GTValues.VA[GTValues.LV])
+
+    // Runic Altar
+    event.remove({output: 'botania:runic_altar'})
+    event.recipes.gtceu.assembler('kubejs_runic_altar')
+        .itemInputs(
+            'kubejs:mana_core',
+            '4x botania:livingrock',
+            '4x gtceu:manasteel_plate'
+        )
+        .itemOutputs(
+            'botania:runic_altar'
+        )
+        .duration(20*10)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    // Botanical Brewery
+    event.remove({id: 'botania:brewery'})
+    event.recipes.gtceu.assembler('kubejs_botanical_brewery')
+        .circuit(29)
+        .itemInputs(
+            'kubejs:mana_core',
+            '4x botania:livingrock',
+            '4x gtceu:manasteel_plate',
+            'minecraft:brewing_stand',
+            'botania:rune_mana'
+        )
+        .itemOutputs(
+            'botania:brewery'
+        )
+        .duration(20*10)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    // Elven Gateway Core
+    event.recipes.gtceu.circuit_assembler('elven_circuit')
+        .circuit(16)
+        .itemInputs(
+            '2x #botania:livingwood_logs',
+            '2x #gtceu:circuits/hv',
+            '8x gtceu:terrasteel_bolt',
+            '16x gtceu:fine_zanite_steel_wire',
+            '2x gtceu:manasteel_plate'
+        )
+        .inputFluids(Fluid.of('gtceu:soldering_alloy 72'))
+        .itemOutputs(
+            'kubejs:elven_circuit'
+        )
+        .duration(20*10)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.assembler('kubejs_elven_gateway_core')
+        .circuit(16)
+        .itemInputs(
+            '2x kubejs:elven_circuit',
+            '8x #botania:livingwood_logs',
+            '8x gtceu:terrasteel_plate',
+            'gtceu:hv_emitter',
+            'gtceu:hv_sensor'
+        )
+        .itemOutputs(
+            'botania:alfheim_portal'
+        )
+        .duration(20*20)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // Mana Pylon
+    event.remove({id: 'botania:mana_pylon'})
+    event.recipes.gtceu.assembler('kubejs_mana_pylon')
+        .circuit(16)
+        .itemInputs(
+            'botania:mana_diamond',
+            '8x gtceu:manasteel_plate',
+            '4x gtceu:gold_plate'
+        )
+        .itemOutputs(
+            'botania:mana_pylon'
+        )
+        .duration(20*8)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    // Natura Pylon
+    event.remove({id: 'botania:natura_pylon'})
+    event.recipes.gtceu.assembler('kubejs_natura_pylon')
+        .circuit(16)
+        .itemInputs(
+            'botania:mana_pylon',
+            '8x gtceu:zanite_steel_plate',
+            '4x botania:terrasteel_ingot'
+        )
+        .itemOutputs(
+            'botania:natura_pylon'
+        )    
+        .duration(20*10)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // Gaia Pylon
+    event.remove({id: 'botania:gaia_pylon'})
+    event.recipes.gtceu.assembler('kubejs_gaia_pylon')
+        .circuit(16)
+        .itemInputs(
+            'botania:mana_pylon',
+            '4x botania:elementium_ingot',
+            '4x gtceu:titanium_plate',
+            '4x botania:pixie_dust'
+        )
+        .itemOutputs(
+            'botania:gaia_pylon'
+        )
+        .duration(20*10)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // Mana Distributor
+    event.remove({id: 'botania:mana_distributor'})
+    event.recipes.gtceu.assembler('kubejs_mana_distributor')
+        .circuit(16)
+        .itemInputs(
+            '4x botania:livingrock',
+            'botania:mana_pool',
+            'kubejs:mana_core'
+        )
+        .itemOutputs(
+            'botania:mana_distributor'
+        )
+        .duration(20*10)
+        .EUt(GTValues.VA[GTValues.LV] / 2)
+
+    // Mana Void
+    event.remove({id: 'botania:mana_void'})
+    event.recipes.gtceu.assembler('kubejs_mana_void')
+        .circuit(16)
+        .itemInputs(
+            '4x botania:livingrock',
+            'trashcans:liquid_trash_can'
+        )
+        .itemOutputs(
+            'botania:mana_void'
+        )
+        .duration(20*10)
+        .EUt(GTValues.VA[GTValues.LV] / 2)
+
+    // Mana Detector
+    event.remove({id: 'botania:mana_detector'})
+    event.recipes.gtceu.assembler('kubejs_mana_detector')
+        .circuit(16)
+        .itemInputs(
+            '4x botania:livingrock',
+            '4x minecraft:redstone',
+            'minecraft:target'
+        )
+        .itemOutputs(
+            'botania:mana_detector'
+        )
+        .duration(20*10)
+        .EUt(GTValues.VA[GTValues.LV] / 2)
+
+    // Spreader Turntable
+    event.remove({id: 'botania:turntable'})
+    event.recipes.gtceu.assembler('kubejs_spreader_turntable')
+        .circuit(16)
+        .itemInputs(
+            '4x #botania:livingwood_logs',
+            'minecraft:sticky_piston'
+        )
+        .itemOutputs(
+            'botania:turntable'
+        )
+        .duration(20*10)
+        .EUt(GTValues.VA[GTValues.LV] / 2)
+
+    // Life Imbuer TODO
+
 })
 
 // yeet('botania:manasteel_ingot')

@@ -13,4 +13,10 @@ StartupEvents.registry('item', event => {
     event.create('mana_core')
         .displayName('Mana core')
         .texture('gtceu:item/mana_core')
+
+    // Elven Circuit
+    event.create('elven_circuit')
+        .displayName('Elven Circuit')
+        .texture('gtceu:item/elven_circuit')
+        .tooltip('An ancient circuit used by the elves.')
 })
