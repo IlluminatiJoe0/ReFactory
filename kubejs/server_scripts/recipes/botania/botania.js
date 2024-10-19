@@ -340,7 +340,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.circuit_assembler('elven_circuit')
         .circuit(16)
         .itemInputs(
-            '2x #botania:livingwood_logs',
+            '2x #botania:glimmering_livingwood_logs',
             '2x #gtceu:circuits/hv',
             '8x gtceu:terrasteel_bolt',
             '16x gtceu:fine_zanite_steel_wire',
