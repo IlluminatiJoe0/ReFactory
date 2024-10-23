@@ -19,4 +19,10 @@ StartupEvents.registry('item', event => {
         .displayName('Elven Circuit')
         .texture('gtceu:item/elven_circuit')
         .tooltip('An ancient circuit used by the elves.')
+
+    // Simulated Egg
+    event.create('simulated_egg')
+        .displayName('Simulated Egg')
+        .texture('gtceu:item/simulated_egg')
+        .tooltip('Used to simulate spawn eggs.')
 })
