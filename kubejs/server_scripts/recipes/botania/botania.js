@@ -472,7 +472,53 @@ ServerEvents.recipes(event => {
         .duration(20*10)
         .EUt(GTValues.VA[GTValues.LV] / 2)
 
-    // Life Imbuer TODO
+    // Life Imbuer
+    event.remove({id: 'botania:spawner_claw'})
+    event.recipes.gtceu.assembler('kubejs_life_imbuer')
+        .circuit(8)
+        .itemInputs(
+            '4x gtceu:elementium_plate',
+            'enderio:zombie_electrode',
+            '4x minecraft:blaze_rod',
+            'gtceu:mv_emitter'
+        )
+        .itemOutputs(
+            'botania:spawner_claw'
+        )
+        .duration(20*10)
+        .EUt(GTValues.VA[GTValues.MV] / 2)
+
+    // Mana Fluxfield
+    event.remove({id: 'botania:mana_fluxfield'})
+    event.recipes.gtceu.assembler('kubejs_mana_fluxfield')
+        .circuit(8)
+        .itemInputs(
+            '4x botania:livingrock',
+            'kubejs:mana_core',
+            'minecraft:redstone_block'
+        )
+        .itemOutputs(
+            'botania:mana_fluxfield'
+        )
+        .duration(20*10)
+        .EUt(GTValues.VA[GTValues.LV] / 2)
+
+    // Mana Prism
+    event.remove({id: 'botania:prism'})
+    event.recipes.gtceu.assembler('kubejs_mana_prism')
+        .circuit(8)
+        .itemInputs(
+            '4x #forge:glass',
+            'kubejs:mana_core',
+            'botania:spectral_platform'
+        )
+        .itemOutputs(
+            'botania:prism'
+        )
+        .duration(20*10)
+        .EUt(GTValues.VA[GTValues.LV] / 2)
+
+    
 
 })
 
