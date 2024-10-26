@@ -337,6 +337,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV])
 
     // Elven Gateway Core
+    event.remove({id: 'botania:alfheim_portal'})
     event.recipes.gtceu.circuit_assembler('elven_circuit')
         .circuit(16)
         .itemInputs(

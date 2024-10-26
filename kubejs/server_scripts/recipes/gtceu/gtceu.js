@@ -78,6 +78,9 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.MV])
 
     // Silicon Boule line
+    event.remove({id: /_boule$/})
+    // Crystal Puller Controller Recipe
+
     // Single Crystal Silicon
     event.recipes.gtceu.alloy_smelter('kubejs_single_crystal_silicon')
         .itemInputs(
@@ -94,16 +97,57 @@ ServerEvents.recipes(event => {
         .duration(20*15)
         .EUt(GTValues.VA[GTValues.LV])
     event.remove('gtceu:electric_blast_furnace/silicon_boule')
-    event.recipes.gtceu.electric_blast_furnace('kubejs_silicon_boule')
-        .circuit(2)
+    // Silicon Boule
+    event.recipes.gtceu.crystal_puller('kubejs_silicon_boule')
+        .circuit(1)
         .itemInputs(
             'kubejs:seed_crystal',
             '32x gtceu:silicon_dust'
         )
         .itemOutputs('gtceu:silicon_boule')
-        .duration(20*420)
+        .duration(20*300)
         .EUt(GTValues.VA[GTValues.MV])
         .blastFurnaceTemp(1784)
+    // Phosporus Doped Boule
+    event.recipes.gtceu.crystal_puller('kubejs_phosporus_boule')
+        .circuit(2)
+        .itemInputs(
+            'kubejs:seed_crystal',
+            '64x gtceu:silicon_dust',
+            '8x gtceu:phosphorus_dust'
+        )
+        .inputFluids(Fluid.of('gtceu:nitrogen', 8000))
+        .itemOutputs('gtceu:phosphorus_boule')
+        .duration(20*360)
+        .EUt(GTValues.VA[GTValues.HV])
+        .blastFurnaceTemp(2484)
+    // Naquadah Doped Boule
+    event.recipes.gtceu.crystal_puller('kubejs_naquadah_boule')
+        .circuit(3)
+        .itemInputs(
+            'kubejs:seed_crystal', 
+            '16x gtceu:silicon_block',
+            'gtceu:naquadah_ingot'
+        )
+        .inputFluids(Fluid.of('gtceu:argon', 8000))
+        .itemOutputs('gtceu:naquadah_boule')
+        .duration(20*420)
+        .EUt(GTValues.VA[GTValues.EV])
+        .blastFurnaceTemp(5400)
+    // Neutronium Doped Boule
+    event.recipes.gtceu.crystal_puller('kubejs_neutronium_boule')
+        .circuit(4)
+        .itemInputs(
+            'kubejs:seed_crystal', 
+            '32x gtceu:silicon_block',
+            '4x gtceu:neutronium_ingot'
+        )
+        .inputFluids(Fluid.of('gtceu:xenon', 8000))
+        .itemOutputs('gtceu:neutronium_boule')
+        .duration(20*420)
+        .EUt(GTValues.VA[GTValues.IV])
+        .blastFurnaceTemp(6484)
+
 
     // Rubber sheets in Bender QOL
     event.recipes.gtceu.bender('kubejs_rubber_sheet')

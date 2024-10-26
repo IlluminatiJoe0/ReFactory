@@ -1,6 +1,11 @@
 # 0.1.1
 - added Too Fast, Client Crafting, FTB Essentials, Almost Unified
-- downgraded the Crafting Station (unable to craft items)
+- Silicon Boules are now crafted in the Crystal Puller
+- Added crafting recipes to Proliferation Inducer
+- Spawn eggs are now craftable
+- Downgraded the Crafting Station (unable to craft items)
+- Several fixes
+- Questbook improvements
 
 # 0.1.0
 - Fixed a game-breaking problem where The Nether and The End do not exist
