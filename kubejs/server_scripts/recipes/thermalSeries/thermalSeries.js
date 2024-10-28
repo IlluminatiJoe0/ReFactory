@@ -27,6 +27,16 @@ ServerEvents.recipes(event => {
 
   event.replaceInput({ input: 'thermal:cured_rubber' }, 'thermal:cured_rubber', 'gtceu:rubber_ingot')
 
+  // Compost
+  event.recipes.gtceu.assembler('compost')
+    .circuit(8)
+    .itemInputs(
+      '4x #minecraft:dirt',
+      '2x #forge:crops'
+    )
+    .inputFluids(Fluid.of('minecraft:water', 1000))
+    .itemOutputs('6x thermal:compost')
+
 })
 
 // hide thermal items

@@ -1,7 +1,8 @@
 {
     "tagprefix.holystone": "Holystone %s Ore",
 
-    "gtceu.proliferation_inducer": "§dProliferation Inducer",
+    "gtceu.proliferation_inducer": "§dProliferation",
+    "gtceu.crystal_puller": "§bCrystal Pulling",
 
     "block.gtceu.proliferation_inducer": "§dProliferation Inducer",
     "block.gtceu.crystal_puller": "§bCrystal Puller",
