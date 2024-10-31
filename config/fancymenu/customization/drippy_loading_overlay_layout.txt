@@ -3,23 +3,25 @@ type = fancymenu_layout
 layout-meta {
   identifier = drippy_loading_overlay
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1725457545070
+  last_edited_time = 1730396526758
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:e025f8f8-b33d-4e2a-bd6a-79141d4244c7-1725457441069] = [groups:][instances:]
+  [loading_requirement_container_meta:f9e5074e-8a0b-4d28-94a7-2498c8bcd5f7-1730396343209] = [groups:][instances:]
 }
 
 menu_background {
-  color = #000000
-  background_type = drippy_color_background
+  image_path = [source:local]/config/fancymenu/assets/background2.png
+  slide = false
+  repeat_texture = false
+  background_type = image
 }
 
 customization {
   action = backgroundoptions
-  keepaspectratio = false
+  keepaspectratio = true
 }
 
 scroll_list_customization {
@@ -29,6 +31,30 @@ scroll_list_customization {
   show_scroll_list_header_footer_preview_in_editor = false
   repeat_scroll_list_header_texture = false
   repeat_scroll_list_footer_texture = false
+}
+
+element {
+  source = [source:local]/config/fancymenu/assets/refactory1.png
+  repeat_texture = false
+  nine_slice_texture = false
+  nine_slice_texture_border_x = 5
+  nine_slice_texture_border_y = 5
+  element_type = image
+  instance_identifier = 6d153fc8-7e6f-4a8c-874e-5af5297b9a84-1730393275598
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = -157
+  y = -61
+  width = 314
+  height = 122
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 5968ab35-d855-4d6a-90f3-26884bbfe5bc-1730393275598
+  [loading_requirement_container_meta:5968ab35-d855-4d6a-90f3-26884bbfe5bc-1730393275598] = [groups:][instances:]
 }
 
 vanilla_button {
@@ -46,10 +72,11 @@ vanilla_button {
   appearance_delay_seconds = 1.0
   fade_in = false
   fade_in_speed = 1.0
-  anchor_point = vanilla
-  x = 140
-  y = 294
-  width = 360
+  anchor_point = bottom-centered
+  advanced_width = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiwidth"} - 3","decimal":"true"}}
+  x = -318
+  y = -10
+  width = 50
   height = 10
   stretch_x = false
   stretch_y = false
@@ -88,7 +115,7 @@ vanilla_button {
   stay_on_screen = true
   element_loading_requirement_container_identifier = ef2c44fd-bc9a-4913-8c7b-fe666d1a1b42-1725457441069
   [loading_requirement_container_meta:ef2c44fd-bc9a-4913-8c7b-fe666d1a1b42-1725457441069] = [groups:][instances:]
-  is_hidden = false
+  is_hidden = true
   automated_button_clicks = 0
   nine_slice_slider_handle = false
   nine_slice_slider_handle_border_x = 5

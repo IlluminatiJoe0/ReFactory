@@ -168,7 +168,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     // Liquid Aether Air
     event.create('liquid_aether_air')
-    .fluid(new GTFluidBuilder().temperature(42))
+    .fluid()
     .color(0xd1bc49)
     .components(
         '28x fluorine',

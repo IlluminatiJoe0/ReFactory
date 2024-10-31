@@ -1,6 +1,7 @@
 # 0.1.1
 - added Too Fast, Client Crafting, FTB Essentials, Almost Unified
 - Added the Crystal Puller multiblock (MV)
+- Menu changes
 - Silicon Boules are now only crafted in the Crystal Puller
 - added Aether Air, its liquid variant, as well as Mistrium, a new fluid element
 - Spawn eggs are now craftable
