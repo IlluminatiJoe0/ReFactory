@@ -189,6 +189,43 @@ ServerEvents.recipes(event => {
         )
         .duration(20*2.25)
         .EUt(30)
+
+    // Aether Air centrifuging
+    event.recipes.gtceu.centrifuge('aether_air_centrifuging')
+        .inputFluids(Fluid.of('gtceu:aether_air', 10000))
+        .outputFluids(
+            Fluid.of('gtceu:fluorine', 4000),
+            Fluid.of('gtceu:oxygen', 3500)
+        )
+        .duration(20*80)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.distillation_tower('liquid_aether_air_centrifuging')
+        .inputFluids(Fluid.of('gtceu:liquid_aether_air', 100000))
+        .outputFluids(
+            Fluid.of('gtceu:fluorine', 28000),
+            Fluid.of('gtceu:oxygen', 22000),
+            Fluid.of('gtceu:ozone', 16000),
+            Fluid.of('gtceu:helium', 16000),
+            Fluid.of('gtceu:mistrium', 18000)
+        )
+        .duration(20*10)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // Aether air to liquid cooling
+    event.recipes.gtceu.vacuum_freezer('aether_air_to_liquid')
+        .inputFluids(Fluid.of('gtceu:aether_air', 4000))
+        .outputFluids(Fluid.of('gtceu:liquid_aether_air', 4000))
+        .duration(20*4)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // Collecting Aether air
+    event.recipes.gtceu.gas_collector('aether_air')
+        .circuit(5)
+        .dimension('aether:the_aether')
+        .outputFluids(Fluid.of('gtceu:aether_air', 10000))
+        .duration(20*10)
+        .EUt(GTValues.VA[GTValues.HV])
     
 })
 

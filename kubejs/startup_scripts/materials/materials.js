@@ -135,6 +135,50 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         GTMaterialFlags.GENERATE_PLATE,
         GTMaterialFlags.GENERATE_ROD
     )
+
+    // Ozone
+    event.create('ozone')
+    .gas()
+    .color(0x9ad6d6)
+    .components(
+        '3x oxygen',
+    )
+    .iconSet(GTMaterialIconSet.FLUID)
+
+    // Mistrium
+    event.create('mistrium')
+    .fluid()
+    .color(0xedd242)
+    .element(GTElements.get('mistrium'))
+    .iconSet(GTMaterialIconSet.FLUID)
+
+    // Aether Air
+    event.create('aether_air')
+    .gas()
+    .color(0xf0e297)
+    .components(
+        '28x fluorine',
+        '24x oxygen',
+        '24x ozone',
+        '16x helium',
+        '8x mistrium'
+    )
+    .iconSet(GTMaterialIconSet.FLUID)
+    .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    // Liquid Aether Air
+    event.create('liquid_aether_air')
+    .fluid(new GTFluidBuilder().temperature(42))
+    .color(0xd1bc49)
+    .components(
+        '28x fluorine',
+        '22x oxygen',
+        '16x ozone',
+        '16x helium',
+        '18x mistrium'
+    )
+    .iconSet(GTMaterialIconSet.FLUID)
+    .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 })
 
 GTCEuStartupEvents.materialModification(event => {

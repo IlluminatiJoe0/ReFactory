@@ -1,9 +1,10 @@
 # 0.1.1
 - added Too Fast, Client Crafting, FTB Essentials, Almost Unified
-- Silicon Boules are now crafted in the Crystal Puller
-- Added crafting recipes to Proliferation Inducer
+- Added the Crystal Puller multiblock (MV)
+- Silicon Boules are now only crafted in the Crystal Puller
+- added Aether Air, its liquid variant, as well as Mistrium, a new fluid element
 - Spawn eggs are now craftable
-- Downgraded the Crafting Station (unable to craft items)
+- Several new and changed recipes for existing content
 - Several fixes
 - Questbook improvements
 
