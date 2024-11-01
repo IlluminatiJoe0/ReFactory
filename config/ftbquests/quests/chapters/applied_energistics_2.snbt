@@ -7,16 +7,188 @@
 	id: "2B911F638B9484C6"
 	order_index: 12
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["669F52806D1D39F6"]
-		id: "5C179A22C4E6B2A6"
-		tasks: [{
-			id: "6F74D342AAB6FC9C"
-			item: "ae2:controller"
-			type: "item"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["49A34E5DA047705A"]
+			id: "77FC61AFA9608A79"
+			tasks: [{
+				id: "335604F1D9BDD822"
+				item: "ae2:energy_acceptor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["77FC61AFA9608A79"]
+			id: "0DC674B323CEA988"
+			tasks: [{
+				id: "6D19A9B4BC608D68"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["77FC61AFA9608A79"]
+			id: "51C021FAE3AC1EA9"
+			tasks: [{
+				id: "0686FB7CD8906044"
+				item: "ae2:drive"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["43D222FD4AF3280E"]
+			icon: "gtceu:titanium_ingot"
+			id: "3D2899722EC64DB5"
+			title: "Titanium"
+			x: -1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3D2899722EC64DB5"]
+			id: "518600219B02E42B"
+			tasks: [{
+				id: "7462EC7DC9E114DE"
+				item: "ae2:item_cell_housing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3D2899722EC64DB5"]
+			id: "54F598CB57F0239F"
+			tasks: [{
+				id: "28782E2E16FC0D09"
+				item: "ae2:fluid_cell_housing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["77FC61AFA9608A79"]
+			id: "10327E230F786506"
+			tasks: [{
+				id: "5B19C3D399E0F4C9"
+				item: "ae2things:disk_housing"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3D2899722EC64DB5"]
+			id: "7BD5E699ACD9F419"
+			tasks: [{
+				id: "6F5912271718D6DB"
+				item: "appbot:mana_cell_housing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["410AC3EF063300E8"]
+			icon: "ae2:cell_component_1k"
+			id: "741FE44D9DD27659"
+			title: "Storage Components"
+			x: 1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["741FE44D9DD27659"]
+			id: "1453F8B3894B5A1C"
+			tasks: [{
+				id: "7483F947771118E0"
+				item: "ae2:cell_component_4k"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1453F8B3894B5A1C"]
+			id: "29D5E453AE5EF442"
+			tasks: [{
+				id: "0BD23398841EE84B"
+				item: "ae2:cell_component_16k"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["29D5E453AE5EF442"]
+			id: "4F7BCDC5F8B2F28F"
+			tasks: [{
+				id: "3A01798D1B1362E3"
+				item: "ae2:cell_component_64k"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4F7BCDC5F8B2F28F"]
+			id: "0E3F566C1119A42E"
+			tasks: [{
+				id: "4F7CF0499E6BC64D"
+				item: "ae2:cell_component_256k"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["77FC61AFA9608A79"]
+			id: "22475691EECF828F"
+			tasks: [{
+				id: "41F8434F53AFBA16"
+				item: "ae2:terminal"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["22475691EECF828F"]
+			id: "4EE9E57F29294924"
+			tasks: [{
+				id: "61FBD2171BFDF308"
+				item: "ae2:pattern_encoding_terminal"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["22475691EECF828F"]
+			id: "33FF416332322748"
+			tasks: [{
+				id: "0C9F859CD6DB71DA"
+				item: "ae2:crafting_terminal"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["22475691EECF828F"]
+			id: "183476A04F5813F2"
+			tasks: [{
+				id: "304C80A6F4377CF9"
+				item: "ae2:pattern_access_terminal"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+	]
 	title: "Applied Energistics 2"
 }

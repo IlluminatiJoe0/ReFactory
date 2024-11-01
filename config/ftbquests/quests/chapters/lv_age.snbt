@@ -14,6 +14,7 @@
 			disable_toast: true
 			icon: "gtceu:lv_machine_hull"
 			id: "35CB055A24346DE1"
+			shape: "square"
 			size: 1.5d
 			title: "LV AGE"
 			x: -3.0d
@@ -38,6 +39,7 @@
 				"0E1F6E844041CC9F"
 			]
 			id: "298F63E0659E0FD6"
+			shape: "gear"
 			size: 1.5d
 			tasks: [{
 				id: "24805EF455C7050A"
@@ -425,6 +427,7 @@
 			]
 			id: "3052BAA53CF8DBAA"
 			tasks: [{
+				count: 4L
 				id: "1B3917FEBC3F7C66"
 				item: "gtceu:diode"
 				type: "item"
@@ -451,6 +454,7 @@
 			]
 			id: "2770BFB05F1E26EC"
 			tasks: [{
+				count: 2L
 				id: "3735B04F8FFAE088"
 				item: "gtceu:phenolic_printed_circuit_board"
 				type: "item"
@@ -462,6 +466,7 @@
 			dependencies: ["74C94B5C7B866A34"]
 			id: "5B86B4616F141E18"
 			tasks: [{
+				count: 2L
 				id: "6ECDCCE5C2AFCBAB"
 				item: "gtceu:phenolic_circuit_board"
 				type: "item"
@@ -492,6 +497,7 @@
 			icon: "gtceu:electric_blast_furnace"
 			id: "318CA73CE4C3DC3D"
 			shape: "gear"
+			size: 1.5d
 			tasks: [
 				{
 					id: "0D5BD6D783E47B3B"
@@ -532,7 +538,7 @@
 			dependencies: ["62B56B57D291BF7B"]
 			description: [
 				"For basically all MV machines, you're going to need Aluminium."
-				"You can get it from either electrolyzing sapphire dust at LV, mining in The Aether dimension, or clay dust at MV."
+				"You can get it from electrolizing sapphire dust, until you get a better source later in the game."
 			]
 			id: "5F717D5E9715ED7C"
 			tasks: [{
@@ -633,6 +639,7 @@
 				"53B8480F64FDA089"
 				"07377D4D02DC350A"
 			]
+			description: ["Makes circuits a lot more efficient to make."]
 			id: "6B22D87DF0CDC580"
 			shape: "gear"
 			size: 1.5d
@@ -648,6 +655,7 @@
 			dependencies: ["18BC6F844CF368EF"]
 			description: ["The base of all MV machines"]
 			id: "498EF8FFD105D589"
+			shape: "gear"
 			size: 1.0d
 			tasks: [{
 				id: "165C8A2A8AE2CF63"
@@ -655,7 +663,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 4.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["35CB055A24346DE1"]
@@ -718,6 +726,7 @@
 		}
 		{
 			dependencies: ["416D2D2897567BA7"]
+			description: ["Battery Alloy is used to make, well, batteries..."]
 			id: "0F1DA17B5B1F42E3"
 			tasks: [{
 				id: "0BE1D4964F4177ED"
@@ -845,6 +854,7 @@
 		}
 		{
 			dependencies: ["4521814F0D4989E9"]
+			description: ["Paper is made using Chad, which is made from Sugarcane."]
 			hide_dependency_lines: true
 			id: "527C703959FD9B65"
 			tasks: [{
@@ -901,118 +911,6 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["29C101F9D9E01012"]
-			description: [
-				"Oil is an important resource. "
-				""
-				"It can be distilled into other products (each useful in it's own way)."
-				"It and it's products can be used in generators."
-				"It's also a very good way to get Polyethylene."
-			]
-			id: "51F2F1AC28487CF8"
-			tasks: [{
-				id: "554175A4B22533AC"
-				item: "gtceu:oil_medium_bucket"
-				type: "item"
-			}]
-			x: 5.0d
-			y: -8.5d
-		}
-		{
-			dependencies: [
-				"59B4E0F4EA02306B"
-				"51F2F1AC28487CF8"
-			]
-			description: [
-				"&ePolyethylene is a very versatile plastic that's used in electronic circuits, multiblock parts, machine parts and other very important stuff I can't think of right now...&r"
-				""
-				"First step: Oil in a distillery makes Sulfuric Light Fuel."
-				""
-				"&8(For alternative polyethylene sources consult the JEI)&r"
-			]
-			id: "724145B7C20122BC"
-			size: 1.0d
-			tasks: [{
-				id: "62DE223034BB106D"
-				item: "gtceu:sulfuric_light_fuel_bucket"
-				type: "item"
-			}]
-			title: "Polyethylene Line"
-			x: 4.0d
-			y: -8.5d
-		}
-		{
-			dependencies: ["724145B7C20122BC"]
-			description: [
-				"Light Fuel is created by reacting Sulfuric Light Fuel with Hydrogen in a chemical reactor."
-				""
-				"You can completely recycle the Hydrogen Sulfide into Sulfur and Hydrogen, which you can pump back into the same machine."
-				""
-				"Or you can use it to create Sulfuric Acid by reacting it with Oxygen."
-			]
-			id: "113DE9526B6901DB"
-			size: 1.0d
-			tasks: [{
-				id: "4B0FDB218668BC07"
-				item: "gtceu:light_fuel_bucket"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -8.5d
-		}
-		{
-			dependencies: ["113DE9526B6901DB"]
-			description: ["Now you need to crack the Light Fuel with some Steam in a chemical reactor."]
-			id: "1638E3D5D5FC015A"
-			size: 1.0d
-			tasks: [{
-				id: "0774AEED5ABD0566"
-				item: "gtceu:severely_steam_cracked_light_fuel_bucket"
-				type: "item"
-			}]
-			title: "Severely blah blah Light Fuel"
-			x: 2.0d
-			y: -8.5d
-		}
-		{
-			dependencies: ["1638E3D5D5FC015A"]
-			description: ["Next step is to distill the Severely Steam-Cracked Light Fuel into Ethylene, with Carbon as a byproduct (don't void it)."]
-			id: "35B97C16211F8BAA"
-			size: 1.0d
-			tasks: [{
-				id: "7427743C5A08DE8E"
-				item: "gtceu:ethylene_bucket"
-				type: "item"
-			}]
-			x: 2.0d
-			y: -9.5d
-		}
-		{
-			dependencies: ["35B97C16211F8BAA"]
-			description: [
-				"At last, react Ethylene with Oxygen, and you got yourself Polyethylene!"
-				""
-				"Alternatively, you can react the Ethylene with Air, but keep in mind Oxygen gives a 50% increase in Polyethylene yield."
-			]
-			id: "2F59FB2BF839C4C5"
-			rewards: [{
-				count: 16
-				id: "18530701E1510DF7"
-				item: "gtceu:polyethylene_plate"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.0d
-			tasks: [{
-				id: "4806BBD053AFFF44"
-				item: "gtceu:polyethylene_bucket"
-				type: "item"
-			}]
-			title: "Polyethylene My Beloved"
-			x: 2.0d
-			y: -10.5d
-		}
-		{
 			dependencies: ["4D377D42028B96A1"]
 			description: ["A very good way to get Hydrogen and Oxygen is through Water Electrolysis."]
 			icon: "minecraft:water_bucket"
@@ -1050,37 +948,6 @@
 			}]
 			x: 6.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["35B97C16211F8BAA"]
-			description: ["You can take a part of your Ethylene and make Vinyl Chloride using some Chlorine."]
-			id: "662DD867DD212E87"
-			tasks: [{
-				id: "3A44FC3DE4619D4E"
-				item: "gtceu:vinyl_chloride_bucket"
-				type: "item"
-			}]
-			x: 1.0d
-			y: -9.5d
-		}
-		{
-			dependencies: ["662DD867DD212E87"]
-			description: ["Oxygen and Vinyl chloride reacting in the chemical reactor give Polyvinyl Chloride, or more commonly known as PVC."]
-			id: "2BE55924C7BFF8B8"
-			rewards: [{
-				count: 16
-				id: "0C857FBB78569AED"
-				item: "gtceu:polyvinyl_chloride_plate"
-				type: "item"
-			}]
-			shape: "gear"
-			tasks: [{
-				id: "540B6CF0BBDBF322"
-				item: "gtceu:polyvinyl_chloride_bucket"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -9.5d
 		}
 		{
 			dependencies: ["01E6A51033DA1518"]
@@ -1148,7 +1015,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -6.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["01A0E9661BB0FDAB"]
@@ -1163,6 +1030,7 @@
 		}
 		{
 			dependencies: ["35CB055A24346DE1"]
+			description: ["Better than a regular cell."]
 			hide_dependency_lines: true
 			id: "389E05F5B0B8FD1A"
 			tasks: [{
@@ -1186,8 +1054,9 @@
 				item: "powah:dielectric_paste"
 				type: "item"
 			}]
+			title: "Powah"
 			x: 2.0d
-			y: -6.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["35CB055A24346DE1"]
@@ -1204,6 +1073,7 @@
 		}
 		{
 			dependencies: ["18BC6F844CF368EF"]
+			description: ["Now you've unlocked a big portion of EnderIO by unlocking Aluminium!"]
 			id: "0C8965813F7EE3D2"
 			tasks: [{
 				id: "2778506E3101EE40"
@@ -1228,6 +1098,58 @@
 			}]
 			x: 3.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["318CA73CE4C3DC3D"]
+			description: ["Optional Quest, but could be useful for you, if you wish to make it."]
+			id: "71842C66162FA5DD"
+			optional: true
+			tasks: [{
+				id: "24599585094A3425"
+				item: "gtceu:lv_world_accelerator"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["35CB055A24346DE1"]
+			hide_dependency_lines: true
+			id: "46303F9FE371A8BA"
+			tasks: [{
+				id: "178F4B931CE5BCF6"
+				item: "gtceu:steel_crate"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0E1F6E844041CC9F"]
+			id: "14DC5DD0B504E902"
+			tasks: [{
+				id: "535612784E5DC6B0"
+				item: {
+					Count: 1
+					id: "gtceu:liquid_fuel_jetpack"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0E1F6E844041CC9F"]
+			hide_dependency_lines: true
+			id: "2D82EB05632CE9E0"
+			tasks: [{
+				id: "08F6FE0738F55D61"
+				item: "powah:energy_cable_starter"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -2.5d
 		}
 	]
 	title: "LV Age"

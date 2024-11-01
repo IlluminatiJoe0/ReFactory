@@ -14,6 +14,7 @@
 			disable_toast: true
 			icon: "gtceu:mv_machine_hull"
 			id: "630A813B0F4DA078"
+			shape: "square"
 			title: "MV AGE"
 			x: 0.0d
 			y: 0.0d
@@ -26,8 +27,8 @@
 				item: "gtceu:mv_electric_motor"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 0.0d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["4F74168E48A8348E"]
@@ -37,8 +38,8 @@
 				item: "gtceu:mv_electric_piston"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 0.0d
+			x: 1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["4F74168E48A8348E"]
@@ -48,8 +49,8 @@
 				item: "gtceu:mv_electric_pump"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -1.5d
+			x: 0.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["4F74168E48A8348E"]
@@ -59,8 +60,8 @@
 				item: "gtceu:mv_conveyor_module"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -1.5d
+			x: 1.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2D86BD3AE9C7AB6B"]
@@ -70,8 +71,8 @@
 				item: "gtceu:mv_robot_arm"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 0.0d
+			x: 3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2D86BD3AE9C7AB6B"]
@@ -86,8 +87,8 @@
 				item: "gtceu:mv_extruder"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -1.5d
+			x: 3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["40949CE64C6F886A"]
@@ -130,18 +131,7 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["2D86BD3AE9C7AB6B"]
-			id: "3BAA5AE2A4ABA9EF"
-			tasks: [{
-				id: "3805F0F262DC7CDF"
-				item: "gtceu:mv_bender"
-				type: "item"
-			}]
-			x: 6.0d
+			x: 3.0d
 			y: -1.5d
 		}
 		{
@@ -152,32 +142,8 @@
 				item: "gtceu:mv_assembler"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["630A813B0F4DA078"]
-			description: ["Sodium Persulfate and Iron III Chloride are both liquids that are used in crafting circuit boards more efficiently."]
-			id: "1E85E8CDA6896B40"
-			tasks: [{
-				id: "21C9B7E721B81FD8"
-				item: "gtceu:sodium_persulfate_bucket"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["1E85E8CDA6896B40"]
-			description: ["Use the Hydrochloric acid from your Sodium Persulfate line to make some Iron III Chloride."]
-			id: "19CFA0E711F38601"
-			tasks: [{
-				id: "5FBB4534A72EE6D1"
-				item: "gtceu:iron_iii_chloride_bucket"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 0.0d
+			x: 4.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2CD891A182DBFE28"]
@@ -188,8 +154,8 @@
 				item: "gtceu:silicon_boule"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 3.0d
+			x: 6.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1984444D466E8EEF"]
@@ -199,8 +165,8 @@
 				item: "gtceu:ulpic_chip"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.5d
+			x: 7.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1984444D466E8EEF"]
@@ -210,8 +176,8 @@
 				item: "gtceu:ram_chip"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 3.0d
+			x: 7.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -225,8 +191,8 @@
 				item: "gtceu:mv_laser_engraver"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 1.5d
+			x: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1984444D466E8EEF"]
@@ -236,8 +202,8 @@
 				item: "gtceu:ilc_chip"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 4.5d
+			x: 7.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7FA2594B75A44E70"]
@@ -253,8 +219,8 @@
 				item: "gtceu:mv_energy_input_hatch"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 6.0d
+			x: 9.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["65CD30C3D6C13C7E"]
@@ -265,8 +231,8 @@
 				type: "item"
 			}]
 			title: "Second LV Circuit"
-			x: -1.5d
-			y: 6.0d
+			x: 9.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -282,23 +248,25 @@
 				type: "item"
 			}]
 			title: "First HV Circuit"
-			x: 3.0d
-			y: 3.0d
+			x: 9.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
-			hide_dependency_lines: true
 			id: "0F53A979A0A20B60"
 			tasks: [{
 				id: "1848D98EB1282464"
 				item: "gtceu:mv_emitter"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 1.5d
+			x: 1.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["1C54E1D5FA473422"]
+			dependencies: [
+				"114D15EF6DA771DD"
+				"4DB4F6BF36D30A35"
+			]
 			description: [
 				"The greatest invention since the resistor."
 				""
@@ -312,24 +280,8 @@
 				item: "gtceu:transistor"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["114D15EF6DA771DD"]
-			description: [
-				"Now do the same with Silicon: EBF -> Chemical Bath in Water."
-				""
-				"I'd also now recommend making a second EBF if you don't already have one, because the further you go, the more materials are going to be smelted in the EBF."
-			]
-			id: "1C54E1D5FA473422"
-			tasks: [{
-				id: "1CFB3D49BACF04A0"
-				item: "gtceu:silicon_ingot"
-				type: "item"
-			}]
-			x: 6.0d
-			y: 3.0d
+			x: 9.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -343,8 +295,8 @@
 				item: "gtceu:kanthal_ingot"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 4.5d
+			x: 7.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["1FFBE42450E3D964"]
@@ -355,8 +307,8 @@
 				item: "gtceu:hot_kanthal_ingot"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 4.5d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["0A6A88F07A82E229"]
@@ -371,36 +323,24 @@
 				item: "gtceu:kanthal_dust"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 4.5d
+			x: 6.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["19748C62B5822497"]
+			dependencies: ["164045DB94B2D221"]
 			description: [
 				"You can get Chromium by electrolyzing Ruby and processing Ruby ore."
 				""
 				"You can also get Chromium from Chromite ore in a Redstone vein in The Nether."
 			]
-			hide_dependency_lines: true
 			id: "0A6A88F07A82E229"
 			tasks: [{
 				id: "32A66118BD33885F"
 				item: "gtceu:chromium_dust"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["630A813B0F4DA078"]
-			id: "19748C62B5822497"
-			tasks: [{
-				id: "60A3100B880C2A2F"
-				item: "gtceu:mv_electrolyzer"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 1.0d
+			x: 4.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -415,8 +355,8 @@
 				item: "gtceu:kanthal_coil_block"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 4.5d
+			x: 9.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
@@ -427,8 +367,8 @@
 				item: "gtceu:mv_chemical_bath"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 6.0d
+			x: 7.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["53A05923F8895595"]
@@ -440,7 +380,7 @@
 				item: "gtceu:stainless_steel_ingot"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 3.0d
 			y: 3.0d
 		}
 		{
@@ -451,7 +391,7 @@
 				item: "gtceu:stainless_steel_dust"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 4.5d
 			y: 3.0d
 		}
 		{
@@ -462,23 +402,11 @@
 				item: "gtceu:hv_machine_hull"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 1.5d
 			y: 3.0d
 		}
 		{
-			dependencies: ["0A6A88F07A82E229"]
-			description: ["Vanadium Steel is a very durable alloy, useful in making long-lasting tools."]
-			id: "5C58171E0C7D446C"
-			tasks: [{
-				id: "69D3438C8775A763"
-				item: "gtceu:vanadium_steel_dust"
-				type: "item"
-			}]
-			x: 9.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["19748C62B5822497"]
+			dependencies: ["164045DB94B2D221"]
 			description: [
 				"Now you can electrolyze clay into Aluminium, Lithium, Silicon and Sodium dusts."
 				""
@@ -516,8 +444,8 @@
 				}
 			]
 			title: "Clay Electrolyzing"
-			x: -4.0d
-			y: 1.0d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["739B7A5F5E19CEB1"]
@@ -527,19 +455,20 @@
 				item: "gtceu:mv_fluid_drilling_rig"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 1.5d
+			x: 4.5d
+			y: -1.5d
 		}
 		{
-			dependencies: ["5C58171E0C7D446C"]
+			dependencies: ["0A6A88F07A82E229"]
+			description: ["A very good tool material!"]
 			id: "739B7A5F5E19CEB1"
 			tasks: [{
 				id: "6A22F696F95797CB"
 				item: "gtceu:vanadium_steel_ingot"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 1.5d
+			x: 4.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
@@ -549,8 +478,8 @@
 				item: "gtceu:mv_battery_hull"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -1.0d
+			x: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
@@ -590,8 +519,8 @@
 				item: "gtceu:energetic_aluminium_ingot"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 6.0d
+			x: 9.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
@@ -614,8 +543,8 @@
 				item: "botania:terra_plate"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 0.0d
+			x: 6.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["12D3FF7ABD35CD49"]
@@ -632,7 +561,7 @@
 				item: "gtceu:mv_miner"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -4.0d
 			y: -3.0d
 		}
 		{
@@ -643,20 +572,21 @@
 				item: "gtceu:mv_sensor"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -1.5d
+			x: -3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["08EE54E6C1C766CF"]
 			id: "374FBE623A0F7200"
 			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "67B350A5160DAA39"
 				item: "gtceu:mv_circuit_assembler"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 4.5d
+			x: 7.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["42565F2AB5AC211C"]
@@ -666,8 +596,8 @@
 				item: "botania:terrasteel_ingot"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 0.0d
+			x: 7.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
@@ -678,19 +608,169 @@
 				item: "gtceu:pyrolyse_oven"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -2.0d
+			x: -1.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["630A813B0F4DA078"]
+			dependencies: ["4F74168E48A8348E"]
 			description: ["Crystal Puller is a multiblock that creates silicon boules."]
 			id: "2CD891A182DBFE28"
+			shape: "gear"
 			tasks: [{
 				id: "7F246C59F2960782"
 				item: "gtceu:crystal_puller"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			description: ["Plant Balls are best made by compressing bio products, especially saplings!"]
+			id: "4F55C127C7F4DC71"
+			tasks: [{
+				id: "04AA33B0F3579B2B"
+				item: "gtceu:plant_ball"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"4F55C127C7F4DC71"
+				"05D3C898EBC0480D"
+			]
+			description: ["This is used with Sulfuric Acid to make Ethylene."]
+			id: "48636EDDADC16359"
+			tasks: [{
+				id: "11AFAD3296785AB1"
+				item: "gtceu:ethanol_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6AAE3CEF45ADDFEB"]
+			id: "4DB4F6BF36D30A35"
+			tasks: [{
+				id: "26B2D6E52C1F26E1"
+				item: "gtceu:polyethylene_bucket"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"48636EDDADC16359"
+				"425001886506083F"
+				"7A0E8F91B933845A"
+			]
+			description: [
+				"For making Ethylene, you have two ways:"
+				""
+				"1. Making it from Ethanol and Sulfuric Acid"
+				""
+				"2. Making it by distilling and cracking Oil."
+			]
+			id: "6AAE3CEF45ADDFEB"
+			min_required_dependencies: 2
+			tasks: [{
+				id: "4C1AB74E49F75C0B"
+				item: "gtceu:ethylene_bucket"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -5.5d
+		}
+		{
+			id: "425001886506083F"
+			tasks: [{
+				id: "1E1739E2A07AC5F8"
+				item: "gtceu:sulfuric_acid_bucket"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.5d
+		}
+		{
+			description: ["This is an alternative way to make Ethylene, but requires Oil, distilling it, cracking and then distilling again."]
+			id: "7A0E8F91B933845A"
+			tasks: [{
+				id: "318736A2BF3F43FB"
+				item: "gtceu:light_fuel_bucket"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["630A813B0F4DA078"]
+			id: "164045DB94B2D221"
+			tasks: [{
+				id: "2A4A63FE1201A3A4"
+				item: "gtceu:mv_electrolyzer"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["630A813B0F4DA078"]
+			description: ["You'll need this to make Ethylene."]
+			id: "05D3C898EBC0480D"
+			tasks: [{
+				id: "13C02931FE8E1CE6"
+				item: "gtceu:mv_distillery"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6AAE3CEF45ADDFEB"]
+			description: ["With a bit of Chloride you can make yourself Polyvinyl Chloride, or PVC."]
+			id: "185B32DF4B476A19"
+			tasks: [{
+				id: "3EE8CAFCD022D285"
+				item: "gtceu:polyvinyl_chloride_bucket"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1984444D466E8EEF"]
+			id: "3DA8858F820F6615"
+			tasks: [{
+				id: "3B0B70FAC7C2D815"
+				item: "gtceu:simple_soc"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3DA8858F820F6615"]
+			id: "4B1646A8C9F2E767"
+			tasks: [{
+				id: "25A17275B89A7F0D"
+				item: "gtceu:nand_chip"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["630A813B0F4DA078"]
+			id: "7505C4A9D8C9B2B7"
+			tasks: [{
+				id: "624316FA02B68B32"
+				item: "powah:energy_cable_basic"
+				type: "item"
+			}]
+			x: 1.5d
 			y: 1.5d
 		}
 	]
