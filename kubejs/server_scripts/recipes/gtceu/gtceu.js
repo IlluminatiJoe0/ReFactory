@@ -226,6 +226,22 @@ ServerEvents.recipes(event => {
         .outputFluids(Fluid.of('gtceu:aether_air', 10000))
         .duration(20*10)
         .EUt(GTValues.VA[GTValues.HV])
+
+    // Proliferation Inducer
+    event.recipes.gtceu.assembler('proliferation_inducer')
+        .circuit(1)
+        .itemInputs(
+            '4x gtceu:luv_machine_casing',
+            '4x #gtceu:circuits/zpm',
+            '32x gtceu:uhpic_chip',
+            'gtceu:iv_field_generator',
+            '2x gtceu:double_naquadah_plate',
+            '16x gtceu:indium_tin_barium_titanium_cuprate_single_wire'
+        )
+        .inputFluids(Fluid.of('gtceu:niobium_titanium', 1152))
+        .itemOutputs('gtceu:proliferation_inducer')
+        .duration(20*60)
+        .EUt(GTValues.VA[GTValues.IV])
     
 })
 

@@ -93,7 +93,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -4.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["38537701E0EE6D51"]
@@ -104,7 +104,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -4.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["084C45E67B39F224"]
@@ -161,8 +161,8 @@
 				item: "gtceu:naquadah_coil_block"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -5.5d
+			x: -1.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["38537701E0EE6D51"]
@@ -410,7 +410,10 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["5A87158E975886BC"]
+			dependencies: [
+				"5A87158E975886BC"
+				"5A46AB7E3385B55E"
+			]
 			id: "7EE25B093813D4E9"
 			tasks: [{
 				id: "3905539E00E23B56"
@@ -512,6 +515,17 @@
 			}]
 			x: -4.5d
 			y: -5.5d
+		}
+		{
+			dependencies: ["38537701E0EE6D51"]
+			id: "457B9A819607CDC9"
+			tasks: [{
+				id: "02584D132A6D8048"
+				item: "powah:energy_cable_spirited"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -7.0d
 		}
 	]
 	title: "LuV Age"

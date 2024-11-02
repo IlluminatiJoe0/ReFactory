@@ -29,20 +29,20 @@
 		{
 			dependencies: ["4A6F76983101B7E1"]
 			description: [
-				"Electroconglomerate Alloy is an alloy of Ambrosium, Energetic Aluminium and Electrum."
+				"Elventium is an alloy of Ambrosium, Gold and Elementium."
 				""
-				"It's an MV superconductor."
+				"It's an HV superconductor."
 				""
 				"It's required to make Nichrome coils."
 			]
 			id: "722C635C6F7AA733"
 			tasks: [{
 				id: "21E7E4AFA1553AF5"
-				item: "gtceu:electroconglomerate_alloy_ingot"
+				item: "gtceu:elventium_ingot"
 				type: "item"
 			}]
 			x: 5.5d
-			y: 7.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["04EEC280F22C612F"]
@@ -113,7 +113,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 7.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
@@ -721,10 +721,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: [
-				"31C81A033CB8C11D"
-				"44890B3796B295E2"
-			]
+			dependencies: ["44890B3796B295E2"]
 			id: "442D375BF085216E"
 			tasks: [{
 				id: "020D284088B5EA39"
@@ -1016,6 +1013,17 @@
 			}]
 			x: 4.0d
 			y: 7.5d
+		}
+		{
+			dependencies: ["62B1007E03E72515"]
+			id: "3E615E3C2E46F831"
+			tasks: [{
+				id: "358155F7572578F8"
+				item: "gtceu:ender_air_bucket"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -6.0d
 		}
 	]
 	title: "HV Age"

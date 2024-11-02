@@ -532,14 +532,14 @@
 		{
 			dependencies: ["4B15C0711FA98FAB"]
 			description: [
-				"Energetic Aluminium is an alloy of Aluminium and Energetic Alloy."
+				"Terralumina is an alloy of Aluminium and Terrasteel."
 				""
-				"It's an LV superconductor, and is required in Kanthal Coil crafting."
+				"It's an MV superconductor, and is required in Kanthal Coil crafting."
 			]
 			id: "472217BE9BA19D20"
 			tasks: [{
 				id: "2EF5E1E8D98F24F1"
-				item: "gtceu:energetic_aluminium_ingot"
+				item: "gtceu:terralumina_ingot"
 				type: "item"
 			}]
 			x: 12.0d
@@ -566,7 +566,7 @@
 				item: "botania:terra_plate"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 7.5d
 			y: -4.5d
 		}
 		{
@@ -823,6 +823,19 @@
 			}]
 			x: -3.0d
 			y: -4.5d
+		}
+		{
+			dependencies: ["0F53EFB5D7D2C329"]
+			description: ["Now you can craft some basic Thermal Series machines! They can become very useful."]
+			id: "004C0B7EEAEFD76C"
+			tasks: [{
+				id: "2283DF6D72733250"
+				item: "thermal:machine_frame"
+				type: "item"
+			}]
+			title: "Welcome to Thermal!"
+			x: 3.0d
+			y: 4.5d
 		}
 	]
 	title: "MV Age"

@@ -354,6 +354,17 @@
 			x: 4.5d
 			y: -1.5d
 		}
+		{
+			dependencies: ["58D1DF9D8857C801"]
+			id: "20602443E014C5F4"
+			tasks: [{
+				id: "630A4D81D269E347"
+				item: "powah:energy_cable_nitro"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
 	]
 	title: "ZPM Age"
 }

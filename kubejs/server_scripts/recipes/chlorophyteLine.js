@@ -98,9 +98,12 @@ ServerEvents.recipes(event => {
         '4x gtceu:chlorophyte_growth_medium_dust',
         'gtceu:indole_3_acetic_acid_dust'
     )
-    .inputFluids(Fluid.of('gtceu:biomass 8000'))
+    .inputFluids(
+        Fluid.of('gtceu:biomass 8000'),
+        Fluid.of('gtceu:sterilized_growth_medium 2000')    
+    )
     .itemOutputs('4x gtceu:chlorophyte_dust')
     .duration(20*60)
-    .EUt(GTValues.VA[GTValues.LuV])
+    .EUt(GTValues.VA[GTValues.IV])
 
 })
