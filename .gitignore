@@ -26,7 +26,10 @@ shaderpacks/
 /rhino.local.properties
 /usercache.json
 /usernamecache.json
+fancymenu_data
 fancymenu_data/
 kubejs/probe/
-/modernfix/
-/ESM/
+modernfix/
+ESM/
+ESM
+modernfix
