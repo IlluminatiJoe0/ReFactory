@@ -24,7 +24,7 @@
 			y: 6.0d
 		}
 	]
-	order_index: 5
+	order_index: 14
 	quest_links: [ ]
 	quests: [
 		{
@@ -1295,6 +1295,17 @@
 			}]
 			title: "Zt"
 			x: 3.0d
+			y: 7.0d
+		}
+		{
+			id: "4EBE89F12D0B1F54"
+			tasks: [{
+				id: "4D06BEB0303BFE41"
+				item: "gtceu:mistrium_bucket"
+				type: "item"
+			}]
+			title: "Mi"
+			x: 17.0d
 			y: 7.0d
 		}
 	]

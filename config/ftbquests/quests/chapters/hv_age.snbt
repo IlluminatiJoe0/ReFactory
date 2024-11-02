@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:advanced_integrated_circuit"
 	id: "7FEB7EC8E62B9067"
-	order_index: 9
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
@@ -42,7 +42,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 6.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["04EEC280F22C612F"]
@@ -113,7 +113,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 6.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
@@ -931,6 +931,91 @@
 			}]
 			x: 2.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["42993980A7D65EBB"]
+			id: "2894F38706D609AD"
+			tasks: [{
+				id: "0C338F43CF968264"
+				item: "botania:alfheim_portal"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2894F38706D609AD"]
+			id: "60A095952D52DFE3"
+			shape: "gear"
+			tasks: [{
+				id: "5E6D0CBADDB405FA"
+				item: "botania:elementium_ingot"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"43D222FD4AF3280E"
+				"42993980A7D65EBB"
+				"60A095952D52DFE3"
+			]
+			description: [
+				"Welcome to Botanical Machinery."
+				""
+				"Finally you can make Botania materials without manually (or with a different janky setup) dropping materials into pools."
+			]
+			icon: "botanicalmachinery:mechanical_runic_altar"
+			id: "7B13621EBCDED048"
+			size: 1.5d
+			tasks: [
+				{
+					id: "1920B47A59CEB274"
+					item: "botanicalmachinery:mechanical_mana_pool"
+					type: "item"
+				}
+				{
+					id: "3BBA4B3000B8E237"
+					item: "botanicalmachinery:mechanical_apothecary"
+					type: "item"
+				}
+				{
+					id: "46B0E4615532F48C"
+					item: "botanicalmachinery:mechanical_brewery"
+					type: "item"
+				}
+				{
+					id: "4106CA6BBEFA8EDA"
+					item: "botanicalmachinery:mechanical_daisy"
+					type: "item"
+				}
+				{
+					id: "3476376C0FC30DA3"
+					item: "botanicalmachinery:mechanical_runic_altar"
+					type: "item"
+				}
+				{
+					id: "31EAD9528EF50472"
+					item: "botanicalmachinery:alfheim_market"
+					type: "item"
+				}
+			]
+			title: "Botanical Machinery"
+			x: 8.535714285714292d
+			y: 6.0d
+		}
+		{
+			dependencies: ["04EEC280F22C612F"]
+			description: ["The Aether air contains useful materials, like Fluorine, Ozone, Helium and Mistrium"]
+			id: "6CB7D934C87C3EB9"
+			tasks: [{
+				id: "716F494DE1862F25"
+				item: "gtceu:liquid_aether_air_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 7.5d
 		}
 	]
 	title: "HV Age"

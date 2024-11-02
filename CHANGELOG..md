@@ -2,12 +2,13 @@
 - added Too Fast, Client Crafting, FTB Essentials, Almost Unified
 - Added the Crystal Puller multiblock (MV)
 - Menu changes
+- Custom Superconductors redesigned (Terralumina, Elventium)
 - Silicon Boules are now only crafted in the Crystal Puller
 - added Aether Air, its liquid variant, as well as Mistrium, a new fluid element
 - Spawn eggs are now craftable
 - Several new and changed recipes for existing content
 - Several fixes
-- Questbook improvements
+- Major Questbook improvements (LV - UV)
 
 # 0.1.0
 - Fixed a game-breaking problem where The Nether and The End do not exist

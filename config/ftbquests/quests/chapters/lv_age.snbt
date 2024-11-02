@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:basic_electronic_circuit"
 	id: "29B5D62254073156"
-	order_index: 7
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -993,7 +993,7 @@
 		{
 			dependencies: ["55D76A052A9EE6A0"]
 			description: [
-				"Mana Alloy is an alloy of Manasteel and Redstone. It's an ULV superconductor, but you probably won't be using it as a cable."
+				"Mana Alloy is an alloy of Manasteel and Redstone. It's an LV superconductor."
 				""
 				"It's use is in Cupronickel coils."
 			]

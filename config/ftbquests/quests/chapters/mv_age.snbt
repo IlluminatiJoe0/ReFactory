@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:good_electronic_circuit"
 	id: "5DAF0EAA15F38ECC"
-	order_index: 8
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -93,6 +93,7 @@
 		{
 			dependencies: ["40949CE64C6F886A"]
 			description: ["These are all comonly used molds for the extruder."]
+			icon: "gtceu:rotor_extruder_mold"
 			id: "0E1912B77BD360EC"
 			tasks: [
 				{
@@ -430,6 +431,7 @@
 				""
 				"Dirt > Mud > Clay > Clay Dust"
 			]
+			icon: "gtceu:aluminium_dust"
 			id: "2B92683848576A1A"
 			shape: "gear"
 			tasks: [
@@ -528,21 +530,20 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["630A813B0F4DA078"]
+			dependencies: ["4B15C0711FA98FAB"]
 			description: [
 				"Energetic Aluminium is an alloy of Aluminium and Energetic Alloy."
 				""
 				"It's an LV superconductor, and is required in Kanthal Coil crafting."
 			]
-			hide_dependency_lines: true
 			id: "472217BE9BA19D20"
 			tasks: [{
 				id: "2EF5E1E8D98F24F1"
 				item: "gtceu:energetic_aluminium_ingot"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 4.5d
+			x: 12.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
@@ -622,7 +623,7 @@
 				item: "botania:terrasteel_ingot"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 12.0d
 			y: -4.5d
 		}
 		{
@@ -724,7 +725,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: -4.5d
+			y: -7.5d
 		}
 		{
 			description: ["This is an alternative way to make Ethylene, but requires Oil, distilling it, cracking and then distilling again."]
