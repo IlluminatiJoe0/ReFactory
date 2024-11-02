@@ -184,8 +184,8 @@
 				item: "gtceu:energy_module"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 1.5d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["783911A84C7E8D8A"]
@@ -200,7 +200,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["5440C770D107710D"]
+			dependencies: [
+				"5440C770D107710D"
+				"745C844768D9D84C"
+			]
 			id: "783911A84C7E8D8A"
 			tasks: [{
 				id: "29D5165D954E260B"
