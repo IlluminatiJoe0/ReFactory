@@ -1,14 +1,14 @@
 GTCEuStartupEvents.registry('gtceu:material', event => {
     // cable properties (Voltage, Amperage, Loss/block, isSuperconductor)
 
-    // ULV
+    // LV
     event.create('mana_alloy')
     .ingot()
     .components(
         '1x manasteel',
-        '1x redstone'
+        '2x redstone'
     )
-    .cableProperties(GTValues.V[GTValues.ULV], 2, 0, true)
+    .cableProperties(GTValues.V[GTValues.LV], 2, 0, true)
     .color(0xed6bed)
     .flags(
         GTMaterialFlags.GENERATE_PLATE,
@@ -16,45 +16,36 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     )
     .iconSet(GTMaterialIconSet.SHINY)
 
-    // LV
-    event.create('energetic_aluminium')
+    // MV
+    event.create('terralumina')
     .ingot()
     .components(
-        '1x energetic_alloy',
+        '1x terrasteel',
         '2x aluminium'
     )
-    .cableProperties(GTValues.V[GTValues.LV], 2, 0, true)
-    .color(0x43bff0)
-    .secondaryColor(0xe0e841)
+    .cableProperties(GTValues.V[GTValues.MV], 2, 0, true)
+    .color(0x53ffcf)
     .flags(
         GTMaterialFlags.GENERATE_PLATE,
         GTMaterialFlags.GENERATE_FOIL
     )
     .iconSet(GTMaterialIconSet.SHINY)
 
-    // MV
-    event.create('electroconglomerate_alloy')
+    // HV
+    event.create('elventium')
     .ingot()
     .components(
-        '1x energetic_aluminium',
+        '1x elementium',
         '1x ambrosium',
-        '1x electrum'
+        '2x gold'
     )
-    .cableProperties(GTValues.V[GTValues.MV], 2, 0, true)
-    .color(0x57612d)
-    .secondaryColor(0x24361c)
+    .cableProperties(GTValues.V[GTValues.HV], 2, 0, true)
+    .color(0x414153)
+    .secondaryColor(0x331619)
     .flags(
         GTMaterialFlags.GENERATE_PLATE,
         GTMaterialFlags.GENERATE_FOIL
     )
-    .iconSet(GTMaterialIconSet.DULL)
-    .blastTemp(1800, null, GTValues.VA[GTValues.HV], 20*20)
-
-    // HV
-
-    // EV
-
-    // IV
-
-    // TODO: return to this at a later date
+    .iconSet(GTMaterialIconSet.SHINY)
+    .blastTemp(1200, null, GTValues.VA[GTValues.MV], 20*10)
 })
