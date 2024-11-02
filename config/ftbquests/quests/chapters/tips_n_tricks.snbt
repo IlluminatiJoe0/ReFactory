@@ -109,6 +109,7 @@
 			icon: "minecraft:oak_sapling"
 			id: "3D937B4F3224B8E7"
 			rewards: [{
+				count: 16
 				id: "49B0EA620FA70F77"
 				item: "biomesoplenty:dead_sapling"
 				type: "item"
@@ -176,6 +177,7 @@
 		}
 		{
 			description: ["Customizable gadgets that allow you to build/destroy easier. They do use power."]
+			icon: "buildinggadgets2:gadget_building"
 			id: "05FEE694FAF9A095"
 			tasks: [
 				{
@@ -340,6 +342,25 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
+			y: -5.0d
+		}
+		{
+			description: [
+				"You can set a home by typing &3/sethome <home_name>&r"
+				""
+				"You can have multiple homes at the same time."
+				""
+				"You can go to any one of your homes by typing &3/home <home_name>&r"
+				""
+				"You can go back by typing &3/back&r"
+			]
+			id: "04A801444FD1C1A5"
+			tasks: [{
+				id: "1BE19CAA3F1923B2"
+				title: "FTB Essentials"
+				type: "checkmark"
+			}]
+			x: 1.5d
 			y: -5.0d
 		}
 	]

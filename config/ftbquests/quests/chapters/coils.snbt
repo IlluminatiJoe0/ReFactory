@@ -97,28 +97,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["5FBC6BAFFAB178B6"]
-			id: "160441498883DE46"
-			tasks: [{
-				id: "0C6D6E198934D81D"
-				item: "gtceu:superconducting_coil"
-				type: "item"
-			}]
-			x: 10.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["160441498883DE46"]
-			id: "3CF3113968B56768"
-			tasks: [{
-				id: "68F7A3F60B749EE2"
-				item: "gtceu:fusion_coil"
-				type: "item"
-			}]
-			x: 10.5d
-			y: -2.0d
-		}
-		{
 			id: "078DF59E2B78C501"
 			tasks: [{
 				id: "5AA069FA25828DF1"

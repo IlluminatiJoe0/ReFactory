@@ -837,6 +837,18 @@
 			x: 3.0d
 			y: 4.5d
 		}
+		{
+			dependencies: ["4DB4F6BF36D30A35"]
+			description: ["Used for making spawn eggs!"]
+			id: "5D5E3B843FF3DC28"
+			tasks: [{
+				id: "6FECB9FB29FF6664"
+				item: "kubejs:simulated_egg"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 4.5d
+		}
 	]
 	title: "MV Age"
 }

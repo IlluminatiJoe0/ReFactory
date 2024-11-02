@@ -560,6 +560,16 @@
 			x: 4.5d
 			y: -2.5d
 		}
+		{
+			id: "19A8026472BC3300"
+			tasks: [{
+				id: "274C70F32C791328"
+				item: "gtceu:plasma_large_turbine"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
 	]
 	title: "Power"
 }

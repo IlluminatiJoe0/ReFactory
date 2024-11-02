@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
         'gtceu:manasteel_dust',
         '2x minecraft:redstone'
     )
-    .itemOutputs('2x gtceu:mana_alloy_dust')
+    .itemOutputs('3x gtceu:mana_alloy_dust')
     .duration(20*10)
     .EUt(GTValues.VA[GTValues.LV])
 
@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
         '2x gtceu:gold_dust',
         'gtceu:ambrosium_dust'
     )
-    .itemOutputs('3x gtceu:elventium_dust')
+    .itemOutputs('4x gtceu:elventium_dust')
     .duration(20*15)
     .EUt(GTValues.VA[GTValues.HV])
 })
