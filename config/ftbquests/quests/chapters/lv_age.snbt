@@ -38,6 +38,7 @@
 				"09ECD67B4648D2EA"
 				"0E1F6E844041CC9F"
 			]
+			description: ["Tired yet?"]
 			id: "298F63E0659E0FD6"
 			shape: "gear"
 			size: 1.5d
@@ -54,7 +55,11 @@
 				"35CB055A24346DE1"
 				"527C703959FD9B65"
 			]
-			description: ["Here comes the hard part..."]
+			description: [
+				"Here comes the hard part..."
+				""
+				"You're going to need about 2 of these per machine."
+			]
 			id: "0E1F6E844041CC9F"
 			shape: "gear"
 			size: 1.5d
@@ -109,6 +114,7 @@
 				"1B1B005DA1E7D5DA"
 			]
 			id: "74C94B5C7B866A34"
+			shape: "gear"
 			size: 1.25d
 			tasks: [{
 				id: "273631D9CE3F02CC"
@@ -254,6 +260,7 @@
 		}
 		{
 			dependencies: ["1766FA742DB40680"]
+			description: ["Miners are not really that useful in LV, but they become more and more useful from MV and on."]
 			id: "7F680750136FAA4A"
 			tasks: [{
 				id: "32DCEC322F2E153D"
@@ -330,6 +337,7 @@
 		}
 		{
 			dependencies: ["0E1F6E844041CC9F"]
+			description: ["You're going to hate this..."]
 			id: "1766FA742DB40680"
 			size: 1.25d
 			tasks: [{
@@ -523,6 +531,11 @@
 			dependencies: [
 				"318CA73CE4C3DC3D"
 				"5F717D5E9715ED7C"
+			]
+			description: [
+				"Aluminium is an essential element and is a gateway to MV."
+				""
+				"Make sure to make a lot of it!"
 			]
 			id: "18BC6F844CF368EF"
 			shape: "gear"
@@ -1025,7 +1038,7 @@
 				item: "botania:manasteel_ingot"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 3.0d
 			y: 2.5d
 		}
 		{
@@ -1140,16 +1153,20 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["0E1F6E844041CC9F"]
-			hide_dependency_lines: true
+			dependencies: ["74C94B5C7B866A34"]
+			description: [
+				"Good for energy transfer, and fairly cheap."
+				""
+				"Each GT tier has its own upgrade."
+			]
 			id: "2D82EB05632CE9E0"
 			tasks: [{
 				id: "08F6FE0738F55D61"
 				item: "powah:energy_cable_starter"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -2.5d
+			x: 9.0d
+			y: 0.0d
 		}
 	]
 	title: "LV Age"

@@ -147,6 +147,11 @@
 		}
 		{
 			dependencies: ["2CD891A182DBFE28"]
+			description: [
+				"Very useful item that is cut into wafers, used to craft various parts of electronic circuits."
+				""
+				"&8For the nerds like me: Boules are made by dipping a silicon crystal into molten silicon, and slowly pulling it up, making a big chunk of silicon, called the silicon boule, or ingot.&r"
+			]
 			id: "1984444D466E8EEF"
 			shape: "gear"
 			tasks: [{
@@ -184,6 +189,7 @@
 				"0F53A979A0A20B60"
 				"2D86BD3AE9C7AB6B"
 			]
+			description: ["The Engraver makes wafers into chips. You're going to have to make it eventually."]
 			id: "6EA539D38718E106"
 			shape: "gear"
 			tasks: [{
@@ -224,6 +230,7 @@
 		}
 		{
 			dependencies: ["65CD30C3D6C13C7E"]
+			description: ["Significantly cheaper LV circuits."]
 			id: "22F6144BF80A1413"
 			tasks: [{
 				id: "3A7C56391AFB4016"
@@ -239,6 +246,7 @@
 				"162E65E940DCC593"
 				"02350D73F63D59E8"
 			]
+			description: ["Yay! Your first HV circuit! Make sure to brag to your friends (if you even have any)."]
 			id: "08EE54E6C1C766CF"
 			shape: "gear"
 			size: 1.5d
@@ -334,6 +342,7 @@
 				"You can also get Chromium from Chromite ore in a Redstone vein in The Nether."
 			]
 			id: "0A6A88F07A82E229"
+			shape: "gear"
 			tasks: [{
 				id: "32A66118BD33885F"
 				item: "gtceu:chromium_dust"
@@ -347,7 +356,11 @@
 				"0BB13F96B93699A8"
 				"472217BE9BA19D20"
 			]
-			description: ["These coils are the next in line in coil progression!"]
+			description: [
+				"These coils are the next in line in coil progression!"
+				""
+				"Now you can cook Silicon!"
+			]
 			id: "114D15EF6DA771DD"
 			tasks: [{
 				count: 16L
@@ -372,6 +385,7 @@
 		}
 		{
 			dependencies: ["53A05923F8895595"]
+			description: ["Make sure to craft a considerable amount."]
 			id: "0F53EFB5D7D2C329"
 			shape: "gear"
 			size: 1.5d
@@ -385,6 +399,7 @@
 		}
 		{
 			dependencies: ["0A6A88F07A82E229"]
+			description: ["Stainless steel is an important material in HV."]
 			id: "53A05923F8895595"
 			tasks: [{
 				id: "39A7D0F31DC2F7B9"
@@ -416,6 +431,7 @@
 				"Dirt > Mud > Clay > Clay Dust"
 			]
 			id: "2B92683848576A1A"
+			shape: "gear"
 			tasks: [
 				{
 					id: "75B1624D785AF96C"
@@ -449,6 +465,11 @@
 		}
 		{
 			dependencies: ["739B7A5F5E19CEB1"]
+			description: [
+				"A Multiblock that extracts fluids from beneath."
+				""
+				"The fluids dont actually exist in the world, but they do deplete."
+			]
 			id: "1833F90AC37B8826"
 			tasks: [{
 				id: "023D299E08C80209"
@@ -472,6 +493,7 @@
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
+			description: ["MV tier batteries, they hold more power."]
 			id: "6C8851F7FB2FC344"
 			tasks: [{
 				id: "03729A27F4FFDAC7"
@@ -553,6 +575,8 @@
 				""
 				"From now on miners are incredibly useful for passively \"generating\" ores. They use little to no power."
 				""
+				"Put a generator with a fuel buffer next to it to power it, and a chest for output of ores."
+				""
 				"&eRemember to chunk load them!&r"
 			]
 			id: "2A693A123793F7E8"
@@ -566,6 +590,7 @@
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
+			description: ["You're going to hate this 2... wait, this is not GTNH..."]
 			id: "12D3FF7ABD35CD49"
 			tasks: [{
 				id: "021E5A17B1D59F93"
@@ -577,6 +602,7 @@
 		}
 		{
 			dependencies: ["08EE54E6C1C766CF"]
+			description: ["Next tier of circuit assembling!"]
 			id: "374FBE623A0F7200"
 			shape: "gear"
 			size: 1.5d
@@ -601,7 +627,11 @@
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
-			description: ["Faster Coke."]
+			description: [
+				"Faster Coke."
+				""
+				"Also grants byproducts that can be useful later."
+			]
 			id: "49322CC369C75E67"
 			tasks: [{
 				id: "4C686EAE4EE51341"
@@ -625,6 +655,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["77EFB9F7E591E14A"]
 			description: ["Plant Balls are best made by compressing bio products, especially saplings!"]
 			id: "4F55C127C7F4DC71"
 			tasks: [{
@@ -633,7 +664,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: -5.5d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -648,10 +679,11 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -5.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["6AAE3CEF45ADDFEB"]
+			description: ["Enough chemistry?"]
 			id: "4DB4F6BF36D30A35"
 			tasks: [{
 				id: "26B2D6E52C1F26E1"
@@ -682,7 +714,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: -5.5d
+			y: -6.0d
 		}
 		{
 			id: "425001886506083F"
@@ -703,7 +735,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -5.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
@@ -718,7 +750,11 @@
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
-			description: ["You'll need this to make Ethylene."]
+			description: [
+				"You'll need this to make Ethylene for Polyethylene."
+				""
+				"Polyethylene is a very important material."
+			]
 			id: "05D3C898EBC0480D"
 			tasks: [{
 				id: "13C02931FE8E1CE6"
@@ -738,7 +774,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: -7.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["1984444D466E8EEF"]
@@ -753,6 +789,7 @@
 		}
 		{
 			dependencies: ["3DA8858F820F6615"]
+			description: ["These are so out of fashion, who even makes these anymore?"]
 			id: "4B1646A8C9F2E767"
 			tasks: [{
 				id: "25A17275B89A7F0D"
@@ -764,6 +801,7 @@
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
+			description: ["Energy cable upgrade."]
 			id: "7505C4A9D8C9B2B7"
 			tasks: [{
 				id: "624316FA02B68B32"
@@ -772,6 +810,18 @@
 			}]
 			x: 1.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["630A813B0F4DA078"]
+			description: ["Very useful for growing crops automatically. Uses really low power so make use of them!"]
+			id: "77EFB9F7E591E14A"
+			tasks: [{
+				id: "0B8DDAA68FC826B1"
+				item: "thermal:machine_insolator"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.5d
 		}
 	]
 	title: "MV Age"

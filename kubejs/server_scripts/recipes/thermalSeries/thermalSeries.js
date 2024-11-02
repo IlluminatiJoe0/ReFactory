@@ -37,6 +37,10 @@ ServerEvents.recipes(event => {
     .inputFluids(Fluid.of('minecraft:water', 1000))
     .itemOutputs('6x thermal:compost')
 
+  // Phytogenic Insolator
+  event.replaceInput({id: 'thermal:machine_insolator'}, 'thermal:lumium_gear', 'gtceu:small_aluminium_gear')
+  event.replaceInput({id: 'thermal:machine_insolator'}, 'thermal:machine_frame', 'gtceu:mv_machine_hull')
+
 })
 
 // hide thermal items

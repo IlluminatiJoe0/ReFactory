@@ -1,0 +1,359 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "zpm"
+	group: ""
+	icon: "gtceu:quantum_processor_mainframe"
+	id: "3B5E1EFB4DFE8F56"
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["50948FC264BA8EF2"]
+			icon: "gtceu:quantum_processor_mainframe"
+			id: "5440C770D107710D"
+			shape: "square"
+			title: "ZPM Age"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5440C770D107710D"
+				"20803A817A7216B1"
+			]
+			id: "517B144096154FCD"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "5182D54F25460C81"
+				item: "gtceu:zpm_fusion_reactor"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E1F17F6CF8F8F25"]
+			id: "79F482B6D7FB9B00"
+			shape: "gear"
+			tasks: [{
+				id: "5B0F16CF55FC7360"
+				item: "gtceu:trinium_coil_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5440C770D107710D"]
+			id: "5E1F17F6CF8F8F25"
+			tasks: [{
+				id: "7C1A090E043D6479"
+				item: "gtceu:zpm_electric_motor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["79F482B6D7FB9B00"]
+			id: "487006C5DAF389A7"
+			tasks: [{
+				id: "6EF61FABD7990504"
+				item: "gtceu:naquadria_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5440C770D107710D"]
+			id: "6F62448BCBD3FD5B"
+			tasks: [{
+				id: "7064DC7E737FA185"
+				item: "gtceu:advanced_data_access_hatch"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5440C770D107710D"]
+			id: "20803A817A7216B1"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "3BFE1D365852A753"
+				item: "gtceu:research_station"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A51A94BAE0BBDD9"]
+			id: "30B6187A76929E96"
+			tasks: [{
+				id: "481E8CEE38831747"
+				item: "gtceu:crystal_soc"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5440C770D107710D"]
+			id: "7A51A94BAE0BBDD9"
+			tasks: [{
+				id: "77738E6B87A555F4"
+				item: "gtceu:zpm_laser_engraver"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"47C948E01873ACD7"
+				"5440C770D107710D"
+			]
+			id: "7671902E9585A19A"
+			tasks: [{
+				id: "19E7B34D778FF055"
+				item: "gtceu:high_performance_computation_array"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5440C770D107710D"]
+			hide_dependency_lines: true
+			id: "47C948E01873ACD7"
+			tasks: [{
+				id: "6026740F496C7C78"
+				item: "gtceu:pcb_coolant_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"20803A817A7216B1"
+				"5440C770D107710D"
+			]
+			id: "20B2CF209B229155"
+			shape: "gear"
+			tasks: [{
+				id: "5D776D987B225EC3"
+				item: "gtceu:zpm_energy_input_hatch"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5440C770D107710D"]
+			id: "745C844768D9D84C"
+			tasks: [{
+				id: "10032D3330A386BB"
+				item: "gtceu:sterilizing_filter_casing"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["487006C5DAF389A7"]
+			id: "52F4F0014207A95D"
+			tasks: [{
+				id: "344001067D90477E"
+				item: "gtceu:zero_point_module"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5440C770D107710D"]
+			id: "00C507F0BBD7A218"
+			tasks: [{
+				id: "7C499312CA3EEA8B"
+				item: "gtceu:energy_module"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["783911A84C7E8D8A"]
+			id: "2BF4827A9A1E453D"
+			shape: "gear"
+			tasks: [{
+				id: "5A003074EFF2A0E0"
+				item: "gtceu:stem_cells"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5440C770D107710D"]
+			id: "783911A84C7E8D8A"
+			tasks: [{
+				id: "29D5165D954E260B"
+				item: "gtceu:sterilized_growth_medium_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2BF4827A9A1E453D"]
+			id: "6627FF309DCD5627"
+			tasks: [{
+				id: "4E0766A6C5C4FC40"
+				item: "gtceu:wetware_printed_circuit_board"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0E164388F14ED2EE"
+				"50433710F2422C31"
+			]
+			id: "6F7E6B3B6F071E93"
+			tasks: [{
+				id: "0977D9E226BFB549"
+				item: "gtceu:wetware_processor"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"6F7E6B3B6F071E93"
+				"50433710F2422C31"
+			]
+			id: "630FA28154A24DBD"
+			tasks: [{
+				id: "00DE193888DEDD35"
+				item: "gtceu:wetware_processor_assembly"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"630FA28154A24DBD"
+				"50433710F2422C31"
+			]
+			id: "43C4A2C1622C156A"
+			tasks: [{
+				id: "517C5A05AC1263C0"
+				item: "gtceu:wetware_processor_computer"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"43C4A2C1622C156A"
+				"50433710F2422C31"
+			]
+			id: "008881C6B4F568F3"
+			tasks: [{
+				id: "036468CEB8294F7F"
+				item: "gtceu:wetware_processor_mainframe"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5440C770D107710D"]
+			id: "0E164388F14ED2EE"
+			tasks: [{
+				id: "3C1B7BB2D2B0B22A"
+				item: "gtceu:yttrium_barium_cuprate_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["517B144096154FCD"]
+			id: "2E5BC127F34D6DA3"
+			tasks: [{
+				id: "00B94B896A8CD77D"
+				item: "gtceu:darmstadtium_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["517B144096154FCD"]
+			id: "24D4CCC7B3511308"
+			tasks: [{
+				id: "400E585DC981F741"
+				item: "gtceu:lutetium_bucket"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["24D4CCC7B3511308"]
+			id: "6B2AA01D96D74BED"
+			tasks: [{
+				id: "1AD70D26AD1316B0"
+				item: "gtceu:americium_ingot"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["625CEABBB87954DC"]
+			id: "58D1DF9D8857C801"
+			tasks: [{
+				id: "3D4C55F39AC1032D"
+				item: "gtceu:tritanium_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["517B144096154FCD"]
+			id: "625CEABBB87954DC"
+			tasks: [{
+				id: "361A5002087A83C0"
+				item: "gtceu:duranium_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6627FF309DCD5627"]
+			id: "50433710F2422C31"
+			tasks: [{
+				id: "6015CF43AE031353"
+				item: "gtceu:neuro_processing_unit"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+	]
+	title: "ZPM Age"
+}

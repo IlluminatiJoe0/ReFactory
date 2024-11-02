@@ -13,6 +13,7 @@
 			icon: "gtceu:micro_processor_mainframe"
 			id: "3F37E03149399E3F"
 			shape: "square"
+			title: "IV Age"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -23,6 +24,7 @@
 			]
 			id: "49955E572AC194B1"
 			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "02BD135AAA1F20FF"
 				item: "gtceu:rhodium_plated_palladium_ingot"
@@ -35,6 +37,7 @@
 			dependencies: [
 				"6136FCE33996E7BC"
 				"45A99B5A2BD7CA40"
+				"3F37E03149399E3F"
 			]
 			id: "1A70E39DBC13742A"
 			tasks: [{
