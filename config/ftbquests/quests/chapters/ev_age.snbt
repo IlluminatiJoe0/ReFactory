@@ -722,33 +722,35 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["669F52806D1D39F6"]
-			id: "6FC4B69A183462F3"
+			dependencies: [
+				"7CC959FF709B1FEF"
+				"41004B2926909C43"
+			]
+			id: "44EC1A10C7C8C96B"
 			shape: "gear"
+			size: 1.5d
 			tasks: [{
-				id: "1F1066691E26F58B"
+				id: "44AFCEF97B173F90"
 				item: {
 					Count: 1
-					id: "ad_astra:tier_1_rocket"
+					id: "ad_astra:tier_2_rocket"
 					tag: { }
 				}
 				type: "item"
 			}]
-			x: -1.5d
-			y: 3.0d
+			x: -4.5d
+			y: 1.5d
 		}
 		{
-			dependencies: ["6FC4B69A183462F3"]
-			id: "1FC97C785D9656B2"
+			dependencies: ["44EC1A10C7C8C96B"]
+			id: "10224C59C263F32F"
 			tasks: [{
-				dimension: "ad_astra:moon"
-				icon: "ad_astra:moon_globe"
-				id: "55F80ADEDB45170D"
-				type: "dimension"
+				id: "1FFC5381679C7EB8"
+				item: "gtceu:ostrum_ingot"
+				type: "item"
 			}]
-			title: "To the Moon and back!"
-			x: -1.5d
-			y: 4.5d
+			x: -6.0d
+			y: 1.5d
 		}
 	]
 	title: "EV Age"

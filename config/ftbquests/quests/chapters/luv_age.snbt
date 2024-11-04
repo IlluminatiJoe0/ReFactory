@@ -527,6 +527,25 @@
 			x: 1.5d
 			y: -7.0d
 		}
+		{
+			dependencies: [
+				"3F435987F11CD2EE"
+				"1882C27113086F8A"
+			]
+			id: "4F0189B1CAFFDDEB"
+			shape: "gear"
+			tasks: [{
+				id: "708149E135CA33AA"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_4_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.5d
+		}
 	]
 	title: "LuV Age"
 }

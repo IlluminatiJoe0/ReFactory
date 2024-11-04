@@ -485,6 +485,33 @@
 			x: 1.5d
 			y: -1.5d
 		}
+		{
+			dependencies: ["4C771453604769B9"]
+			id: "5284E03D56F4372E"
+			shape: "gear"
+			tasks: [{
+				id: "54F7CF1CBDDEAD3C"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_3_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5284E03D56F4372E"]
+			id: "404C8CE8D36E1D46"
+			tasks: [{
+				id: "3FD0FE62FDB33F58"
+				item: "gtceu:calorite_ingot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
 	]
 	title: "IV Age"
 }

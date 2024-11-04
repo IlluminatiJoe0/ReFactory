@@ -46,6 +46,18 @@ let yeet_f = (itemName) => {
   yeet('ad_astra:etrionic_capacitor')
   yeet('ad_astra:etrionic_core')
   yeet('ad_astra:oxygen_gear')
+  yeet('ad_astra:desh_ingot')
+  yeet('ad_astra:desh_nugget')
+  yeet('ad_astra:raw_desh')
+  yeet('ad_astra:raw_desh_block')
+  yeet('ad_astra:ostrum_ingot')
+  yeet('ad_astra:ostrum_nugget')
+  yeet('ad_astra:raw_ostrum')
+  yeet('ad_astra:raw_ostrum_block')
+  yeet('ad_astra:calorite_ingot')
+  yeet('ad_astra:calorite_nugget')
+  yeet('ad_astra:raw_calorite')
+  yeet('ad_astra:raw_calorite_block')
   
   yeet_f('ad_astra:oxygen')
   yeet_f('ad_astra:fuel')
@@ -82,7 +94,7 @@ ServerEvents.tags('fluid', event => {
     event.remove({ output: 'ad_astra:tier_4_rocket' })
 
     event.remove({ output: 'ad_astra:steel_engine' })
-    // event.remove({ output: 'ad_astra:launch_pad' })
+    event.remove({ output: 'ad_astra:launch_pad' })
     event.remove({ output: 'ad_astra:nasa_workbench' })
     // event.remove({ output: 'ad_astra:oxygen_distributor' })
     // event.remove({ output: 'ad_astra:oxygen_sensor' })
@@ -103,118 +115,50 @@ ServerEvents.tags('fluid', event => {
     event.remove({ output: 'ad_astra:wheel' })
     event.remove({ output: 'ad_astra:tier_1_rover' })
     event.remove({ id: 'ad_astra:nasa_workbench/tier_1_rocket_from_nasa_workbench' })
-    // event.remove({ id: 'ad_astra:nasa_workbench/tier_2_rocket_from_nasa_workbench' })
-    // event.remove({ id: 'ad_astra:nasa_workbench/tier_3_rocket_from_nasa_workbench' })
-    // event.remove({ id: 'ad_astra:nasa_workbench/tier_4_rocket_from_nasa_workbench' })
+    event.remove({ id: 'ad_astra:nasa_workbench/tier_2_rocket_from_nasa_workbench' })
+    event.remove({ id: 'ad_astra:nasa_workbench/tier_3_rocket_from_nasa_workbench' })
+    event.remove({ id: 'ad_astra:nasa_workbench/tier_4_rocket_from_nasa_workbench' })
     event.remove({ output: 'ad_astra:desh_ingot' })
     event.remove({ id: 'ad_astra:desh_nugget' })
     event.remove({ id: 'ad_astra:desh_block' })
+    event.remove({ output: 'ad_astra:ostrum_ingot' })
+    event.remove({ id: 'ad_astra:ostrum_nugget' })
+    event.remove({ id: 'ad_astra:ostrum_block' })
+    event.remove({ output: 'ad_astra:calorite_ingot' })
+    event.remove({ id: 'ad_astra:calorite_nugget' })
+    event.remove({ id: 'ad_astra:calorite_block' })
 
+    event.replaceInput({}, 'ad_astra:desh_plate', 'gtceu:desh_plate')
+    event.replaceInput({}, 'ad_astra:desh_ingot', 'gtceu:desh_ingot')
+    event.replaceInput({}, 'ad_astra:ostrum_plate', 'gtceu:ostrum_plate')
+    event.replaceInput({}, 'ad_astra:ostrum_ingot', 'gtceu:ostrum_ingot')
+    event.replaceInput({}, 'ad_astra:calorite_plate', 'gtceu:calorite_plate')
+    event.replaceInput({}, 'ad_astra:calorite_ingot', 'gtceu:calorite_ingot')
+
+    
     // TIER 1
     event.custom({
-      "type": "ad_astra:nasa_workbench",
-      "ingredients": [
-        {
-          "item": "ad_astra:rocket_nose_cone"
-        },
-        {
-          "item": "kubejs:t1_rocket_plate"
-        },
-        {
-          "item": "kubejs:t1_rocket_plate"
-        },
-        {
-          "item": "kubejs:t1_rocket_plate"
-        },
-        {
-          "item": "kubejs:t1_rocket_plate"
-        },
-        {
-          "item": "kubejs:t1_rocket_plate"
-        },
-        {
-          "item": "kubejs:t1_rocket_plate"
-        },
-        {
-          "item": "ad_astra:rocket_fin"
-        },
-        {
-          "item": 'gtceu:titanium_drum'
-        },
-        {
-          "item": 'gtceu:titanium_drum'
-        },
-        {
-          "item": "ad_astra:rocket_fin"
-        },
-        {
-          "item": "ad_astra:rocket_fin"
-        },
-        {
-          "item": "ad_astra:steel_engine"
-        },
-        {
-          "item": "ad_astra:rocket_fin"
-        }
+      type: "ad_astra:nasa_workbench",
+      ingredients: [
+        { ingredient: { item: "ad_astra:rocket_nose_cone" } },
+        { ingredient: { item: "kubejs:t1_rocket_plate" } },
+        { ingredient: { item: "kubejs:t1_rocket_plate" } },
+        { ingredient: { item: "kubejs:t1_rocket_plate" } },
+        { ingredient: { item: "kubejs:t1_rocket_plate" } },
+        { ingredient: { item: "kubejs:t1_rocket_plate" } },
+        { ingredient: { item: "kubejs:t1_rocket_plate" } },
+        { ingredient: { item: "ad_astra:rocket_fin" } },
+        { ingredient: { item: "gtceu:titanium_drum" } },
+        { ingredient: { item: "gtceu:titanium_drum" } },
+        { ingredient: { item: "ad_astra:rocket_fin" } },
+        { ingredient: { item: "ad_astra:rocket_fin" } },
+        { ingredient: { item: "ad_astra:steel_engine" } },
+        { ingredient: { item: "ad_astra:rocket_fin" } },
       ],
-      "result": {
-        "count": 1,
-        "id": "ad_astra:tier_1_rocket"
-      }
+      output: "ad_astra:tier_1_rocket",
     })
 
-    // // TIER 2
-    // event.custom({
-    //   "type": "ad_astra:nasa_workbench",
-    //   "ingredients": [
-    //     {
-    //       "item": 'kubejs:osmiridium_nose_cone'
-    //     },
-    //     {
-    //       "item": 'kubejs:t2_rocket_plating'
-    //     },
-    //     {
-    //       "item": 'kubejs:t2_rocket_plating'
-    //     },
-    //     {
-    //       "item": 'kubejs:t2_rocket_plating'
-    //     },
-    //     {
-    //       "item": 'kubejs:t2_rocket_plating'
-    //     },
-    //     {
-    //       "item": 'kubejs:t2_rocket_plating'
-    //     },
-    //     {
-    //       "item": 'kubejs:t2_rocket_plating'
-    //     },
-    //     {
-    //       "item": 'kubejs:osmiridium_fin'
-    //     },
-    //     {
-    //       "item": 'gtceu:tungsten_steel_drum'
-    //     },
-    //     {
-    //       "item": 'gtceu:tungsten_steel_drum'
-    //     },
-    //     {
-    //       "item": 'kubejs:osmiridium_fin'
-    //     },
-    //     {
-    //       "item": 'kubejs:osmiridium_fin'
-    //     },
-    //     {
-    //       "item": 'kubejs:osmiridium_engine'
-    //     },
-    //     {
-    //       "item": 'kubejs:osmiridium_fin'
-    //     }
-    //   ],
-    //   "result": {
-    //     "count": 1,
-    //     "id": "ad_astra:tier_2_rocket"
-    //   }
-    // })
+    // TIER 2 TODO:
 
     event.recipes.gtceu.forming_press("t1_welded_plate")
       .itemInputs(['4x gtceu:zanite_steel_plate', '4x gtceu:black_steel_plate', '4x gtceu:titanium_plate', '4x gtceu:manasteel_plate'])
@@ -293,12 +237,12 @@ ServerEvents.tags('fluid', event => {
     //   .duration(160)
     //   .EUt(GTValues.VA[GTValues.HV])
 
-    // event.recipes.gtceu.assembler("launch_pad")
-    //   .itemInputs(['6x gtceu:stainless_steel_plate', '3x gtceu:titanium_plate'])
-    //   .circuit(5)
-    //   .itemOutputs('ad_astra:launch_pad')
-    //   .duration(160)
-    //   .EUt(GTValues.VA[GTValues.HV])
+    event.recipes.gtceu.assembler("launch_pad")
+      .itemInputs(['5x gtceu:stainless_steel_plate', '4x gtceu:titanium_plate'])
+      .circuit(5)
+      .itemOutputs('ad_astra:launch_pad')
+      .duration(160)
+      .EUt(GTValues.VA[GTValues.HV])
   
     // event.recipes.gtceu.assembler('osmiridium_fin')
     //   .itemInputs(['8x gtceu:osmiridium_plate', '8x gtceu:osmiridium_screw', '4x gtceu:osmiridium_rod', '2x gtceu:ev_electric_motor'])
@@ -430,4 +374,15 @@ ServerEvents.tags('fluid', event => {
       'ad_astra:steel_rod',
       'gtceu:steel_rod'
     )
+
+    event.replaceInput({id: 'ad_astra:recipes/rocket_nose_cone'},
+      '#forge:plates/steel',
+      'kubejs:t1_rocket_plate'
+     )
+
+     event.replaceInput({id: 'ad_astra:recipes/rocket_fin'},
+      '#forge:plates/steel',
+      'kubejs:t1_rocket_plate'
+     )
+
   })

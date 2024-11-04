@@ -27,7 +27,10 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["4A6F76983101B7E1"]
+			dependencies: [
+				"4A6F76983101B7E1"
+				"60A095952D52DFE3"
+			]
 			description: [
 				"Elventium is an alloy of Ambrosium, Gold and Elementium."
 				""
@@ -41,8 +44,8 @@
 				item: "gtceu:elventium_ingot"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 6.0d
+			x: 2.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["04EEC280F22C612F"]
@@ -83,6 +86,7 @@
 			icon: "aether:aether_portal_frame"
 			id: "04EEC280F22C612F"
 			shape: "gear"
+			size: 1.5d
 			tasks: [
 				{
 					dimension: "aether:the_aether"
@@ -112,8 +116,8 @@
 				item: "gtceu:nichrome_coil_block"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 6.0d
+			x: 1.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
@@ -338,36 +342,6 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["762A79DEDEE8636A"]
-			description: [
-				"Smelt the Tantalum dust to get Tantalum ingots."
-				""
-				"With Tantalum you can get cheaper components, SMD components specifically."
-				"Craft a batch of them and never worry again!"
-			]
-			id: "2BB98DA0A2CA5342"
-			tasks: [{
-				id: "29292500FE20AEF9"
-				item: "gtceu:tantalum_ingot"
-				type: "item"
-			}]
-			x: -0.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["530D44DF1E3897F8"]
-			description: ["You can get Tantalite from Manganese ore veins."]
-			hide_dependency_lines: true
-			id: "762A79DEDEE8636A"
-			tasks: [{
-				id: "570530954BC7FD66"
-				item: "gtceu:tantalite_dust"
-				type: "item"
-			}]
-			x: -0.5d
-			y: -6.0d
-		}
-		{
 			dependencies: [
 				"530D44DF1E3897F8"
 				"442D375BF085216E"
@@ -529,7 +503,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: -3.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["20831A754A2A5392"]
@@ -539,8 +513,8 @@
 				item: "gtceu:gelled_toluene"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -1.5d
+			x: 5.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["70CA8E65AA945363"]
@@ -550,8 +524,8 @@
 				item: "gtceu:industrial_tnt"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -1.5d
+			x: 7.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4AEC76A5E18BF772"]
@@ -594,6 +568,8 @@
 		{
 			dependencies: ["59775F7F175FF086"]
 			id: "20831A754A2A5392"
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "2CB0DDA54BB47F50"
 				item: "gtceu:distillation_tower"
@@ -865,6 +841,7 @@
 		{
 			dependencies: ["59775F7F175FF086"]
 			id: "35A65112B1648D9F"
+			shape: "gear"
 			tasks: [{
 				id: "313B5ACC20FD87D4"
 				item: "gtceu:phosphorus_boule"
@@ -1013,7 +990,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 7.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["62B1007E03E72515"]
@@ -1025,6 +1002,101 @@
 			}]
 			x: 7.0d
 			y: -6.0d
+		}
+		{
+			dependencies: [
+				"43D222FD4AF3280E"
+				"68BAC4CBCD602803"
+				"31C81A033CB8C11D"
+				"44890B3796B295E2"
+			]
+			id: "4F14AC38199A005E"
+			tasks: [{
+				id: "772280E8D0AA09A5"
+				item: "kubejs:t1_rocket_plate"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2C8E85642D860689"]
+			id: "1FC97C785D9656B2"
+			tasks: [{
+				dimension: "ad_astra:moon"
+				icon: "ad_astra:moon_globe"
+				id: "55F80ADEDB45170D"
+				type: "dimension"
+			}]
+			title: "To the Moon and back!"
+			x: 8.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"4F14AC38199A005E"
+				"1759C9F0F4EC584C"
+			]
+			id: "2C8E85642D860689"
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "159505787578AA66"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_1_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1FC97C785D9656B2"]
+			id: "44CFC87CB9F11EE8"
+			shape: "gear"
+			tasks: [{
+				id: "1D472360661136AC"
+				item: "gtceu:desh_ingot"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6CB7D934C87C3EB9"]
+			id: "1C4FCF8636BC790A"
+			tasks: [{
+				id: "3B9D8D1630CC9744"
+				item: "gtceu:mistrium_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6CB7D934C87C3EB9"]
+			id: "51F47C4B68444190"
+			tasks: [{
+				id: "6AC0F85B27F3380B"
+				item: "gtceu:ozone_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["43D222FD4AF3280E"]
+			hide_dependency_lines: true
+			id: "1759C9F0F4EC584C"
+			tasks: [{
+				id: "19A94F5E0C759688"
+				item: "ad_astra:nasa_workbench"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 9.0d
 		}
 	]
 	title: "HV Age"
