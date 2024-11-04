@@ -685,6 +685,71 @@
 			x: 7.5d
 			y: 4.5d
 		}
+		{
+			id: "27EFF52A9FBBE23A"
+			tasks: [{
+				id: "7CF2BD82F0FE76E8"
+				item: "gtceu:styrene_butadiene_rubber_bucket"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["27EFF52A9FBBE23A"]
+			id: "40BA01C8A46A39DC"
+			tasks: [{
+				id: "4401C04DD8154FEA"
+				item: "gtceu:styrene_butadiene_rubber_plate"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["40BA01C8A46A39DC"]
+			id: "6056BAFF1819C91A"
+			tasks: [{
+				id: "021AC82353932EBD"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_1_rover"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["669F52806D1D39F6"]
+			id: "6FC4B69A183462F3"
+			shape: "gear"
+			tasks: [{
+				id: "1F1066691E26F58B"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_1_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6FC4B69A183462F3"]
+			id: "1FC97C785D9656B2"
+			tasks: [{
+				dimension: "ad_astra:moon"
+				icon: "ad_astra:moon_globe"
+				id: "55F80ADEDB45170D"
+				type: "dimension"
+			}]
+			title: "To the Moon and back!"
+			x: -1.5d
+			y: 4.5d
+		}
 	]
 	title: "EV Age"
 }
