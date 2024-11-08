@@ -15,7 +15,7 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('elementium', 123, 318, -1, null, 'E', false)
     
     // Ad Astra
-    event.create('desh', 135, 320, -1, null, 'De', false)
-    event.create('ostrum', 136, 324, -1, null, 'Ot', false)
-    event.create('calorite', 137, 328, -1, null, 'Ct', false)
+    // event.create('desh', 135, 320, -1, null, 'De', false)
+    // event.create('ostrum', 136, 324, -1, null, 'Ot', false)
+    // event.create('calorite', 137, 328, -1, null, 'Ct', false)
  })
