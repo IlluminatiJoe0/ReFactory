@@ -1020,51 +1020,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["2C8E85642D860689"]
-			id: "1FC97C785D9656B2"
-			tasks: [{
-				dimension: "ad_astra:moon"
-				icon: "ad_astra:moon_globe"
-				id: "55F80ADEDB45170D"
-				type: "dimension"
-			}]
-			title: "To the Moon and back!"
-			x: 8.5d
-			y: 9.0d
-		}
-		{
-			dependencies: [
-				"4F14AC38199A005E"
-				"1759C9F0F4EC584C"
-			]
-			id: "2C8E85642D860689"
-			shape: "gear"
-			size: 1.0d
-			tasks: [{
-				id: "159505787578AA66"
-				item: {
-					Count: 1
-					id: "ad_astra:tier_1_rocket"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 7.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["1FC97C785D9656B2"]
-			id: "44CFC87CB9F11EE8"
-			shape: "gear"
-			tasks: [{
-				id: "1D472360661136AC"
-				item: "gtceu:desh_ingot"
-				type: "item"
-			}]
-			x: 10.0d
-			y: 9.0d
-		}
-		{
 			dependencies: ["6CB7D934C87C3EB9"]
 			id: "1C4FCF8636BC790A"
 			tasks: [{
@@ -1089,13 +1044,30 @@
 		{
 			dependencies: ["43D222FD4AF3280E"]
 			hide_dependency_lines: true
-			id: "1759C9F0F4EC584C"
+			id: "247390A4673AD828"
 			tasks: [{
-				id: "19A94F5E0C759688"
-				item: "ad_astra:nasa_workbench"
+				id: "41C127184EEC3E8F"
+				item: "gcyr:rocket_scanner"
 				type: "item"
 			}]
 			x: 5.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"4F14AC38199A005E"
+				"247390A4673AD828"
+			]
+			id: "7F79BF7FD6AE35CE"
+			shape: "gear"
+			tasks: [{
+				dimension: "gcyr:luna"
+				icon: "gcyr:moon_sand"
+				id: "5605E8AEDC2F8FBF"
+				title: "To the Moon!"
+				type: "dimension"
+			}]
+			x: 7.0d
 			y: 9.0d
 		}
 	]
