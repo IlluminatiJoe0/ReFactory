@@ -1,5 +1,7 @@
 # 0.1.2
 - Added Gregicality Rocketry, Just Zoom, Enchantment Descriptions, ME Requester, Sodium/Embeddium Extras, Time In A Bottle
+- Updated GregTech, EnderIO, and a bunch more mods
+- Removed Gregified Integrations (bye bye!!!)
 
 # 0.1.1
 - added Too Fast, Client Crafting, FTB Essentials, Almost Unified
