@@ -24,6 +24,19 @@ ServerEvents.recipes(event => {
 
     // THERMAL MACHINE FRAME 
 	frame('thermal:machine_frame', 'gtceu:stainless_steel_plate')
+  event.shaped(
+		'thermal:machine_frame',
+		[
+			'PPP',
+			'PVP',
+			'CPC',
+		],
+		{
+			P: 'gtceu:stainless_steel_plate',
+			V: '#forge:tools/wrenches',
+			C: 'gtceu:electrum_single_cable'
+		}
+	)
 
   event.replaceInput({ input: 'thermal:cured_rubber' }, 'thermal:cured_rubber', 'gtceu:rubber_ingot')
 
