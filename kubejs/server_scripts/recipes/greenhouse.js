@@ -4,15 +4,18 @@ ServerEvents.recipes(event => {
 
     event.shaped(
         'gtceu:greenhouse',
-        ['AWA', 'CSC', 'WCW'],
+        [
+            'GGG',
+            'CHC',
+            'FFF'
+        ],
         {
-            A: '#forge:circuits/mv',
-            W: 'gtceu:copper_single_cable',
-            C: '#forge:circuits/mv',
-            S: 'gtceu:solid_machine_casing'
+            G: 'ae2:quartz_glass',
+            C: '#gtceu:circuits/mv',
+            H: 'gtceu:mv_machine_hull',
+            F: 'thermal:machine_insolator'
         }
-    ).id('gtceu:shaped/greenhouse')
-
+    )
 
     ////// Greenhouse Recipes //////
 
@@ -24,16 +27,16 @@ ServerEvents.recipes(event => {
                 .itemInputs('4x gtceu:fertilizer')
                 .inputFluids(Fluid.of('minecraft:water', fluid))
                 .itemOutputs(output)
-                .duration(320)
-                .EUt(MV)
+                .duration(20*16)
+                .EUt(GTValues.VA[GTValues.MV])
         } else {
             event.recipes.gtceu.greenhouse(id)
                 .circuit(1)
                 .notConsumable(InputItem.of(input))
                 .inputFluids(Fluid.of('minecraft:water', fluid))
                 .itemOutputs(output)
-                .duration(640)
-                .EUt(MV)
+                .duration(20*32)
+                .EUt(GTValues.VA[GTValues.MV])
         }
     }
 
