@@ -3,9 +3,11 @@
 
     "gtceu.proliferation_inducer": "§dProliferation",
     "gtceu.crystal_puller": "§bCrystal Pulling",
+    "gtceu.greenhouse": "Greenhouse",
 
     "block.gtceu.proliferation_inducer": "§dProliferation Inducer",
     "block.gtceu.crystal_puller": "§bCrystal Puller",
+    "block.gtceu.greenhouse": "Greenhouse",
 
     "material.gtceu.zanite": "Zanite",
     "material.gtceu.ambrosium": "Ambrosium",

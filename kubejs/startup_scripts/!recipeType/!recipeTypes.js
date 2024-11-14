@@ -17,4 +17,11 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARC_FURNACE, FillDirection.LEFT_TO_RIGHT) 
         .setSound(GTSoundEntries.TURBINE)
+
+    event.create('greenhouse')
+        .category('refactory')
+        .setEUIO('in')
+        .setMaxIOSize(3, 4, 1, 0)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.BATH)
 })
