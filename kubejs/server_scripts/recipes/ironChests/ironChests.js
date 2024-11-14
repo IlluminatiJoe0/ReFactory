@@ -1,5 +1,43 @@
 ServerEvents.recipes(event => {
 
+    event.remove({ id:'ironchest:chests/vanilla_copper_chest' })
+    event.remove({ id:'ironchest:chests/vanilla_iron_chest' })
+    event.remove({ id:'ironchest:chests/copper_iron_chest' })
+    event.remove({ id:'ironchest:chests/gold_diamond_chest' })
+    event.remove({ id:'ironchest:chests/diamond_crystal_chest' })
+    event.remove({ id:'ironchest:chests/diamond_obsidian_chest' })
+    event.remove({ id:'ironchest:chests/vanilla_dirt_chest' })
+
+    event.remove({id: 'ironchest:upgrades/wood_to_iron_chest_upgrade'})
+    event.remove({id: 'ironchest:upgrades/iron_to_gold_chest_upgrade'})
+    event.remove({id: 'ironchest:upgrades/gold_to_diamond_chest_upgrade'})
+    event.remove({id: 'ironchest:upgrades/copper_to_iron_chest_upgrade'})
+    event.remove({id: 'ironchest:upgrades/wood_to_iron_chest_upgrade'})
+    event.remove({id: 'ironchest:upgrades/diamond_to_crystal_chest_upgrade'})
+    event.remove({id: 'ironchest:upgrades/wood_to_copper_chest_upgrade'})
+    event.remove({id: 'ironchest:upgrades/diamond_to_obsidian_chest_upgrade'})
+
+    // let upgrade = (input, output) => {
+    //     event.recipes.gtceu.assembler(output)
+    //     .circuit(32)
+    //     .itemInputs(
+    //         input
+    //     )
+    //     .itemOutputs(
+    //         output
+    //     )
+    //     .duration(20*8)
+    //     .EUt(8)
+    // }
+
+    // upgrade('8x gtceu:copper_plate', 'ironchest:wood_to_copper_chest_upgrade')
+    // upgrade('8x gtceu:iron_plate', 'ironchest:wood_to_iron_chest_upgrade')
+    // upgrade('4x gtceu:gold_plate', 'ironchest:iron_to_gold_chest_upgrade')
+    // upgrade('4x gtceu:diamond_plate', 'ironchest:gold_to_diamond_chest_upgrade')
+    // upgrade('4x ae2:quartz_glass', 'ironchest:diamond_to_crystal_chest_upgrade')
+    // upgrade('4x gtceu:obsidian_plate', 'ironchest:diamond_to_obsidian_chest_upgrade')
+    // upgrade('4x gtceu:iron_plate', 'ironchest:copper_to_iron_chest_upgrade')
+
     // copper chest
     event.recipes.gtceu.assembler('kubejs_copper_chest')
     .circuit(32)
