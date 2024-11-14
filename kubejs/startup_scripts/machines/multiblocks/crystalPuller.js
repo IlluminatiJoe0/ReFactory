@@ -1,0 +1,31 @@
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('crystal_puller', 'multiblock')
+        .tooltips(Component.translatable('tooltip.gtceu.multiblock.crystal_puller'))
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeType('crystal_puller')
+        .appearanceBlock(GTBlocks.CASING_INVAR_HEATPROOF)
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('CcC', 'CCC', 'CCC', 'CCC')
+            .aisle('ccc', 'C#C', 'C#C', 'CGC')
+            .aisle('CcC', 'COC', 'CCC', 'CCC')
+            .where('O', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('#', Predicates.air())
+            .where('C', Predicates.blocks(GTBlocks.CASING_INVAR_HEATPROOF.get())
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS))
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE))
+            )
+            .where('G', Predicates.blocks(GTBlocks.CASING_STEEL_GEARBOX.get()))
+            .where('c', Predicates.heatingCoils())
+            .build()
+        )
+        .workableCasingRenderer(
+            'gtceu:block/casings/solid/machine_casing_heatproof',
+            'gtceu:block/multiblock/large_chemical_reactor',
+            false
+        )
+})
