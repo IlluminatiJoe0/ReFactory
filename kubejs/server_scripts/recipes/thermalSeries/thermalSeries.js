@@ -38,6 +38,7 @@ ServerEvents.recipes(event => {
 		}
 	)
 
+  // Rubber replacement
   event.replaceInput({ input: 'thermal:cured_rubber' }, 'thermal:cured_rubber', 'gtceu:rubber_ingot')
 
   // Compost
@@ -54,6 +55,21 @@ ServerEvents.recipes(event => {
   event.replaceInput({id: 'thermal:machine_insolator'}, 'thermal:lumium_gear', 'gtceu:small_aluminium_gear')
   event.replaceInput({id: 'thermal:machine_insolator'}, 'thermal:machine_frame', 'gtceu:mv_machine_hull')
 
+  // Lumium and Signalum replacement
+  event.replaceInput({ input: 'thermal:lumium_gear' }, 'thermal:lumium_gear', 'gtceu:lumium_gear')
+  event.replaceInput({ input: 'thermal:lumium_ingot' }, 'thermal:lumium_ingot', 'gtceu:lumium_ingot')
+  event.replaceInput({ input: 'thermal:lumium_plate' }, 'thermal:lumium_plate', 'gtceu:lumium_plate')
+  event.replaceInput({ input: 'thermal:lumium_dust' }, 'thermal:lumium_dust', 'gtceu:lumium_dust')
+  event.replaceInput({ input: 'thermal:lumium_nugget' }, 'thermal:lumium_nugget', 'gtceu:lumium_nugget')
+  event.replaceInput({ input: 'thermal:lumium_block' }, 'thermal:lumium_block', 'gtceu:lumium_block')
+
+  event.replaceInput({ input: 'thermal:signalum_gear' }, 'thermal:signalum_gear', 'gtceu:signalum_gear')
+  event.replaceInput({ input: 'thermal:signalum_ingot' }, 'thermal:signalum_ingot', 'gtceu:signalum_ingot')
+  event.replaceInput({ input: 'thermal:signalum_plate' }, 'thermal:signalum_plate', 'gtceu:signalum_plate')
+  event.replaceInput({ input: 'thermal:signalum_dust' }, 'thermal:signalum_dust', 'gtceu:signalum_dust')
+  event.replaceInput({ input: 'thermal:signalum_nugget' }, 'thermal:signalum_nugget', 'gtceu:signalum_nugget')
+  event.replaceInput({ input: 'thermal:signalum_block' }, 'thermal:signalum_block', 'gtceu:signalum_block')
+
 })
 
 // hide thermal items
@@ -67,6 +83,8 @@ ServerEvents.recipes(event => {
     yeet('thermal:electrum_ingot')
     yeet('thermal:invar_ingot')
     yeet('thermal:rose_gold_ingot')
+    //yeet(/thermal:lumium_/)
+    //yeet(/thermal:signalum_/)
     // plates
     yeet('thermal:tin_plate')
     yeet('thermal:lead_plate')

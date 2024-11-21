@@ -180,6 +180,53 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     .iconSet(GTMaterialIconSet.FLUID)
     .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
+    event.create('lumium')
+    .ingot()
+    .color(0xfff9b5)
+    .secondaryColor(0xed983e)
+    .components(
+        '3x tin',
+        '1x silver',
+        '4x glowstone'
+    )
+    .iconSet(GTMaterialIconSet.METALLIC)
+    .flags(
+        GTMaterialFlags.GENERATE_PLATE, 
+        GTMaterialFlags.GENERATE_LONG_ROD,
+        GTMaterialFlags.GENERATE_BOLT_SCREW,
+        GTMaterialFlags.GENERATE_DENSE,
+        GTMaterialFlags.GENERATE_RING,
+        GTMaterialFlags.GENERATE_FINE_WIRE,
+        GTMaterialFlags.GENERATE_FOIL,
+        GTMaterialFlags.GENERATE_GEAR,
+        GTMaterialFlags.GENERATE_ROD,
+        GTMaterialFlags.GENERATE_ROTOR
+    )
+    .blastTemp(2000, null, GTValues.VA[GTValues.EV], 20*20)
+
+    event.create('signalum')
+    .ingot()
+    .color(0xeb7628)
+    .components(
+        '3x copper',
+        '1x silver',
+        '2x redstone'
+    )
+    .iconSet(GTMaterialIconSet.METALLIC)
+    .flags(
+        GTMaterialFlags.GENERATE_PLATE, 
+        GTMaterialFlags.GENERATE_LONG_ROD,
+        GTMaterialFlags.GENERATE_BOLT_SCREW,
+        GTMaterialFlags.GENERATE_DENSE,
+        GTMaterialFlags.GENERATE_RING,
+        GTMaterialFlags.GENERATE_FINE_WIRE,
+        GTMaterialFlags.GENERATE_FOIL,
+        GTMaterialFlags.GENERATE_GEAR,
+        GTMaterialFlags.GENERATE_ROD,
+        GTMaterialFlags.GENERATE_ROTOR
+    )
+    .blastTemp(2000, null, GTValues.VA[GTValues.IV], 20*20)
+
     // Ad Astra
     // Desh
     // event.create('desh')
