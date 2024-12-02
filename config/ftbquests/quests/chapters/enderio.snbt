@@ -6,18 +6,562 @@
 	group: ""
 	icon: "enderio:ender_resonator"
 	id: "78C3D9CACFB4C904"
+	images: [
+		{
+			height: 2.0d
+			image: "enderio:block/alloy_smelter_front_active"
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			height: 2.0d
+			image: "enderio:block/slice_and_splice_front_active"
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: -3.5d
+		}
+	]
 	order_index: 18
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["18BC6F844CF368EF"]
-		id: "1F6208F7AD819E46"
-		tasks: [{
-			id: "3EF68E5A1BB06B9B"
-			item: "enderio:void_chassis"
-			type: "item"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["18BC6F844CF368EF"]
+			description: [
+				"Welcome to EnderIO Questline! "
+				""
+				"We will first start with our machine casing; the &aChassis.&f"
+				""
+				"To begin, we need to first gather Aluminium (I recommend at least a few stacks in MV, to atone for the sins of the Greg)"
+			]
+			id: "1F6208F7AD819E46"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "05BAEBB2268B5426"
+				table_id: 6805427150730107784L
+				type: "loot"
+			}]
+			subtitle: "Ender(Input/Output);"
+			tasks: [{
+				id: "3EF68E5A1BB06B9B"
+				item: "enderio:void_chassis"
+				type: "item"
+			}]
+			title: "Welcome to EnderIO!"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4816A85DF7D24F0B"]
+			description: [
+				"Conduits are a great way for compact logistics in this pack. "
+				""
+				"For those unaware, Conduits are basically pipes, with the unique ability to &a fit multiple of different types in the same block!"
+				"&f"
+				""
+				"They also possess many great filtering abilities and mod compat."
+				""
+				"To get started, craft some &eConduit Binder&f (You will need a LOT of it, but it is decently cheap.)"
+				""
+				"(I also recommend you start the other quest for the alloys, as you will be needing them for the conduits)"
+			]
+			hide_dependency_lines: false
+			id: "0FF81E53547B92AE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "62A1CC766142871A"
+				table_id: 6805427150730107784L
+				type: "loot"
+			}]
+			subtitle: "MCMultiPart... #bringbackprojectred"
+			tasks: [{
+				id: "48687A755F3ECDE7"
+				item: "enderio:conduit_binder"
+				type: "item"
+			}]
+			title: "Welcome to EnderIO! (Conduits)"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0FF81E53547B92AE"
+				"198D927F0F40328D"
+			]
+			description: [
+				"Okay, so i heard this has infinite energy transport. Take it with a grain of salt."
+				""
+				"Besides that, it is good for routing energy in compact spaces."
+			]
+			id: "18C1EBD6D2500951"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5E13D582C319F80B"
+				table_id: 6805427150730107784L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "14C9BA4411079407"
+				item: "enderio:energy_conduit"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0FF81E53547B92AE"]
+			description: [
+				"The regular Fluid conduit is affected by Gravity, so it only flows from up to down. The rest don't have this constraint."
+				"&l"
+			]
+			id: "5E74326789394CD3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4D4DBB4C8262A47E"
+				table_id: 6805427150730107784L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "66848992B0D7608C"
+					item: "enderio:fluid_conduit"
+					type: "item"
+				}
+				{
+					id: "6885CF4182FBD7FA"
+					item: "enderio:pressurized_fluid_conduit"
+					type: "item"
+				}
+				{
+					id: "59997DD081B80225"
+					item: "enderio:ender_fluid_conduit"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0FF81E53547B92AE"]
+			description: ["Conducts Redstone. As simple as it gets."]
+			id: "0E092819F22A70E8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2CD80E32BFF2534B"
+				table_id: 6805427150730107784L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "343D6FD10D97C841"
+				item: "enderio:redstone_conduit"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"0FF81E53547B92AE"
+				"643FEB164D504DEB"
+			]
+			description: ["Item Conduits are bad in terms of bulk transport, but insanely good in logistics. Configure priorities and use them with drawers for a cheap filter setup."]
+			id: "0C1C7A6A5BF6F75C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "565325A596895C0E"
+				table_id: 6805427150730107784L
+				type: "loot"
+			}]
+			subtitle: "Logic++"
+			tasks: [{
+				id: "44D3B9379EA1B062"
+				item: "enderio:item_conduit"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0FF81E53547B92AE"]
+			description: [
+				"ME Conduits are way better than regular cables imo, but you need to connect them to a cable to use them. They don't connect"
+				"to devices directly in my experience."
+			]
+			id: "4F7EB918B94FBF9E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2BCDB3554649EEA4"
+				table_id: 6805427150730107784L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "47944E4F48A2F6D3"
+				item: "enderio:me_conduit"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1F6208F7AD819E46"]
+			description: [
+				"The Alloy Smelter is your first machine (no, this is NOT a greg reference)"
+				""
+				"This will help you make your first key EnderIO Alloys, but i recommend you stock up on Silicon, Copper, Iron, Redstone, and Ender Pearls to make the most useful conduits."
+				""
+				"This can also make Fused Quartz, which is incredibly versatile as a building block (no ctm :cry:) and is also required for many other things in EIO itself."
+				""
+				"So, i suggest you make 2-4 of these for parallelization early on."
+			]
+			id: "2479DD1E235FEA1B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4FF28F61389B1317"
+				table_id: 6805427150730107784L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "0E4B4FEE22B86273"
+				item: "enderio:alloy_smelter"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2479DD1E235FEA1B"]
+			description: ["Made from Copper and Silicon. Needed for Future Alloys."]
+			id: "6F8CBEF30A745346"
+			tasks: [{
+				id: "357AA9FE7DCD58EB"
+				item: "enderio:copper_alloy_ingot"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6F8CBEF30A745346"]
+			id: "198D927F0F40328D"
+			tasks: [{
+				id: "2B2D8A786DE0F833"
+				item: "enderio:conductive_alloy_ingot"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1F6208F7AD819E46"]
+			description: ["The SAG Mill (Semi-Autogenous Grinder) is a cheap way to do ore processing, but is also required for many other EIO recipes."]
+			id: "3B88C3102C1AC271"
+			subtitle: "We have a macerator at home"
+			tasks: [{
+				id: "08DF368D835BE56B"
+				item: "enderio:sag_mill"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1F6208F7AD819E46"
+				"12FA482532B5E8A2"
+			]
+			description: ["Capacitor Banks are easy modular power storage that connect to each other, like a multiblock. They don't have CTM, unless you have Athena installed. Which, i will ask Joe to do..."]
+			id: "74705856142839F6"
+			tasks: [
+				{
+					id: "3F7BD0FAA18D481A"
+					item: "enderio:basic_capacitor_bank"
+					type: "item"
+				}
+				{
+					id: "5BDB6FF330095F5F"
+					item: "enderio:advanced_capacitor_bank"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "603E97CC0F7CE2E5"
+					item: "enderio:vibrant_capacitor_bank"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			description: [
+				"To get Grains of Infinity, you need to light bedrock on fire and wait... or you can use the alternative method with flint and deepslate."
+				""
+				"These are required for Capacitors, which need to be implanted in most machines to make them work. They are also required for tool rods."
+			]
+			id: "4279169E4B3A9A28"
+			rewards: [{
+				count: 6
+				id: "32BA27FCDF151A9B"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			subtitle: "Back in MY day.."
+			tasks: [{
+				id: "29F4CC70928A3303"
+				item: "enderio:grains_of_infinity"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4279169E4B3A9A28"]
+			description: ["Capacitors are modular \"upgrades\" (kind of?) to any EIO Machine. They are required to make the machine work and the higher the tier the more effective they make the machine."]
+			id: "12FA482532B5E8A2"
+			subtitle: "Stop the Cap, Cuh"
+			tasks: [
+				{
+					id: "2D6B2EA7B9718A77"
+					item: "enderio:basic_capacitor"
+					type: "item"
+				}
+				{
+					id: "382A1F4DB92C4E1E"
+					item: "enderio:double_layer_capacitor"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3F5B1517AEFB6D5F"
+					item: "enderio:octadic_capacitor"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Capacitors"
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1F6208F7AD819E46"]
+			description: [
+				"The Painting Machine has one main purpose; to paint Facades to a certain block."
+				""
+				"Place a Conduit Facade in one slot and the desired block in the other. Boom, it begins painting. It doesn't consume the original block either."
+			]
+			id: "0783DE4F1B1242FC"
+			subtitle: "Facade, Like, AE2? "
+			tasks: [{
+				id: "140A349853205CC9"
+				item: "enderio:painting_machine"
+				type: "item"
+			}]
+			title: "Facades and Painting Machine"
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1F6208F7AD819E46"]
+			description: ["The Crafter is a simple autocrafting machine. Simply make a pattern in one grid and input the items through the other."]
+			id: "206CB6AACABB6B71"
+			subtitle: "RFTools flashes.. good times they were"
+			tasks: [{
+				id: "7270B94149A1815F"
+				item: "enderio:crafter"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1F6208F7AD819E46"]
+			description: [
+				"Can someone tellme how this works? Cause i have legit 0 idea"
+				"-iris"
+			]
+			id: "6E51C51DDCE2ECE5"
+			tasks: [{
+				id: "4C857E3593BD53C1"
+				item: "enderio:impulse_hopper"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2479DD1E235FEA1B"]
+			description: ["See, this is why i say stock up on pearls."]
+			id: "643FEB164D504DEB"
+			tasks: [{
+				id: "33BF65C50896053A"
+				item: "enderio:pulsating_alloy_ingot"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2479DD1E235FEA1B"]
+			id: "57B1CA72A6B208C0"
+			tasks: [{
+				id: "39E338C805AF499F"
+				item: "enderio:clear_glass"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2479DD1E235FEA1B"]
+			description: ["Welcome to the next tier of machines! These machines focus around mob drops and xp."]
+			id: "7C1C8BF9AFFB989F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "16886EA7B97C2A70"
+				table_id: 6805427150730107784L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "0452AC5B3007CA18"
+				item: "enderio:soularium_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7C1C8BF9AFFB989F"]
+			description: ["Soul Machines almost always need a soul vial for its use, so i recommend you make a few."]
+			id: "11B64118797C615D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6BEECE2D2FD01B38"
+				table_id: 6805427150730107784L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "1DDDB6F4177D72F9"
+				item: "enderio:ensouled_chassis"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["11B64118797C615D"]
+			description: [
+				"The Powered Spawner requires two things to spawn mobs; Energy, and also a Soul Vial with the desired mob. It can be upgraded using capacitors for a bigger range."
+				""
+				"It consumes more energy for certain specific mobs, e.g wither skeleton."
+			]
+			id: "4BD2EC8939084030"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "456057331EDF1B3C"
+				table_id: 6805427150730107784L
+				type: "loot"
+			}]
+			subtitle: "RFTools is BETTER!!"
+			tasks: [{
+				id: "25547A0EE4D68B4C"
+				item: {
+					Count: 1
+					id: "enderio:powered_spawner"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["11B64118797C615D"]
+			description: [
+				"The Slice'N'Splice converts heads (as well as other materials) into logic components."
+				""
+				"It is required for the Z-Logic processor, as well as the Ender Resonator."
+			]
+			id: "7DD5F8DE20F8E0F7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5BBE6452D3BB50DF"
+				table_id: 6805427150730107784L
+				type: "loot"
+			}]
+			subtitle: "No, you cannot eat it."
+			tasks: [{
+				id: "0CB5D91155AB620F"
+				item: "enderio:slice_and_splice"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["11B64118797C615D"]
+			description: [
+				"Used to bind souls to things like Broken Spawners from Soul Vials."
+				"Can also be used to infuse certain items with souls."
+			]
+			id: "5A265150EA02DDDE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1427713F8832DF2E"
+				table_id: 6805427150730107784L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "3D041A1668260AA2"
+				item: "enderio:soul_binder"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["11B64118797C615D"]
+			id: "28D396968C4FB436"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "22BA6616CB5A429A"
+				table_id: 6805427150730107784L
+				type: "loot"
+			}]
+			subtitle: "I don't think this works"
+			tasks: [{
+				id: "1A6B8350D0FFB4EB"
+				item: {
+					Count: 1
+					id: "enderio:soul_engine"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["11B64118797C615D"]
+			description: ["The Soul Vial is an item that is required for using many soul machines. To capture a mob inside of it, simply hold an empty vial and rightclick on said mob."]
+			id: "0769DAC8507EEF10"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "68430907D6A7A5B1"
+				table_id: 6805427150730107784L
+				type: "loot"
+			}]
+			subtitle: "I Choose You!"
+			tasks: [{
+				id: "1462C30DC482726F"
+				item: "enderio:empty_soul_vial"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.5d
+		}
+	]
 	title: "EnderIO"
 }

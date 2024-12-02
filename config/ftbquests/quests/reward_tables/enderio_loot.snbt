@@ -1,0 +1,18 @@
+{
+	id: "5E71BBEFD8111B88"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ count: 8, item: "enderio:conduit_binder" }
+		{ count: 4, item: "enderio:item_conduit" }
+		{ count: 4, item: "enderio:silicon" }
+		{ count: 3, item: "gtceu:aluminium_ingot", weight: 0.1f }
+		{ item: "botania:cosmetic_witch_pin", weight: 0.2f }
+		{ count: 3, item: "enderio:enderios" }
+		{ item: "enderio:travel_anchor", weight: 0.2f }
+		{ count: 2, item: "thermal:hearty_stew" }
+		{ count: 64, item: "minecraft:white_concrete" }
+		{ count: 4, item: "enderio:me_conduit" }
+	]
+	title: "EnderIO Loot"
+}
