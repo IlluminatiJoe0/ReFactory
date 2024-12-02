@@ -2,7 +2,9 @@
 - Added Gregicality Rocketry, Just Zoom, Enchantment Descriptions, ME Requester, Sodium/Embeddium Extras, Time In A Bottle
 - Updated GregTech, EnderIO, and a bunch more mods
 - Removed Gregified Integrations (bye bye!!!)
+- Removed Bauxite from the overworld Mica vein
 - Added the Greenhouse
+- Many Minor mods Gregified
 - More gregified recipes
 
 # 0.1.1
