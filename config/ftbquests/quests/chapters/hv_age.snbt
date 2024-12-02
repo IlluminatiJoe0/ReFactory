@@ -66,7 +66,7 @@
 				item: "gtceu:zanite_steel_ingot"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 8.5d
 			y: 4.5d
 		}
 		{
@@ -813,7 +813,7 @@
 				item: "kubejs:elven_circuit"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 10.0d
 			y: 4.5d
 		}
 		{
@@ -915,7 +915,7 @@
 				item: "botania:alfheim_portal"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 11.5d
 			y: 4.5d
 		}
 		{
@@ -927,7 +927,7 @@
 				item: "botania:elementium_ingot"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 11.5d
 			y: 7.5d
 		}
 		{
@@ -977,7 +977,7 @@
 				}
 			]
 			title: "Botanical Machinery"
-			x: 8.535714285714292d
+			x: 10.035714285714292d
 			y: 6.0d
 		}
 		{

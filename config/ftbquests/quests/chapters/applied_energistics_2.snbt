@@ -9,7 +9,10 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["49A34E5DA047705A"]
+			dependencies: [
+				"49A34E5DA047705A"
+				"0F3D795EAAE3E8DC"
+			]
 			id: "77FC61AFA9608A79"
 			tasks: [{
 				id: "335604F1D9BDD822"
@@ -97,6 +100,11 @@
 			dependencies: ["410AC3EF063300E8"]
 			icon: "ae2:cell_component_1k"
 			id: "741FE44D9DD27659"
+			tasks: [{
+				id: "0DC6FA2178CBA660"
+				item: "ae2:cell_component_1k"
+				type: "item"
+			}]
 			title: "Storage Components"
 			x: 1.5d
 			y: -5.0d
@@ -188,6 +196,60 @@
 			}]
 			x: -1.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["1D700C53DB15F3EA"]
+			id: "236E5597D4F4B5EB"
+			tasks: [{
+				id: "42D2AD65251E9E23"
+				item: "ae2:fluix_glass_cable"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0F3D795EAAE3E8DC"]
+			id: "01C75F187C3EC440"
+			tasks: [{
+				id: "4046C2A6E83A474E"
+				item: "ae2:flawed_budding_quartz"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0F3D795EAAE3E8DC"]
+			id: "198F3F03A42BF420"
+			tasks: [{
+				id: "3969D8C23BEEC9D5"
+				item: "ae2:quartz_fiber"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			id: "0F3D795EAAE3E8DC"
+			tasks: [{
+				id: "7B80B16E8B14BC37"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0F3D795EAAE3E8DC"]
+			id: "1D700C53DB15F3EA"
+			tasks: [{
+				id: "02AE053F23E14741"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
 		}
 	]
 	title: "Applied Energistics 2"
