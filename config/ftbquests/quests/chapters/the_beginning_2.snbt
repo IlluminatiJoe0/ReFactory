@@ -193,7 +193,7 @@
 						Count: 1
 						id: "gtceu:iron_hammer"
 						tag: {
-							DisallowContainerItem: 0b
+							DisallowContainerItem: 0
 							GT.Behaviours: { }
 							GT.Tool: {
 								Damage: 0
@@ -716,7 +716,10 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["189B920AAB6456B4"]
+			dependencies: [
+				"189B920AAB6456B4"
+				"0E1B564A6BE06105"
+			]
 			description: ["A step into future."]
 			id: "313476D47A208906"
 			tasks: [{
@@ -732,7 +735,7 @@
 				"38D1CF49FA014533"
 				"59B13573493F565F"
 			]
-			description: ["Now that you have rubber, you're ready to make cables!"]
+			description: ["Now that you have rubber, you're ready to make cables! "]
 			id: "09ECD67B4648D2EA"
 			tasks: [{
 				id: "1ECBD4DC55C2A0EE"
@@ -874,6 +877,11 @@
 		}
 		{
 			dependencies: ["189B920AAB6456B4"]
+			description: [
+				"Pulls nearby items towards you!"
+				""
+				"Needs charge to work."
+			]
 			hide_dependency_lines: true
 			id: "496A59D3C7E8D87B"
 			tasks: [{
@@ -892,7 +900,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: 7.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["03CF5FEDA44D312B"]
@@ -955,69 +963,42 @@
 				""
 				"These furnaces are faster than vanilla ones, and each higher tier is faster than the previous."
 			]
+			icon: "ironfurnaces:iron_furnace"
 			id: "1F0BF9D9E762756A"
-			tasks: [{
-				id: "34E5761882DCFFD1"
-				item: "ironfurnaces:iron_furnace"
-				type: "item"
-			}]
-			x: -2.0d
+			tasks: [
+				{
+					id: "34E5761882DCFFD1"
+					item: "ironfurnaces:iron_furnace"
+					type: "item"
+				}
+				{
+					id: "68D93D3B0C971862"
+					item: "ironfurnaces:gold_furnace"
+					type: "item"
+				}
+				{
+					id: "68502311B412E858"
+					item: "ironfurnaces:diamond_furnace"
+					type: "item"
+				}
+				{
+					id: "5839BF917783DD2A"
+					item: "ironfurnaces:emerald_furnace"
+					type: "item"
+				}
+				{
+					id: "739FA0F345A1DBAD"
+					item: "ironfurnaces:obsidian_furnace"
+					type: "item"
+				}
+				{
+					id: "69D98ACDBF186391"
+					item: "ironfurnaces:netherite_furnace"
+					type: "item"
+				}
+			]
+			x: -1.5d
 			y: 1.5d
-		}
-		{
-			dependencies: ["1F0BF9D9E762756A"]
-			id: "69671F83C3850ACA"
-			tasks: [{
-				id: "71EEF7CCFFFCBE9C"
-				item: "ironfurnaces:gold_furnace"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["1FE2F49A9EA6D4FA"]
-			id: "02A383E3FC209A47"
-			tasks: [{
-				id: "29C1CF0A846CD186"
-				item: "ironfurnaces:emerald_furnace"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["69671F83C3850ACA"]
-			id: "1FE2F49A9EA6D4FA"
-			tasks: [{
-				id: "2C8BA44763575CC7"
-				item: "ironfurnaces:diamond_furnace"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["02A383E3FC209A47"]
-			id: "168973CDC4B0C6A1"
-			tasks: [{
-				id: "17E89F348831A2C2"
-				item: "ironfurnaces:obsidian_furnace"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["168973CDC4B0C6A1"]
-			id: "0EB570C7EA655C0C"
-			tasks: [{
-				id: "4B68A26AB60AC7DD"
-				item: "ironfurnaces:netherite_furnace"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 4.5d
 		}
 		{
 			dependencies: ["31A0620289688EFB"]
@@ -1116,18 +1097,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["1F0BF9D9E762756A"]
-			id: "3EA8D154B8F2D359"
-			optional: true
-			tasks: [{
-				id: "169EA8F7847E52B1"
-				item: "ironfurnaces:item_copy"
-				type: "item"
-			}]
-			x: -4.5d
-			y: 1.5d
-		}
-		{
 			dependencies: ["03CF5FEDA44D312B"]
 			description: ["A very useful tool for gathering dirt/gravel. Mines in a 3x3 radius."]
 			id: "2C091EEA2566F00E"
@@ -1211,8 +1180,8 @@
 				item: "silentgear:fluffy_string"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -1.5d
+			x: 4.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["628E5C66DC7C1E88"]
@@ -1222,8 +1191,8 @@
 				item: "minecraft:string"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -1.5d
+			x: 4.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["223D1C1F43CDFF74"]
@@ -1234,7 +1203,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: -2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["74D8894C4E3F7290"]
@@ -1244,8 +1213,8 @@
 				item: "minecraft:feather"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -2.5d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1296F376D1AA5290"]
@@ -1270,6 +1239,34 @@
 			}]
 			x: 7.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["071811F3550BAF2F"]
+			hide_dependency_lines: true
+			id: "0E1B564A6BE06105"
+			tasks: [{
+				id: "0805B89E1E806C29"
+				item: "gtceu:wrought_iron_ingot"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["071811F3550BAF2F"]
+			description: [
+				"Don't worry about ore doubling, processing and other stuff yet, focus on getting a lot of ores and just smelting them."
+				""
+				"Later in the pack you'll have the chance to process the ores a lot better."
+			]
+			id: "383386B0D2747205"
+			tasks: [{
+				id: "41BCC7F82837F17A"
+				title: "Early Ore Processing"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 3.0d
 		}
 	]
 	title: "The Beginning"

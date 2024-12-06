@@ -75,25 +75,25 @@
 		{
 			dependencies: ["1AD99F9620569AA4"]
 			id: "196B6372301A235E"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "0042010F7338590F"
 				item: "gtceu:lv_bender"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 13.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["1AD99F9620569AA4"]
 			id: "7C29E80B0DDAE836"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "19EBE89C4A440CE3"
 				item: "gtceu:lv_lathe"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 11.0d
 			y: -4.0d
 		}
 		{
@@ -133,7 +133,7 @@
 				item: "gtceu:lv_electric_piston"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.5d
 			y: -3.0d
 		}
 		{
@@ -210,7 +210,7 @@
 				item: "gtceu:lv_compressor"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 13.5d
 			y: -2.0d
 		}
 		{
@@ -243,11 +243,12 @@
 				item: "gtceu:lv_extruder"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -3.0d
+			x: 14.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["298F63E0659E0FD6"]
+			hide_dependent_lines: true
 			id: "4816A85DF7D24F0B"
 			size: 1.0d
 			tasks: [{
@@ -320,7 +321,7 @@
 				item: "gtceu:lv_robot_arm"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.5d
 			y: 1.0d
 		}
 		{
@@ -374,36 +375,29 @@
 		}
 		{
 			dependencies: ["1996FB28610A07F4"]
-			id: "1B669AEBF7D0F83F"
-			tasks: [{
-				id: "080337B577A2CCEC"
-				item: "gtceu:lv_cadmium_battery"
-				type: "item"
-			}]
+			id: "7F7FA47652C0FA90"
+			tasks: [
+				{
+					id: "3B9B08D160BF1BC1"
+					item: "gtceu:lv_sodium_battery"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1AF0EBE90B7EBB1C"
+					item: "gtceu:lv_cadmium_battery"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0AB86EA9FBC2DF5F"
+					item: "gtceu:lv_lithium_battery"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 8.0d
 			y: -6.0d
-		}
-		{
-			dependencies: ["1996FB28610A07F4"]
-			id: "518A64D3F771B80A"
-			tasks: [{
-				id: "290A796F3C7A608F"
-				item: "gtceu:lv_lithium_battery"
-				type: "item"
-			}]
-			x: 8.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["1996FB28610A07F4"]
-			id: "7F7FA47652C0FA90"
-			tasks: [{
-				id: "3B9B08D160BF1BC1"
-				item: "gtceu:lv_sodium_battery"
-				type: "item"
-			}]
-			x: 8.0d
-			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -446,14 +440,14 @@
 		{
 			dependencies: ["1AD99F9620569AA4"]
 			id: "14A2B15A4B228C88"
-			size: 1.25d
+			size: 1.0d
 			tasks: [{
 				id: "7F4FBFF1E586A88E"
 				item: "gtceu:lv_forming_press"
 				type: "item"
 			}]
 			x: 12.5d
-			y: 2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -467,7 +461,7 @@
 				item: "gtceu:phenolic_printed_circuit_board"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 11.0d
 			y: 4.0d
 		}
 		{
@@ -479,7 +473,7 @@
 				item: "gtceu:phenolic_circuit_board"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 11.0d
 			y: 2.5d
 		}
 		{
@@ -490,8 +484,8 @@
 				item: "gtceu:lv_rock_crusher"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -4.0d
+			x: 15.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0E1F6E844041CC9F"]
@@ -726,28 +720,23 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["4816A85DF7D24F0B"]
-			description: ["Soldering alloy is the most efficient ingredient for electronic circuit crafting in the Circuit Assembler."]
+			dependencies: [
+				"4816A85DF7D24F0B"
+				"6B22D87DF0CDC580"
+			]
+			description: [
+				"Soldering alloy is the most efficient ingredient for electronic circuit crafting in the Circuit Assembler."
+				""
+				"It's not really necessary in the early game, but keep it in mind for later."
+			]
 			id: "0B597578FA4639DF"
 			tasks: [{
 				id: "718DD372E45A8A9E"
 				item: "gtceu:soldering_alloy_dust"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["416D2D2897567BA7"]
-			description: ["Battery Alloy is used to make, well, batteries..."]
-			id: "0F1DA17B5B1F42E3"
-			tasks: [{
-				id: "0BE1D4964F4177ED"
-				item: "gtceu:battery_alloy_ingot"
-				type: "item"
-			}]
-			x: 1.0d
-			y: -1.0d
+			x: 3.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["298F63E0659E0FD6"]
@@ -792,18 +781,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["53B8480F64FDA089"]
-			description: ["Holds items and fluids as a buffer for other machines."]
-			id: "48B50A232B8130E2"
-			tasks: [{
-				id: "1A78016992058FEF"
-				item: "gtceu:lv_buffer"
-				type: "item"
-			}]
-			x: 4.0d
-			y: 0.0d
-		}
-		{
 			dependencies: ["2425F4CE4FE78AC1"]
 			description: ["Chemical reactors allow you to make rubber more efficiently."]
 			id: "7B42F0062CCF379B"
@@ -835,8 +812,8 @@
 					type: "item"
 				}
 			]
-			x: 11.0d
-			y: -5.0d
+			x: 15.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0E1F6E844041CC9F"]
@@ -879,24 +856,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["74C94B5C7B866A34"]
-			description: [
-				"Unlike sand, Snad boosts the growth of crops."
-				""
-				"Provide a constant redstone signal to the Snad to boost the growth."
-				""
-				"Can be used in Botany Pots and provides a 1.5x boost."
-			]
-			id: "2013543595D54148"
-			tasks: [{
-				id: "2037CDEBA5A36AD7"
-				item: "snad:snad"
-				type: "item"
-			}]
-			x: 8.0d
-			y: 0.0d
-		}
-		{
 			dependencies: ["0E1F6E844041CC9F"]
 			description: ["This little guy holds energy for you and can charge your inventory equipment."]
 			id: "29598AD66C765FBA"
@@ -924,27 +883,6 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["4D377D42028B96A1"]
-			description: ["A very good way to get Hydrogen and Oxygen is through Water Electrolysis."]
-			icon: "minecraft:water_bucket"
-			id: "3F4ACE47ACD1EED4"
-			tasks: [
-				{
-					id: "609FC8A219CAB267"
-					item: "gtceu:hydrogen_bucket"
-					type: "item"
-				}
-				{
-					id: "30220AA001B1C685"
-					item: "gtceu:oxygen_bucket"
-					type: "item"
-				}
-			]
-			title: "Water Electrolysis"
-			x: 3.0d
-			y: -1.0d
-		}
-		{
 			dependencies: ["4816A85DF7D24F0B"]
 			description: [
 				"Gallium Arsenide is needed in Diode crafting."
@@ -959,8 +897,8 @@
 				item: "gtceu:gallium_arsenide_dust"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 0.0d
+			x: 9.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["01E6A51033DA1518"]
@@ -1165,7 +1103,7 @@
 				item: "powah:energy_cable_starter"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 8.0d
 			y: 0.0d
 		}
 	]

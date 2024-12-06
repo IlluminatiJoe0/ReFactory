@@ -58,9 +58,8 @@
 			description: [
 				"Conduits are a great way for compact logistics in this pack. "
 				""
-				"For those unaware, Conduits are basically pipes, with the unique ability to &a fit multiple of different types in the same block!"
+				"For those unaware, Conduits are basically pipes, with the unique ability to&a fit multiple of different types in the same block!"
 				"&f"
-				""
 				"They also possess many great filtering abilities and mod compat."
 				""
 				"To get started, craft some &eConduit Binder&f (You will need a LOT of it, but it is decently cheap.)"
@@ -271,7 +270,11 @@
 				"1F6208F7AD819E46"
 				"12FA482532B5E8A2"
 			]
-			description: ["Capacitor Banks are easy modular power storage that connect to each other, like a multiblock. They don't have CTM, unless you have Athena installed. Which, i will ask Joe to do..."]
+			description: [
+				"Capacitor Banks are easy modular power storage that connect to each other, like a multiblock. They don't have CTM, unless you have Athena installed. Which, i will ask Joe to do..."
+				""
+				"&7Don't worry it is installed :3&r"
+			]
 			id: "74705856142839F6"
 			tasks: [
 				{
@@ -300,6 +303,8 @@
 				"To get Grains of Infinity, you need to light bedrock on fire and wait... or you can use the alternative method with flint and deepslate."
 				""
 				"These are required for Capacitors, which need to be implanted in most machines to make them work. They are also required for tool rods."
+				""
+				"&3Chapter created by: iristhepianist&r"
 			]
 			id: "4279169E4B3A9A28"
 			rewards: [{

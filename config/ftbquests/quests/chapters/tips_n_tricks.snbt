@@ -139,17 +139,6 @@
 			y: 0.0d
 		}
 		{
-			description: ["A compass that locates AE2 meteors."]
-			id: "2E46A9541F9BE51B"
-			tasks: [{
-				id: "367951BB7598FAC1"
-				item: "ae2:meteorite_compass"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 1.5d
-		}
-		{
 			description: [
 				"Very useful mod for expanding inventory storage."
 				""
@@ -362,6 +351,24 @@
 			}]
 			x: 1.5d
 			y: -5.0d
+		}
+		{
+			dependencies: ["74C94B5C7B866A34"]
+			description: [
+				"Unlike sand, Snad boosts the growth of crops."
+				""
+				"Provide a constant redstone signal to the Snad to boost the growth."
+				""
+				"Can be used in Botany Pots and provides a 1.5x boost."
+			]
+			id: "2013543595D54148"
+			tasks: [{
+				id: "2037CDEBA5A36AD7"
+				item: "snad:snad"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
 		}
 	]
 	title: "Tips n Tricks"

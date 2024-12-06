@@ -5,6 +5,15 @@
 	group: ""
 	icon: "botania:pure_daisy"
 	id: "4DF8A4EB7F3C23CA"
+	images: [{
+		alpha: 88
+		height: 30.0d
+		image: "biomesoplenty:block/flowering_oak_sapling"
+		rotation: 0.0d
+		width: 30.0d
+		x: -0.5d
+		y: -7.0d
+	}]
 	order_index: 15
 	quest_links: [ ]
 	quests: [
@@ -23,8 +32,8 @@
 				type: "checkmark"
 			}]
 			title: "Lexica Botania"
-			x: 0.0d
-			y: 1.0d
+			x: 0.3d
+			y: 5.1d
 		}
 		{
 			dependencies: ["1C3A2DA8B5971533"]
@@ -35,8 +44,8 @@
 				item: "botania:livingwood_log"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -5.0d
+			x: 3.5d
+			y: -1.3d
 		}
 		{
 			dependencies: ["71DA8374016E4183"]
@@ -55,8 +64,8 @@
 				item: "botania:pure_daisy"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -3.0d
+			x: 0.30000000000000004d
+			y: -1.35d
 		}
 		{
 			dependencies: ["1C3A2DA8B5971533"]
@@ -67,8 +76,8 @@
 				item: "botania:livingrock"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -5.0d
+			x: 0.5d
+			y: -3.4d
 		}
 		{
 			dependencies: ["164936F5A53110D4"]
@@ -79,20 +88,21 @@
 				item: "botania:apothecary_default"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -1.5d
+			x: 0.2d
+			y: 1.6d
 		}
 		{
 			dependencies: ["3AACA352C261688C"]
 			id: "24F313A71382D5A4"
+			shape: "gear"
 			size: 1.5d
 			tasks: [{
 				id: "01BB0E8CADE70FB7"
 				item: "gtceu:rubber_sapling"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -5.0d
+			x: 6.6000000000000005d
+			y: 0.15000000000000002d
 		}
 		{
 			dependencies: ["0765A1C269042682"]
@@ -109,8 +119,8 @@
 				item: "botania:mana_pool"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -7.0d
+			x: 0.30000000000000004d
+			y: -6.15d
 		}
 		{
 			dependencies: ["3AACA352C261688C"]
@@ -120,8 +130,8 @@
 				item: "botania:livingwood_twig"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -6.0d
+			x: 5.1d
+			y: -2.9d
 		}
 		{
 			dependencies: ["7B1A54FADF4AED03"]
@@ -138,8 +148,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: -7.5d
+			x: 6.8d
+			y: -4.6d
 		}
 		{
 			dependencies: ["3AACA352C261688C"]
@@ -149,8 +159,8 @@
 				item: "botania:mana_spreader"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -6.0d
+			x: 3.2d
+			y: -3.1d
 		}
 		{
 			dependencies: ["7654326C675F0181"]
@@ -160,8 +170,8 @@
 				item: "botania:runic_altar"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -8.5d
+			x: -1.9d
+			y: -7.8d
 		}
 		{
 			dependencies: ["7654326C675F0181"]
@@ -171,8 +181,8 @@
 				item: "botania:manasteel_ingot"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -8.0d
+			x: 1.9d
+			y: -7.7d
 		}
 		{
 			dependencies: ["5F1F1AFD5426D7DD"]
@@ -184,8 +194,8 @@
 				item: "botania:terra_plate"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -10.0d
+			x: 3.6000000000000005d
+			y: -9.450000000000001d
 		}
 		{
 			dependencies: ["3676803CDE7C7045"]
@@ -195,8 +205,8 @@
 				item: "botania:terrasteel_ingot"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -11.5d
+			x: 3.2214285714285538d
+			y: -10.347619047619041d
 		}
 		{
 			dependencies: ["11E30097AC7708B5"]
@@ -207,8 +217,8 @@
 				type: "item"
 			}]
 			title: "Runes"
-			x: -2.5d
-			y: -10.5d
+			x: -3.2d
+			y: -10.1d
 		}
 		{
 			dependencies: ["5F1F1AFD5426D7DD"]
@@ -218,8 +228,8 @@
 				item: "botania:mana_distributor"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -9.5d
+			x: 0.3d
+			y: -8.4d
 		}
 		{
 			dependencies: ["7654326C675F0181"]
@@ -229,8 +239,8 @@
 				item: "botania:alchemy_catalyst"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -6.5d
+			x: -2.1d
+			y: -5.5d
 		}
 		{
 			dependencies: ["022B354012349578"]
@@ -240,8 +250,8 @@
 				item: "botania:conjuration_catalyst"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -16.5d
+			x: 8.7d
+			y: -13.1d
 		}
 		{
 			dependencies: ["2757DC4A2D67740E"]
@@ -262,8 +272,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: -13.5d
+			x: 4.3500000000000005d
+			y: -12.3d
 		}
 		{
 			dependencies: ["64649D7EB21F7AA2"]
@@ -273,8 +283,8 @@
 				item: "botania:elementium_ingot"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -15.5d
+			x: 6.5d
+			y: -12.8d
 		}
 		{
 			dependencies: ["64649D7EB21F7AA2"]
@@ -290,8 +300,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
-			y: -14.0d
+			x: 2.3d
+			y: -12.9d
 		}
 		{
 			dependencies: ["71DA8374016E4183"]
@@ -301,8 +311,8 @@
 				item: "botania:hydroangeas"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -2.5d
+			x: 1.8d
+			y: 1.4d
 		}
 		{
 			dependencies: ["71DA8374016E4183"]
@@ -312,8 +322,8 @@
 				item: "botania:endoflame"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -2.0d
+			x: -1.4d
+			y: 1.4d
 		}
 		{
 			dependencies: ["5F1F1AFD5426D7DD"]
@@ -324,8 +334,8 @@
 				item: "gtceu:mana_alloy_ingot"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -7.0d
+			x: 2.3d
+			y: -6.2d
 		}
 	]
 	title: "Regrowth"

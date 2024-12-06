@@ -64,19 +64,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["2F1D18213F81EA19"]
-			hide_dependency_lines: true
-			id: "50766F3FA56819D1"
-			tasks: [{
-				id: "4B19D29CAA6456A0"
-				item: "ironchest:iron_chest"
-				type: "item"
-			}]
-			title: "Iron Chests"
-			x: 4.5d
-			y: -5.0d
-		}
-		{
 			id: "0661223152CAAE33"
 			tasks: [{
 				id: "654DAEE0283271C0"
@@ -123,39 +110,45 @@
 		}
 		{
 			dependencies: ["2F1D18213F81EA19"]
+			description: ["Very good storage option for the early game."]
 			hide_dependency_lines: true
-			id: "541BD7EC68FAB78A"
-			tasks: [{
-				id: "145C7117BC2996ED"
-				item: "ironchest:gold_chest"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -3.5d
-		}
-		{
-			dependencies: ["2F1D18213F81EA19"]
-			hide_dependency_lines: true
-			id: "2E848EB1195D3473"
-			tasks: [{
-				id: "52416C5C351B54CA"
-				item: "ironchest:diamond_chest"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["2F1D18213F81EA19"]
-			hide_dependency_lines: true
+			icon: "ironchest:iron_chest"
 			id: "70385A410D4727A1"
-			tasks: [{
-				id: "429E4676F4A5BF88"
-				item: "ironchest:copper_chest"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -5.0d
+			tasks: [
+				{
+					id: "429E4676F4A5BF88"
+					item: "ironchest:copper_chest"
+					type: "item"
+				}
+				{
+					id: "1C733D51CAA32855"
+					item: "ironchest:gold_chest"
+					type: "item"
+				}
+				{
+					id: "45EDE30CA59855F3"
+					item: "ironchest:diamond_chest"
+					type: "item"
+				}
+				{
+					id: "38510F199861E7AB"
+					item: "ironchest:iron_chest"
+					type: "item"
+				}
+				{
+					id: "3591BCB7743933D9"
+					item: "ironchest:crystal_chest"
+					type: "item"
+				}
+				{
+					id: "2111042350E95D23"
+					item: "ironchest:obsidian_chest"
+					type: "item"
+				}
+			]
+			title: "Iron Chests"
+			x: 1.5d
+			y: -3.5d
 		}
 		{
 			id: "22A3C6A165D2B61F"
@@ -186,30 +179,6 @@
 			}]
 			x: 4.5d
 			y: 0.0d
-		}
-		{
-			dependencies: ["2F1D18213F81EA19"]
-			hide_dependency_lines: true
-			id: "568E66E469AA85DA"
-			tasks: [{
-				id: "3564368D440867D3"
-				item: "ironchest:crystal_chest"
-				type: "item"
-			}]
-			x: 6.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["2F1D18213F81EA19"]
-			hide_dependency_lines: true
-			id: "6D3C59828B61D14D"
-			tasks: [{
-				id: "78920F5C95128480"
-				item: "ironchest:obsidian_chest"
-				type: "item"
-			}]
-			x: 6.0d
-			y: -3.5d
 		}
 	]
 	title: "Storage"

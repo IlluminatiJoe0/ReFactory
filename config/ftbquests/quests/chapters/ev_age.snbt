@@ -488,6 +488,7 @@
 		{
 			dependencies: ["4088C106B4D46075"]
 			id: "4263EB754052F1DC"
+			subtitle: "Also play GT Quantum!"
 			tasks: [{
 				id: "39C0C5BE5DAF28A1"
 				item: "gtceu:quantum_eye"
@@ -538,6 +539,8 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["669F52806D1D39F6"]
+			hide_dependency_lines: true
 			id: "5B3A4F5769490D07"
 			tasks: [{
 				id: "1FCDDEBC129E8441"

@@ -100,19 +100,19 @@
 			icon: "minecraft:zombie_head"
 			id: "28558109E985AACE"
 			rewards: [{
-				id: "331378350E380441"
+				id: "1E6C248DDB658B49"
 				item: {
 					Count: 1
-					id: "gtceu:wrought_iron_sword"
+					id: "gtceu:steel_sword"
 					tag: {
 						DisallowContainerItem: 0b
 						GT.Behaviours: { }
 						GT.Tool: {
-							AttackDamage: 5.0f
-							AttackSpeed: -2.6000001f
+							AttackDamage: 6.0f
+							AttackSpeed: -2.4f
 							Damage: 0
-							Enchantability: 5
-							MaxDamage: 383
+							Enchantability: 14
+							MaxDamage: 511
 						}
 						HideFlags: 2
 					}
@@ -182,7 +182,7 @@
 		{
 			dependencies: ["43E0325219933606"]
 			description: [
-				"Pollution in this pack is disabled, since it's recommended to stay in one secure place in the early game to minimize dying, the pollution would add nothing to the gameplay other than annoyance."
+				"Pollution in this pack is disabled."
 				""
 				"If you wish to enable it, go to Mods->GregTech->Config"
 				"->Gameplay->environmentalHazards"
