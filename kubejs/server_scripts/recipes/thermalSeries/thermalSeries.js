@@ -4,8 +4,8 @@ let yeet = (itemName) => {
       event.remove({ output: itemName })
     })
     ServerEvents.tags('item', event => {
+      event.removeAllTagsFrom(itemName)
       event.add('c:hidden_from_recipe_viewers', itemName)
-      event.remove('forge:tools/hammers', itemName)
     })
 }
 
@@ -129,3 +129,6 @@ ServerEvents.recipes(event => {
     // rubber
     yeet('thermal:cured_rubber')
     yeet('thermal:rubber')
+
+    // others
+    yeet('thermal:sulfur_dust')
