@@ -7,9 +7,9 @@ ServerEvents.recipes(event => {
       .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.implosion_compressor("t1_rocket_plate")
-      .itemInputs('kubejs:t1_welded_rocket_plate')
+      .itemInputs('kubejs:t1_welded_rocket_plate', 'gtceu:industrial_tnt')
       .circuit(1)
       .itemOutputs('kubejs:t1_rocket_plate')
-      .duration(20)
+      .duration(20*0.75)
       .EUt(GTValues.VA[GTValues.HV])
 })
