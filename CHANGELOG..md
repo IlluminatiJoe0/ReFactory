@@ -5,6 +5,7 @@
 - Removed Bauxite from the overworld Mica vein
 - Added the Greenhouse
 - Many Minor mods Gregified
+- Unified a lot of recipes
 - More gregified recipes
 
 # 0.1.1
