@@ -6,6 +6,7 @@
 - Added the Greenhouse
 - Many Minor mods Gregified
 - Unified a lot of recipes
+- Infernal mobs have less health, less attributes
 - More gregified recipes
 
 # 0.1.1
