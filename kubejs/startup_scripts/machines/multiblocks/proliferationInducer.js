@@ -5,7 +5,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('proliferation_inducer')
         .appearanceBlock(GTBlocks.CASING_HSSE_STURDY)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('F###F', 'F###F', 'F#C#F', 'FCCCF', '##C##', '#####')
             .aisle('#####', '##C##', '#CMC#', 'CMMMC', '#CMC#', '##C##')
