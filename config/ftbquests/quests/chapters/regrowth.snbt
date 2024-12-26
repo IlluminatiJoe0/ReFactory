@@ -337,6 +337,18 @@
 			x: 2.3d
 			y: -6.2d
 		}
+		{
+			dependencies: ["5F1F1AFD5426D7DD"]
+			description: ["Turns mana into liquid you can store in a tank or bucket. Just point a spreader towards it."]
+			id: "4B9F1EABE12CECF2"
+			tasks: [{
+				id: "2AC4C7B564C876A6"
+				item: "manaliquidizer:mana_liquidizer"
+				type: "item"
+			}]
+			x: 0.3571428571428541d
+			y: -11.107142857142854d
+		}
 	]
 	title: "Regrowth"
 }

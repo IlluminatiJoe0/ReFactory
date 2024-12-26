@@ -78,7 +78,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         GTMaterialFlags.GENERATE_PLATE, 
         GTMaterialFlags.GENERATE_FINE_WIRE,
         GTMaterialFlags.GENERATE_FOIL,
-        GTMaterialFlags.GENERATE_ROD
+        GTMaterialFlags.GENERATE_ROD,
+        GTMaterialFlags.GENERATE_BOLT_SCREW
     )
     .blastTemp(1800, null, GTValues.VA[GTValues.HV], 20*20)
 
@@ -100,7 +101,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     .iconSet(GTMaterialIconSet.SHINY)
     .flags(
         GTMaterialFlags.GENERATE_PLATE,
-        GTMaterialFlags.GENERATE_ROD
+        GTMaterialFlags.GENERATE_ROD,
+        GTMaterialFlags.GENERATE_BOLT_SCREW,
+        GTMaterialFlags.GENERATE_FINE_WIRE
     )
 
     // Terra
@@ -122,7 +125,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     .flags(
         GTMaterialFlags.GENERATE_PLATE,
         GTMaterialFlags.GENERATE_ROD,
-        GTMaterialFlags.GENERATE_BOLT_SCREW
+        GTMaterialFlags.GENERATE_BOLT_SCREW,
+        GTMaterialFlags.GENERATE_FINE_WIRE
     )
 
     // Elementium
@@ -133,7 +137,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     .iconSet(GTMaterialIconSet.SHINY)
     .flags(
         GTMaterialFlags.GENERATE_PLATE,
-        GTMaterialFlags.GENERATE_ROD
+        GTMaterialFlags.GENERATE_ROD,
+        GTMaterialFlags.GENERATE_BOLT_SCREW,
+        GTMaterialFlags.GENERATE_FINE_WIRE
     )
 
     // Ozone

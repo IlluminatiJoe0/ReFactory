@@ -242,6 +242,45 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:proliferation_inducer')
         .duration(20*60)
         .EUt(GTValues.VA[GTValues.IV])
+
+    //// BOTANIA FOR GT CIRCUITS
+    //// LV - Manasteel / Mana Alloy
+    //// MV - Terrasteel / Terralumina
+    //// HV - Elementium / Elventium
+
+    // LV TIER
+    // Good Electronic Circuit
+    event.replaceInput({output: 'gtceu:good_electronic_circuit'}, 'gtceu:copper_single_wire', 'gtceu:mana_alloy_single_wire')
+
+    // MV TIER
+    // Basic Integrated Circuit
+    event.replaceInput({output: 'gtceu:basic_integrated_circuit'}, 'gtceu:tin_bolt', 'gtceu:terrasteel_bolt')
+    event.replaceInput({output: 'gtceu:basic_integrated_circuit'}, 'gtceu:fine_copper_wire', 'gtceu:fine_mana_alloy_wire')
+
+    // Good Integrated Circuit
+    event.replaceInput({output: 'gtceu:good_integrated_circuit'}, 'gtceu:silver_bolt', 'gtceu:terrasteel_bolt')
+    event.replaceInput({output: 'gtceu:good_integrated_circuit'}, 'gtceu:fine_gold_wire', 'gtceu:fine_terralumina_wire')
+
+    // Advanced Integrated Circuit
+    event.replaceInput({output: 'gtceu:advanced_integrated_circuit'}, 'gtceu:annealed_copper_bolt', 'gtceu:terrasteel_bolt')
+    event.replaceInput({output: 'gtceu:advanced_integrated_circuit'}, 'gtceu:fine_electrum_wire', 'gtceu:fine_terralumina_wire')
+
+    // HV TIER
+    // Microchip Processor
+    event.replaceInput({output: 'gtceu:microchip_processor'}, 'gtceu:fine_copper_wire', 'gtceu:fine_mana_alloy_wire')
+
+    // Micro Processor
+    event.replaceInput({output: 'gtceu:micro_processor'}, 'gtceu:fine_red_alloy_wire', 'gtceu:fine_terralumina_wire')
+
+    // Micro Processor Assembly
+    event.replaceInput({output: 'gtceu:micro_processor_assembly'}, 'gtceu:fine_red_alloy_wire', 'gtceu:fine_elventium_wire')
+
+    // Micro Processor Computer
+    event.replaceInput({output: 'gtceu:micro_processor_computer'}, 'gtceu:fine_electrum_wire', 'gtceu:fine_elventium_wire')
+    event.replaceInput({output: 'gtceu:micro_processor_computer'}, 'gtceu:blue_alloy_bolt', 'gtceu:elementium_bolt')
+
+    // Micro Processor Mainframe
+    event.replaceInput({output: 'gtceu:micro_processor_mainframe'}, 'gtceu:annealed_copper_single_wire', 'gtceu:elventium_single_wire')
     
 })
 
