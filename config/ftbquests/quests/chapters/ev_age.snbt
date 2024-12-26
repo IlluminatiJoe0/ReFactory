@@ -144,8 +144,8 @@
 				item: "gtceu:carbon_fibers"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -3.0d
+			x: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["669F52806D1D39F6"]
@@ -519,7 +519,7 @@
 				item: "powah:energy_cable_blazing"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 3.0d
 			y: -1.5d
 		}
 		{
@@ -687,6 +687,16 @@
 			}]
 			x: 7.5d
 			y: 4.5d
+		}
+		{
+			id: "2C3F51C6C0776EA6"
+			tasks: [{
+				id: "183230371F5E85C1"
+				item: "botania:gaia_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -6.0d
 		}
 	]
 	title: "EV Age"

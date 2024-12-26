@@ -16,8 +16,8 @@
 			id: "630A813B0F4DA078"
 			shape: "square"
 			title: "MV AGE"
-			x: 0.0d
-			y: 0.0d
+			x: -1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
@@ -236,11 +236,14 @@
 				item: "gtceu:mv_energy_input_hatch"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 10.5d
 			y: -1.5d
 		}
 		{
-			dependencies: ["65CD30C3D6C13C7E"]
+			dependencies: [
+				"65CD30C3D6C13C7E"
+				"4B15C0711FA98FAB"
+			]
 			description: ["Significantly cheaper LV circuits."]
 			id: "22F6144BF80A1413"
 			tasks: [{
@@ -256,6 +259,7 @@
 			dependencies: [
 				"162E65E940DCC593"
 				"02350D73F63D59E8"
+				"6DC53EC297BEBD3C"
 			]
 			description: ["Yay! Your first HV circuit! Make sure to brag to your friends (if you even have any)."]
 			id: "08EE54E6C1C766CF"
@@ -514,8 +518,8 @@
 				item: "gtceu:mv_battery_hull"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.5d
+			x: -1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
@@ -526,8 +530,8 @@
 				item: "gtceu:mv_super_chest"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 1.5d
+			x: -3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
@@ -538,8 +542,8 @@
 				item: "gtceu:mv_super_tank"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 2.5d
+			x: -1.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["4B15C0711FA98FAB"]
@@ -566,8 +570,8 @@
 				item: "gtceu:aluminium_fluid_cell"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 3.5d
+			x: 0.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["45EC6B51678C5FDB"]
@@ -578,7 +582,7 @@
 				item: "botania:terra_plate"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 10.5d
 			y: -4.5d
 		}
 		{
@@ -598,8 +602,8 @@
 				item: "gtceu:mv_miner"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -1.0d
+			x: -4.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
@@ -611,7 +615,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: -1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["08EE54E6C1C766CF"]
@@ -636,7 +640,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
@@ -651,8 +655,8 @@
 				item: "gtceu:pyrolyse_oven"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 0.0d
+			x: -3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4F74168E48A8348E"]
@@ -679,7 +683,7 @@
 				item: "gtceu:plant_ball"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -3.0d
 			y: -6.0d
 		}
 		{
@@ -740,11 +744,12 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: -7.5d
+			y: -6.0d
 		}
 		{
 			description: ["This is an alternative way to make Ethylene, but requires Oil, distilling it, cracking and then distilling again."]
 			id: "7A0E8F91B933845A"
+			optional: true
 			tasks: [{
 				id: "318736A2BF3F43FB"
 				item: "gtceu:light_fuel_bucket"
@@ -789,8 +794,8 @@
 				item: "gtceu:polyvinyl_chloride_bucket"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -7.5d
+			x: 12.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -827,8 +832,8 @@
 				item: "powah:energy_cable_basic"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 1.5d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["630A813B0F4DA078"]
@@ -843,8 +848,8 @@
 				item: "thermal:machine_insolator"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -3.0d
+			x: -4.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["0F53EFB5D7D2C329"]
@@ -884,8 +889,23 @@
 				item: "gtceu:greenhouse"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -3.0d
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"22F6144BF80A1413"
+				"472217BE9BA19D20"
+			]
+			description: ["Better MV circuits"]
+			id: "6DC53EC297BEBD3C"
+			tasks: [{
+				id: "735D9F9612F9F06E"
+				item: "gtceu:good_integrated_circuit"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.5d
 		}
 	]
 	title: "MV Age"

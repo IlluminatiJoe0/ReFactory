@@ -12,7 +12,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     .color(0xed6bed)
     .flags(
         GTMaterialFlags.GENERATE_PLATE,
-        GTMaterialFlags.GENERATE_FOIL
+        GTMaterialFlags.GENERATE_FOIL,
+        GTMaterialFlags.GENERATE_FINE_WIRE,
+        GTMaterialFlags.GENERATE_BOLT_SCREW
     )
     .iconSet(GTMaterialIconSet.SHINY)
 
@@ -27,7 +29,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     .color(0x53ffcf)
     .flags(
         GTMaterialFlags.GENERATE_PLATE,
-        GTMaterialFlags.GENERATE_FOIL
+        GTMaterialFlags.GENERATE_FOIL,
+        GTMaterialFlags.GENERATE_FINE_WIRE,
+        GTMaterialFlags.GENERATE_BOLT_SCREW
     )
     .iconSet(GTMaterialIconSet.SHINY)
 
@@ -44,7 +48,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     .secondaryColor(0x331619)
     .flags(
         GTMaterialFlags.GENERATE_PLATE,
-        GTMaterialFlags.GENERATE_FOIL
+        GTMaterialFlags.GENERATE_FOIL,
+        GTMaterialFlags.GENERATE_FINE_WIRE,
+        GTMaterialFlags.GENERATE_BOLT_SCREW
     )
     .iconSet(GTMaterialIconSet.SHINY)
     .blastTemp(1200, null, GTValues.VA[GTValues.MV], 20*10)

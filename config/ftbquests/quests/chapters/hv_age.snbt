@@ -9,15 +9,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["08EE54E6C1C766CF"]
-			icon: "gtceu:advanced_integrated_circuit"
-			id: "530D44DF1E3897F8"
-			shape: "square"
-			title: "HV Circuits"
-			x: 1.0d
-			y: -3.0d
-		}
-		{
 			dependencies: ["6AB3F08490774D51"]
 			icon: "gtceu:hv_machine_hull"
 			id: "59775F7F175FF086"
@@ -107,7 +98,10 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["722C635C6F7AA733"]
+			dependencies: [
+				"722C635C6F7AA733"
+				"528DAD15BFA6104A"
+			]
 			id: "28B610006FFBCBE6"
 			shape: "gear"
 			tasks: [{
@@ -131,33 +125,9 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["530D44DF1E3897F8"]
-			hide_dependency_lines: true
-			id: "35122B1BDDA69282"
-			tasks: [{
-				id: "08D46160201AF15D"
-				item: "gtceu:inductor"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["530D44DF1E3897F8"]
-			hide_dependency_lines: true
-			id: "7D4A190F091292E2"
-			tasks: [{
-				id: "499530EC177D389E"
-				item: "gtceu:capacitor"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -1.5d
-		}
-		{
 			dependencies: [
-				"7D4A190F091292E2"
 				"1147F49038872B8F"
+				"5069AE4DE34C5627"
 			]
 			description: ["Cheapest LV circuits there are."]
 			id: "53CBD2CE4933D4F0"
@@ -167,7 +137,7 @@
 				type: "item"
 			}]
 			title: "Cheapest LV Circuits"
-			x: -3.5d
+			x: -5.0d
 			y: -1.5d
 		}
 		{
@@ -181,14 +151,11 @@
 				item: "gtceu:plastic_printed_circuit_board"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -5.0d
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"7D4A190F091292E2"
-				"1147F49038872B8F"
-			]
+			dependencies: ["1147F49038872B8F"]
 			id: "0E89B435074FF121"
 			tasks: [{
 				id: "66B8C580766D15E1"
@@ -196,14 +163,14 @@
 				type: "item"
 			}]
 			title: "Cheap MV Circuits"
-			x: -3.5d
+			x: -5.0d
 			y: 0.0d
 		}
 		{
 			dependencies: [
 				"0E89B435074FF121"
 				"1147F49038872B8F"
-				"35122B1BDDA69282"
+				"4815B8E4EF4AC16E"
 			]
 			id: "1D08089B37803F70"
 			tasks: [{
@@ -212,7 +179,7 @@
 				type: "item"
 			}]
 			title: "Cheaper HV Circuits"
-			x: -3.5d
+			x: -5.0d
 			y: 1.5d
 		}
 		{
@@ -229,14 +196,11 @@
 				type: "item"
 			}]
 			title: "Early EV Circuits"
-			x: -3.5d
+			x: -5.0d
 			y: 3.0d
 		}
 		{
 			dependencies: [
-				"1147F49038872B8F"
-				"7D4A190F091292E2"
-				"35122B1BDDA69282"
 				"5E0F220459741BE1"
 				"42ADECB98707B089"
 			]
@@ -252,8 +216,8 @@
 				type: "item"
 			}]
 			title: "Early IV Circuits"
-			x: -3.5d
-			y: 4.5d
+			x: -6.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -326,7 +290,7 @@
 				item: "gtceu:vacuum_freezer"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.5d
 			y: 4.5d
 		}
 		{
@@ -343,8 +307,8 @@
 		}
 		{
 			dependencies: [
-				"530D44DF1E3897F8"
 				"442D375BF085216E"
+				"59775F7F175FF086"
 			]
 			description: ["You can now finally craft Eyes of Ender."]
 			id: "30D787446CE3CE8B"
@@ -353,8 +317,8 @@
 				item: "minecraft:ender_eye"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -3.0d
+			x: 1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["30D787446CE3CE8B"]
@@ -364,8 +328,8 @@
 				item: "gtceu:hv_sensor"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -6.0d
+			x: 1.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["30D787446CE3CE8B"]
@@ -375,8 +339,8 @@
 				item: "gtceu:hv_emitter"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -4.5d
+			x: -0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["0B159426F31C5AC1"]
@@ -386,21 +350,21 @@
 				item: "gtceu:hv_miner"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -6.0d
+			x: 2.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["5E0F220459741BE1"]
 			id: "1F4BD78DF492DE6A"
 			shape: "gear"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "469144AD637D4644"
 				item: "gtceu:hv_circuit_assembler"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 3.0d
+			x: -5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
@@ -453,8 +417,8 @@
 				item: "gtceu:hv_super_chest"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -0.5d
+			x: -10.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
@@ -465,8 +429,8 @@
 				item: "gtceu:hv_super_tank"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -1.5d
+			x: -10.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
@@ -479,7 +443,7 @@
 				item: "gtceu:cleanroom"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.5d
 			y: 3.0d
 		}
 		{
@@ -562,7 +526,7 @@
 				}
 			]
 			title: "NanoMuscle Armor"
-			x: 7.0d
+			x: 8.5d
 			y: 3.0d
 		}
 		{
@@ -637,8 +601,8 @@
 				item: "gtceu:hv_item_magnet"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -1.5d
+			x: -11.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -651,8 +615,8 @@
 				item: "gtceu:ender_fluid_link_cover"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -6.0d
+			x: -0.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["43D222FD4AF3280E"]
@@ -682,8 +646,8 @@
 				item: "enderstorage:ender_pouch"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -4.5d
+			x: 2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["30D787446CE3CE8B"]
@@ -693,8 +657,8 @@
 				item: "mob_grinding_utils:entity_spawner"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -4.5d
+			x: 1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
@@ -705,11 +669,12 @@
 				item: "minecraft:ender_pearl"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -3.0d
+			x: 2.5d
+			y: -1.5d
 		}
 		{
-			dependencies: ["530D44DF1E3897F8"]
+			dependencies: ["05A634B47A2EF253"]
+			description: ["If you get Tantalum, you can craft insanely cheap components."]
 			icon: "gtceu:smd_transistor"
 			id: "2585010E61E151AB"
 			tasks: [
@@ -735,8 +700,8 @@
 				}
 			]
 			title: "SMD Components"
-			x: 1.0d
-			y: -1.5d
+			x: -3.5d
+			y: -3.0d
 		}
 		{
 			id: "0807682913253D8D"
@@ -745,7 +710,7 @@
 				item: "gtceu:sodium_persulfate_bucket"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -5.0d
 			y: -4.5d
 		}
 		{
@@ -755,7 +720,7 @@
 				item: "gtceu:iron_iii_chloride_bucket"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.5d
 			y: -4.5d
 		}
 		{
@@ -802,8 +767,8 @@
 				type: "dimension"
 			}]
 			title: "The End (not yet, actually)"
-			x: 5.5d
-			y: -6.0d
+			x: 4.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["68BAC4CBCD602803"]
@@ -851,15 +816,15 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["530D44DF1E3897F8"]
+			dependencies: ["59775F7F175FF086"]
 			id: "35A298845D55AEED"
 			tasks: [{
 				id: "5AA830BBB24615FC"
 				item: "gtceu:infinite_water_cover"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -3.0d
+			x: -2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
@@ -870,8 +835,8 @@
 				item: "gtceu:stainless_steel_fluid_cell"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -0.5d
+			x: -11.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["3F75C75CFDA986C1"]
@@ -904,8 +869,8 @@
 				item: "powah:energy_cable_hardened"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 1.5d
+			x: -2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["42993980A7D65EBB"]
@@ -1000,8 +965,8 @@
 				item: "gtceu:ender_air_bucket"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -6.0d
+			x: 5.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -1010,6 +975,7 @@
 				"31C81A033CB8C11D"
 				"44890B3796B295E2"
 			]
+			description: ["You'll need 26 of these to make your very first rocket!"]
 			id: "4F14AC38199A005E"
 			tasks: [{
 				id: "772280E8D0AA09A5"
@@ -1069,6 +1035,53 @@
 			}]
 			x: 7.0d
 			y: 9.0d
+		}
+		{
+			dependencies: ["41DC9E77D843E0D2"]
+			id: "528DAD15BFA6104A"
+			tasks: [{
+				id: "68F5C463B1081F7F"
+				item: "gtceu:nichrome_ingot"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["59775F7F175FF086"]
+			hide_dependency_lines: true
+			id: "05A634B47A2EF253"
+			tasks: [{
+				id: "734A6A0E49112C54"
+				item: "gtceu:tantalum_ingot"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["59775F7F175FF086"]
+			hide_dependency_lines: true
+			id: "5069AE4DE34C5627"
+			tasks: [{
+				id: "307A0128CE024FDD"
+				item: "gtceu:capacitor"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["59775F7F175FF086"]
+			hide_dependency_lines: true
+			id: "4815B8E4EF4AC16E"
+			tasks: [{
+				id: "3BDE772A99217772"
+				item: "gtceu:inductor"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.5d
 		}
 	]
 	title: "HV Age"
