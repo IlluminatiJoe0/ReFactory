@@ -24,4 +24,18 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setMaxIOSize(3, 4, 1, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.BATH)
+
+    event.create('large_mana_pool')
+        .category('refactory')
+        .setEUIO('in')
+        .setMaxIOSize(4, 4, 3, 3)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.BATH)
+
+    event.create('mana_generator')
+        .category('refactory')
+        .setEUIO('in')
+        .setMaxIOSize(4, 1, 2, 1)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_CRYSTALLIZATION, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.ELECTROLYZER)
 })
