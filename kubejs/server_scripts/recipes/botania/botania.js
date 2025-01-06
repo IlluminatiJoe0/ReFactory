@@ -211,7 +211,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '6x #botania:livingwood_logs',
             'gtceu:lv_emitter',
-            '#forge:lenses'
+            'gtceu:glass_plate'
         )
         .itemOutputs(
             'botania:mana_spreader'

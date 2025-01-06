@@ -4,10 +4,14 @@
     "gtceu.proliferation_inducer": "§dProliferation",
     "gtceu.crystal_puller": "§bCrystal Pulling",
     "gtceu.greenhouse": "Greenhouse",
+    "gtceu.large_mana_pool": "Large Mana Pool",    
+    "gtceu.mana_generator": "Mana Generator",
 
     "block.gtceu.proliferation_inducer": "§dProliferation Inducer",
     "block.gtceu.crystal_puller": "§bCrystal Puller",
     "block.gtceu.greenhouse": "Greenhouse",
+    "block.gtceu.large_mana_pool": "Large Mana Pool",
+    "block.gtceu.mana_generator": "Mana Generator",
 
     "material.gtceu.zanite": "Zanite",
     "material.gtceu.ambrosium": "Ambrosium",
@@ -42,6 +46,9 @@
 
     "tooltip.gtceu.multiblock.proliferation_inducer": "Used for growing an ancient biometal",
     "tooltip.gtceu.multiblock.crystal_puller": "Used for creating silicon boules",
+    "tooltip.gtceu.multiblock.greenhouse": "Used for growing plants",
+    "tooltip.gtceu.multiblock.large_mana_pool": "Used to simulate Mana Pool recipes using Mana",
+    "tooltip.gtceu.multiblock.mana_generator": "Used to simulate botania flowers, outputing Mana",
 
     "gtceu.jei.ore_vein.zanite": "Zanite Ore Vein",
     "gtceu.jei.ore_vein.ambrosium": "Ambrosium Ore Vein",

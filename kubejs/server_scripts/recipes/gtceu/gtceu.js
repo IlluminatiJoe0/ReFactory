@@ -243,7 +243,7 @@ ServerEvents.recipes(event => {
         .duration(20*60)
         .EUt(GTValues.VA[GTValues.IV])
 
-    //// BOTANIA FOR GT CIRCUITS
+    //// BOTANIA FOR GT CIRCUITS ----------------------------------------------------------------------------------------------
     //// LV - Manasteel / Mana Alloy
     //// MV - Terrasteel / Terralumina
     //// HV - Elementium / Elventium
@@ -282,6 +282,10 @@ ServerEvents.recipes(event => {
     // Micro Processor Mainframe
     event.replaceInput({output: 'gtceu:micro_processor_mainframe'}, 'gtceu:annealed_copper_single_wire', 'gtceu:elventium_single_wire')
     
+    //// ---------------------------------------------------------------------------------------------------------------------------
+
+    // Wrought iron made by smelting iron
+    event.smelting('gtceu:wrought_iron_ingot', 'minecraft:iron_ingot')
 })
 
 ServerEvents.tags('block', event => {
