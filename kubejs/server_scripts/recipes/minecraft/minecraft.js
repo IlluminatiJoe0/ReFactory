@@ -59,5 +59,14 @@ ServerEvents.recipes(event => {
 
 	// Remove eye of ender from traders
 	event.remove({id: 'emitrades:villager_trades/wandering_trader_116'})
+
+	// Hopper now requires the programmed circuit with No 31
+	event.remove({id: 'gtceu:assembler/hopper_iron'})
+	event.recipes.gtceu.assembler('hopper_iron')
+		.circuit(31)
+		.itemInputs('#forge:chests/wooden', '5x gtceu:iron_plate')
+		.itemOutputs('minecraft:hopper')
+		.duration(20*40)
+		.EUt(2)
 	
 })
