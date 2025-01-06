@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:basic_electronic_circuit"
 	id: "29B5D62254073156"
-	order_index: 4
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -24,30 +24,30 @@
 			dependencies: ["0E1F6E844041CC9F"]
 			description: ["Crucial machine for creating LV power."]
 			id: "03D3442F857F0592"
-			size: 1.25d
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "1BF0D8B2C58C1011"
 				item: "gtceu:lv_steam_turbine"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -4.0d
+			x: 6.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
 				"09ECD67B4648D2EA"
-				"0E1F6E844041CC9F"
+				"03D3442F857F0592"
 			]
 			description: ["Tired yet?"]
 			id: "298F63E0659E0FD6"
-			shape: "gear"
 			size: 1.5d
 			tasks: [{
 				id: "24805EF455C7050A"
 				item: "gtceu:lv_electric_motor"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 12.0d
 			y: -3.0d
 		}
 		{
@@ -59,6 +59,8 @@
 				"Here comes the hard part..."
 				""
 				"You're going to need about 2 of these per machine."
+				""
+				"Make as much as you are able to, you'll need them, trust me."
 			]
 			id: "0E1F6E844041CC9F"
 			shape: "gear"
@@ -75,38 +77,38 @@
 		{
 			dependencies: ["1AD99F9620569AA4"]
 			id: "196B6372301A235E"
-			size: 1.25d
+			size: 1.0d
 			tasks: [{
 				id: "0042010F7338590F"
 				item: "gtceu:lv_bender"
 				type: "item"
 			}]
-			x: 13.5d
-			y: -4.0d
+			x: 10.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1AD99F9620569AA4"]
 			id: "7C29E80B0DDAE836"
-			size: 1.25d
+			size: 1.0d
 			tasks: [{
 				id: "19EBE89C4A440CE3"
 				item: "gtceu:lv_lathe"
 				type: "item"
 			}]
-			x: 11.0d
-			y: -4.0d
+			x: 13.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["298F63E0659E0FD6"]
 			id: "12401DF56940C9F9"
-			size: 1.25d
+			size: 1.0d
 			tasks: [{
 				id: "4C6556A485A4CFD2"
 				item: "gtceu:lv_wiremill"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -4.0d
+			x: 10.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -115,59 +117,59 @@
 			]
 			id: "74C94B5C7B866A34"
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "273631D9CE3F02CC"
 				item: "gtceu:lv_assembler"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 1.0d
+			x: 6.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["298F63E0659E0FD6"]
 			id: "1AD99F9620569AA4"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "13A71EEFE85F45F8"
 				item: "gtceu:lv_electric_piston"
 				type: "item"
 			}]
-			x: 12.5d
-			y: -3.0d
+			x: 12.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["0E1F6E844041CC9F"]
+			dependencies: ["03D3442F857F0592"]
 			id: "4CC0BC35DF5A8F18"
 			tasks: [{
 				id: "56C90758761F1404"
 				item: "gtceu:lv_electric_furnace"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -2.0d
+			x: 4.5d
+			y: -1.5d
 		}
 		{
-			dependencies: ["0E1F6E844041CC9F"]
+			dependencies: ["03D3442F857F0592"]
 			id: "416D2D2897567BA7"
 			tasks: [{
 				id: "020EA65E86B87D88"
 				item: "gtceu:lv_alloy_smelter"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -2.0d
+			x: 3.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["0E1F6E844041CC9F"]
+			dependencies: ["03D3442F857F0592"]
 			id: "01E6A51033DA1518"
 			tasks: [{
 				id: "6CA7F14BA3CAA4F3"
 				item: "gtceu:lv_arc_furnace"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -2.0d
+			x: 7.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["44495C979D17EFD5"]
@@ -177,8 +179,8 @@
 				item: "gtceu:lv_autoclave"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -5.0d
+			x: 19.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["298F63E0659E0FD6"]
@@ -188,8 +190,8 @@
 				item: "gtceu:lv_centrifuge"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -2.0d
+			x: 11.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["298F63E0659E0FD6"]
@@ -199,8 +201,8 @@
 				item: "gtceu:lv_chemical_reactor"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -2.0d
+			x: 13.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["1AD99F9620569AA4"]
@@ -211,18 +213,18 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: -2.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["0E1F6E844041CC9F"]
+			dependencies: ["03D3442F857F0592"]
 			id: "4D377D42028B96A1"
 			tasks: [{
 				id: "4FCF72B0E5AC601F"
 				item: "gtceu:lv_electrolyzer"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -2.0d
+			x: 6.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["44495C979D17EFD5"]
@@ -232,8 +234,8 @@
 				item: "gtceu:lv_extractor"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -7.5d
+			x: 19.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["1AD99F9620569AA4"]
@@ -243,8 +245,8 @@
 				item: "gtceu:lv_extruder"
 				type: "item"
 			}]
-			x: 14.5d
-			y: -2.0d
+			x: 13.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["298F63E0659E0FD6"]
@@ -256,20 +258,8 @@
 				item: "gtceu:lv_mixer"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["1766FA742DB40680"]
-			description: ["Miners are not really that useful in LV, but they become more and more useful from MV and on."]
-			id: "7F680750136FAA4A"
-			tasks: [{
-				id: "32DCEC322F2E153D"
-				item: "gtceu:lv_miner"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -7.5d
+			x: 8.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["298F63E0659E0FD6"]
@@ -279,8 +269,8 @@
 				item: "gtceu:lv_ore_washer"
 				type: "item"
 			}]
-			x: 9.0d
-			y: -2.0d
+			x: 11.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["35CB055A24346DE1"]
@@ -298,10 +288,13 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: -3.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["298F63E0659E0FD6"]
+			dependencies: [
+				"298F63E0659E0FD6"
+				"03D3442F857F0592"
+			]
 			id: "44495C979D17EFD5"
 			size: 1.5d
 			tasks: [{
@@ -309,20 +302,20 @@
 				item: "gtceu:lv_electric_pump"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -6.0d
+			x: 18.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1AD99F9620569AA4"]
 			id: "1B1B005DA1E7D5DA"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "40F518F0A11F8BA7"
 				item: "gtceu:lv_robot_arm"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 1.0d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["298F63E0659E0FD6"]
@@ -333,21 +326,8 @@
 				item: "gtceu:lv_conveyor_module"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["0E1F6E844041CC9F"]
-			description: ["You're going to hate this..."]
-			id: "1766FA742DB40680"
-			size: 1.25d
-			tasks: [{
-				id: "73E8C7BC2150DD4B"
-				item: "gtceu:lv_sensor"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -6.25d
+			x: 12.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["0E1F6E844041CC9F"]
@@ -359,8 +339,8 @@
 				item: "gtceu:lv_emitter"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -5.0d
+			x: -1.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["44495C979D17EFD5"]
@@ -370,8 +350,8 @@
 				item: "gtceu:lv_canner"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -6.0d
+			x: 19.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1996FB28610A07F4"]
@@ -396,13 +376,14 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
-			y: -6.0d
+			x: 21.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
 				"3052BAA53CF8DBAA"
 				"2770BFB05F1E26EC"
+				"6A3B2EF9E54AB551"
 			]
 			description: [
 				"The next tier of circuit."
@@ -419,8 +400,8 @@
 				type: "item"
 			}]
 			title: "Your Second Circuit"
-			x: 8.0d
-			y: 4.0d
+			x: 6.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -434,8 +415,8 @@
 				item: "gtceu:diode"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 2.5d
+			x: 6.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["1AD99F9620569AA4"]
@@ -446,8 +427,8 @@
 				item: "gtceu:lv_forming_press"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 4.0d
+			x: 10.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -461,8 +442,8 @@
 				item: "gtceu:phenolic_printed_circuit_board"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 4.0d
+			x: 10.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["74C94B5C7B866A34"]
@@ -473,8 +454,8 @@
 				item: "gtceu:phenolic_circuit_board"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 2.5d
+			x: 8.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["1AD99F9620569AA4"]
@@ -484,11 +465,15 @@
 				item: "gtceu:lv_rock_crusher"
 				type: "item"
 			}]
-			x: 15.5d
-			y: -2.0d
+			x: 10.5d
+			y: 4.5d
 		}
 		{
-			dependencies: ["0E1F6E844041CC9F"]
+			dependencies: [
+				"0E1F6E844041CC9F"
+				"74C94B5C7B866A34"
+				"45961AD543495B1D"
+			]
 			description: [
 				"An EBF is an important step for progressing. It's required to get Aluminium ingots and move into MV."
 				""
@@ -517,9 +502,30 @@
 					item: "gtceu:maintenance_hatch"
 					type: "item"
 				}
+				{
+					id: "1002719BE2CCD8A1"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "5A85BE393F149ED9"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+				{
+					id: "2E6343B1DAC4272D"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "55C333F6ECB5C3C9"
+					item: { Count: 10, id: "gtceu:heatproof_machine_casing" }
+					type: "item"
+				}
 			]
 			x: 0.0d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -533,13 +539,14 @@
 			]
 			id: "18BC6F844CF368EF"
 			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "7CB8E4F11B64A373"
 				item: "gtceu:aluminium_ingot"
 				type: "item"
 			}]
 			x: 0.0d
-			y: 2.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["62B56B57D291BF7B"]
@@ -554,7 +561,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 2.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -578,8 +585,8 @@
 				type: "item"
 			}]
 			title: "Coils"
-			x: 1.5d
-			y: 1.0d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["318CA73CE4C3DC3D"]
@@ -610,7 +617,7 @@
 				type: "checkmark"
 			}]
 			x: -1.5d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["35CB055A24346DE1"]
@@ -639,24 +646,21 @@
 				type: "checkmark"
 			}]
 			x: -4.5d
-			y: -1.5d
+			y: -3.0d
 		}
 		{
-			dependencies: [
-				"53B8480F64FDA089"
-				"07377D4D02DC350A"
-			]
+			dependencies: ["07377D4D02DC350A"]
 			description: ["Makes circuits a lot more efficient to make."]
 			id: "6B22D87DF0CDC580"
 			shape: "gear"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "501190AA63AA8AA8"
 				item: "gtceu:lv_circuit_assembler"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 4.0d
+			x: 4.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["18BC6F844CF368EF"]
@@ -670,7 +674,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 4.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["35CB055A24346DE1"]
@@ -694,30 +698,16 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["35CB055A24346DE1"]
+			dependencies: ["0E1F6E844041CC9F"]
 			description: ["Holds insane amounts of one item."]
-			hide_dependency_lines: true
 			id: "5CE14FF227CC4A58"
 			tasks: [{
 				id: "3FB6A1A4FB68E55E"
 				item: "gtceu:lv_super_chest"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -5.5d
-		}
-		{
-			dependencies: ["35CB055A24346DE1"]
-			description: ["Holds insane amounts of one fluid."]
-			hide_dependency_lines: true
-			id: "0DC21557F69B6755"
-			tasks: [{
-				id: "64467B66C3A008BA"
-				item: "gtceu:lv_super_tank"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -5.5d
+			x: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -736,7 +726,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 4.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["298F63E0659E0FD6"]
@@ -746,8 +736,8 @@
 				item: "gtceu:lv_cutter"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -2.0d
+			x: 10.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["44495C979D17EFD5"]
@@ -758,8 +748,8 @@
 				item: "gtceu:lv_pump"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -7.5d
+			x: 18.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["0E1F6E844041CC9F"]
@@ -777,8 +767,8 @@
 				item: "gtceu:bronze_large_boiler"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -4.0d
+			x: -1.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2425F4CE4FE78AC1"]
@@ -789,8 +779,8 @@
 				item: "gtceu:rubber_bucket"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -1.0d
+			x: 13.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["196B6372301A235E"]
@@ -812,8 +802,8 @@
 					type: "item"
 				}
 			]
-			x: 15.5d
-			y: -4.0d
+			x: 10.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0E1F6E844041CC9F"]
@@ -839,8 +829,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
-			y: -2.0d
+			x: 0.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["4521814F0D4989E9"]
@@ -853,7 +843,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["0E1F6E844041CC9F"]
@@ -868,8 +858,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
-			y: -1.0d
+			x: 1.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["44495C979D17EFD5"]
@@ -879,8 +869,8 @@
 				item: "gtceu:lv_distillery"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -7.5d
+			x: 16.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["4816A85DF7D24F0B"]
@@ -897,8 +887,8 @@
 				item: "gtceu:gallium_arsenide_dust"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 2.5d
+			x: 7.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["01E6A51033DA1518"]
@@ -909,24 +899,8 @@
 				item: "gtceu:annealed_copper_ingot"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["0E1F6E844041CC9F"]
-			hide_dependency_lines: true
-			id: "0E157F0B95D45F80"
-			tasks: [{
-				id: "6BDD178C35935F6E"
-				item: {
-					Count: 1
-					id: "gtceu:nightvision_goggles"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: -7.0d
-			y: -4.5d
+			x: 7.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["55D76A052A9EE6A0"]
@@ -942,7 +916,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 1.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["74C94B5C7B866A34"]
@@ -953,8 +927,8 @@
 				item: "botania:mana_pool"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 2.5d
+			x: 4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["59B4E0F4EA02306B"]
@@ -965,8 +939,8 @@
 				item: "gtceu:lubricant_bucket"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -7.5d
+			x: 16.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["01A0E9661BB0FDAB"]
@@ -977,20 +951,19 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 2.5d
+			y: 6.0d
 		}
 		{
-			dependencies: ["35CB055A24346DE1"]
+			dependencies: ["74C94B5C7B866A34"]
 			description: ["Better than a regular cell."]
-			hide_dependency_lines: true
 			id: "389E05F5B0B8FD1A"
 			tasks: [{
 				id: "60D7C8FB99B88068"
 				item: "gtceu:steel_fluid_cell"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -4.5d
+			x: 4.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["3F93873DE169ED25"]
@@ -1006,21 +979,20 @@
 				type: "item"
 			}]
 			title: "Powah"
-			x: 2.0d
-			y: -7.5d
+			x: 16.5d
+			y: 1.5d
 		}
 		{
-			dependencies: ["35CB055A24346DE1"]
+			dependencies: ["7F7FA47652C0FA90"]
 			description: ["If you haven't made an EnderIO magnet, this one does the job as well, but is a bit harder to craft."]
-			hide_dependency_lines: true
 			id: "1E761C6B347E80D6"
 			tasks: [{
 				id: "3E7BF9337D7DCD9F"
 				item: "gtceu:lv_item_magnet"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -3.5d
+			x: 22.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["18BC6F844CF368EF"]
@@ -1032,7 +1004,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 2.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["0E1F6E844041CC9F"]
@@ -1047,33 +1019,19 @@
 				item: "thermal:device_water_gen"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -4.0d
+			x: 0.0d
+			y: -4.5d
 		}
 		{
-			dependencies: ["318CA73CE4C3DC3D"]
-			description: ["Optional Quest, but could be useful for you, if you wish to make it."]
-			id: "71842C66162FA5DD"
-			optional: true
-			tasks: [{
-				id: "24599585094A3425"
-				item: "gtceu:lv_world_accelerator"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["35CB055A24346DE1"]
-			hide_dependency_lines: true
+			dependencies: ["0E1F6E844041CC9F"]
 			id: "46303F9FE371A8BA"
 			tasks: [{
 				id: "178F4B931CE5BCF6"
 				item: "gtceu:steel_crate"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -3.5d
+			x: 0.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["0E1F6E844041CC9F"]
@@ -1087,8 +1045,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: -1.0d
+			x: -1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["74C94B5C7B866A34"]
@@ -1103,8 +1061,30 @@
 				item: "powah:energy_cable_starter"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 0.0d
+			x: 7.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0E1F6E844041CC9F"]
+			id: "1845F5B69046AA95"
+			tasks: [{
+				id: "002EA2B577FE7C7F"
+				item: "thermal:device_rock_gen"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["416D2D2897567BA7"]
+			id: "45961AD543495B1D"
+			tasks: [{
+				id: "397C07F13B6E277F"
+				item: "gtceu:invar_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
 		}
 	]
 	title: "LV Age"

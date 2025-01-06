@@ -45,15 +45,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["43D222FD4AF3280E"]
-			icon: "gtceu:titanium_ingot"
-			id: "3D2899722EC64DB5"
-			title: "Titanium"
-			x: -1.5d
-			y: -6.0d
-		}
-		{
-			dependencies: ["3D2899722EC64DB5"]
+			dependencies: ["27DEEE5708A89666"]
 			id: "518600219B02E42B"
 			tasks: [{
 				id: "7462EC7DC9E114DE"
@@ -64,7 +56,7 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["3D2899722EC64DB5"]
+			dependencies: ["27DEEE5708A89666"]
 			id: "54F598CB57F0239F"
 			tasks: [{
 				id: "28782E2E16FC0D09"
@@ -86,7 +78,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["3D2899722EC64DB5"]
+			dependencies: ["27DEEE5708A89666"]
 			id: "7BD5E699ACD9F419"
 			tasks: [{
 				id: "6F5912271718D6DB"
@@ -232,11 +224,20 @@
 		}
 		{
 			id: "0F3D795EAAE3E8DC"
-			tasks: [{
-				id: "7B80B16E8B14BC37"
-				item: "ae2:certus_quartz_crystal"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7B80B16E8B14BC37"
+					item: "ae2:certus_quartz_crystal"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5CC965FA3E5F5E69"
+					item: "gtceu:certus_quartz_gem"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 3.0d
 			y: -1.5d
 		}
@@ -250,6 +251,14 @@
 			}]
 			x: 6.0d
 			y: -1.5d
+		}
+		{
+			dependencies: ["0F53EFB5D7D2C329"]
+			icon: "gtceu:stainless_steel_ingot"
+			id: "27DEEE5708A89666"
+			title: "Stainless Steel"
+			x: -1.5d
+			y: -6.0d
 		}
 	]
 	title: "Applied Energistics 2"

@@ -14,7 +14,7 @@
 		x: -0.5d
 		y: -7.0d
 	}]
-	order_index: 15
+	order_index: 14
 	quest_links: [ ]
 	quests: [
 		{
@@ -205,8 +205,8 @@
 				item: "botania:terrasteel_ingot"
 				type: "item"
 			}]
-			x: 3.2214285714285538d
-			y: -10.347619047619041d
+			x: 3.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["11E30097AC7708B5"]
