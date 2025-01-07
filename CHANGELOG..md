@@ -10,6 +10,7 @@
 - Unified a lot of recipes
 - Infernal mobs have less health, less attributes
 - More gregified recipes
+- Fixed a lot of broken/impossible recipes
 
 # 0.1.1
 - added Too Fast, Client Crafting, FTB Essentials, Almost Unified
