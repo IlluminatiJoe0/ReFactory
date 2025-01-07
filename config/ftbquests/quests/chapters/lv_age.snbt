@@ -111,7 +111,7 @@
 				item: "gtceu:lv_wiremill"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 10.5d
 			y: -4.5d
 		}
 		{
@@ -194,7 +194,7 @@
 				item: "gtceu:lv_centrifuge"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 12.0d
 			y: -4.5d
 		}
 		{
@@ -205,7 +205,7 @@
 				item: "gtceu:lv_chemical_reactor"
 				type: "item"
 			}]
-			x: 13.0d
+			x: 13.5d
 			y: -4.5d
 		}
 		{
@@ -262,7 +262,7 @@
 				item: "gtceu:lv_mixer"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 9.0d
 			y: -4.5d
 		}
 		{
@@ -273,7 +273,7 @@
 				item: "gtceu:lv_ore_washer"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 12.0d
 			y: -6.0d
 		}
 		{
@@ -335,7 +335,7 @@
 		}
 		{
 			dependencies: ["0E1F6E844041CC9F"]
-			description: ["With the Placeable Emitters mod, you can now place emitters and transfer energy wirelessly."]
+			description: ["With the Placeable Emitters mod, you can now place emitters and transfer energy wirelessly!"]
 			id: "05B388C998126A7C"
 			size: 1.0d
 			tasks: [{
@@ -404,7 +404,7 @@
 				type: "item"
 			}]
 			title: "Your Second Circuit"
-			x: 6.0d
+			x: 3.0d
 			y: 12.0d
 		}
 		{
@@ -529,7 +529,7 @@
 				}
 			]
 			x: 0.0d
-			y: 2.0d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -550,7 +550,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["62B56B57D291BF7B"]
@@ -565,7 +565,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -590,7 +590,7 @@
 			}]
 			title: "Coils"
 			x: 0.0d
-			y: 6.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["318CA73CE4C3DC3D"]
@@ -621,7 +621,7 @@
 				type: "checkmark"
 			}]
 			x: -1.5d
-			y: 2.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["35CB055A24346DE1"]
@@ -663,8 +663,8 @@
 				item: "gtceu:lv_circuit_assembler"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 12.0d
+			x: 3.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["18BC6F844CF368EF"]
@@ -678,16 +678,16 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 10.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["35CB055A24346DE1"]
 			description: [
-				"Maybe you want to convert EU to RF/FE or vice versa?"
+				"&9Maybe you want to convert EU to RF/FE or vice versa?&r"
 				""
 				"Well then this is the perfect block for you!"
 				""
-				"Later on you might want to generate power with Powah, so you can use these to easily convert energy."
+				"Later on you might want to generate power with Powah (whose reactors are buffed) or other power generation methods, so you can use these to easily convert energy."
 				""
 				"&eConsult the \"Power\" section of the questbook for more power sources.&r"
 			]
@@ -729,8 +729,8 @@
 				item: "gtceu:soldering_alloy_dust"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 12.0d
+			x: 4.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["298F63E0659E0FD6"]
@@ -740,7 +740,7 @@
 				item: "gtceu:lv_cutter"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 10.5d
 			y: -6.0d
 		}
 		{
@@ -783,7 +783,7 @@
 				item: "gtceu:rubber_bucket"
 				type: "item"
 			}]
-			x: 13.0d
+			x: 13.5d
 			y: -6.0d
 		}
 		{
@@ -815,6 +815,8 @@
 				"Machines have plenty of recipes, and some require Programmed Circuits set on a certain number."
 				""
 				"You almost never need to make these, as every multiblock and machine contain these in their menu by default."
+				""
+				"You can set the number in the bottom left of the machine's menu."
 			]
 			id: "4249C932C7F3FF69"
 			rewards: [{
@@ -920,7 +922,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 9.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["74C94B5C7B866A34"]
@@ -966,8 +968,8 @@
 				item: "gtceu:steel_fluid_cell"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 8.0d
+			x: 7.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["3F93873DE169ED25"]
@@ -1008,7 +1010,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["0E1F6E844041CC9F"]
@@ -1028,14 +1030,19 @@
 		}
 		{
 			dependencies: ["0E1F6E844041CC9F"]
+			description: [
+				"Serves as a very large chest."
+				""
+				"There are higher tiers as you progress, made out of more advanced materials."
+			]
 			id: "46303F9FE371A8BA"
 			tasks: [{
 				id: "178F4B931CE5BCF6"
 				item: "gtceu:steel_crate"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -7.5d
+			x: 1.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["0E1F6E844041CC9F"]
@@ -1069,7 +1076,7 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["0E1F6E844041CC9F"]
+			dependencies: ["45961AD543495B1D"]
 			id: "1845F5B69046AA95"
 			tasks: [{
 				id: "002EA2B577FE7C7F"
@@ -1077,7 +1084,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -4.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["416D2D2897567BA7"]
@@ -1127,6 +1134,21 @@
 			}]
 			x: -3.0d
 			y: -1.5d
+		}
+		{
+			dependencies: ["6C3A8FBF865AF3E0"]
+			description: [
+				"There are certain cables that &2have no cable loss what-so-ever&r, so you may want to utilize them. "
+				"You'll unlock your first one when you get &3Manasteel&r, which is close, but don't rush!"
+			]
+			id: "3F552EA8957F9A07"
+			tasks: [{
+				id: "6671396AA9DC2EDE"
+				title: "Superconductors"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: -3.0d
 		}
 	]
 	title: "LV Age"

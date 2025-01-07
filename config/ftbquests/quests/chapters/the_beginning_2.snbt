@@ -422,6 +422,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["071811F3550BAF2F"]
 			description: [
 				"You might have figured there is &4NO CLAY&r in the world, anywhere."
 				""
@@ -429,6 +430,7 @@
 				""
 				"Later on you'll get a much better way of getting clay."
 			]
+			hide_dependency_lines: true
 			id: "0C2AE8D7483504CC"
 			rewards: [{
 				count: 32
