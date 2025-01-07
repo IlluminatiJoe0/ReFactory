@@ -12,6 +12,10 @@
 		icon: "gtceu:wetware_processor_mainframe"
 		id: "65B0E98F7AF62971"
 		shape: "square"
+		tasks: [{
+			id: "59FDC6605BCF04A1"
+			type: "checkmark"
+		}]
 		title: "UHV Age"
 		x: 0.0d
 		y: 0.0d

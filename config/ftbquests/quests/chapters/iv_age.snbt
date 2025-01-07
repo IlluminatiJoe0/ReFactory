@@ -13,6 +13,10 @@
 			icon: "gtceu:micro_processor_mainframe"
 			id: "3F37E03149399E3F"
 			shape: "square"
+			tasks: [{
+				id: "2BECC5E8BAF67512"
+				type: "checkmark"
+			}]
 			title: "IV Age"
 			x: 0.0d
 			y: 0.0d

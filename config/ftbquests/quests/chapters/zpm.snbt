@@ -13,6 +13,10 @@
 			icon: "gtceu:quantum_processor_mainframe"
 			id: "5440C770D107710D"
 			shape: "square"
+			tasks: [{
+				id: "0FA7176E351E5E99"
+				type: "checkmark"
+			}]
 			title: "ZPM Age"
 			x: 0.0d
 			y: 0.0d

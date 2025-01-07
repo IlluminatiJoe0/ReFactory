@@ -13,6 +13,10 @@
 			icon: "gtceu:hv_machine_hull"
 			id: "59775F7F175FF086"
 			shape: "square"
+			tasks: [{
+				id: "01E24DE564C87FD7"
+				type: "checkmark"
+			}]
 			title: "HV Age"
 			x: 1.0d
 			y: 1.5d

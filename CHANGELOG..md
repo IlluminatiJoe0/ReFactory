@@ -1,7 +1,7 @@
 # 0.1.2
 - Possible to travel to the Moon in HV
 - Micro and Integrated circuits now require Botania and Botania-derived materials
-- Added Gregicality Rocketry, Just Zoom, Enchantment Descriptions, ME Requester, Sodium/Embeddium Extras, Time In A Bottle, Mana Liquidizer
+- Added Gregicality Rocketry, Just Zoom, Enchantment Descriptions, ME Requester, Sodium/Embeddium Extras, Time In A Bottle, Mana Liquidizer, No Farmland Trample, Right Click Harvest, Inventory Sorter
 - Updated GregTech, EnderIO, and a bunch more mods
 - Removed Gregified Integrations (bye bye!!!)
 - Removed Bauxite from the overworld Mica vein

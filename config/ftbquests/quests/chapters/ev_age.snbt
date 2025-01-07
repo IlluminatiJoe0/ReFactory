@@ -13,6 +13,10 @@
 			icon: "gtceu:micro_processor_computer"
 			id: "669F52806D1D39F6"
 			shape: "square"
+			tasks: [{
+				id: "67908F29ECD1F0B6"
+				type: "checkmark"
+			}]
 			title: "EV Age"
 			x: 0.0d
 			y: 0.0d

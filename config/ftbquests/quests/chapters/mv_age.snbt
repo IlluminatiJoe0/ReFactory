@@ -16,6 +16,10 @@
 			id: "630A813B0F4DA078"
 			shape: "square"
 			size: 1.5d
+			tasks: [{
+				id: "5DDFD9148E50F37E"
+				type: "checkmark"
+			}]
 			title: "MV AGE"
 			x: -4.5d
 			y: 0.0d
