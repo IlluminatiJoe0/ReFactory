@@ -13,6 +13,10 @@
 			icon: "gtceu:crystal_processor_mainframe"
 			id: "0F1EE60EBAA8CAEF"
 			shape: "square"
+			tasks: [{
+				id: "5B68F7A8D54250A1"
+				type: "checkmark"
+			}]
 			title: "UV Age"
 			x: 0.0d
 			y: 0.0d

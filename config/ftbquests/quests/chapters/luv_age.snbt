@@ -13,6 +13,10 @@
 			icon: "gtceu:nano_processor_mainframe"
 			id: "6945C4E4B0EF9E12"
 			shape: "square"
+			tasks: [{
+				id: "281AC70F00662733"
+				type: "checkmark"
+			}]
 			title: "Luv Age"
 			x: 1.5d
 			y: -1.0d

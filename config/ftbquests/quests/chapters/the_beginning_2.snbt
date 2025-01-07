@@ -135,7 +135,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["071811F3550BAF2F"]
+			dependencies: ["77219C4E83F48E8F"]
 			description: [
 				"You'll need all of these tools."
 				""
@@ -185,20 +185,22 @@
 					type: "item"
 				}
 			]
+			shape: "gear"
 			subtitle: "Handyman"
 			tasks: [
 				{
-					id: "191D9382D35CB5F2"
+					id: "6211183EEAC03A33"
 					item: {
 						Count: 1
-						id: "gtceu:iron_hammer"
+						id: "gtceu:wrought_iron_hammer"
 						tag: {
-							DisallowContainerItem: 0
+							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
 								Damage: 0
+								Enchantability: 5
 								HarvestLevel: 2
-								MaxDamage: 255
+								MaxDamage: 383
 								ToolSpeed: 6.0f
 							}
 							HideFlags: 2
@@ -207,16 +209,17 @@
 					type: "item"
 				}
 				{
-					id: "17DCCF5969160CEE"
+					id: "5B7E1120538919E7"
 					item: {
 						Count: 1
-						id: "gtceu:iron_file"
+						id: "gtceu:wrought_iron_file"
 						tag: {
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
 								Damage: 0
-								MaxDamage: 255
+								Enchantability: 5
+								MaxDamage: 383
 							}
 							HideFlags: 2
 						}
@@ -224,10 +227,10 @@
 					type: "item"
 				}
 				{
-					id: "4453C93721608E93"
+					id: "38AC5A720E06E0B2"
 					item: {
 						Count: 1
-						id: "gtceu:iron_saw"
+						id: "gtceu:wrought_iron_saw"
 						tag: {
 							DisallowContainerItem: 0b
 							GT.Behaviours: {
@@ -235,7 +238,8 @@
 							}
 							GT.Tool: {
 								Damage: 0
-								MaxDamage: 255
+								Enchantability: 5
+								MaxDamage: 383
 							}
 							HideFlags: 2
 						}
@@ -243,16 +247,17 @@
 					type: "item"
 				}
 				{
-					id: "480C397F7DB21B39"
+					id: "3EF1F29294B2988A"
 					item: {
 						Count: 1
-						id: "gtceu:iron_screwdriver"
+						id: "gtceu:wrought_iron_screwdriver"
 						tag: {
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
 								Damage: 0
-								MaxDamage: 255
+								Enchantability: 5
+								MaxDamage: 383
 							}
 							HideFlags: 2
 						}
@@ -260,17 +265,18 @@
 					type: "item"
 				}
 				{
-					id: "7171DF2C9F8E2D49"
+					id: "400C5BCF1CEF8222"
 					item: {
 						Count: 1
-						id: "gtceu:iron_wire_cutter"
+						id: "gtceu:wrought_iron_wire_cutter"
 						tag: {
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
 								Damage: 0
+								Enchantability: 5
 								HarvestLevel: 2
-								MaxDamage: 255
+								MaxDamage: 383
 								ToolSpeed: 6.0f
 							}
 							HideFlags: 2
@@ -279,27 +285,10 @@
 					type: "item"
 				}
 				{
-					id: "381A242E53183FD3"
+					id: "3ED0561F9FF84BF0"
 					item: {
 						Count: 1
-						id: "gtceu:iron_mortar"
-						tag: {
-							DisallowContainerItem: 0b
-							GT.Behaviours: { }
-							GT.Tool: {
-								Damage: 0
-								MaxDamage: 255
-							}
-							HideFlags: 2
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "29426334B0CE42FB"
-					item: {
-						Count: 1
-						id: "gtceu:iron_wrench"
+						id: "gtceu:wrought_iron_wrench"
 						tag: {
 							DisallowContainerItem: 0b
 							GT.Behaviours: {
@@ -307,10 +296,28 @@
 							}
 							GT.Tool: {
 								Damage: 0
-								Enchantability: 14
+								Enchantability: 5
 								HarvestLevel: 2
-								MaxDamage: 255
+								MaxDamage: 383
 								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "73AD5441C093CD59"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_mortar"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								Enchantability: 5
+								MaxDamage: 383
 							}
 							HideFlags: 2
 						}
@@ -319,7 +326,7 @@
 				}
 			]
 			title: "Tools"
-			x: 0.0d
+			x: 1.5d
 			y: 4.5d
 		}
 		{
@@ -404,6 +411,7 @@
 				"Unlike the Aqueous Accumulator, it does export water."
 			]
 			id: "3FCDBCB2152DE3FB"
+			optional: true
 			size: 1.0d
 			tasks: [{
 				id: "181EE1896DB52E1C"
@@ -444,6 +452,8 @@
 				"Creates coke and creosote from coal."
 				""
 				"You will need 116 Coke Oven bricks for this."
+				""
+				"I recommend building 2+, if you have the resources to do that. Note that they can be wall-shared."
 			]
 			icon: "gtceu:coke_oven"
 			id: "364AD55044CC7EBE"
@@ -543,7 +553,7 @@
 				}
 			]
 			title: "Fluid Pipes"
-			x: 0.0d
+			x: 1.5d
 			y: 6.0d
 		}
 		{
@@ -557,7 +567,7 @@
 				type: "item"
 			}]
 			title: "Item Pipes"
-			x: 1.5d
+			x: 3.0d
 			y: 6.0d
 		}
 		{
@@ -703,6 +713,8 @@
 				"Electricity finally!"
 				""
 				"This block is an ingredient to all your LV machines."
+				""
+				"Go to LV AGE when you complete this quest!"
 			]
 			id: "62B56B57D291BF7B"
 			shape: "gear"
@@ -716,12 +728,15 @@
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"189B920AAB6456B4"
-				"0E1B564A6BE06105"
-			]
+			dependencies: ["189B920AAB6456B4"]
 			description: ["A step into future."]
 			id: "313476D47A208906"
+			rewards: [{
+				count: 16
+				id: "223019980AF8C83E"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2C455DA05F51CDE9"
 				item: "gtceu:lv_machine_casing"
@@ -874,33 +889,6 @@
 			}]
 			x: 7.5d
 			y: 7.0d
-		}
-		{
-			dependencies: ["189B920AAB6456B4"]
-			description: [
-				"Pulls nearby items towards you!"
-				""
-				"Needs charge to work."
-			]
-			hide_dependency_lines: true
-			id: "496A59D3C7E8D87B"
-			tasks: [{
-				id: "2CC93D390B46DA3D"
-				item: {
-					Count: 1
-					id: "enderio:electromagnet"
-					tag: {
-						Energy: {
-							EnergyStored: 0
-							MaxEnergyStored: 100000
-							MaxEnergyUse: 100000
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: 10.5d
-			y: 6.0d
 		}
 		{
 			dependencies: ["03CF5FEDA44D312B"]
@@ -1127,7 +1115,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
+			x: 0.0d
 			y: 6.0d
 		}
 		{
@@ -1229,30 +1217,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["5E785D06BD90880A"]
-			id: "0AA5DDE425B141B5"
-			optional: true
-			tasks: [{
-				id: "2A01D0215E3605E0"
-				item: "mob_grinding_utils:xpsolidifier"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["071811F3550BAF2F"]
-			hide_dependency_lines: true
-			id: "0E1B564A6BE06105"
-			tasks: [{
-				id: "0805B89E1E806C29"
-				item: "gtceu:wrought_iron_ingot"
-				type: "item"
-			}]
-			x: 12.0d
-			y: 6.0d
-		}
-		{
 			dependencies: ["071811F3550BAF2F"]
 			description: [
 				"Don't worry about ore doubling, processing and other stuff yet, focus on getting a lot of ores and just smelting them."
@@ -1267,6 +1231,18 @@
 			}]
 			x: -1.5d
 			y: 3.0d
+		}
+		{
+			dependencies: ["071811F3550BAF2F"]
+			description: ["You can get Wrought Iron Ingots by smelting Iron Ingots in a furnace."]
+			id: "77219C4E83F48E8F"
+			tasks: [{
+				id: "63807B81E3DBF30C"
+				item: "gtceu:wrought_iron_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
 		}
 	]
 	title: "The Beginning"
