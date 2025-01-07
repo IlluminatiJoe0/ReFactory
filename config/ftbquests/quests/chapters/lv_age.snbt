@@ -1,0 +1,1133 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "lv_age"
+	group: ""
+	icon: "gtceu:basic_electronic_circuit"
+	id: "29B5D62254073156"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["62B56B57D291BF7B"]
+			description: ["Welcome to the LV age, now you have power, and access to basic machines."]
+			disable_toast: true
+			icon: "gtceu:lv_machine_hull"
+			id: "35CB055A24346DE1"
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				id: "552AB0B877452E23"
+				type: "checkmark"
+			}]
+			title: "LV AGE"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0E1F6E844041CC9F"]
+			description: ["Crucial machine for creating LV power."]
+			id: "03D3442F857F0592"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "1BF0D8B2C58C1011"
+				item: "gtceu:lv_steam_turbine"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"09ECD67B4648D2EA"
+				"03D3442F857F0592"
+			]
+			description: ["Tired yet?"]
+			id: "298F63E0659E0FD6"
+			size: 1.5d
+			tasks: [{
+				id: "24805EF455C7050A"
+				item: "gtceu:lv_electric_motor"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"35CB055A24346DE1"
+				"527C703959FD9B65"
+			]
+			description: [
+				"Here comes the hard part..."
+				""
+				"You're going to need about 2 of these per machine."
+				""
+				"Make as much as you are able to, you'll need them, trust me."
+			]
+			id: "0E1F6E844041CC9F"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "1BC795E23F104984"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			title: "Your First Circuit!"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1AD99F9620569AA4"]
+			id: "196B6372301A235E"
+			size: 1.0d
+			tasks: [{
+				id: "0042010F7338590F"
+				item: "gtceu:lv_bender"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1AD99F9620569AA4"]
+			id: "7C29E80B0DDAE836"
+			size: 1.0d
+			tasks: [{
+				id: "19EBE89C4A440CE3"
+				item: "gtceu:lv_lathe"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["298F63E0659E0FD6"]
+			id: "12401DF56940C9F9"
+			size: 1.0d
+			tasks: [{
+				id: "4C6556A485A4CFD2"
+				item: "gtceu:lv_wiremill"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"53B8480F64FDA089"
+				"1B1B005DA1E7D5DA"
+			]
+			id: "74C94B5C7B866A34"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "273631D9CE3F02CC"
+				item: "gtceu:lv_assembler"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["298F63E0659E0FD6"]
+			id: "1AD99F9620569AA4"
+			size: 1.5d
+			tasks: [{
+				id: "13A71EEFE85F45F8"
+				item: "gtceu:lv_electric_piston"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["03D3442F857F0592"]
+			id: "4CC0BC35DF5A8F18"
+			tasks: [{
+				id: "56C90758761F1404"
+				item: "gtceu:lv_electric_furnace"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["03D3442F857F0592"]
+			id: "416D2D2897567BA7"
+			tasks: [{
+				id: "020EA65E86B87D88"
+				item: "gtceu:lv_alloy_smelter"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["03D3442F857F0592"]
+			id: "01E6A51033DA1518"
+			tasks: [{
+				id: "6CA7F14BA3CAA4F3"
+				item: "gtceu:lv_arc_furnace"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["44495C979D17EFD5"]
+			id: "662A64496CA2E824"
+			tasks: [{
+				id: "1706653C1D728D37"
+				item: "gtceu:lv_autoclave"
+				type: "item"
+			}]
+			x: 19.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["298F63E0659E0FD6"]
+			id: "5951A83C0CC6B27D"
+			tasks: [{
+				id: "7AA5294339CD58CC"
+				item: "gtceu:lv_centrifuge"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["298F63E0659E0FD6"]
+			id: "2425F4CE4FE78AC1"
+			tasks: [{
+				id: "5B34E0D422A1B61B"
+				item: "gtceu:lv_chemical_reactor"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1AD99F9620569AA4"]
+			id: "2C3AF8EA8EF8A321"
+			tasks: [{
+				id: "00D83C31629AFEB3"
+				item: "gtceu:lv_compressor"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["03D3442F857F0592"]
+			id: "4D377D42028B96A1"
+			tasks: [{
+				id: "4FCF72B0E5AC601F"
+				item: "gtceu:lv_electrolyzer"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["44495C979D17EFD5"]
+			id: "20A8D7A27A745592"
+			tasks: [{
+				id: "74100EBEAB9A3FD0"
+				item: "gtceu:lv_extractor"
+				type: "item"
+			}]
+			x: 19.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1AD99F9620569AA4"]
+			id: "11ACC7CD8EFFBB66"
+			tasks: [{
+				id: "0E31D8A896B81D9D"
+				item: "gtceu:lv_extruder"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["298F63E0659E0FD6"]
+			hide_dependent_lines: true
+			id: "4816A85DF7D24F0B"
+			size: 1.0d
+			tasks: [{
+				id: "5BD63BEF636CF8BB"
+				item: "gtceu:lv_mixer"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["298F63E0659E0FD6"]
+			id: "7EAA57EC0799D40D"
+			tasks: [{
+				id: "3992F3ADBF90A6C6"
+				item: "gtceu:lv_ore_washer"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["35CB055A24346DE1"]
+			description: [
+				"A very useful buffer for power."
+				""
+				"Requires batteries of same voltage tier, and outputs amps depending on the number of batteries inside."
+				""
+				"You don't have access to batteries yet, but keep this in mind."
+			]
+			id: "7A182C2B32A50D8A"
+			tasks: [{
+				id: "0E85CD2DFD187C0A"
+				item: "gtceu:lv_battery_buffer_4x"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"298F63E0659E0FD6"
+				"03D3442F857F0592"
+			]
+			id: "44495C979D17EFD5"
+			size: 1.5d
+			tasks: [{
+				id: "299B171F8C158356"
+				item: "gtceu:lv_electric_pump"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1AD99F9620569AA4"]
+			id: "1B1B005DA1E7D5DA"
+			size: 1.5d
+			tasks: [{
+				id: "40F518F0A11F8BA7"
+				item: "gtceu:lv_robot_arm"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["298F63E0659E0FD6"]
+			id: "53B8480F64FDA089"
+			size: 1.5d
+			tasks: [{
+				id: "415DDFF88B9399DC"
+				item: "gtceu:lv_conveyor_module"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0E1F6E844041CC9F"]
+			description: ["With the Placeable Emitters mod, you can now place emitters and transfer energy wirelessly."]
+			id: "05B388C998126A7C"
+			size: 1.0d
+			tasks: [{
+				id: "6FA92A9A0C209647"
+				item: "gtceu:lv_emitter"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["44495C979D17EFD5"]
+			id: "1996FB28610A07F4"
+			tasks: [{
+				id: "0AF54BBA168B9520"
+				item: "gtceu:lv_canner"
+				type: "item"
+			}]
+			x: 19.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1996FB28610A07F4"]
+			id: "7F7FA47652C0FA90"
+			tasks: [
+				{
+					id: "3B9B08D160BF1BC1"
+					item: "gtceu:lv_sodium_battery"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1AF0EBE90B7EBB1C"
+					item: "gtceu:lv_cadmium_battery"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0AB86EA9FBC2DF5F"
+					item: "gtceu:lv_lithium_battery"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 21.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"3052BAA53CF8DBAA"
+				"2770BFB05F1E26EC"
+				"6A3B2EF9E54AB551"
+			]
+			description: [
+				"The next tier of circuit."
+				""
+				"With these 2 circuits, you should immediately craft the LV Circuit Assembler, as it is very efficient in making circuits."
+			]
+			id: "07377D4D02DC350A"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				count: 2L
+				id: "0FEE350D6FF93B46"
+				item: "gtceu:good_electronic_circuit"
+				type: "item"
+			}]
+			title: "Your Second Circuit"
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"74C94B5C7B866A34"
+				"7D4B02AACF124E44"
+			]
+			id: "3052BAA53CF8DBAA"
+			tasks: [{
+				count: 4L
+				id: "1B3917FEBC3F7C66"
+				item: "gtceu:diode"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["1AD99F9620569AA4"]
+			id: "14A2B15A4B228C88"
+			size: 1.0d
+			tasks: [{
+				id: "7F4FBFF1E586A88E"
+				item: "gtceu:lv_forming_press"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"5B86B4616F141E18"
+				"14A2B15A4B228C88"
+			]
+			id: "2770BFB05F1E26EC"
+			tasks: [{
+				count: 2L
+				id: "3735B04F8FFAE088"
+				item: "gtceu:phenolic_printed_circuit_board"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["74C94B5C7B866A34"]
+			id: "5B86B4616F141E18"
+			tasks: [{
+				count: 2L
+				id: "6ECDCCE5C2AFCBAB"
+				item: "gtceu:phenolic_circuit_board"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["1AD99F9620569AA4"]
+			id: "597B768AC0E3FBEC"
+			tasks: [{
+				id: "79E17099F22F5C5E"
+				item: "gtceu:lv_rock_crusher"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0E1F6E844041CC9F"
+				"74C94B5C7B866A34"
+				"45961AD543495B1D"
+			]
+			description: [
+				"An EBF is an important step for progressing. It's required to get Aluminium ingots and move into MV."
+				""
+				"The EBF requires MV, so unless you have an MV energy hatch, it's possible to use 2 LV energy hatches instead. Note that it does consume hefty amounts of energy."
+				""
+				"Later on it's recommended to get multiple EBF's running (preferably wall shared)."
+			]
+			icon: "gtceu:electric_blast_furnace"
+			id: "318CA73CE4C3DC3D"
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "0D5BD6D783E47B3B"
+					item: "gtceu:electric_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3695317FC04D7D6B"
+					item: { Count: 2, id: "gtceu:lv_energy_input_hatch" }
+					type: "item"
+				}
+				{
+					id: "40AEB0E535F06CB1"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "1002719BE2CCD8A1"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "5A85BE393F149ED9"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+				{
+					id: "2E6343B1DAC4272D"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "55C333F6ECB5C3C9"
+					item: { Count: 10, id: "gtceu:heatproof_machine_casing" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"318CA73CE4C3DC3D"
+				"5F717D5E9715ED7C"
+			]
+			description: [
+				"Aluminium is an essential element and is a gateway to MV."
+				""
+				"Make sure to make a lot of it!"
+			]
+			id: "18BC6F844CF368EF"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "7CB8E4F11B64A373"
+				item: "gtceu:aluminium_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["62B56B57D291BF7B"]
+			description: [
+				"For basically all MV machines, you're going to need Aluminium."
+				"You can get it from electrolizing sapphire dust, until you get a better source later in the game."
+			]
+			id: "5F717D5E9715ED7C"
+			tasks: [{
+				id: "7F8D558574E13105"
+				item: "gtceu:aluminium_dust"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"318CA73CE4C3DC3D"
+				"6A3B2EF9E54AB551"
+			]
+			description: [
+				"EBFs (Electric Blasts Furnaces) all require coils in order to work."
+				"Every material has its minimum coil tier that allows it to get smelted."
+				"Higher materials require higher levels of coils."
+				""
+				"One EBF requires 16 coils, unless it's wall-sharing with another EBF."
+				""
+				"Take a look at the \"Coils\" chapter for more coil info."
+			]
+			id: "4806751104224E6A"
+			tasks: [{
+				count: 16L
+				id: "62AFFC39EF5E36DC"
+				item: { Count: 16, id: "gtceu:cupronickel_coil_block" }
+				type: "item"
+			}]
+			title: "Coils"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["318CA73CE4C3DC3D"]
+			description: [
+				"You can wallshare EBFs, which means that two EBFs share a side with each other, reducing the amount of resources (mainly coils) to build."
+				""
+				"The following blocks CAN be wallshared:"
+				"- Coils"
+				"- Machine casings"
+				"- Input and output buses and hatches"
+				"- Muffler hatch (though impossible for the EBF)"
+				"- Energy hatches (though not recommended, unless you know what you are doing)"
+				""
+				"The following blocks CANNOT be wallshared:"
+				"- Maintenance hatch"
+				"- Controller"
+			]
+			disable_toast: true
+			id: "79469B87C6E057CA"
+			rewards: [{
+				id: "28AD185319B60FF1"
+				item: "gtceu:duct_tape"
+				type: "item"
+			}]
+			tasks: [{
+				id: "76DDC25C641D4F7F"
+				title: "Wallsharing"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["35CB055A24346DE1"]
+			description: [
+				"For transferring electricity you will need cables."
+				""
+				"Cables can only transfer a set amount of &eamps&r, and have a &dvoltage limit&r."
+				"Transferring power that is &chigher voltage&r (e.g. MV power through LV cables) &cwill make the cable burn&r, which can cause fires and potentially blow up machines."
+				""
+				"Similarly, transferring &cmore amps than the cable allows will also burn the cable&r. Usually, a singleblock machine will use 1 amp of power, so make sure the number of machines is less than the amount of amps your cable can transfer."
+				""
+				"At last, there's also &3cable loss&r, which determines &3how much EU will the cable lose, per block&r to the machine. Make sure machines are closer to the source of power, as well as using cables which have less cable loss."
+				""
+				"For LV, it's best to use tin cables."
+			]
+			id: "6C3A8FBF865AF3E0"
+			rewards: [{
+				count: 4
+				id: "1E49B6D6434B9292"
+				item: "thermal:green_bean_pie"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A6367562A3CB19F"
+				title: "Cables"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["07377D4D02DC350A"]
+			description: ["Makes circuits a lot more efficient to make."]
+			id: "6B22D87DF0CDC580"
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "501190AA63AA8AA8"
+				item: "gtceu:lv_circuit_assembler"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["18BC6F844CF368EF"]
+			description: ["The base of all MV machines"]
+			id: "498EF8FFD105D589"
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "165C8A2A8AE2CF63"
+				item: "gtceu:mv_machine_hull"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["35CB055A24346DE1"]
+			description: [
+				"Maybe you want to convert EU to RF/FE or vice versa?"
+				""
+				"Well then this is the perfect block for you!"
+				""
+				"Later on you might want to generate power with Powah, so you can use these to easily convert energy."
+				""
+				"&eConsult the \"Power\" section of the questbook for more power sources.&r"
+			]
+			id: "77529F6F46D25E74"
+			tasks: [{
+				id: "537E23D3C0AD1590"
+				item: "gtceu:lv_4a_energy_converter"
+				type: "item"
+			}]
+			title: "Energy Conversion"
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0E1F6E844041CC9F"]
+			description: ["Holds insane amounts of one item."]
+			id: "5CE14FF227CC4A58"
+			tasks: [{
+				id: "3FB6A1A4FB68E55E"
+				item: "gtceu:lv_super_chest"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"4816A85DF7D24F0B"
+				"6B22D87DF0CDC580"
+			]
+			description: [
+				"Soldering alloy is the most efficient ingredient for electronic circuit crafting in the Circuit Assembler."
+				""
+				"It's not really necessary in the early game, but keep it in mind for later."
+			]
+			id: "0B597578FA4639DF"
+			tasks: [{
+				id: "718DD372E45A8A9E"
+				item: "gtceu:soldering_alloy_dust"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["298F63E0659E0FD6"]
+			id: "0ADAD20D4196337D"
+			tasks: [{
+				id: "5E22F7BF0CECAAC5"
+				item: "gtceu:lv_cutter"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["44495C979D17EFD5"]
+			description: ["Pumps liquids."]
+			id: "29C101F9D9E01012"
+			tasks: [{
+				id: "1A49E8ACB4659F89"
+				item: "gtceu:lv_pump"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0E1F6E844041CC9F"]
+			description: [
+				"OPTIONAL"
+				""
+				"This is a multiblock that burns fuel and generates a lot of steam."
+				""
+				"This block might be for you if you have a lot of burnable material and need a lot of steam, though solar panels should do the job just as well, for free."
+			]
+			id: "7D3B41AED0D6C081"
+			optional: true
+			tasks: [{
+				id: "75C6919BB02D9293"
+				item: "gtceu:bronze_large_boiler"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2425F4CE4FE78AC1"]
+			description: ["Chemical reactors allow you to make rubber more efficiently."]
+			id: "7B42F0062CCF379B"
+			tasks: [{
+				id: "5CE5439EE3C20DB9"
+				item: "gtceu:rubber_bucket"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["196B6372301A235E"]
+			description: [
+				"Fluid cells allow you to transfer fluids by hand. It's as easy as clicking on a fluid in a machine with a cell."
+				""
+				"You can also transform them into Universal Cells, which can hold more molten fluids (1000mb) than normal cells (144mb), but have less functionality."
+			]
+			id: "68ADC7ADA9E45EB2"
+			tasks: [
+				{
+					id: "57BA2CE66F9FC27B"
+					item: "gtceu:fluid_cell"
+					type: "item"
+				}
+				{
+					id: "742D786FC9B2FDAE"
+					item: "gtceu:universal_fluid_cell"
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0E1F6E844041CC9F"]
+			description: [
+				"Machines have plenty of recipes, and some require Programmed Circuits set on a certain number."
+				""
+				"You almost never need to make these, as every multiblock and machine contain these in their menu by default."
+			]
+			id: "4249C932C7F3FF69"
+			rewards: [{
+				id: "2F30C90FEE74A89F"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			tasks: [{
+				id: "72DB835AE024B8C6"
+				item: {
+					Count: 1
+					id: "gtceu:programmed_circuit"
+					tag: {
+						Configuration: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4521814F0D4989E9"]
+			description: ["Paper is made using Chad, which is made from Sugarcane."]
+			hide_dependency_lines: true
+			id: "527C703959FD9B65"
+			tasks: [{
+				id: "193B1D97DF63836A"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0E1F6E844041CC9F"]
+			description: ["This little guy holds energy for you and can charge your inventory equipment."]
+			id: "29598AD66C765FBA"
+			tasks: [{
+				id: "09621B4CE4B7D315"
+				item: {
+					Count: 1
+					id: "thermal:rf_potato"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["44495C979D17EFD5"]
+			id: "59B4E0F4EA02306B"
+			tasks: [{
+				id: "73E33CD17C8C95FD"
+				item: "gtceu:lv_distillery"
+				type: "item"
+			}]
+			x: 16.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4816A85DF7D24F0B"]
+			description: [
+				"Gallium Arsenide is needed in Diode crafting."
+				""
+				"You can get Gallium from processing Sphalerite."
+				""
+				"You can get Arsenic from centrifuging Realgar Dust."
+			]
+			id: "7D4B02AACF124E44"
+			tasks: [{
+				id: "6800D7060EB527F6"
+				item: "gtceu:gallium_arsenide_dust"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["01E6A51033DA1518"]
+			description: ["You can smelt the copper in the arc furnace into Annealed Copper, which can be used in many recipes that require Copper and gives a higher yield."]
+			id: "3EC7290C5FE13ED1"
+			tasks: [{
+				id: "3B48A4CC5F973C1A"
+				item: "gtceu:annealed_copper_ingot"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["55D76A052A9EE6A0"]
+			description: [
+				"Mana Alloy is an alloy of Manasteel and Redstone. It's an LV superconductor."
+				""
+				"It's use is in Cupronickel coils."
+			]
+			id: "6A3B2EF9E54AB551"
+			tasks: [{
+				id: "0EEB232EEE2C1D00"
+				item: "gtceu:mana_alloy_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["74C94B5C7B866A34"]
+			disable_toast: true
+			id: "01A0E9661BB0FDAB"
+			tasks: [{
+				id: "2F71AD033A6074AD"
+				item: "botania:mana_pool"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["59B4E0F4EA02306B"]
+			description: ["You can make Lubricant in a Brewery, using Talc, Soapstone or Redstone with Oil, Seed Oil or Creosote."]
+			id: "3F93873DE169ED25"
+			tasks: [{
+				id: "68A3B4AF78395BF5"
+				item: "gtceu:lubricant_bucket"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["01A0E9661BB0FDAB"]
+			id: "55D76A052A9EE6A0"
+			tasks: [{
+				id: "40E8B07C3856E4DB"
+				item: "botania:manasteel_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["74C94B5C7B866A34"]
+			description: ["Better than a regular cell."]
+			id: "389E05F5B0B8FD1A"
+			tasks: [{
+				id: "60D7C8FB99B88068"
+				item: "gtceu:steel_fluid_cell"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3F93873DE169ED25"]
+			description: [
+				"Start your Powah adventure!"
+				""
+				"See the \"Power\" tab for more info."
+			]
+			id: "164443788430F196"
+			tasks: [{
+				id: "75CCC7153CD65E6E"
+				item: "powah:dielectric_paste"
+				type: "item"
+			}]
+			title: "Powah"
+			x: 16.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7F7FA47652C0FA90"]
+			description: ["If you haven't made an EnderIO magnet, this one does the job as well, but is a bit harder to craft."]
+			id: "1E761C6B347E80D6"
+			tasks: [{
+				id: "3E7BF9337D7DCD9F"
+				item: "gtceu:lv_item_magnet"
+				type: "item"
+			}]
+			x: 22.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["18BC6F844CF368EF"]
+			description: ["Now you've unlocked a big portion of EnderIO by unlocking Aluminium!"]
+			id: "0C8965813F7EE3D2"
+			tasks: [{
+				id: "2778506E3101EE40"
+				item: "enderio:void_chassis"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0E1F6E844041CC9F"]
+			description: [
+				"Generates water when placed between two water sources."
+				""
+				"You will need to output the water somehow (pump, conduit) because this machine doesn't export automatically."
+			]
+			id: "6F8BA04C054531D5"
+			tasks: [{
+				id: "1916FC1736C81B3E"
+				item: "thermal:device_water_gen"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0E1F6E844041CC9F"]
+			id: "46303F9FE371A8BA"
+			tasks: [{
+				id: "178F4B931CE5BCF6"
+				item: "gtceu:steel_crate"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0E1F6E844041CC9F"]
+			id: "14DC5DD0B504E902"
+			tasks: [{
+				id: "535612784E5DC6B0"
+				item: {
+					Count: 1
+					id: "gtceu:liquid_fuel_jetpack"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["74C94B5C7B866A34"]
+			description: [
+				"Good for energy transfer, and fairly cheap."
+				""
+				"Each GT tier has its own upgrade."
+			]
+			id: "2D82EB05632CE9E0"
+			tasks: [{
+				id: "08F6FE0738F55D61"
+				item: "powah:energy_cable_starter"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0E1F6E844041CC9F"]
+			id: "1845F5B69046AA95"
+			tasks: [{
+				id: "002EA2B577FE7C7F"
+				item: "thermal:device_rock_gen"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["416D2D2897567BA7"]
+			id: "45961AD543495B1D"
+			tasks: [{
+				id: "397C07F13B6E277F"
+				item: "gtceu:invar_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["35CB055A24346DE1"]
+			id: "0AA5DDE425B141B5"
+			optional: true
+			tasks: [{
+				id: "2A01D0215E3605E0"
+				item: "mob_grinding_utils:xpsolidifier"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["35CB055A24346DE1"]
+			description: [
+				"Pulls nearby items towards you!"
+				""
+				"Needs charge to work."
+			]
+			id: "496A59D3C7E8D87B"
+			tasks: [{
+				id: "2CC93D390B46DA3D"
+				item: {
+					Count: 1
+					id: "enderio:electromagnet"
+					tag: {
+						Energy: {
+							EnergyStored: 0
+							MaxEnergyStored: 100000
+							MaxEnergyUse: 100000
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+	]
+	title: "LV Age"
+}

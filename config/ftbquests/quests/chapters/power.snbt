@@ -1,0 +1,575 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "power"
+	group: ""
+	icon: "gtceu:max_battery"
+	id: "7230C36C9441CF20"
+	images: [{
+		color: 0
+		height: 2.0d
+		image: "lollipop:textures/gui/container/slot/ov_energy.png"
+		rotation: 0.0d
+		width: 2.0d
+		x: -2.0d
+		y: 0.5d
+	}]
+	order_index: 17
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["54FA4F541B6DD285"]
+			description: ["The reactors are all buffed, they all have 6x their original production rate and transfer rate."]
+			id: "224B2F81FBC05090"
+			size: 1.25d
+			subtitle: "LV"
+			tasks: [{
+				id: "39DD78A60B2B6678"
+				item: "powah:reactor_starter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.625d
+		}
+		{
+			dependencies: ["2E6AD6093E146584"]
+			id: "3122EA82C7670705"
+			size: 1.25d
+			subtitle: "MV"
+			tasks: [{
+				id: "270DD6F7AADE0043"
+				item: "powah:reactor_basic"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.625d
+		}
+		{
+			dependencies: ["29CA7EE5AB8B66A8"]
+			id: "65F752B216038986"
+			size: 1.25d
+			subtitle: "HV"
+			tasks: [{
+				id: "66EC7046DD4798E5"
+				item: "powah:reactor_hardened"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.625d
+		}
+		{
+			dependencies: ["4E681FAB2174B0F0"]
+			id: "62FB7518CA31F864"
+			size: 1.25d
+			subtitle: "EV"
+			tasks: [{
+				id: "058E38087F6B2F94"
+				item: "powah:reactor_blazing"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.625d
+		}
+		{
+			dependencies: ["1418659A4FEA6C44"]
+			id: "78705C58DFF6FF53"
+			size: 1.25d
+			subtitle: "IV"
+			tasks: [{
+				id: "599734F29B14DD15"
+				item: "powah:reactor_niotic"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.625d
+		}
+		{
+			dependencies: ["24FD7B32D435D545"]
+			id: "01C8C9D02FDD4196"
+			size: 1.25d
+			subtitle: "LuV"
+			tasks: [{
+				id: "0B5AA8D5A2276AAF"
+				item: "powah:reactor_spirited"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.625d
+		}
+		{
+			dependencies: ["4A6F78EFACA8DB2B"]
+			id: "71CD774D5B869CE1"
+			size: 1.25d
+			subtitle: "ZPM"
+			tasks: [{
+				id: "4C23D90DF018B4D4"
+				item: "powah:reactor_nitro"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.625d
+		}
+		{
+			id: "4C60781F63A68896"
+			tasks: [{
+				id: "68DE0ECEE441989C"
+				item: "gtceu:lv_steam_turbine"
+				type: "item"
+			}]
+			title: "LV Steam"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			id: "2ED1972D5F6AB80D"
+			tasks: [{
+				id: "3A52DA2BD6692CF3"
+				item: "gtceu:mv_steam_turbine"
+				type: "item"
+			}]
+			title: "MV Steam"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			id: "47A9CB0608353FA0"
+			tasks: [{
+				id: "27609B3DF6199510"
+				item: "gtceu:hv_steam_turbine"
+				type: "item"
+			}]
+			title: "HV Steam"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			description: ["Multiblock version of the HV Steam Turbine."]
+			id: "680AA1D55DD526DA"
+			tasks: [{
+				id: "4C3C084549803ED9"
+				item: "gtceu:steam_large_turbine"
+				type: "item"
+			}]
+			title: "HV Steam Multiblock"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			id: "38EB3F74FF15565E"
+			tasks: [{
+				id: "519AEAC7E63199EC"
+				item: "gtceu:lv_gas_turbine"
+				type: "item"
+			}]
+			title: "LV Gas"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			id: "356863732109304B"
+			tasks: [{
+				id: "5E2711CB5FF2B101"
+				item: "gtceu:mv_gas_turbine"
+				type: "item"
+			}]
+			title: "MV Gas"
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			id: "7F8C19C918404342"
+			tasks: [{
+				id: "63426B10D1ACA745"
+				item: "gtceu:hv_gas_turbine"
+				type: "item"
+			}]
+			title: "HV Gas"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			id: "1007ECF43A2BDD4B"
+			tasks: [{
+				id: "2143CA3D0607FB73"
+				item: "gtceu:gas_large_turbine"
+				type: "item"
+			}]
+			title: "EV Gas"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			id: "498545974B0CD4CC"
+			tasks: [{
+				id: "220B2B919FAEC436"
+				item: "gtceu:lv_combustion"
+				type: "item"
+			}]
+			title: "LV Fuel"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			id: "426E2F60A0FFBF77"
+			tasks: [{
+				id: "6C52E97FC021C5AA"
+				item: "gtceu:mv_combustion"
+				type: "item"
+			}]
+			title: "MV Fuel"
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			id: "40039F44075ACA2B"
+			tasks: [{
+				id: "5EE2AA68917889C1"
+				item: "gtceu:hv_combustion"
+				type: "item"
+			}]
+			title: "HV Fuel"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			id: "65C93A6E1F11107D"
+			tasks: [{
+				id: "1B49A18760D7C85E"
+				item: "gtceu:large_combustion_engine"
+				type: "item"
+			}]
+			title: "EV Fuel"
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			id: "251F3EBC1EF05E99"
+			tasks: [{
+				id: "4ED8568B604E3AED"
+				item: "gtceu:extreme_combustion_engine"
+				type: "item"
+			}]
+			title: "IV Fuel"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			id: "61BF9B1182039243"
+			tasks: [{
+				id: "52BB36BD8808E755"
+				item: "thermal:dynamo_stirling"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			id: "79B777D14814D4F6"
+			tasks: [{
+				id: "093B0DE88F6626F7"
+				item: "thermal:dynamo_compression"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			id: "23F3D62D27BB4D45"
+			tasks: [{
+				id: "34B5D6F4086E6C97"
+				item: "thermal:dynamo_magmatic"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			id: "63E0B3B1853AC6CF"
+			tasks: [{
+				id: "26DBF92E48AF1BBB"
+				item: "thermal:dynamo_numismatic"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			id: "0756D9D031BBA406"
+			tasks: [{
+				id: "40E380DE9A0D1F98"
+				item: "thermal:dynamo_lapidary"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.5d
+		}
+		{
+			id: "175FBD992044903E"
+			tasks: [{
+				id: "4CEEFF6FE0D289EE"
+				item: "thermal:dynamo_disenchantment"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.5d
+		}
+		{
+			id: "259CE92E39267B45"
+			tasks: [{
+				id: "31488996532E685C"
+				item: "thermal:dynamo_gourmand"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.5d
+		}
+		{
+			id: "6B2D0C72C0350872"
+			tasks: [{
+				id: "37B8DD47F5199931"
+				item: "powah:energy_cell_starter"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Welcome to Powah!"
+				""
+				"Use it to generate insane amounts of, well, power."
+			]
+			id: "41EFB2DDDC445E15"
+			rewards: [{
+				id: "3DCE973E4EEFEC76"
+				item: "powah:book"
+				type: "item"
+			}]
+			tasks: [{
+				id: "686BE727611E654C"
+				item: "powah:dielectric_paste"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["41EFB2DDDC445E15"]
+			id: "54FA4F541B6DD285"
+			tasks: [{
+				id: "5E58E275B9DADE92"
+				item: "powah:capacitor_basic_tiny"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["41EFB2DDDC445E15"]
+			id: "2E6AD6093E146584"
+			tasks: [{
+				id: "5D6BDDB70D125141"
+				item: "powah:capacitor_basic_large"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["41EFB2DDDC445E15"]
+			id: "29CA7EE5AB8B66A8"
+			tasks: [{
+				id: "6586CC42018F3567"
+				item: "powah:capacitor_hardened"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["41EFB2DDDC445E15"]
+			id: "4E681FAB2174B0F0"
+			tasks: [{
+				id: "30E39A97AA11495F"
+				item: "powah:capacitor_blazing"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["41EFB2DDDC445E15"]
+			id: "1418659A4FEA6C44"
+			tasks: [{
+				id: "1AEFFE3A05D255BC"
+				item: "powah:capacitor_niotic"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["41EFB2DDDC445E15"]
+			id: "24FD7B32D435D545"
+			tasks: [{
+				id: "3F8A071FB2A649C3"
+				item: "powah:capacitor_spirited"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["41EFB2DDDC445E15"]
+			id: "4A6F78EFACA8DB2B"
+			tasks: [{
+				id: "71E52D214D9EF2C3"
+				item: "powah:capacitor_nitro"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["41EFB2DDDC445E15"]
+			description: ["The magmator generates energy from hot liquids like lava."]
+			id: "56AA98C5E66B5BD9"
+			tasks: [{
+				id: "65AD99E9E61C27DC"
+				item: "powah:magmator_starter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["41EFB2DDDC445E15"]
+			description: ["The furnator generates energy by burning solid fuels. (Not a great source of power, I know)"]
+			id: "3FB08C255150A7B5"
+			tasks: [{
+				id: "0A0A8AC2652935C2"
+				item: "powah:furnator_starter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["41EFB2DDDC445E15"]
+			id: "648785C046B7B88B"
+			tasks: [{
+				id: "050C8AA133BFA34F"
+				item: "powah:thermoelectric_plate"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["648785C046B7B88B"]
+			description: ["The thermo generator generates energy from hot sources below it (lava or magma block). It requires some sort of coolant to work."]
+			id: "1FBAC4E1B11B78A5"
+			tasks: [{
+				id: "132594C930354B7C"
+				item: "powah:thermo_generator_starter"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["59BE413F878398AD"]
+			description: [
+				"Solar panels generate energy using the Sun."
+				""
+				"Make sure they don't have a block above them."
+			]
+			id: "3E20562B62FB5488"
+			tasks: [{
+				id: "6C18D67681554431"
+				item: "powah:solar_panel_starter"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["41EFB2DDDC445E15"]
+			id: "59BE413F878398AD"
+			tasks: [{
+				id: "7F014497C203E2FD"
+				item: "powah:photoelectric_pane"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			id: "33F750FD899F1C07"
+			tasks: [{
+				id: "0348DB924D47DCA2"
+				item: "powah:ender_cell_starter"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			id: "7BE09052EC866EA7"
+			tasks: [{
+				id: "39074439204E32B4"
+				item: "powah:player_transmitter_starter"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			id: "3B4D1AD116200B2E"
+			tasks: [{
+				id: "2418B114217E897F"
+				item: "powah:energy_hopper_starter"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			id: "111C7F3AD9673694"
+			tasks: [{
+				id: "4BD601058F81ACAE"
+				item: "powah:energy_discharger_starter"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["41EFB2DDDC445E15"]
+			description: [
+				"These cables are cheap, use them."
+				""
+				"They cannot transfer EU though."
+			]
+			id: "00BC030689409C30"
+			tasks: [{
+				id: "503219987AF11D6D"
+				item: "powah:energy_cable_starter"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			id: "19A8026472BC3300"
+			tasks: [{
+				id: "274C70F32C791328"
+				item: "gtceu:plasma_large_turbine"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+	]
+	title: "Power"
+}

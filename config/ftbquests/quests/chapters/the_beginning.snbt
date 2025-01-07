@@ -1,0 +1,202 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_beginning"
+	group: ""
+	icon: "minecraft:book"
+	id: "58D1FD4D1FA29004"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome!"
+				"This is a post-apocalyptic, expert, factory-building modpack with a focus on GregTech, inspired by the likes of Nomifactory, GT: New Horizons and Regrowth."
+				"The point of the modpack is to create a sustainable factory from the ground up, on an empty and barren land."
+				""
+				"&cThe Wasteland biome is never-ending &r"
+				""
+				"Here, have an unbreakable hammer! :)"
+			]
+			disable_toast: true
+			icon: "minecraft:book"
+			id: "43E0325219933606"
+			rewards: [{
+				id: "3DDE7ADEE672DBF3"
+				item: {
+					Count: 1
+					id: "gtceu:diamond_mining_hammer"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							AoEColumn: 1
+							AoELayer: 0
+							AoERow: 1
+							MaxAoEColumn: 1
+							MaxAoELayer: 0
+							MaxAoERow: 1
+						}
+						GT.Tool: {
+							Damage: 0
+							Enchantability: 18
+							HarvestLevel: 3
+							MaxDamage: 420
+							ToolSpeed: 6.4f
+						}
+						HideFlags: 2
+						Unbreakable: 1
+					}
+				}
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "Welcome"
+			tasks: [{
+				id: "7A0231CAE7A2D615"
+				title: "The Beginning"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["43E0325219933606"]
+			description: [
+				"True Darkness mod makes the whole world completely black during night,"
+				"so be mindful about wandering without a light source."
+			]
+			disable_toast: true
+			icon: "minecraft:clock"
+			id: "3E1500BCAEAC6C7C"
+			rewards: [{
+				count: 8
+				id: "5A2ECE56F51BE65E"
+				item: "minecraft:cooked_beef"
+				type: "item"
+			}]
+			subtitle: "Pitch Black"
+			tasks: [{
+				id: "29D94DB0A9B5D8AB"
+				title: "True Darkness"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["43E0325219933606"]
+			description: [
+				"This modpack has increased Infernal Mobs mod spawn rate, so &ea safe shelter is very important throughout the night&r."
+				""
+				"A chance of a mob spawning infernal is 50%, and zombies always spawn infernal."
+				""
+				"Some infernal prefixes are disabled."
+				""
+				"It is recommended to make a base in the air, in the ground, on a platform over the sea or similar."
+				""
+				"&9If you're really struggling, or don't want to struggle at all, you can either play on peaceful, or disable Infernal Mobs, I won't judge you.&r"
+			]
+			disable_toast: true
+			icon: "minecraft:zombie_head"
+			id: "28558109E985AACE"
+			rewards: [{
+				id: "1E6C248DDB658B49"
+				item: {
+					Count: 1
+					id: "gtceu:steel_sword"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							AttackDamage: 6.0f
+							AttackSpeed: -2.4f
+							Damage: 0
+							Enchantability: 14
+							MaxDamage: 511
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "You're going to die"
+			tasks: [{
+				id: "15FC0493AC428EF1"
+				type: "checkmark"
+			}]
+			title: "Infernal Mobs"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["43E0325219933606"]
+			description: [
+				"GregTech changes the ore generation, making it so the ores are spawned in groups."
+				"So in order to find a ore it's not a good idea to just dig straight down, rather, find the ore you are looking for with an Ore Prospector, and you'll find a lot of it in one place."
+				""
+				"&eNote: You're going to need A LOT of ores throughout the game, especially stuff like copper and iron.&r"
+			]
+			icon: "minecraft:iron_ore"
+			id: "66E630CF05711378"
+			rewards: [{
+				id: "3380955CCA1F1AF9"
+				item: {
+					Count: 1
+					id: "gtceu:prospector.hv"
+					tag: {
+						Charge: 1600000L
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6013A71DEFC79C82"
+				title: "GT Ore Generation"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["43E0325219933606"]
+			description: [
+				"Since you'll be surviving here without food for a while, here are some berries, plant them."
+				""
+				"You'll get more food throughout quests, but there's always a supply of food in the Emergency Items section."
+			]
+			id: "665BCDDFC912F276"
+			rewards: [{
+				count: 32
+				id: "1FDF67CC5CBF4FF7"
+				item: "minecraft:sweet_berries"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7CC55947E41A756F"
+				title: "Food"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["43E0325219933606"]
+			description: [
+				"Pollution in this pack is disabled."
+				""
+				"If you wish to enable it, go to Mods->GregTech->Config"
+				"->Gameplay->environmentalHazards"
+				"and set it to True."
+			]
+			id: "4552071689D9C460"
+			tasks: [{
+				id: "3E1CF5E90B63B78C"
+				title: "Pollution"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+	]
+	title: "Intro"
+}

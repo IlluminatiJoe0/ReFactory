@@ -1,0 +1,494 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "iv_age"
+	group: ""
+	icon: "gtceu:micro_processor_mainframe"
+	id: "5A95C11874372AB5"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5C1F974BF9733EE6"]
+			icon: "gtceu:micro_processor_mainframe"
+			id: "3F37E03149399E3F"
+			shape: "square"
+			tasks: [{
+				id: "2BECC5E8BAF67512"
+				type: "checkmark"
+			}]
+			title: "IV Age"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1A70E39DBC13742A"
+				"3F37E03149399E3F"
+			]
+			id: "49955E572AC194B1"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "02BD135AAA1F20FF"
+				item: "gtceu:rhodium_plated_palladium_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"6136FCE33996E7BC"
+				"45A99B5A2BD7CA40"
+				"3F37E03149399E3F"
+			]
+			id: "1A70E39DBC13742A"
+			tasks: [{
+				id: "0ABE002B27E564D5"
+				item: "gtceu:iv_mixer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4A52C383E49CC653"]
+			id: "6136FCE33996E7BC"
+			shape: "gear"
+			tasks: [{
+				id: "5A0637A008D92A53"
+				item: "gtceu:laminated_glass"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"41F235082B112F48"
+				"0417EDDA1FA6D876"
+			]
+			id: "4A52C383E49CC653"
+			tasks: [{
+				id: "1B218A024FEBC2E3"
+				item: "gtceu:polyvinyl_butyral_bucket"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5178526C19FBC522"]
+			id: "41F235082B112F48"
+			tasks: [{
+				id: "67F86FA157AC94FB"
+				item: "gtceu:polyvinyl_acetate_bucket"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3F37E03149399E3F"]
+			hide_dependency_lines: true
+			id: "0417EDDA1FA6D876"
+			tasks: [{
+				id: "2AF768CED86E3EB3"
+				item: "gtceu:butyraldehyde_bucket"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3F37E03149399E3F"]
+			hide_dependency_lines: true
+			id: "5178526C19FBC522"
+			tasks: [{
+				id: "27DDF55438503393"
+				item: "gtceu:vinyl_acetate_bucket"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3F37E03149399E3F"]
+			hide_dependency_lines: true
+			id: "0CAA5A9C805F5334"
+			tasks: [{
+				id: "7BDB2665C179875B"
+				item: "gtceu:graphene_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0CAA5A9C805F5334"]
+			id: "45A99B5A2BD7CA40"
+			shape: "gear"
+			tasks: [{
+				id: "40E3892F3599736F"
+				item: "gtceu:iv_electric_motor"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"42B2CDF4C1FB9ECC"
+				"6F366B7F54C95B44"
+			]
+			id: "539B123AE70751BD"
+			tasks: [{
+				id: "7831F2D46115387D"
+				item: "gtceu:iv_energy_input_hatch"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3F37E03149399E3F"]
+			hide_dependency_lines: true
+			id: "42B2CDF4C1FB9ECC"
+			tasks: [{
+				id: "590EF62B9081B8B7"
+				item: "gtceu:iridium_dust"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6136FCE33996E7BC"]
+			id: "55BB678FAA5C38C2"
+			tasks: [{
+				id: "7ADC08A4D3083B7E"
+				item: "gtceu:iv_cutter"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0EFB0D8CDE53E31C"]
+			id: "6CB77C298AEE2305"
+			tasks: [{
+				id: "2564199A7C91C0AD"
+				item: "gtceu:hpic_wafer"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"6CB77C298AEE2305"
+				"55BB678FAA5C38C2"
+			]
+			id: "6F366B7F54C95B44"
+			tasks: [{
+				id: "326D91200202AF09"
+				item: "gtceu:hpic_chip"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3F37E03149399E3F"]
+			hide_dependency_lines: true
+			id: "0EFB0D8CDE53E31C"
+			tasks: [{
+				id: "48E84B51EAA79DCC"
+				item: "gtceu:indium_gallium_phosphide_dust"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0EFB0D8CDE53E31C"]
+			id: "313B662C730401A5"
+			tasks: [{
+				id: "395C9924FEF35863"
+				item: "gtceu:qbit_cpu_wafer"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"313B662C730401A5"
+				"081802EE27170790"
+			]
+			id: "34077661328308FB"
+			tasks: [{
+				id: "097C56984E5F5253"
+				item: "gtceu:quantum_processor"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["081802EE27170790"]
+			id: "256C8C7D49EA5829"
+			tasks: [{
+				id: "04D1759EF296DF4C"
+				item: "gtceu:quantum_processor_assembly"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["081802EE27170790"]
+			id: "5464B2B4D0EDD912"
+			tasks: [{
+				id: "5ECA46F83467AA95"
+				item: "gtceu:quantum_processor_computer"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["081802EE27170790"]
+			id: "50948FC264BA8EF2"
+			tasks: [{
+				id: "246C402059AD4131"
+				item: "gtceu:quantum_processor_mainframe"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["1DACA568E400EB45"]
+			id: "081802EE27170790"
+			tasks: [{
+				id: "7522E313A374906B"
+				item: "gtceu:fiber_reinforced_printed_circuit_board"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["3F37E03149399E3F"]
+			hide_dependency_lines: true
+			id: "3BD4A57C8E776D83"
+			tasks: [{
+				id: "702F36A6469185E3"
+				item: "gtceu:reinforced_epoxy_resin_plate"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3BD4A57C8E776D83"]
+			id: "1DACA568E400EB45"
+			tasks: [{
+				id: "59AA2AAE8EB55C00"
+				item: "gtceu:fiber_reinforced_circuit_board"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"4D468B06B5952FA4"
+				"3190DE2F5CF53483"
+			]
+			id: "483A6C2844930A40"
+			shape: "gear"
+			tasks: [{
+				id: "05EF7F0625C20158"
+				item: "gtceu:hssg_coil_block"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3F37E03149399E3F"]
+			hide_dependency_lines: true
+			id: "4D468B06B5952FA4"
+			tasks: [{
+				id: "66C3F0417E304A49"
+				item: "gtceu:tungsten_carbide_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3F37E03149399E3F"]
+			hide_dependency_lines: true
+			id: "3190DE2F5CF53483"
+			tasks: [{
+				id: "3613479299ACBCC9"
+				item: "gtceu:hssg_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"6136FCE33996E7BC"
+				"6F366B7F54C95B44"
+				"45A99B5A2BD7CA40"
+			]
+			id: "084C45E67B39F224"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "24005EC6140869EB"
+				item: "gtceu:assembly_line"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3F37E03149399E3F"]
+			id: "041669D818CC1051"
+			tasks: [{
+				id: "73B6F323F9B34E01"
+				item: "gtceu:polybenzimidazole_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3F37E03149399E3F"]
+			hide_dependency_lines: true
+			id: "18513632F088035F"
+			tasks: [{
+				id: "1FE8E4A3381D6827"
+				item: "gtceu:samarium_dust"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"18513632F088035F"
+				"483A6C2844930A40"
+			]
+			id: "2B74365F02A0CB65"
+			tasks: [{
+				id: "31BA77373393DDFD"
+				item: "gtceu:samarium_iron_arsenic_oxide_quadruple_wire"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"04D4F228BEE94349"
+				"2B74365F02A0CB65"
+				"50948FC264BA8EF2"
+			]
+			id: "2D17A322451C17D6"
+			tasks: [
+				{
+					id: "3AAA7865D97E4BA0"
+					item: {
+						Count: 1
+						id: "gtceu:quarktech_helmet"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "186E73CF37C0F3A0"
+					item: "gtceu:quarktech_chestplate"
+					type: "item"
+				}
+				{
+					id: "20BC3C2DA0727F3F"
+					item: "gtceu:quarktech_leggings"
+					type: "item"
+				}
+				{
+					id: "43FA1EB332798503"
+					item: "gtceu:quarktech_boots"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["081802EE27170790"]
+			id: "04D4F228BEE94349"
+			tasks: [{
+				id: "3ED2E09ED42CFB7C"
+				item: "gtceu:lapotronic_energy_orb"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["50948FC264BA8EF2"]
+			id: "37D8D033D2F8F37B"
+			tasks: [{
+				id: "33FBC403FBD462D0"
+				item: "gtceu:power_substation"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"270411056AEC4BCD"
+				"483A6C2844930A40"
+			]
+			id: "4C771453604769B9"
+			tasks: [{
+				id: "4DC83C026FEC8431"
+				item: "gtceu:hsss_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			id: "270411056AEC4BCD"
+			tasks: [{
+				id: "535E06B374F545AA"
+				item: "gtceu:osmium_dust"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3F37E03149399E3F"]
+			id: "4307BA731021D1A8"
+			tasks: [{
+				id: "5578C6D7C959D6AD"
+				item: "powah:energy_cable_niotic"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+	]
+	title: "IV Age"
+}

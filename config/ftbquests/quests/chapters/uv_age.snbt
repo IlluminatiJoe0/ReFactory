@@ -1,0 +1,181 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "uv_age"
+	group: ""
+	icon: "gtceu:crystal_processor_mainframe"
+	id: "54436DC4AC0104F2"
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["75E752F5FA5C7C43"]
+			icon: "gtceu:crystal_processor_mainframe"
+			id: "0F1EE60EBAA8CAEF"
+			shape: "square"
+			tasks: [{
+				id: "5B68F7A8D54250A1"
+				type: "checkmark"
+			}]
+			title: "UV Age"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0F1EE60EBAA8CAEF"
+				"7842ACFA4E761B8C"
+			]
+			id: "79A13CE5F3D6E3E7"
+			shape: "gear"
+			tasks: [{
+				id: "41030D6F03B26726"
+				item: "gtceu:uv_fusion_reactor"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["79A13CE5F3D6E3E7"]
+			id: "076ABBF0BD22A6A5"
+			tasks: [{
+				id: "41C5DAD3CBF83819"
+				item: "gtceu:neutronium_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["076ABBF0BD22A6A5"]
+			id: "2E71F602233228A2"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "4719E2DB7A68FB9E"
+				item: "gtceu:nan_certificate"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["076ABBF0BD22A6A5"]
+			id: "3D502778C5337E19"
+			tasks: [{
+				id: "59E0F26CD4B8C676"
+				item: "gtceu:neutronium_boule"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"076ABBF0BD22A6A5"
+				"4B00FCE1D915F968"
+				"10F1E61D404D8B89"
+			]
+			id: "148D364B5D0057F1"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "46A505A671353E6A"
+				item: "gtceu:max_battery"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0F1EE60EBAA8CAEF"]
+			id: "7842ACFA4E761B8C"
+			tasks: [{
+				id: "176B7446DBEC6A1E"
+				item: {
+					Count: 1
+					id: "gtceu:data_module"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["076ABBF0BD22A6A5"]
+			id: "4B00FCE1D915F968"
+			tasks: [{
+				id: "31E7CA9E384B055B"
+				item: "gtceu:gravi_star"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0F1EE60EBAA8CAEF"
+				"5B868C1F0626F21C"
+			]
+			id: "10F1E61D404D8B89"
+			tasks: [{
+				id: "180614126D606698"
+				item: "gtceu:energy_cluster"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"7842ACFA4E761B8C"
+				"0F1EE60EBAA8CAEF"
+			]
+			id: "5A805FAAA7EB9ACE"
+			shape: "gear"
+			tasks: [{
+				id: "000A568811B1A785"
+				item: "gtceu:uv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3D502778C5337E19"]
+			id: "5AE10657D7873346"
+			tasks: [{
+				id: "15C9C3498B7D7E5E"
+				item: "gtceu:highly_advanced_soc"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F1EE60EBAA8CAEF"]
+			id: "5B868C1F0626F21C"
+			tasks: [{
+				id: "69B5EB704616E464"
+				item: "gtceu:uv_electric_motor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0F1EE60EBAA8CAEF"]
+			id: "32FC7E5CD8F38ACB"
+			tasks: [{
+				id: "015EC9582959CF39"
+				item: "gtceu:tritanium_coil_block"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+	]
+	title: "UV Age"
+}

@@ -1,0 +1,602 @@
+recipesAdditions:
+  a:
+    # Whether to harden AE2WTLib recipes.
+    # Default: true
+    harderAE2WTLibRecipes: true
+
+    # Whether to harden Alchemistry recipes.
+    # Default: true
+    harderAlchemistryRecipes: true
+
+    # Whether to harden Applied Botanics recipes.
+    # Default: true
+    harderAppliedBotanicsRecipes: true
+
+    # Whether to harden Applied Energistics 2 recipes.
+    # Default: true
+    harderAppliedEnergistics2Recipes: true
+
+    # Whether to harden Applied Flux recipes.
+    # Default: true
+    harderAppliedFluxRecipes: true
+
+    # Whether to harden Applied Mekanistics recipes.
+    # Default: true
+    harderAppliedMekanisticsRecipes: true
+
+    # Whether to harden Ars Nouveau recipes.
+    # Default: true
+    harderArsNouveauRecipes: true
+
+    # Whether to harden Ars …nergistique recipes.
+    # Default: true
+    harderArs…nergistiqueRecipes: true
+
+    # Whether to harden Assembly Lines recipes.
+    # Default: true
+    harderAssemblyLinesRecipes: true
+
+  b:
+    # Whether to harden Ballistix recipes.
+    # Default: true
+    harderBallistixRecipes: true
+
+    # Whether to harden Better Archeology recipes.
+    # Default: true
+    harderBetterArcheologyRecipes: true
+
+    # Whether to harden Biomes O' Plenty recipes.
+    # Default: true
+    harderBiomesOPlentyRecipes: true
+
+    # Whether to harden Blastcraft mod recipes.
+    # Default: true
+    harderBlastcraftModRecipes: true
+
+    # Whether to harden Botania recipes.
+    # Default: true
+    harderBotaniaRecipes: true
+
+  c:
+    # Whether to harden CC Tweaked recipes.
+    # Default: true
+    harderCCTweakedRecipes: true
+
+    # Whether to harden CC:C Bridge recipes.
+    # Default: true
+    harderCCCBridgeRecipes: true
+
+    # Whether to harden Chem Lib recipes.
+    # Default: true
+    harderChemLibRecipes: true
+
+    # Whether to harden Chisel and Bits recipes.
+    # Default: true
+    harderChiselAndBitsRecipes: true
+
+    # Whether to harden Connected Glass recipes.
+    # Default: true
+    harderConnectedGlassRecipes: true
+
+    # Whether to harden Cooking for Blockheads recipes.
+    # Default: true
+    harderCookingForBlockheadsRecipes: true
+
+    # Whether to harden Create recipes.
+    # Default: true
+    harderCreateRecipes: true
+
+  d:
+    # Whether to harden Dank Storage recipes.
+    # Default: true
+    harderDankStorageRecipes: true
+
+    # Whether to harden Domum Omamentum recipes.
+    # Default: true
+    harderDomumOmamentumRecipes: true
+
+    # Whether to harden Dynamic Electricity recipes.
+    # Default: true
+    harderDynamicElectricityRecipes: true
+
+  e:
+    # Whether to harden Electrodynamics recipes.
+    # Default: true
+    harderElectrodynamicsRecipes: true
+
+    # Whether to harden Ender Chest recipes.
+    # Default: true
+    harderEnderChestRecipes: true
+
+    # Whether to harden Ender IO recipes.
+    # Default: true
+    harderEnderIORecipes: true
+
+    # Whether to harden Ender Tanks recipes.
+    # Default: true
+    harderEnderTanksRecipes: true
+
+    # Whether to harden Electrodynamics recipes.
+    # Default: true
+    harderExtraDisksRecipes: true
+
+  f:
+    # Whether to harden Flux Network recipes.
+    # Default: true
+    harderFluxNetworkRecipes: true
+
+  g:
+  h:
+  i:
+    # Whether to harden Industrial Foregoing recipes.
+    # Default: true
+    harderIndustrialForegoingRecipes: true
+
+    # Whether to harden Iron Chest recipes.
+    # Default: true
+    harderIronChestRecipes: true
+
+    # Whether to harden Iron Furnaces recipes.
+    # Default: true
+    harderIronFurnacesRecipes: true
+
+    # Whether to harden Iron Jetpacks recipes.
+    # Default: true
+    harderIronJetpacksRecipes: true
+
+    # Whether to harden Iron Shulker Box recipes.
+    # Default: true
+    harderIronShulkerBoxRecipes: true
+
+  j:
+    # Whether to harden Jumbo Furnace recipes.
+    # Default: true
+    harderJumboFurnaceRecipes: true
+
+    # Whether to harden Just Stargate Mod recipes.
+    # Default: true
+    harderJustStargateModRecipes: true
+
+  k:
+  l:
+  m:
+    # Whether to harden ME Requester recipes.
+    # Default: true
+    harderMERequesterRecipes: true
+
+    # Whether to harden MEGA Cells recipes.
+    # Default: true
+    harderMEGACellsRecipes: true
+
+    # Whether to harden Mekanism recipes.
+    # Default: true
+    harderMekanismRecipes: true
+
+    # Whether to harden Mekanism Additions recipes.
+    # Default: true
+    harderMekanismAdditionsRecipes: true
+
+    # Whether to harden Mekanism Generators recipes.
+    # Default: true
+    harderMekanismGeneratorsRecipes: true
+
+    # Whether to harden Mekanism Tools recipes.
+    # Default: true
+    harderMekanismToolsRecipes: true
+
+    # Whether to harden Mekanism-MoreSolarPanels recipes.
+    # Default: true
+    harderMekanismMoreSolarPanelsRecipes: true
+
+    # Whether to harden Mekanism: Weapons recipes.
+    # Default: true
+    harderMekanismWeaponsRecipes: true
+
+    # Whether to harden MineColonies recipes.
+    # Default: true
+    harderMineColoniesRecipes: true
+
+    # Whether to harden MineColonies for ComputerCraft recipes.
+    # Default: true
+    harderMineColoniesForComputerCraftRecipes: true
+
+    # Whether to harden Modular Force Fields System recipes.
+    # Default: true
+    harderModularForceFieldsSystemRecipes: true
+
+    # Whether to harden More Red recipes.
+    # Default: true
+    harderMoreRedRecipes: true
+
+    # Whether to harden Multi-Piston recipes.
+    # Default: true
+    harderMultiPistonRecipes: true
+
+  n:
+    # Whether to harden Nuclear Science recipes.
+    # Default: true
+    harderNuclearScienceRecipes: true
+
+  o:
+  p:
+    # Whether to harden Pipez recipes.
+    # Default: true
+    harderPipezRecipes: true
+
+    # Whether to harden Powah recipes.
+    # Default: true
+    harderPowahRecipes: true
+
+    # Whether to harden Productive Bees recipes.
+    # Default: true
+    harderProductiveBeesRecipes: true
+
+  q:
+  r:
+    # Whether to harden Reborn Storage recipes.
+    # Default: true
+    harderRebornStorageRecipes: true
+
+    # Whether to harden Rechiseled recipes.
+    # Default: true
+    harderRechiseledRecipes: true
+
+    # Whether to harden Rechiseled Create recipes.
+    # Default: true
+    harderRechiseledCreateRecipes: true
+
+    # Whether to harden Refined Cooking recipes.
+    # Default: true
+    harderRefinedCookingRecipes: true
+
+    # Whether to harden Refined Storage recipes.
+    # Default: true
+    harderRefinedStorageRecipes: true
+
+    # Whether to harden Refined Storage Addon recipes.
+    # Default: true
+    harderRefinedStorageAddonRecipes: true
+
+    # Whether to harden Refined Storage Infinite Booster recipes.
+    # Default: true
+    harderRefinedStorageInfiniteBoosterRecipes: true
+
+    # Whether to harden Refined Storage Insert Export Upgrade recipes.
+    # Default: true
+    harderRefinedStorageInsertExportUpgradeRecipes: true
+
+    # Whether to harden Refined Storage Requestify recipes.
+    # Default: true
+    harderRefinedStorageRequestifyRecipes: true
+
+  s:
+    # Whether to harden Simple Light recipes.
+    # Default: true
+    harderSimpleLightRecipes: true
+
+    # Whether to harden Specialised Cells recipes.
+    # Default: true
+    harderSpecialisedCellsRecipes: true
+
+  t:
+    # Whether to harden The Twilight Forest recipes.
+    # Default: true
+    harderTheTwilightForestRecipes: true
+
+  u:
+    # Whether to harden Universal Grid recipes.
+    # Default: true
+    harderUniversalGridRecipes: true
+
+  v:
+  w:
+    # Whether to harden Wireless Chargers recipes.
+    # Default: true
+    harderWirelessChargersRecipes: true
+
+  x:
+  y:
+  z:
+recipesRemoval:
+  a:
+    # Whether to harden AE2WTLib recipes.
+    # Default: true
+    harderAE2WTLibRecipes: true
+
+    # Whether to harden Alchemistry recipes.
+    # Default: true
+    harderAlchemistryRecipes: true
+
+    # Whether to harden Applied Botanics recipes.
+    # Default: true
+    harderAppliedBotanicsRecipes: true
+
+    # Whether to harden Applied Cooking recipes.
+    # Default: true
+    harderAppliedCookingRecipes: true
+
+    # Whether to harden Applied Energistics 2 recipes.
+    # Default: true
+    harderAppliedEnergistics2Recipes: true
+
+    # Whether to harden Applied Flux recipes.
+    # Default: true
+    harderAppliedFluxRecipes: true
+
+    # Whether to harden Applied Mekanistics recipes.
+    # Default: true
+    harderAppliedMekanisticsRecipes: true
+
+    # Whether to harden Ars Nouveau recipes.
+    # Default: true
+    harderArsNouveauRecipes: true
+
+    # Whether to harden Ars …nergistique recipes.
+    # Default: true
+    harderArs…nergistiqueRecipes: true
+
+    # Whether to harden Assembly Lines recipes.
+    # Default: true
+    harderAssemblyLinesRecipes: true
+
+  b:
+    # Whether to harden Ballistix recipes.
+    # Default: true
+    harderBallistixRecipes: true
+
+    # Whether to harden Better Archeology recipes.
+    # Default: true
+    harderBetterArcheologyRecipes: true
+
+    # Whether to harden Biomes O' Plenty recipes.
+    # Default: true
+    harderBiomesOPlentyRecipes: true
+
+    # Whether to harden Blastcraft mod recipes.
+    # Default: true
+    harderBlastcraftModRecipes: true
+
+    # Whether to harden Botania recipes.
+    # Default: true
+    harderBotaniaRecipes: true
+
+  c:
+    # Whether to harden CC Tweaked recipes.
+    # Default: true
+    harderCCTweakedRecipes: true
+
+    # Whether to harden CC:C Bridge recipes.
+    # Default: true
+    harderCCCBridgeRecipes: true
+
+    # Whether to harden Chem Lib recipes.
+    # Default: true
+    harderChemLibRecipes: true
+
+    # Whether to harden Chisel and Bits recipes.
+    # Default: true
+    harderChiselAndBitsRecipes: true
+
+    # Whether to harden Connected Glass recipes.
+    # Default: true
+    harderConnectedGlassRecipes: true
+
+    # Whether to harden Cooking for Blockheads recipes.
+    # Default: true
+    harderCookingForBlockheadsRecipes: true
+
+    # Whether to harden Create recipes.
+    # Default: true
+    harderCreateRecipes: true
+
+  d:
+    # Whether to harden Dank Storage recipes.
+    # Default: true
+    harderDankStorageRecipes: true
+
+    # Whether to harden Domum Omamentum recipes.
+    # Default: true
+    harderDomumOmamentumRecipes: true
+
+    # Whether to harden Dynamic Electricity recipes.
+    # Default: true
+    harderDynamicElectricityRecipes: true
+
+  e:
+    # Whether to harden Electrodynamics recipes.
+    # Default: true
+    harderElectrodynamicsRecipes: true
+
+    # Whether to harden Ender Chest recipes.
+    # Default: true
+    harderEnderChestRecipes: true
+
+    # Whether to harden Ender IO recipes.
+    # Default: true
+    harderEnderIORecipes: true
+
+    # Whether to harden Ender Tanks recipes.
+    # Default: true
+    harderEnderTanksRecipes: true
+
+    # Whether to harden Electrodynamics recipes.
+    # Default: true
+    harderExtraDisksRecipes: true
+
+  f:
+    # Whether to harden Flux Network recipes.
+    # Default: true
+    harderFluxNetworkRecipes: true
+
+  g:
+  h:
+  i:
+    # Whether to harden Industrial Foregoing recipes.
+    # Default: true
+    harderIndustrialForegoingRecipes: true
+
+    # Whether to harden Iron Chest recipes.
+    # Default: true
+    harderIronChestRecipes: true
+
+    # Whether to harden Iron Furnaces recipes.
+    # Default: true
+    harderIronFurnacesRecipes: true
+
+    # Whether to harden Iron Jetpacks recipes.
+    # Default: true
+    harderIronJetpacksRecipes: true
+
+    # Whether to harden Iron Shulker Box recipes.
+    # Default: true
+    harderIronShulkerBoxRecipes: true
+
+  j:
+    # Whether to harden Jumbo Furnace recipes.
+    # Default: true
+    harderJumboFurnaceRecipes: true
+
+    # Whether to harden Just Stargate Mod recipes.
+    # Default: true
+    harderJustStargateModRecipes: true
+
+  k:
+  l:
+  m:
+    # Whether to harden ME Requester recipes.
+    # Default: true
+    harderMERequesterRecipes: true
+
+    # Whether to harden MEGA Cells recipes.
+    # Default: true
+    harderMEGACellsRecipes: true
+
+    # Whether to harden Mekanism recipes.
+    # Default: true
+    harderMekanismRecipes: true
+
+    # Whether to harden Mekanism Removeitions recipes.
+    # Default: true
+    harderMekanismAdditionsRecipes: true
+
+    # Whether to harden Mekanism Generators recipes.
+    # Default: true
+    harderMekanismGeneratorsRecipes: true
+
+    # Whether to harden Mekanism Tools recipes.
+    # Default: true
+    harderMekanismToolsRecipes: true
+
+    # Whether to harden Mekanism-MoreSolarPanels recipes.
+    # Default: true
+    harderMekanismMoreSolarPanelsRecipes: true
+
+    # Whether to harden Mekanism: Weapons recipes.
+    # Default: true
+    harderMekanismWeaponsRecipes: true
+
+    # Whether to harden MineColonies recipes.
+    # Default: true
+    harderMineColoniesRecipes: true
+
+    # Whether to harden MineColonies for ComputerCraft recipes.
+    # Default: true
+    harderMineColoniesForComputerCraftRecipes: true
+
+    # Whether to harden Modular Force Fields System recipes.
+    # Default: true
+    harderModularForceFieldsSystemRecipes: true
+
+    # Whether to harden More Red recipes.
+    # Default: true
+    harderMoreRedRecipes: true
+
+    # Whether to harden Multi-Piston recipes.
+    # Default: true
+    harderMultiPistonRecipes: true
+
+  n:
+    # Whether to harden Nuclear Science recipes.
+    # Default: true
+    harderNuclearScienceRecipes: true
+
+  o:
+  p:
+    # Whether to harden Pipez recipes.
+    # Default: true
+    harderPipezRecipes: true
+
+    # Whether to harden Powah recipes.
+    # Default: true
+    harderPowahRecipes: true
+
+    # Whether to harden Productive Bees recipes.
+    # Default: true
+    harderProductiveBeesRecipes: true
+
+  q:
+  r:
+    # Whether to harden Reborn Storage recipes.
+    # Default: true
+    harderRebornStorageRecipes: true
+
+    # Whether to harden Rechiseled recipes.
+    # Default: true
+    harderRechiseledRecipes: true
+
+    # Whether to harden Rechiseled Create recipes.
+    # Default: true
+    harderRechiseledCreateRecipes: true
+
+    # Whether to harden Refined Cooking recipes.
+    # Default: true
+    harderRefinedCookingRecipes: true
+
+    # Whether to harden Refined Storage recipes.
+    # Default: true
+    harderRefinedStorageRecipes: true
+
+    # Whether to harden Refined Storage Removeon recipes.
+    # Default: true
+    harderRefinedStorageAddonRecipes: true
+
+    # Whether to harden Refined Storage Infinite Booster recipes.
+    # Default: true
+    harderRefinedStorageInfiniteBoosterRecipes: true
+
+    # Whether to harden Refined Storage Insert Export Upgrade recipes.
+    # Default: true
+    harderRefinedStorageInsertExportUpgradeRecipes: true
+
+    # Whether to harden Refined Storage Requestify recipes.
+    # Default: true
+    harderRefinedStorageRequestifyRecipes: true
+
+  s:
+    # Whether to harden Simple Light recipes.
+    # Default: true
+    harderSimpleLightRecipes: true
+
+    # Whether to harden Specialised Cells recipes.
+    # Default: true
+    harderSpecialisedCellsRecipes: true
+
+  t:
+    # Whether to harden The Twilight Forest recipes.
+    # Default: true
+    harderTheTwilightForestRecipes: true
+
+  u:
+    # Whether to harden Universal Grid recipes.
+    # Default: true
+    harderUniversalGridRecipes: true
+
+  v:
+  w:
+    # Whether to harden Wireless Chargers recipes.
+    # Default: true
+    harderWirelessChargersRecipes: true
+
+  x:
+  y:
+  z:

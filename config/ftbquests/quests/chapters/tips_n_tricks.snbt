@@ -1,0 +1,386 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tips_n_tricks"
+	group: ""
+	icon: "ftbquests:book"
+	id: "077BA14C503A136B"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["GregTech Axes are similar to regular axes, but cut the whole tree down."]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_axe"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						DisableShields: 1b
+						TreeFelling: 1b
+					}
+					GT.Tool: {
+						Damage: 0
+						Enchantability: 14
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 4.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "2156AC379D8A33E3"
+			rewards: [{
+				id: "31E45DF3A789748F"
+				item: {
+					Count: 1
+					id: "gtceu:flint_axe"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							DisableShields: 1b
+							TreeFelling: 1b
+						}
+						GT.Tool: {
+							Damage: 0
+							Enchantability: 5
+							HarvestLevel: 2
+							MaxDamage: 63
+							ToolSpeed: 3.5f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "002F7CF95B751E58"
+				type: "checkmark"
+			}]
+			title: "GT Axes"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["189B920AAB6456B4"]
+			description: [
+				"A very good early game way of fast travel."
+				""
+				"Especially useful in The Aether."
+			]
+			id: "3A02435621CAA79C"
+			tasks: [{
+				id: "77C2DF7DF0A8D7C9"
+				item: {
+					Count: 1
+					id: "hangglider:hang_glider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"189B920AAB6456B4"
+				"3A02435621CAA79C"
+			]
+			description: ["A better version of the glider (does require an elytra)."]
+			id: "063986C9F78C2BD4"
+			tasks: [{
+				id: "3C2BA748C4A87C95"
+				item: {
+					Count: 1
+					id: "hangglider:reinforced_hang_glider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			description: ["&eYou can crouch to speed up crop and tree growth!&r"]
+			icon: "minecraft:oak_sapling"
+			id: "3D937B4F3224B8E7"
+			rewards: [{
+				count: 16
+				id: "49B0EA620FA70F77"
+				item: "biomesoplenty:dead_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "68D387EB378D64EE"
+				title: "Twerk"
+				type: "checkmark"
+			}]
+			title: "Twerk to the crops"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: ["A compass that locates structures."]
+			id: "1A3A96D98FE4717F"
+			tasks: [{
+				id: "5D77B2A6A448601F"
+				item: {
+					Count: 1
+					id: "explorerscompass:explorerscompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Very useful mod for expanding inventory storage."
+				""
+				"Can be upgraded."
+			]
+			id: "2CC084E99F046E9B"
+			tasks: [{
+				id: "6DAAF38E308EE321"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			description: ["With the Find Me mod, you can now search nearby chests for items by pressing \"Y\" while hovering over the item you want to search."]
+			icon: "botania:lens_normal"
+			id: "426853E43D3F86CC"
+			tasks: [{
+				id: "0400C141CB4FE58B"
+				title: "Find Me"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			description: ["Customizable gadgets that allow you to build/destroy easier. They do use power."]
+			icon: "buildinggadgets2:gadget_building"
+			id: "05FEE694FAF9A095"
+			tasks: [
+				{
+					id: "50DCD55354F8E97F"
+					item: "buildinggadgets2:gadget_building"
+					type: "item"
+				}
+				{
+					id: "718B8F6E2D247A61"
+					item: "buildinggadgets2:gadget_exchanging"
+					type: "item"
+				}
+				{
+					id: "40242F9D7DE2B907"
+					item: {
+						Count: 1
+						id: "buildinggadgets2:gadget_copy_paste"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "2A14BD709FF0949D"
+					item: {
+						Count: 1
+						id: "buildinggadgets2:gadget_cut_paste"
+						tag: {
+							pastereplace: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "693CDA663AB47AE5"
+					item: "buildinggadgets2:gadget_destruction"
+					type: "item"
+				}
+			]
+			title: "Better Building"
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			description: ["Magnum torch creates a large area where mobs cannot spawn."]
+			id: "5629AF02666D9F9C"
+			tasks: [{
+				id: "1EA330A3290CE0BD"
+				item: "torchmaster:megatorch"
+				type: "item"
+			}]
+			title: "Mob Repellent 2.0"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			description: ["With Carry On you can pick up most entities and some block entities by shift-rightclicking them. You have to have both hands empty to do that."]
+			icon: {
+				Count: 1
+				id: "thermal:satchel"
+				tag: { }
+			}
+			id: "02A3A75D6F16A925"
+			tasks: [{
+				id: "0A570B80BC83A9E8"
+				title: "Carry On"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			description: ["You cannot trample crops by jumping on them anymore."]
+			icon: "minecraft:wheat_seeds"
+			id: "2F626A3E17F046F7"
+			tasks: [{
+				id: "3D36A8F860458F00"
+				title: "Trample No More"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			description: [
+				"Press \"J\" to open a map."
+				""
+				"Press \"B\" to set a new waypoint."
+			]
+			icon: "minecraft:map"
+			id: "0B6246A996F0397B"
+			tasks: [{
+				id: "6D9194C86943DD2C"
+				title: "Journey Map"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			description: [
+				"Press \"M\" or click on the top-left map button while in the inventory, then press on the top-left \"Claims Chunks\""
+				""
+				"You can claim chunks by clicking on them, and chunkload them by shift+clicking them."
+				""
+				"You can unclaim chunks by right-clicking them, and remove chunkloading by shift+right-clicking them."
+			]
+			icon: "thermal:lock"
+			id: "35E863AF91DF7543"
+			tasks: [{
+				id: "2D505ACB24F105D7"
+				title: "Claiming and Chunkloading"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -5.0d
+		}
+		{
+			description: [
+				"You can easily store XP in this book, so you won't lose it when you die."
+				""
+				"Shift+right-click to store, right-click to retrieve XP."
+			]
+			id: "77166410873988E7"
+			tasks: [{
+				id: "5B1E787D289662E3"
+				item: {
+					Count: 1
+					id: "xpbook:xp_tome"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			description: ["Travel vertically between elevators by pressing shift to go down, and space to go up."]
+			id: "38A0A96F3F2A72AB"
+			tasks: [{
+				id: "000276ACE082FFBC"
+				item: "elevatorid:elevator_white"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			description: ["By eating unique foods, you gain hearts. This way you're rewarded for eating a variety of different foods!"]
+			icon: "minecraft:cake"
+			id: "7FEB3F081DA28D43"
+			rewards: [
+				{
+					id: "25EF747B5159E119"
+					item: "minecraft:apple"
+					type: "item"
+				}
+				{
+					id: "0F39A0B90D888469"
+					item: "minecraft:baked_potato"
+					type: "item"
+				}
+				{
+					id: "64374D018C033103"
+					item: "thermal:sushi_maki"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "498328FB29AF53EA"
+				title: "Eat Various Foods!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			description: [
+				"You can set a home by typing &3/sethome <home_name>&r"
+				""
+				"You can have multiple homes at the same time."
+				""
+				"You can go to any one of your homes by typing &3/home <home_name>&r"
+				""
+				"You can go back by typing &3/back&r"
+			]
+			icon: "minecraft:red_bed"
+			id: "04A801444FD1C1A5"
+			tasks: [{
+				id: "1BE19CAA3F1923B2"
+				title: "FTB Essentials"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["74C94B5C7B866A34"]
+			description: [
+				"Unlike sand, Snad boosts the growth of crops."
+				""
+				"Provide a constant redstone signal to the Snad to boost the growth."
+				""
+				"Can be used in Botany Pots and provides a 1.5x boost."
+			]
+			id: "2013543595D54148"
+			tasks: [{
+				id: "2037CDEBA5A36AD7"
+				item: "snad:snad"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+	]
+	title: "Tips n Tricks"
+}

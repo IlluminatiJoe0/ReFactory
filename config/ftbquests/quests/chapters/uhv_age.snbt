@@ -1,0 +1,24 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "uhv_age"
+	group: ""
+	icon: "gtceu:wetware_processor_mainframe"
+	id: "5067D127F87CB27B"
+	order_index: 11
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["008881C6B4F568F3"]
+		icon: "gtceu:wetware_processor_mainframe"
+		id: "65B0E98F7AF62971"
+		shape: "square"
+		tasks: [{
+			id: "59FDC6605BCF04A1"
+			type: "checkmark"
+		}]
+		title: "UHV Age"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "UHV Age"
+}

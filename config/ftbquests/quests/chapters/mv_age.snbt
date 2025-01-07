@@ -1,0 +1,1270 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mv_age"
+	group: ""
+	icon: "gtceu:good_electronic_circuit"
+	id: "5DAF0EAA15F38ECC"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["498EF8FFD105D589"]
+			description: ["Welcome to the MV age!"]
+			disable_toast: true
+			icon: "gtceu:mv_machine_hull"
+			id: "630A813B0F4DA078"
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				id: "5DDFD9148E50F37E"
+				type: "checkmark"
+			}]
+			title: "MV AGE"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["630A813B0F4DA078"]
+			id: "4F74168E48A8348E"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "7C248DAA27330DA1"
+				item: "gtceu:mv_electric_motor"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F74168E48A8348E"]
+			id: "2D86BD3AE9C7AB6B"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "3FD13D0F85994E05"
+				item: "gtceu:mv_electric_piston"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F74168E48A8348E"]
+			id: "41D7CFAE222CAE64"
+			size: 1.5d
+			tasks: [{
+				id: "5651DA51C150E465"
+				item: "gtceu:mv_electric_pump"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4F74168E48A8348E"]
+			id: "19FF64B61527ED5A"
+			size: 1.5d
+			tasks: [{
+				id: "2F07897A896FBE8A"
+				item: "gtceu:mv_conveyor_module"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2D86BD3AE9C7AB6B"]
+			id: "034D2646EC37C967"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "6B0A8DAA9396E2E6"
+				item: "gtceu:mv_robot_arm"
+				type: "item"
+			}]
+			x: 12.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D86BD3AE9C7AB6B"]
+			description: [
+				"The MV extruder can craft most of the things (unlike the LV extruder)."
+				""
+				"It is incredibly useful (and efficient!)"
+			]
+			id: "40949CE64C6F886A"
+			size: 1.0d
+			tasks: [{
+				id: "1EC4569A0911D349"
+				item: "gtceu:mv_extruder"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["40949CE64C6F886A"]
+			description: ["These are all comonly used molds for the extruder."]
+			icon: "gtceu:rotor_extruder_mold"
+			id: "0E1912B77BD360EC"
+			size: 1.0d
+			tasks: [
+				{
+					id: "61F68E070AC01A44"
+					item: "gtceu:rod_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "6FC64A7A32824C55"
+					item: "gtceu:bolt_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "2DE0C309329498B2"
+					item: "gtceu:ring_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "40CA721DF9545495"
+					item: "gtceu:cell_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "5F7933C282763EE2"
+					item: "gtceu:gear_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "439897F0D1B6CDAE"
+					item: "gtceu:small_gear_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "6C1BD9A15E1FE9A3"
+					item: "gtceu:rotor_extruder_mold"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["034D2646EC37C967"]
+			id: "45EC6B51678C5FDB"
+			size: 1.0d
+			tasks: [{
+				id: "01ED14431FEFB9F4"
+				item: "gtceu:mv_assembler"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2CD891A182DBFE28"
+				"1DF08C90B56E3423"
+			]
+			description: [
+				"Very useful item that is cut into wafers, used to craft various parts of electronic circuits."
+				""
+				"&8For the nerds like me: Boules are made by dipping a silicon crystal into molten silicon, and slowly pulling it up, making a big chunk of silicon, called the silicon boule, or ingot.&r"
+			]
+			id: "1984444D466E8EEF"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "1AD796DD9F693082"
+				item: "gtceu:silicon_boule"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"6EA539D38718E106"
+				"664234AA516DD4DD"
+			]
+			id: "7FA2594B75A44E70"
+			size: 1.0d
+			tasks: [{
+				id: "7DC616D3A506759B"
+				item: "gtceu:ulpic_chip"
+				type: "item"
+			}]
+			x: 26.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"6EA539D38718E106"
+				"664234AA516DD4DD"
+			]
+			id: "162E65E940DCC593"
+			size: 1.0d
+			tasks: [{
+				id: "6FBFA278FBA12ADE"
+				item: "gtceu:ram_chip"
+				type: "item"
+			}]
+			x: 24.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"0F53A979A0A20B60"
+				"2D86BD3AE9C7AB6B"
+			]
+			description: ["The Engraver makes wafers into chips. You're going to have to make it eventually."]
+			hide_dependent_lines: true
+			id: "6EA539D38718E106"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "3492B74BAED620F9"
+				item: "gtceu:mv_laser_engraver"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"6EA539D38718E106"
+				"664234AA516DD4DD"
+			]
+			id: "65CD30C3D6C13C7E"
+			size: 1.0d
+			tasks: [{
+				id: "718BD294162D8939"
+				item: "gtceu:ilc_chip"
+				type: "item"
+			}]
+			x: 18.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["7FA2594B75A44E70"]
+			description: [
+				"You'll need two of them to overclock the EBF to HV."
+				""
+				"Stainless Steel and Kanthal require HV to smelt."
+			]
+			id: "6DDF9D316DE9DCF7"
+			size: 1.0d
+			tasks: [{
+				count: 2L
+				id: "36105098D55B7C5A"
+				item: "gtceu:mv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 26.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"65CD30C3D6C13C7E"
+				"4B15C0711FA98FAB"
+			]
+			description: ["Significantly cheaper LV circuits."]
+			id: "22F6144BF80A1413"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "3A7C56391AFB4016"
+				item: "gtceu:basic_integrated_circuit"
+				type: "item"
+			}]
+			title: "Second LV Circuit"
+			x: 18.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"162E65E940DCC593"
+				"02350D73F63D59E8"
+				"6DC53EC297BEBD3C"
+			]
+			description: ["Yay! Your first HV circuit! Make sure to brag to your friends (if you even have any)."]
+			id: "08EE54E6C1C766CF"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "67BFE8216EBD08CB"
+				item: "gtceu:advanced_integrated_circuit"
+				type: "item"
+			}]
+			title: "First HV Circuit"
+			x: 24.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["630A813B0F4DA078"]
+			id: "0F53A979A0A20B60"
+			size: 1.5d
+			tasks: [{
+				id: "1848D98EB1282464"
+				item: "gtceu:mv_emitter"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"4DB4F6BF36D30A35"
+				"40FC5D78402DF5F8"
+			]
+			description: [
+				"The greatest invention since the resistor."
+				""
+				"Now you can craft more advanced circuits!"
+				""
+				"I recommend crafting huge batches of these types of materials (Transistors, Resistors, Inductors, etc)."
+			]
+			id: "02350D73F63D59E8"
+			size: 1.0d
+			tasks: [{
+				id: "2B6CF7C523424F0C"
+				item: "gtceu:transistor"
+				type: "item"
+			}]
+			x: 24.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"7BD97DC4C3DE7F11"
+				"5459BC503BBBD81E"
+			]
+			description: ["Put the hot ingot into the chemical bath with some water or distilled water and you get yourself a cool and nice Kanthal Ingot."]
+			id: "0BB13F96B93699A8"
+			size: 1.0d
+			tasks: [{
+				id: "1ED384BC9AD338A3"
+				item: "gtceu:kanthal_ingot"
+				type: "item"
+			}]
+			x: 23.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1FFBE42450E3D964"
+				"6DDF9D316DE9DCF7"
+			]
+			description: ["Put the dust into the EBF to cook, and you get the Hot Ingot, but fear not, there is a way to cool it down."]
+			id: "5459BC503BBBD81E"
+			size: 1.0d
+			tasks: [{
+				id: "25E40097EDB50226"
+				item: "gtceu:hot_kanthal_ingot"
+				type: "item"
+			}]
+			x: 26.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A6A88F07A82E229"]
+			description: [
+				"Kanthal is a mix of Aluminium, Chromium and Iron."
+				""
+				"You'll need it for the next set of coils."
+			]
+			id: "1FFBE42450E3D964"
+			size: 1.0d
+			tasks: [{
+				id: "0A874F2BB5948FAB"
+				item: "gtceu:kanthal_dust"
+				type: "item"
+			}]
+			x: 26.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["164045DB94B2D221"]
+			description: [
+				"You can get Chromium by electrolyzing Ruby and processing Ruby ore."
+				""
+				"You can also get Chromium from Chromite ore in a Redstone vein in The Nether."
+			]
+			id: "0A6A88F07A82E229"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "32A66118BD33885F"
+				item: "gtceu:chromium_dust"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0BB13F96B93699A8"
+				"472217BE9BA19D20"
+			]
+			description: [
+				"These coils are the next in line in coil progression!"
+				""
+				"Now you can cook Silicon!"
+			]
+			id: "114D15EF6DA771DD"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				count: 16L
+				id: "408B5C1DC06317BE"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			x: 21.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["19FF64B61527ED5A"]
+			hide_dependent_lines: true
+			id: "7BD97DC4C3DE7F11"
+			size: 1.0d
+			tasks: [{
+				id: "6141BF3BA1655498"
+				item: "gtceu:mv_chemical_bath"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["53A05923F8895595"]
+			description: ["Make sure to craft a considerable amount."]
+			id: "0F53EFB5D7D2C329"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "44F006E9A08BD5DC"
+				item: "gtceu:stainless_steel_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0A6A88F07A82E229"]
+			description: ["Stainless steel is an important material in HV."]
+			id: "53A05923F8895595"
+			size: 1.0d
+			tasks: [{
+				id: "39A7D0F31DC2F7B9"
+				item: "gtceu:stainless_steel_dust"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0F53EFB5D7D2C329"]
+			id: "6AB3F08490774D51"
+			size: 1.0d
+			tasks: [{
+				id: "03D8A40305A6B956"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["164045DB94B2D221"]
+			description: [
+				"Now you can electrolyze clay into Aluminium, Lithium, Silicon and Sodium dusts."
+				""
+				"To get infinite clay, there are two ways:"
+				"Diorite > Diorite Dust > Clay Dust"
+				""
+				"Dirt > Mud > Clay > Clay Dust"
+			]
+			icon: "gtceu:aluminium_dust"
+			id: "2B92683848576A1A"
+			shape: "gear"
+			size: 1.0d
+			tasks: [
+				{
+					id: "75B1624D785AF96C"
+					item: "gtceu:clay_dust"
+					type: "item"
+				}
+				{
+					id: "13CCA2AFA7034258"
+					item: "gtceu:aluminium_dust"
+					type: "item"
+				}
+				{
+					id: "4ECEC7B2B0DE1830"
+					item: "gtceu:lithium_dust"
+					type: "item"
+				}
+				{
+					id: "44F20BB2BA936061"
+					item: "gtceu:sodium_dust"
+					type: "item"
+				}
+				{
+					id: "3CA2BCC27B155268"
+					item: "gtceu:silicon_dust"
+					type: "item"
+				}
+			]
+			title: "Clay Electrolyzing"
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["739B7A5F5E19CEB1"]
+			description: [
+				"A Multiblock that extracts fluids from beneath."
+				""
+				"The fluids dont actually exist in the world, but they do deplete."
+				""
+				"A great way of getting LOADS of oil, the oil reserves are basically infinite!"
+			]
+			hide_dependency_lines: false
+			id: "1833F90AC37B8826"
+			size: 1.0d
+			tasks: [{
+				id: "023D299E08C80209"
+				item: "gtceu:mv_fluid_drilling_rig"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0A6A88F07A82E229"]
+			description: ["A very good tool material!"]
+			id: "739B7A5F5E19CEB1"
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "6A22F696F95797CB"
+				item: "gtceu:vanadium_steel_ingot"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["630A813B0F4DA078"]
+			description: ["MV tier batteries, they hold more power."]
+			id: "6C8851F7FB2FC344"
+			size: 1.0d
+			tasks: [{
+				id: "03729A27F4FFDAC7"
+				item: "gtceu:mv_battery_hull"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["630A813B0F4DA078"]
+			id: "1C8B355A01AB6CFB"
+			size: 1.0d
+			tasks: [{
+				id: "7E95B32DC151D587"
+				item: "gtceu:mv_super_chest"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["185B32DF4B476A19"]
+			id: "042E57D5AD1F1B7E"
+			size: 1.0d
+			tasks: [{
+				id: "7C4A912C20813136"
+				item: "gtceu:mv_super_tank"
+				type: "item"
+			}]
+			x: 26.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4B15C0711FA98FAB"]
+			description: [
+				"Terralumina is an alloy of Aluminium and Terrasteel."
+				""
+				"It's an MV superconductor, and is required in Kanthal Coil crafting."
+			]
+			id: "472217BE9BA19D20"
+			size: 1.0d
+			tasks: [{
+				id: "2EF5E1E8D98F24F1"
+				item: "gtceu:terralumina_ingot"
+				type: "item"
+			}]
+			x: 21.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["630A813B0F4DA078"]
+			hide_dependency_lines: true
+			id: "3DFBF4299BAB12B5"
+			size: 1.0d
+			tasks: [{
+				id: "5BA13D61663773F8"
+				item: "gtceu:aluminium_fluid_cell"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"45EC6B51678C5FDB"
+				"3EABF54D848B7C03"
+			]
+			id: "42565F2AB5AC211C"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "2349C3D85F5F5C49"
+				item: "botania:terra_plate"
+				type: "item"
+			}]
+			x: 18.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["12D3FF7ABD35CD49"]
+			description: [
+				"Make use of this guy, really."
+				""
+				"From now on miners are incredibly useful for passively \"generating\" ores. They use little to no power."
+				""
+				"Put a generator with a fuel buffer next to it to power it, and a chest for output of ores."
+				""
+				"&eRemember to chunk load them!&r"
+			]
+			id: "2A693A123793F7E8"
+			size: 1.0d
+			tasks: [{
+				id: "1306B2572A639129"
+				item: "gtceu:mv_miner"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["630A813B0F4DA078"]
+			description: ["You're going to hate this 2... wait, this is not GTNH..."]
+			id: "12D3FF7ABD35CD49"
+			size: 1.0d
+			tasks: [{
+				id: "021E5A17B1D59F93"
+				item: "gtceu:mv_sensor"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["08EE54E6C1C766CF"]
+			description: ["Next tier of circuit assembling!"]
+			id: "374FBE623A0F7200"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "67B350A5160DAA39"
+				item: "gtceu:mv_circuit_assembler"
+				type: "item"
+			}]
+			x: 28.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"42565F2AB5AC211C"
+				"7E7F3081B25D024D"
+			]
+			id: "4B15C0711FA98FAB"
+			size: 1.0d
+			tasks: [{
+				id: "0A49C691E341B690"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			x: 18.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["630A813B0F4DA078"]
+			description: [
+				"Faster Coke."
+				""
+				"Also grants byproducts that can be useful later."
+			]
+			id: "49322CC369C75E67"
+			size: 1.0d
+			tasks: [{
+				id: "4C686EAE4EE51341"
+				item: "gtceu:pyrolyse_oven"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4F74168E48A8348E"]
+			description: ["Crystal Puller is a multiblock that creates silicon boules."]
+			id: "2CD891A182DBFE28"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "7F246C59F2960782"
+				item: "gtceu:crystal_puller"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"77EFB9F7E591E14A"
+				"5D5572F284DFA0DC"
+			]
+			description: ["Plant Balls are best made by compressing bio products, especially saplings!"]
+			id: "4F55C127C7F4DC71"
+			size: 1.0d
+			tasks: [{
+				id: "04AA33B0F3579B2B"
+				item: "gtceu:plant_ball"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"4F55C127C7F4DC71"
+				"05D3C898EBC0480D"
+			]
+			description: ["This is used with Sulfuric Acid to make Ethylene."]
+			id: "48636EDDADC16359"
+			size: 1.0d
+			tasks: [{
+				id: "11AFAD3296785AB1"
+				item: "gtceu:ethanol_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6AAE3CEF45ADDFEB"]
+			description: ["Enough chemistry?"]
+			id: "4DB4F6BF36D30A35"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "26B2D6E52C1F26E1"
+				item: "gtceu:polyethylene_bucket"
+				type: "item"
+			}]
+			x: 19.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"425001886506083F"
+				"7A0E8F91B933845A"
+				"48636EDDADC16359"
+			]
+			description: [
+				"For making Ethylene, you have two ways:"
+				""
+				"1. Making it from Ethanol and Sulfuric Acid"
+				""
+				"2. Making it by distilling and cracking Oil."
+			]
+			id: "6AAE3CEF45ADDFEB"
+			min_required_dependencies: 2
+			size: 1.0d
+			tasks: [{
+				id: "4C1AB74E49F75C0B"
+				item: "gtceu:ethylene_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["48636EDDADC16359"]
+			id: "425001886506083F"
+			size: 1.0d
+			tasks: [{
+				id: "1E1739E2A07AC5F8"
+				item: "gtceu:sulfuric_acid_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["05D3C898EBC0480D"]
+			description: ["This is an alternative way to make Ethylene, but requires Oil, distilling it, cracking and then distilling again."]
+			id: "7A0E8F91B933845A"
+			optional: true
+			size: 1.0d
+			tasks: [{
+				id: "318736A2BF3F43FB"
+				item: "gtceu:light_fuel_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["630A813B0F4DA078"]
+			id: "164045DB94B2D221"
+			size: 1.0d
+			tasks: [{
+				id: "2A4A63FE1201A3A4"
+				item: "gtceu:mv_electrolyzer"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["41D7CFAE222CAE64"]
+			description: [
+				"You'll need this to make Ethylene for Polyethylene."
+				""
+				"Polyethylene is a very important material."
+			]
+			id: "05D3C898EBC0480D"
+			size: 1.0d
+			tasks: [{
+				id: "13C02931FE8E1CE6"
+				item: "gtceu:mv_distillery"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6AAE3CEF45ADDFEB"]
+			description: ["With a bit of Chloride you can make yourself Polyvinyl Chloride, or PVC."]
+			id: "185B32DF4B476A19"
+			size: 1.0d
+			tasks: [{
+				id: "3EE8CAFCD022D285"
+				item: "gtceu:polyvinyl_chloride_bucket"
+				type: "item"
+			}]
+			x: 24.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"6EA539D38718E106"
+				"664234AA516DD4DD"
+			]
+			description: ["OPTIONAL"]
+			id: "3DA8858F820F6615"
+			optional: true
+			size: 1.0d
+			tasks: [{
+				id: "3B0B70FAC7C2D815"
+				item: "gtceu:simple_soc"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["3DA8858F820F6615"]
+			description: ["These are so out of fashion, who even makes these anymore?"]
+			id: "4B1646A8C9F2E767"
+			optional: true
+			size: 1.0d
+			tasks: [{
+				id: "25A17275B89A7F0D"
+				item: "gtceu:nand_chip"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["630A813B0F4DA078"]
+			description: ["Energy cable upgrade."]
+			id: "7505C4A9D8C9B2B7"
+			size: 1.0d
+			tasks: [{
+				id: "624316FA02B68B32"
+				item: "powah:energy_cable_basic"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["630A813B0F4DA078"]
+			description: [
+				"Very useful for growing crops automatically. Uses really low power so make use of them!"
+				""
+				"The alternative is the Greenhouse, which will require a bit more work and power, but provides much more."
+			]
+			id: "77EFB9F7E591E14A"
+			size: 1.0d
+			tasks: [{
+				id: "0B8DDAA68FC826B1"
+				item: "thermal:machine_insolator"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0F53EFB5D7D2C329"]
+			description: ["Now you can craft some basic Thermal Series machines! They can become very useful."]
+			id: "004C0B7EEAEFD76C"
+			size: 1.0d
+			tasks: [{
+				id: "2283DF6D72733250"
+				item: "thermal:machine_frame"
+				type: "item"
+			}]
+			title: "Welcome to Thermal!"
+			x: -3.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["4DB4F6BF36D30A35"]
+			description: ["Used for making spawn eggs!"]
+			id: "5D5E3B843FF3DC28"
+			size: 1.0d
+			tasks: [{
+				id: "6FECB9FB29FF6664"
+				item: "kubejs:simulated_egg"
+				type: "item"
+			}]
+			x: 19.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"06BE0E0CFF758069"
+				"77EFB9F7E591E14A"
+			]
+			description: [
+				"Used to grow crops."
+				""
+				"An alternative is the Phytogenic Insolator, which uses less power and is much cheaper, but also produces less."
+			]
+			id: "5D5572F284DFA0DC"
+			size: 1.0d
+			tasks: [{
+				id: "3055B41183780133"
+				item: "gtceu:greenhouse"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"22F6144BF80A1413"
+				"472217BE9BA19D20"
+			]
+			description: ["Better MV circuits"]
+			id: "6DC53EC297BEBD3C"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "735D9F9612F9F06E"
+				item: "gtceu:good_integrated_circuit"
+				type: "item"
+			}]
+			x: 21.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7F1B572D2F1C1D75"]
+			id: "0E157F0B95D45F80"
+			size: 1.0d
+			tasks: [{
+				id: "6BDD178C35935F6E"
+				item: {
+					Count: 1
+					id: "gtceu:nightvision_goggles"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4DB4F6BF36D30A35"]
+			id: "2421EF363F56F392"
+			size: 1.0d
+			tasks: [{
+				id: "6871CD87D4C802E3"
+				item: "gtceu:lv_super_tank"
+				type: "item"
+			}]
+			x: 17.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0F3D795EAAE3E8DC"]
+			id: "06BE0E0CFF758069"
+			size: 1.0d
+			tasks: [{
+				id: "3520EDD1CA982431"
+				item: "ae2:quartz_glass"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2D86BD3AE9C7AB6B"]
+			id: "76348171200A547D"
+			tasks: [{
+				id: "508F40A33B283F8A"
+				item: "gtceu:mv_lathe"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["76348171200A547D"]
+			id: "7F1B572D2F1C1D75"
+			tasks: [{
+				id: "6AD5342D0B358BF1"
+				item: "gtceu:glass_lens"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4F74168E48A8348E"]
+			id: "52A0A461231A7B89"
+			tasks: [{
+				id: "73973CFCEB1C97D5"
+				item: "gtceu:mv_wiremill"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2D86BD3AE9C7AB6B"]
+			id: "44B14F5A5371251E"
+			tasks: [{
+				id: "28BFE3E8CB1476F3"
+				item: "gtceu:mv_bender"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["630A813B0F4DA078"]
+			id: "467DB55EAF51DD12"
+			tasks: [{
+				id: "567BDC799EE7A758"
+				item: "gtceu:mv_alloy_smelter"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["630A813B0F4DA078"]
+			id: "53D4B55D233A93CA"
+			tasks: [{
+				id: "7ED20ABB2EA1898E"
+				item: "gtceu:mv_arc_furnace"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["41D7CFAE222CAE64"]
+			id: "2921A5F181BF61CB"
+			tasks: [{
+				id: "4D4335199769AB4C"
+				item: "gtceu:mv_autoclave"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["739B7A5F5E19CEB1"]
+			id: "12FEA88FD0D52D02"
+			tasks: [{
+				id: "449047B9655EC577"
+				item: "gtceu:mv_cutter"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"12FEA88FD0D52D02"
+				"1984444D466E8EEF"
+			]
+			id: "664234AA516DD4DD"
+			tasks: [{
+				id: "006624C3D9AF76DD"
+				item: "gtceu:silicon_wafer"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2B92683848576A1A"]
+			id: "66949CA86F4019C4"
+			tasks: [{
+				id: "424D20EE7A0217E7"
+				item: "kubejs:single_crystal_silicon"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["66949CA86F4019C4"]
+			id: "1DF08C90B56E3423"
+			tasks: [{
+				id: "4160EDD0AF70B307"
+				item: "kubejs:seed_crystal"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7654326C675F0181"]
+			id: "7E7F3081B25D024D"
+			tasks: [
+				{
+					id: "6E97A045BD9171B8"
+					item: "botania:mana_diamond"
+					type: "item"
+				}
+				{
+					id: "53D9961BB6A1B2DA"
+					item: "botania:mana_pearl"
+					type: "item"
+				}
+			]
+			x: 17.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["11E30097AC7708B5"]
+			id: "3EABF54D848B7C03"
+			tasks: [
+				{
+					id: "18811CEF1A89705E"
+					item: "botania:rune_water"
+					type: "item"
+				}
+				{
+					id: "79A0402F87AD0A7B"
+					item: "botania:rune_fire"
+					type: "item"
+				}
+				{
+					id: "15233D691BB288CD"
+					item: "botania:rune_earth"
+					type: "item"
+				}
+				{
+					id: "1B78A53FDD3C55B6"
+					item: "botania:rune_air"
+					type: "item"
+				}
+				{
+					id: "7233CC234C3A32C0"
+					item: "botania:rune_mana"
+					type: "item"
+				}
+			]
+			x: 18.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4F74168E48A8348E"]
+			id: "09D9CCA93670E139"
+			tasks: [{
+				id: "0F03B5B4F47EE6AF"
+				item: "gtceu:mv_centrifuge"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4F74168E48A8348E"]
+			id: "1684FC383823BFAE"
+			tasks: [{
+				id: "3FB66964D243E604"
+				item: "gtceu:mv_chemical_reactor"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["41D7CFAE222CAE64"]
+			id: "2F9EC13841F53B9F"
+			tasks: [{
+				id: "5A4A8064AA04A771"
+				item: "gtceu:mv_fluid_solidifier"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4F74168E48A8348E"]
+			id: "165F2F4FC6F0C6F6"
+			tasks: [{
+				id: "3EDBF26649864AE7"
+				item: "gtceu:mv_mixer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["114D15EF6DA771DD"]
+			id: "40FC5D78402DF5F8"
+			tasks: [{
+				id: "01BC1EBA8557203B"
+				item: "gtceu:silicon_ingot"
+				type: "item"
+			}]
+			x: 21.5d
+			y: -2.0d
+		}
+	]
+	title: "MV Age"
+}
