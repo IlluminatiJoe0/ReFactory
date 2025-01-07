@@ -260,7 +260,7 @@ ServerEvents.recipes(event => {
 
 
     // Mana Core
-    event.recipes.botania.mana_infusion('kubejs:mana_core', 'gtceu:lv_machine_casing', 1000)
+    event.recipes.botania.mana_infusion('kubejs:mana_core', '#gtceu:circuits/lv', 1000)
 
     // Alchemy Catalyst
     event.remove({id: 'botania:alchemy_catalyst'})

@@ -7,6 +7,7 @@
 - Removed Bauxite from the overworld Mica vein
 - Added the Greenhouse
 - Many Minor mods Gregified
+- Mana Cores now crafted with LV circuits instead of LV machine casings
 - Unified a lot of recipes
 - Infernal mobs have less health, less attributes
 - More gregified recipes
