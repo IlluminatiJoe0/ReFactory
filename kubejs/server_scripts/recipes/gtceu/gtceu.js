@@ -5,49 +5,49 @@ ServerEvents.recipes(event => {
 
     // MV PHENOLIC CIRCUIT BOARD
 	event.recipes.gtceu.assembler('kubejs_phenolic_board')
-    .circuit(1)
-    .itemInputs(
-        'gtceu:wood_dust',
-        'gtceu:small_glass_dust'
-    )
-    .inputFluids(
-        Fluid.of('gtceu:glue', 50)
-    )
-    .itemOutputs(
-        'gtceu:phenolic_circuit_board'
-    )
-    .duration(160)
-    .EUt(30)
+        .circuit(1)
+        .itemInputs(
+            'gtceu:wood_dust',
+            'gtceu:small_glass_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:glue', 50)
+        )
+        .itemOutputs(
+            'gtceu:phenolic_circuit_board'
+        )
+        .duration(160)
+        .EUt(30)
 
     // MV GOOD CIRCUIT BOARD
     event.recipes.gtceu.forming_press('kubejs_good_circuit_board')
-    .itemInputs(
-        'gtceu:phenolic_circuit_board',
-        '8x gtceu:silver_single_wire'
-    )
-    .itemOutputs(
-        'gtceu:phenolic_printed_circuit_board'
-    )
-    .circuit(1)
-    .duration(160)
-    .EUt(16)
+        .itemInputs(
+            'gtceu:phenolic_circuit_board',
+            '8x gtceu:silver_single_wire'
+        )
+        .itemOutputs(
+            'gtceu:phenolic_printed_circuit_board'
+        )
+        .circuit(1)
+        .duration(160)
+        .EUt(16)
 
 	// REMOVE STEEL INGOTS AND BLOCKS FROM NON-COKE ITEMS IN PRIMITIVE BLAST FURNACE
 	event.remove({ 
-			type: 'gtceu:primitive_blast_furnace', 
-			output: 'gtceu:steel_ingot', 
-			not: [
-				{ input: 'gtceu:coke_gem' }, 
-				{input: 'gtceu:coke_dust'}
-			] 
+            type: 'gtceu:primitive_blast_furnace', 
+            output: 'gtceu:steel_ingot', 
+            not: [
+                { input: 'gtceu:coke_gem' }, 
+                {input: 'gtceu:coke_dust'}
+            ] 
 		}
 	)
 	event.remove({ 
-			type: 'gtceu:primitive_blast_furnace', 
-			output: 'gtceu:steel_block', 
-			not: { 
-				input: 'gtceu:coke_block' 
-			} 
+            type: 'gtceu:primitive_blast_furnace', 
+            output: 'gtceu:steel_block', 
+            not: { 
+                input: 'gtceu:coke_block' 
+            } 
 		}
 	)
 
@@ -55,27 +55,27 @@ ServerEvents.recipes(event => {
     event.remove('snad:snad')
     event.remove('snad:red_snad')
     event.recipes.gtceu.assembler('kubejs_snad')
-    .circuit(1)
-    .itemInputs(
-        '32x minecraft:sand',
-        'minecraft:redstone_block'
-    )
-    .itemOutputs(
-        'snad:snad'
-    )
-    .duration(20*10)
-    .EUt(24)
+        .circuit(1)
+        .itemInputs(
+            '32x minecraft:sand',
+            'minecraft:redstone_block'
+        )
+        .itemOutputs(
+            'snad:snad'
+        )
+        .duration(20*10)
+        .EUt(24)
 
     // zanite steel
     event.recipes.gtceu.mixer('zanite_steel')
-    .circuit(31)
-    .itemInputs(
-        'gtceu:steel_dust',
-        'gtceu:zanite_dust'
-    )
-    .itemOutputs('gtceu:zanite_steel_dust')
-    .duration(20*15)
-    .EUt(GTValues.VA[GTValues.MV])
+        .circuit(31)
+        .itemInputs(
+            'gtceu:steel_dust',
+            'gtceu:zanite_dust'
+        )
+        .itemOutputs('gtceu:zanite_steel_dust')
+        .duration(20*15)
+        .EUt(GTValues.VA[GTValues.MV])
 
     // Silicon Boule line
     event.remove({id: /_boule$/})
@@ -156,6 +156,13 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:rubber_plate")
         .duration(20/4)
         .EUt(GTValues.VA[GTValues.ULV])
+
+    // Rubber sheets in Compressor QOL for Steam age
+    event.recipes.gtceu.compressor('rubber_sheet_compressor')
+        .itemInputs('gtceu:rubber_ingot')
+        .itemOutputs('gtceu:rubber_plate')
+        .duration(20/4)
+        .EUt(4)
 
     // Dirt recipes
     event.recipes.gtceu.mixer('kubejs_dirt')
@@ -244,6 +251,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
 
     //// BOTANIA FOR GT CIRCUITS ----------------------------------------------------------------------------------------------
+
     //// LV - Manasteel / Mana Alloy
     //// MV - Terrasteel / Terralumina
     //// HV - Elementium / Elventium
@@ -286,10 +294,4 @@ ServerEvents.recipes(event => {
 
     // Wrought iron made by smelting iron
     event.smelting('gtceu:wrought_iron_ingot', 'minecraft:iron_ingot')
-})
-
-ServerEvents.tags('block', event => {
-    // Aether only in HV
-    event.remove('aether:aether_portal_blocks', 'minecraft:glowstone')
-    event.add('aether:aether_portal_blocks', 'gtceu:clean_machine_casing')
 })
