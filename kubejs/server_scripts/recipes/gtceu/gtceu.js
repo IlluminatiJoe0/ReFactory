@@ -294,4 +294,47 @@ ServerEvents.recipes(event => {
 
     // Wrought iron made by smelting iron
     event.smelting('gtceu:wrought_iron_ingot', 'minecraft:iron_ingot')
+
+    // Basalz, Blitz and Blizz chem line
+    event.recipes.gtceu.chemical_reactor('basalz')
+        .itemInputs(
+            '2x gtceu:sulfur_dust',
+            'gtceu:silicon_dioxide_dust'
+        )
+        .inputFluids(Fluid.of('gtceu:iron', 288))
+        .itemOutputs('thermal:basalz_powder')
+        .duration(20*8)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.chemical_reactor('blitz')
+        .itemInputs(
+            '2x gtceu:phosphorus_pentoxide_dust',
+            '2x gtceu:zinc_dust'
+        )
+        .inputFluids(Fluid.of('gtceu:nitrogen', 1000))
+        .itemOutputs('thermal:blitz_powder')
+        .duration(20*8)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.chemical_reactor('blizz')
+        .itemInputs(
+            '2x gtceu:silver_dust'
+        )
+        .inputFluids(
+            Fluid.of('water', 2000),
+            Fluid.of('gtceu:ammonia', 500)
+        )
+        .itemOutputs('thermal:blizz_powder')
+        .duration(20*8)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.mixer('mythic_compound')
+        .itemInputs(
+            'thermal:blitz_powder',
+            'thermal:blizz_powder',
+            'thermal:basalz_powder'
+        )
+        .itemOutputs('gtceu:mythic_compound_dust')
+        .duration(20*8)
+        .EUt(GTValues.VA[GTValues.HV])
 })
