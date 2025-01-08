@@ -233,6 +233,46 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     )
     .blastTemp(2000, null, GTValues.VA[GTValues.IV], 20*20)
 
+    // Silicon Dioxide, Sulfur, Iron
+    event.create('basalz')
+        .dust()
+        .color(0x200f10)
+        .components(
+            '2x sulfur',
+            '2x iron',
+            'silicon_dioxide'
+        )
+
+    // Water, Ammonia and Silver
+    event.create('blizz')
+        .dust()
+        .color(0x60bfff)
+        .components(
+            '2x water',
+            '2x silver',
+            'ammonia'
+        )
+
+    // Phosphorus Pentoxide, Zinc, Nitrogen
+    event.create('blitz')
+        .dust()
+        .color(0xd0d0a0)
+        .components(
+            '2x phosphorus_pentoxide',
+            '2x zinc',
+            'nitrogen'
+        )
+
+    // Mythic Compound
+    event.create('mythic_compound')
+        .dust()
+        .color(0x7e4e65)
+        .components(
+            'basalz',
+            'blitz',
+            'blizz'
+        )
+
     // Ad Astra
     // Desh
     // event.create('desh')
@@ -288,4 +328,8 @@ GTCEuStartupEvents.materialModification(event => {
     TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('manasteel'), () => Item.getItem('botania:manasteel_ingot'))
     TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('terrasteel'), () => Item.getItem('botania:terrasteel_ingot'))
     TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('elementium'), () => Item.getItem('botania:elementium_ingot'))
+
+    TagPrefix.dust['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('blitz'), () => Item.getItem('thermal:blitz_powder'))
+    TagPrefix.dust['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('blizz'), () => Item.getItem('thermal:blizz_powder'))
+    TagPrefix.dust['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('basalz'), () => Item.getItem('thermal:basalz_powder'))
 })
