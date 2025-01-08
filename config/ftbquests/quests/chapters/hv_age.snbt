@@ -82,7 +82,11 @@
 		}
 		{
 			dependencies: ["7DFAB08F359689DD"]
-			description: ["You cannot build the portal with Glowstone anymore, you'll need Clean Stainless Steel Casings."]
+			description: [
+				"You cannot build the portal with Glowstone anymore, you'll need Artificial Cloud Blocks."
+				""
+				"Place 10 blocks like you would for a nether portal, and put a water bucket in the center."
+			]
 			icon: "aether:aether_portal_frame"
 			id: "04EEC280F22C612F"
 			shape: "gear"
@@ -97,8 +101,8 @@
 				}
 				{
 					count: 10L
-					id: "2EF9D3547BE2A3B7"
-					item: { Count: 10, id: "gtceu:clean_machine_casing" }
+					id: "2C392D378820147C"
+					item: "kubejs:artificial_cloud_block"
 					type: "item"
 				}
 			]
@@ -221,7 +225,7 @@
 			dependencies: [
 				"5E0F220459741BE1"
 				"42ADECB98707B089"
-				"1E4C02A79BB43BE6"
+				"6491CC503A0BD3A7"
 			]
 			description: [
 				"These do get expensive, so don't craft them until you really need them."
@@ -344,8 +348,8 @@
 				item: "minecraft:ender_eye"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -5.5d
+			x: -16.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["30D787446CE3CE8B"]
@@ -356,8 +360,8 @@
 				item: "gtceu:hv_sensor"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -7.5d
+			x: -15.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["30D787446CE3CE8B"]
@@ -368,8 +372,8 @@
 				item: "gtceu:hv_emitter"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -7.5d
+			x: -17.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["0B159426F31C5AC1"]
@@ -380,8 +384,8 @@
 				item: "gtceu:hv_miner"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -9.5d
+			x: -14.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["5E0F220459741BE1"]
@@ -596,7 +600,7 @@
 				type: "item"
 			}]
 			x: -11.5d
-			y: -9.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
@@ -633,7 +637,7 @@
 				type: "item"
 			}]
 			x: -11.5d
-			y: -10.5d
+			y: -12.5d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
@@ -660,8 +664,8 @@
 				item: "gtceu:ender_fluid_link_cover"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -9.5d
+			x: -16.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["43D222FD4AF3280E"]
@@ -693,8 +697,8 @@
 				item: "enderstorage:ender_pouch"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -5.5d
+			x: -18.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["30D787446CE3CE8B"]
@@ -705,8 +709,8 @@
 				item: "mob_grinding_utils:entity_spawner"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -4.0d
+			x: -14.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
@@ -718,8 +722,8 @@
 				item: "minecraft:ender_pearl"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -4.0d
+			x: -17.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["05A634B47A2EF253"]
@@ -793,8 +797,8 @@
 				type: "dimension"
 			}]
 			title: "The End (not yet, actually)"
-			x: -7.5d
-			y: -3.5d
+			x: -16.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["68BAC4CBCD602803"]
@@ -829,8 +833,8 @@
 				item: "minecraft:blaze_powder"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -5.5d
+			x: -10.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["273E6401132B67CF"]
@@ -879,8 +883,8 @@
 				item: "gtceu:silicone_rubber_bucket"
 				type: "item"
 			}]
-			x: -13.5d
-			y: -5.5d
+			x: -13.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
@@ -954,8 +958,8 @@
 				item: "gtceu:ender_air_bucket"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -2.0d
+			x: -16.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -985,7 +989,7 @@
 				type: "item"
 			}]
 			x: 11.0d
-			y: -6.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["6CB7D934C87C3EB9"]
@@ -996,8 +1000,8 @@
 				item: "gtceu:ozone_bucket"
 				type: "item"
 			}]
-			x: 11.0d
-			y: -4.5d
+			x: 9.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["43D222FD4AF3280E"]
@@ -1125,7 +1129,7 @@
 				type: "item"
 			}]
 			x: -11.5d
-			y: -5.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
@@ -1147,7 +1151,7 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: -7.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["1DA37C72B3F83FD4"]
@@ -1158,7 +1162,7 @@
 				type: "item"
 			}]
 			x: -12.5d
-			y: -7.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
@@ -1195,77 +1199,56 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["17A254562B5DF529"]
-			id: "5D7A74E10C08FCFA"
-			tasks: [{
-				id: "6B843719F724A4FD"
-				title: "THERMAL"
-				type: "checkmark"
-			}]
-			x: -2.5d
-			y: 0.0d
-		}
-		{
 			dependencies: [
 				"36981BBAECB87212"
 				"5DE437C1810F3513"
 				"736AA526360DFDFC"
 			]
+			description: ["Blitz, Blizz and Basalz powders make Mythic Compound."]
 			id: "7DFAB08F359689DD"
 			tasks: [{
-				id: "717450AA64AB9BE8"
-				title: "THERMAL"
-				type: "checkmark"
+				id: "48C6F6BE6BA53C95"
+				item: "gtceu:mythic_compound_dust"
+				type: "item"
 			}]
 			x: -2.5d
 			y: -7.5d
 		}
 		{
-			dependencies: ["5D7A74E10C08FCFA"]
+			dependencies: ["1DA37C72B3F83FD4"]
+			description: ["Sulfur, Liquid Iron and Silicon Dioxide make Basalz powder."]
 			id: "736AA526360DFDFC"
 			tasks: [{
 				id: "1EDF4E5D1C45F825"
 				item: "thermal:basalz_powder"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -3.5d
+			x: -7.0d
+			y: -7.5d
 		}
 		{
-			dependencies: ["5D7A74E10C08FCFA"]
+			dependencies: ["1DA37C72B3F83FD4"]
+			description: ["Phosphorus Pentoxide, Nitrogen and Zinc make Blitz powder."]
 			id: "5DE437C1810F3513"
 			tasks: [{
 				id: "0856D3D9B69F8A7D"
 				item: "thermal:blitz_powder"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -3.5d
+			x: -7.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["5D7A74E10C08FCFA"]
+			dependencies: ["1DA37C72B3F83FD4"]
+			description: ["Silver, Water and Ammonia make Blizz powder."]
 			id: "36981BBAECB87212"
 			tasks: [{
 				id: "73512CD396B03FF9"
 				item: "thermal:blizz_powder"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -3.5d
-		}
-		{
-			dependencies: [
-				"1C4FCF8636BC790A"
-				"51F47C4B68444190"
-			]
-			id: "1E4C02A79BB43BE6"
-			tasks: [{
-				id: "277441F474ABD720"
-				title: "THERMAL"
-				type: "checkmark"
-			}]
-			x: 13.0d
-			y: -5.5d
+			x: -7.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["04EEC280F22C612F"]
@@ -1276,6 +1259,17 @@
 				type: "item"
 			}]
 			x: 6.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1C4FCF8636BC790A"]
+			id: "6491CC503A0BD3A7"
+			tasks: [{
+				id: "2C3AAA8092BB82D3"
+				item: "gtceu:lumium_ingot"
+				type: "item"
+			}]
+			x: 13.0d
 			y: -5.5d
 		}
 	]
