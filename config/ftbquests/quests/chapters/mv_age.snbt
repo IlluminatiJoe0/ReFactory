@@ -1265,6 +1265,30 @@
 			x: 21.5d
 			y: -2.0d
 		}
+		{
+			dependencies: ["1684FC383823BFAE"]
+			id: "0807682913253D8D"
+			size: 1.0d
+			tasks: [{
+				id: "28DE4FCC2DA9E9A8"
+				item: "gtceu:sodium_persulfate_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1684FC383823BFAE"]
+			id: "71410C823BA76E8A"
+			size: 1.0d
+			tasks: [{
+				id: "5E960CDEE29976B1"
+				item: "gtceu:iron_iii_chloride_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
 	]
 	title: "MV Age"
 }

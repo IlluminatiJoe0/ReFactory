@@ -13,13 +13,14 @@
 			icon: "gtceu:hv_machine_hull"
 			id: "59775F7F175FF086"
 			shape: "square"
+			size: 1.5d
 			tasks: [{
 				id: "01E24DE564C87FD7"
 				type: "checkmark"
 			}]
 			title: "HV Age"
-			x: 1.0d
-			y: 1.5d
+			x: -11.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -34,49 +35,53 @@
 				"It's required to make Nichrome coils."
 			]
 			id: "722C635C6F7AA733"
+			size: 1.5d
 			tasks: [{
 				id: "21E7E4AFA1553AF5"
 				item: "gtceu:elventium_ingot"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 7.5d
+			x: 7.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["04EEC280F22C612F"]
 			id: "4A6F76983101B7E1"
+			size: 1.0d
 			tasks: [{
 				id: "67CEF5C4051AFE3C"
 				item: "gtceu:ambrosium_gem"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 6.0d
+			x: 5.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3C1300681CAA0377"]
 			id: "68BAC4CBCD602803"
+			size: 1.0d
 			tasks: [{
 				id: "4BC4012FA008DC4B"
 				item: "gtceu:zanite_steel_ingot"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 4.5d
+			x: 2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["04EEC280F22C612F"]
 			id: "3C1300681CAA0377"
+			size: 1.0d
 			tasks: [{
 				id: "5365E9798A02BD6E"
 				item: "gtceu:zanite_gem"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 4.5d
+			x: 2.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["17A254562B5DF529"]
+			dependencies: ["7DFAB08F359689DD"]
 			description: ["You cannot build the portal with Glowstone anymore, you'll need Clean Stainless Steel Casings."]
 			icon: "aether:aether_portal_frame"
 			id: "04EEC280F22C612F"
@@ -98,8 +103,8 @@
 				}
 			]
 			title: "Visit the Aether"
-			x: 4.0d
-			y: 4.5d
+			x: 5.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -108,33 +113,37 @@
 			]
 			id: "28B610006FFBCBE6"
 			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				count: 16L
 				id: "4A69CED0E44758DB"
 				item: "gtceu:nichrome_coil_block"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 7.5d
+			x: 7.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
 			id: "17A254562B5DF529"
+			size: 1.0d
 			tasks: [{
 				id: "497468DD038247B0"
 				item: "gtceu:hv_assembler"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 3.0d
+			x: -5.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
 				"1147F49038872B8F"
 				"5069AE4DE34C5627"
+				"489074B5570FEE37"
 			]
 			description: ["Cheapest LV circuits there are."]
 			id: "53CBD2CE4933D4F0"
+			size: 1.5d
 			tasks: [{
 				id: "1666B115D48EE522"
 				item: "gtceu:microchip_processor"
@@ -142,71 +151,77 @@
 			}]
 			title: "Cheapest LV Circuits"
 			x: -5.0d
-			y: -1.5d
+			y: 5.0d
 		}
 		{
-			dependencies: [
-				"0807682913253D8D"
-				"71410C823BA76E8A"
-			]
+			dependencies: ["442599FD110BB3C3"]
 			id: "1147F49038872B8F"
+			size: 1.5d
 			tasks: [{
 				id: "16FC91122792C2C1"
 				item: "gtceu:plastic_printed_circuit_board"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -3.0d
+			x: -10.0d
+			y: 5.0d
 		}
 		{
-			dependencies: ["1147F49038872B8F"]
+			dependencies: [
+				"1147F49038872B8F"
+				"489074B5570FEE37"
+			]
 			id: "0E89B435074FF121"
+			size: 1.5d
 			tasks: [{
 				id: "66B8C580766D15E1"
 				item: "gtceu:micro_processor"
 				type: "item"
 			}]
 			title: "Cheap MV Circuits"
-			x: -5.0d
-			y: 0.0d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
 				"0E89B435074FF121"
-				"1147F49038872B8F"
 				"4815B8E4EF4AC16E"
+				"722C635C6F7AA733"
 			]
 			id: "1D08089B37803F70"
+			size: 1.5d
 			tasks: [{
 				id: "25AF509E2496D7B9"
 				item: "gtceu:micro_processor_assembly"
 				type: "item"
 			}]
 			title: "Cheaper HV Circuits"
-			x: -5.0d
-			y: 1.5d
+			x: 5.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
-				"1147F49038872B8F"
 				"1D08089B37803F70"
 				"42ADECB98707B089"
+				"722C635C6F7AA733"
 			]
 			description: ["A bit expensive but worth it!"]
 			id: "5E0F220459741BE1"
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "55AF6871D5DDC015"
 				item: "gtceu:micro_processor_computer"
 				type: "item"
 			}]
 			title: "Early EV Circuits"
-			x: -5.0d
-			y: 3.0d
+			x: 10.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
 				"5E0F220459741BE1"
 				"42ADECB98707B089"
+				"1E4C02A79BB43BE6"
 			]
 			description: [
 				"These do get expensive, so don't craft them until you really need them."
@@ -214,14 +229,16 @@
 				"&8Or don't, I don't really care, you can do what you want, I'm just a guy in a book.&r"
 			]
 			id: "5C1F974BF9733EE6"
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "2DC960AA62E911F6"
 				item: "gtceu:micro_processor_mainframe"
 				type: "item"
 			}]
 			title: "Early IV Circuits"
-			x: -6.5d
-			y: 3.0d
+			x: 13.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -236,38 +253,41 @@
 				item: "gtceu:titanium_ingot"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 6.0d
+			x: 17.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["04EEC280F22C612F"]
 			description: ["Process some Ilmenite or Bauxite to get Rutile dust. You'll need it to make Titanium."]
 			id: "2D3383DBA6CE7935"
+			size: 1.0d
 			tasks: [{
 				id: "4194A6D3629F7258"
 				item: "gtceu:rutile_dust"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 6.0d
+			x: 15.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["2D3383DBA6CE7935"]
 			description: ["React Carbon, Rutile and Chlorine in a HV Chemical Reactor to get Titanium Tetrachloride."]
 			id: "6E595E49F758C615"
+			size: 1.0d
 			tasks: [{
 				id: "475320E1196D6B38"
 				item: "gtceu:titanium_tetrachloride_bucket"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 6.0d
+			x: 17.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["6E595E49F758C615"]
 			description: ["Blast the Titanium Tetrachloride in an EBF with some Magnesium to get Hot Titanium and some Magnesium Chloride, which can be recycled."]
 			icon: "gtceu:hot_titanium_ingot"
 			id: "095EFD640A49AE71"
+			size: 1.0d
 			tasks: [
 				{
 					id: "2FB633DD573E4CA0"
@@ -281,121 +301,130 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
-			y: 6.0d
+			x: 17.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5E0F220459741BE1"]
 			description: ["Chill!"]
 			id: "41DC9E77D843E0D2"
 			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "0C6FDED276BB1CCB"
 				item: "gtceu:vacuum_freezer"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 4.5d
+			x: 15.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["43D222FD4AF3280E"]
 			id: "097912261E2A9B52"
 			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "7DEDB3B30A81C9DE"
 				item: "gtceu:ev_machine_hull"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 7.5d
+			x: 19.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
 				"442D375BF085216E"
-				"59775F7F175FF086"
+				"1DA37C72B3F83FD4"
 			]
 			description: ["You can now finally craft Eyes of Ender."]
 			id: "30D787446CE3CE8B"
+			size: 1.5d
 			tasks: [{
 				id: "7842EF6C359F8308"
 				item: "minecraft:ender_eye"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -1.5d
+			x: -7.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["30D787446CE3CE8B"]
 			id: "0B159426F31C5AC1"
+			size: 1.0d
 			tasks: [{
 				id: "3E00F8C9FB25DB70"
 				item: "gtceu:hv_sensor"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -4.5d
+			x: -6.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["30D787446CE3CE8B"]
 			id: "6B1DA81DE2410919"
+			size: 1.0d
 			tasks: [{
 				id: "636429606B949817"
 				item: "gtceu:hv_emitter"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -3.0d
+			x: -8.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["0B159426F31C5AC1"]
 			id: "0310998DEAFB2B09"
+			size: 1.0d
 			tasks: [{
 				id: "34DCAC0493EBE60F"
 				item: "gtceu:hv_miner"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -4.5d
+			x: -5.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["5E0F220459741BE1"]
 			id: "1F4BD78DF492DE6A"
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "469144AD637D4644"
 				item: "gtceu:hv_circuit_assembler"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 4.5d
+			x: 10.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
 			id: "36E2F6D2A1388D1C"
+			size: 1.0d
 			tasks: [{
 				id: "6728D80E9B031515"
 				item: "gtceu:hv_mixer"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 3.0d
+			x: -16.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["36E2F6D2A1388D1C"]
 			id: "4AEC76A5E18BF772"
+			size: 1.0d
 			tasks: [{
 				id: "0360BF941A30BB35"
 				item: "gtceu:energy_crystal"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 3.0d
+			x: -17.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
 			icon: "gtceu:configurable_maintenance_hatch"
 			id: "107D6EDE7A48ABAD"
+			size: 1.0d
 			tasks: [
 				{
 					id: "43135593A7B41375"
@@ -409,32 +438,34 @@
 				}
 			]
 			title: "New Maintenance Hatches"
-			x: -0.5d
-			y: 4.5d
+			x: -13.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
 			hide_dependency_lines: true
 			id: "684E563297A20A13"
+			size: 1.0d
 			tasks: [{
 				id: "1AC3E81754CBDEC8"
 				item: "gtceu:hv_super_chest"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 2.5d
+			x: -18.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
 			hide_dependency_lines: true
 			id: "3BDA4407BF2CC45D"
+			size: 1.0d
 			tasks: [{
 				id: "7DBFCA657F516F5B"
 				item: "gtceu:hv_super_tank"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 1.5d
+			x: -18.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
@@ -447,53 +478,57 @@
 				item: "gtceu:cleanroom"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 3.0d
+			x: 10.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
 			id: "658F35B4B40FFB93"
+			size: 1.0d
 			tasks: [{
 				id: "1F455ACB387BD89D"
 				item: "gtceu:evaporation_plant"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 4.5d
+			x: -14.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
 			hide_dependency_lines: true
 			id: "31C81A033CB8C11D"
+			size: 1.0d
 			tasks: [{
 				id: "623425A0E1BA1BB1"
 				item: "gtceu:implosion_compressor"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 7.5d
+			x: 15.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["20831A754A2A5392"]
 			id: "70CA8E65AA945363"
+			size: 1.0d
 			tasks: [{
 				id: "33E60C8817F13937"
 				item: "gtceu:gelled_toluene"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 0.0d
+			x: -8.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["70CA8E65AA945363"]
 			id: "44890B3796B295E2"
+			size: 1.0d
 			tasks: [{
 				id: "2B58FB1E284E374E"
 				item: "gtceu:industrial_tnt"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 0.0d
+			x: 17.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["4AEC76A5E18BF772"]
@@ -503,6 +538,7 @@
 				tag: { }
 			}
 			id: "25AFA7FC86E52939"
+			size: 1.0d
 			tasks: [
 				{
 					id: "197CB3456FA9824F"
@@ -530,8 +566,8 @@
 				}
 			]
 			title: "NanoMuscle Armor"
-			x: 8.5d
-			y: 3.0d
+			x: -19.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
@@ -543,48 +579,51 @@
 				item: "gtceu:distillation_tower"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 0.0d
+			x: -8.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["4154B5E74200F152"]
+			dependencies: [
+				"5C00182B01D5FFCF"
+				"400A096DB2D1D861"
+			]
 			id: "508C959C59F50CAF"
 			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "79948A975EE7AC43"
 				item: "gtceu:polytetrafluoroethylene_bucket"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 0.0d
+			x: -11.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
 			id: "25BA9E6C6E55C85C"
+			size: 1.0d
 			tasks: [{
 				id: "695B3240BA0B4A36"
 				item: "gtceu:multi_smelter"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 3.0d
+			x: -13.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
 			id: "17515CF049766872"
+			size: 1.0d
 			tasks: [{
 				id: "4578A64C823C2DB6"
 				item: "gtceu:cracker"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 4.5d
+			x: -16.0d
+			y: -1.5d
 		}
 		{
-			dependencies: [
-				"508C959C59F50CAF"
-				"59775F7F175FF086"
-			]
+			dependencies: ["508C959C59F50CAF"]
 			id: "3F75C75CFDA986C1"
 			shape: "gear"
 			size: 1.5d
@@ -593,20 +632,21 @@
 				item: "gtceu:large_chemical_reactor"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -1.5d
+			x: -11.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
 			hide_dependency_lines: true
 			id: "6BD0E91035055F7D"
+			size: 1.0d
 			tasks: [{
 				id: "3022E359A7FA4E54"
 				item: "gtceu:hv_item_magnet"
 				type: "item"
 			}]
-			x: -11.0d
-			y: 1.5d
+			x: -19.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -614,18 +654,20 @@
 				"0B159426F31C5AC1"
 			]
 			id: "57D35AEFE44C9CB2"
+			size: 1.0d
 			tasks: [{
 				id: "047E7E2203B3229B"
 				item: "gtceu:ender_fluid_link_cover"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -4.5d
+			x: -7.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["43D222FD4AF3280E"]
 			icon: "enderstorage:ender_chest"
 			id: "60C751CF4D7C286E"
+			size: 1.0d
 			tasks: [
 				{
 					id: "2AE27E796B555435"
@@ -639,48 +681,52 @@
 				}
 			]
 			title: "Ender Storage"
-			x: -3.5d
-			y: 6.0d
+			x: 16.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["30D787446CE3CE8B"]
 			id: "63B866791B806ECC"
+			size: 1.0d
 			tasks: [{
 				id: "072DF6E9E38ED5FE"
 				item: "enderstorage:ender_pouch"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -3.0d
+			x: -5.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["30D787446CE3CE8B"]
 			id: "257591A1D3D26F6E"
+			size: 1.0d
 			tasks: [{
 				id: "31884393324F927A"
 				item: "mob_grinding_utils:entity_spawner"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -3.0d
+			x: -6.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
 			hide_dependency_lines: true
 			id: "442D375BF085216E"
+			size: 1.0d
 			tasks: [{
 				id: "020D284088B5EA39"
 				item: "minecraft:ender_pearl"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -1.5d
+			x: -9.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["05A634B47A2EF253"]
 			description: ["If you get Tantalum, you can craft insanely cheap components."]
 			icon: "gtceu:smd_transistor"
 			id: "2585010E61E151AB"
+			size: 1.5d
 			tasks: [
 				{
 					id: "17C0B5CC7DFD1A14"
@@ -704,66 +750,42 @@
 				}
 			]
 			title: "SMD Components"
-			x: -3.5d
-			y: -3.0d
+			x: -10.0d
+			y: 6.5d
 		}
 		{
-			id: "0807682913253D8D"
-			tasks: [{
-				id: "28DE4FCC2DA9E9A8"
-				item: "gtceu:sodium_persulfate_bucket"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -4.5d
-		}
-		{
-			id: "71410C823BA76E8A"
-			tasks: [{
-				id: "5E960CDEE29976B1"
-				item: "gtceu:iron_iii_chloride_bucket"
-				type: "item"
-			}]
-			x: -6.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["48267B88994A6920"]
+			dependencies: [
+				"34D27CED8F185184"
+				"298AA444AEC8C3A1"
+				"3B1F268BC1A56F83"
+			]
 			id: "6C75DE589F2268C7"
 			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "673A3A2F8CA6C7C1"
 				item: "gtceu:hv_energy_input_hatch"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 1.5d
+			x: -20.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["59775F7F175FF086"]
+			dependencies: ["14E993FAD54631CD"]
 			id: "48267B88994A6920"
+			size: 1.0d
 			tasks: [{
 				id: "4F7A0FC8FF756FFC"
 				item: "gtceu:hv_cutter"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["59775F7F175FF086"]
-			id: "4154B5E74200F152"
-			tasks: [{
-				id: "2D9F9069CAE41CDD"
-				item: "gtceu:hv_chemical_reactor"
-				type: "item"
-			}]
-			x: -0.5d
+			x: -17.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["30D787446CE3CE8B"]
 			id: "62B1007E03E72515"
+			size: 1.0d
 			tasks: [{
 				dimension: "minecraft:the_end"
 				icon: "minecraft:end_portal_frame"
@@ -771,206 +793,169 @@
 				type: "dimension"
 			}]
 			title: "The End (not yet, actually)"
-			x: 4.0d
-			y: -4.5d
+			x: -7.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["68BAC4CBCD602803"]
 			id: "42993980A7D65EBB"
+			size: 1.0d
 			tasks: [{
 				id: "717EF6126B69FFA1"
 				item: "kubejs:elven_circuit"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 4.5d
+			x: 3.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
 			id: "0C4E72AB5A1B13E6"
+			size: 1.0d
 			tasks: [{
 				id: "0C126303B81F4873"
 				item: "gtceu:hv_battery_hull"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 0.0d
+			x: -13.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["4154B5E74200F152"]
+			dependencies: ["1DA37C72B3F83FD4"]
 			id: "783DE37E3030180D"
+			size: 1.0d
 			tasks: [{
 				id: "41BB3F5FDD7D2101"
 				item: "minecraft:blaze_powder"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -1.5d
+			x: -9.5d
+			y: -5.5d
 		}
 		{
-			dependencies: ["59775F7F175FF086"]
+			dependencies: ["273E6401132B67CF"]
 			id: "35A65112B1648D9F"
 			shape: "gear"
+			size: 1.0d
 			tasks: [{
 				id: "313B5ACC20FD87D4"
 				item: "gtceu:phosphorus_boule"
 				type: "item"
 			}]
-			x: 4.0d
+			x: -16.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
 			id: "35A298845D55AEED"
+			size: 1.0d
 			tasks: [{
 				id: "5AA830BBB24615FC"
 				item: "gtceu:infinite_water_cover"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 4.5d
+			x: -14.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
 			hide_dependency_lines: true
 			id: "63CE3350D5F484A7"
+			size: 1.0d
 			tasks: [{
 				id: "75587D368B8A3C8F"
 				item: "gtceu:stainless_steel_fluid_cell"
 				type: "item"
 			}]
-			x: -11.0d
-			y: 2.5d
+			x: -19.0d
+			y: 4.0d
 		}
 		{
-			dependencies: ["3F75C75CFDA986C1"]
+			dependencies: ["1DA37C72B3F83FD4"]
 			id: "0C2C24739D10F90C"
+			size: 1.0d
 			tasks: [{
 				id: "78452D5D48EC216F"
 				item: "gtceu:silicone_rubber_bucket"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -3.0d
+			x: -13.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
 			description: ["Now your macerators have unlocked chanced byproducts!"]
 			id: "2B5F523C728A64C3"
+			size: 1.0d
 			tasks: [{
 				id: "08D59374CB56A31B"
 				item: "gtceu:hv_macerator"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 3.0d
+			x: -14.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
 			id: "640C2569D10D1CDC"
+			size: 1.0d
 			tasks: [{
 				id: "7BD2B348DE8DD295"
 				item: "powah:energy_cable_hardened"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -13.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["42993980A7D65EBB"]
 			id: "2894F38706D609AD"
+			size: 1.0d
 			tasks: [{
 				id: "0C338F43CF968264"
 				item: "botania:alfheim_portal"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 4.5d
+			x: 5.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2894F38706D609AD"]
 			id: "60A095952D52DFE3"
 			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "5E6D0CBADDB405FA"
 				item: "botania:elementium_ingot"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 7.5d
-		}
-		{
-			dependencies: [
-				"43D222FD4AF3280E"
-				"42993980A7D65EBB"
-				"60A095952D52DFE3"
-			]
-			description: [
-				"Welcome to Botanical Machinery."
-				""
-				"Finally you can make Botania materials without manually (or with a different janky setup) dropping materials into pools."
-			]
-			icon: "botanicalmachinery:mechanical_runic_altar"
-			id: "7B13621EBCDED048"
-			size: 1.5d
-			tasks: [
-				{
-					id: "1920B47A59CEB274"
-					item: "botanicalmachinery:mechanical_mana_pool"
-					type: "item"
-				}
-				{
-					id: "3BBA4B3000B8E237"
-					item: "botanicalmachinery:mechanical_apothecary"
-					type: "item"
-				}
-				{
-					id: "46B0E4615532F48C"
-					item: "botanicalmachinery:mechanical_brewery"
-					type: "item"
-				}
-				{
-					id: "4106CA6BBEFA8EDA"
-					item: "botanicalmachinery:mechanical_daisy"
-					type: "item"
-				}
-				{
-					id: "3476376C0FC30DA3"
-					item: "botanicalmachinery:mechanical_runic_altar"
-					type: "item"
-				}
-				{
-					id: "31EAD9528EF50472"
-					item: "botanicalmachinery:alfheim_market"
-					type: "item"
-				}
-			]
-			title: "Botanical Machinery"
-			x: 10.035714285714292d
-			y: 6.0d
+			x: 5.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["04EEC280F22C612F"]
 			description: ["The Aether air contains useful materials, like Fluorine, Ozone, Helium and Mistrium"]
 			id: "6CB7D934C87C3EB9"
+			size: 1.0d
 			tasks: [{
 				id: "716F494DE1862F25"
 				item: "gtceu:liquid_aether_air_bucket"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 9.0d
+			x: 6.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["62B1007E03E72515"]
 			id: "3E615E3C2E46F831"
+			size: 1.0d
 			tasks: [{
 				id: "358155F7572578F8"
 				item: "gtceu:ender_air_bucket"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -4.5d
+			x: -7.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -979,49 +964,52 @@
 				"31C81A033CB8C11D"
 				"44890B3796B295E2"
 			]
-			description: ["You'll need 26 of these to make your very first rocket!"]
+			description: ["You'll need 13 of these to make your very first rocket!"]
 			id: "4F14AC38199A005E"
+			size: 1.5d
 			tasks: [{
 				id: "772280E8D0AA09A5"
 				item: "kubejs:t1_rocket_plate"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 6.0d
+			x: 17.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6CB7D934C87C3EB9"]
 			id: "1C4FCF8636BC790A"
+			size: 1.0d
 			tasks: [{
 				id: "3B9D8D1630CC9744"
 				item: "gtceu:mistrium_bucket"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 10.5d
+			x: 9.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["6CB7D934C87C3EB9"]
 			id: "51F47C4B68444190"
+			size: 1.0d
 			tasks: [{
 				id: "6AC0F85B27F3380B"
 				item: "gtceu:ozone_bucket"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 10.5d
+			x: 9.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["43D222FD4AF3280E"]
-			hide_dependency_lines: true
 			id: "247390A4673AD828"
+			size: 1.0d
 			tasks: [{
 				id: "41C127184EEC3E8F"
 				item: "gcyr:rocket_scanner"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 9.0d
+			x: 19.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1030,6 +1018,7 @@
 			]
 			id: "7F79BF7FD6AE35CE"
 			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				dimension: "gcyr:luna"
 				icon: "gcyr:moon_sand"
@@ -1037,55 +1026,246 @@
 				title: "To the Moon!"
 				type: "dimension"
 			}]
-			x: 7.0d
-			y: 9.0d
+			x: 19.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["41DC9E77D843E0D2"]
 			id: "528DAD15BFA6104A"
+			size: 1.0d
 			tasks: [{
 				id: "68F5C463B1081F7F"
 				item: "gtceu:nichrome_ingot"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 7.5d
+			x: 15.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
 			hide_dependency_lines: true
 			id: "05A634B47A2EF253"
+			size: 1.0d
 			tasks: [{
 				id: "734A6A0E49112C54"
 				item: "gtceu:tantalum_ingot"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -4.5d
+			x: -11.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
 			hide_dependency_lines: true
 			id: "5069AE4DE34C5627"
+			size: 1.0d
 			tasks: [{
 				id: "307A0128CE024FDD"
 				item: "gtceu:capacitor"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -1.5d
+			x: -5.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["59775F7F175FF086"]
 			hide_dependency_lines: true
 			id: "4815B8E4EF4AC16E"
+			size: 1.0d
 			tasks: [{
 				id: "3BDE772A99217772"
 				item: "gtceu:inductor"
 				type: "item"
 			}]
-			x: -3.5d
+			x: 5.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["48267B88994A6920"]
+			id: "34D27CED8F185184"
+			tasks: [{
+				id: "6708F78CC53DD87E"
+				item: "gtceu:lpic_chip"
+				type: "item"
+			}]
+			x: -19.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["59775F7F175FF086"]
+			hide_dependency_lines: true
+			id: "298AA444AEC8C3A1"
+			tasks: [{
+				id: "170129ADE1FE5D8B"
+				item: "gtceu:sodium_potassium_bucket"
+				type: "item"
+			}]
+			x: -22.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["59775F7F175FF086"]
+			hide_dependency_lines: true
+			id: "3B1F268BC1A56F83"
+			tasks: [{
+				id: "05424AD043038E03"
+				item: "gtceu:black_steel_ingot"
+				type: "item"
+			}]
+			x: -22.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["59775F7F175FF086"]
+			id: "1DA37C72B3F83FD4"
+			size: 1.5d
+			tasks: [{
+				id: "1D47DAABE51CDCEE"
+				item: "gtceu:hv_chemical_reactor"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["59775F7F175FF086"]
+			id: "14E993FAD54631CD"
+			tasks: [{
+				id: "50CB454B6F804B96"
+				item: "gtceu:red_steel_ingot"
+				type: "item"
+			}]
+			x: -16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1DA37C72B3F83FD4"]
+			id: "5C00182B01D5FFCF"
+			tasks: [{
+				id: "22BE3889AFEAC567"
+				item: "gtceu:hydrofluoric_acid_bucket"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["1DA37C72B3F83FD4"]
+			id: "400A096DB2D1D861"
+			tasks: [{
+				id: "45A61761A00B8E61"
+				item: "gtceu:chloroform_bucket"
+				type: "item"
+			}]
+			x: -12.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["59775F7F175FF086"]
+			id: "442599FD110BB3C3"
+			tasks: [{
+				id: "7B7AB9A85AB05AA3"
+				item: "gtceu:plastic_circuit_board"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["59775F7F175FF086"]
+			hide_dependency_lines: true
+			id: "489074B5570FEE37"
+			tasks: [{
+				id: "3E530BB578C0B39D"
+				item: "gtceu:cpu_chip"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["59775F7F175FF086"]
+			id: "273E6401132B67CF"
+			tasks: [{
+				id: "3747A350EF966384"
+				item: "gtceu:phosphorus_dust"
+				type: "item"
+			}]
+			x: -14.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["17A254562B5DF529"]
+			id: "5D7A74E10C08FCFA"
+			tasks: [{
+				id: "6B843719F724A4FD"
+				title: "THERMAL"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"36981BBAECB87212"
+				"5DE437C1810F3513"
+				"736AA526360DFDFC"
+			]
+			id: "7DFAB08F359689DD"
+			tasks: [{
+				id: "717450AA64AB9BE8"
+				title: "THERMAL"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5D7A74E10C08FCFA"]
+			id: "736AA526360DFDFC"
+			tasks: [{
+				id: "1EDF4E5D1C45F825"
+				item: "thermal:basalz_powder"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5D7A74E10C08FCFA"]
+			id: "5DE437C1810F3513"
+			tasks: [{
+				id: "0856D3D9B69F8A7D"
+				item: "thermal:blitz_powder"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5D7A74E10C08FCFA"]
+			id: "36981BBAECB87212"
+			tasks: [{
+				id: "73512CD396B03FF9"
+				item: "thermal:blizz_powder"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1C4FCF8636BC790A"
+				"51F47C4B68444190"
+			]
+			id: "1E4C02A79BB43BE6"
+			tasks: [{
+				id: "277441F474ABD720"
+				title: "THERMAL"
+				type: "checkmark"
+			}]
+			x: 13.0d
+			y: -5.5d
 		}
 	]
 	title: "HV Age"
