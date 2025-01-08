@@ -193,7 +193,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     .components(
         '3x tin',
         '1x silver',
-        '4x glowstone'
+        '4x glowstone',
+        'mistrium'
     )
     .iconSet(GTMaterialIconSet.METALLIC)
     .flags(
