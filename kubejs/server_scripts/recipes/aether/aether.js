@@ -22,5 +22,4 @@ yeet('aether:zanite_gemstone')
 ServerEvents.tags('block', event => {
   // Aether only in HV
   event.remove('aether:aether_portal_blocks', 'minecraft:glowstone')
-  event.add('aether:aether_portal_blocks', 'gtceu:clean_machine_casing')
 })
